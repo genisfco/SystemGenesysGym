@@ -61,13 +61,28 @@ namespace GenesysGym
             this.label6 = new System.Windows.Forms.Label();
             this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.grpboxEndereco = new System.Windows.Forms.GroupBox();
+            this.txtLogradouro = new System.Windows.Forms.TextBox();
+            this.txtNumLogradouro = new System.Windows.Forms.TextBox();
+            this.maskCEP = new System.Windows.Forms.MaskedTextBox();
+            this.txtBairro = new System.Windows.Forms.TextBox();
+            this.txtCidade = new System.Windows.Forms.TextBox();
+            this.txtEstado = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
             this.pnlCadastrarCliente.SuspendLayout();
             this.grpboxDadosPessoais.SuspendLayout();
             this.menuStrip1.SuspendLayout();
+            this.grpboxEndereco.SuspendLayout();
             this.SuspendLayout();
             // 
             // pnlCadastrarCliente
             // 
+            this.pnlCadastrarCliente.Controls.Add(this.grpboxEndereco);
             this.pnlCadastrarCliente.Controls.Add(this.label2);
             this.pnlCadastrarCliente.Controls.Add(this.label1);
             this.pnlCadastrarCliente.Controls.Add(this.dttimepickDataRegistro);
@@ -75,7 +90,7 @@ namespace GenesysGym
             this.pnlCadastrarCliente.Controls.Add(this.grpboxDadosPessoais);
             this.pnlCadastrarCliente.Location = new System.Drawing.Point(12, 27);
             this.pnlCadastrarCliente.Name = "pnlCadastrarCliente";
-            this.pnlCadastrarCliente.Size = new System.Drawing.Size(447, 481);
+            this.pnlCadastrarCliente.Size = new System.Drawing.Size(447, 548);
             this.pnlCadastrarCliente.TabIndex = 0;
             // 
             // grpboxDadosPessoais
@@ -328,6 +343,123 @@ namespace GenesysGym
             this.radioButton2.Text = "Feminino";
             this.radioButton2.UseVisualStyleBackColor = true;
             // 
+            // grpboxEndereco
+            // 
+            this.grpboxEndereco.Controls.Add(this.label12);
+            this.grpboxEndereco.Controls.Add(this.label11);
+            this.grpboxEndereco.Controls.Add(this.label10);
+            this.grpboxEndereco.Controls.Add(this.label9);
+            this.grpboxEndereco.Controls.Add(this.label8);
+            this.grpboxEndereco.Controls.Add(this.label7);
+            this.grpboxEndereco.Controls.Add(this.txtEstado);
+            this.grpboxEndereco.Controls.Add(this.txtCidade);
+            this.grpboxEndereco.Controls.Add(this.txtBairro);
+            this.grpboxEndereco.Controls.Add(this.maskCEP);
+            this.grpboxEndereco.Controls.Add(this.txtNumLogradouro);
+            this.grpboxEndereco.Controls.Add(this.txtLogradouro);
+            this.grpboxEndereco.Location = new System.Drawing.Point(3, 239);
+            this.grpboxEndereco.Name = "grpboxEndereco";
+            this.grpboxEndereco.Size = new System.Drawing.Size(436, 135);
+            this.grpboxEndereco.TabIndex = 4;
+            this.grpboxEndereco.TabStop = false;
+            this.grpboxEndereco.Text = "Endereço";
+            // 
+            // txtLogradouro
+            // 
+            this.txtLogradouro.Location = new System.Drawing.Point(6, 40);
+            this.txtLogradouro.Name = "txtLogradouro";
+            this.txtLogradouro.Size = new System.Drawing.Size(256, 20);
+            this.txtLogradouro.TabIndex = 0;
+            // 
+            // txtNumLogradouro
+            // 
+            this.txtNumLogradouro.Location = new System.Drawing.Point(268, 40);
+            this.txtNumLogradouro.Name = "txtNumLogradouro";
+            this.txtNumLogradouro.Size = new System.Drawing.Size(45, 20);
+            this.txtNumLogradouro.TabIndex = 1;
+            // 
+            // maskCEP
+            // 
+            this.maskCEP.Location = new System.Drawing.Point(324, 40);
+            this.maskCEP.Name = "maskCEP";
+            this.maskCEP.Size = new System.Drawing.Size(100, 20);
+            this.maskCEP.TabIndex = 2;
+            // 
+            // txtBairro
+            // 
+            this.txtBairro.Location = new System.Drawing.Point(12, 97);
+            this.txtBairro.Name = "txtBairro";
+            this.txtBairro.Size = new System.Drawing.Size(100, 20);
+            this.txtBairro.TabIndex = 3;
+            // 
+            // txtCidade
+            // 
+            this.txtCidade.Location = new System.Drawing.Point(182, 97);
+            this.txtCidade.Name = "txtCidade";
+            this.txtCidade.Size = new System.Drawing.Size(100, 20);
+            this.txtCidade.TabIndex = 4;
+            // 
+            // txtEstado
+            // 
+            this.txtEstado.Location = new System.Drawing.Point(376, 97);
+            this.txtEstado.Name = "txtEstado";
+            this.txtEstado.Size = new System.Drawing.Size(45, 20);
+            this.txtEstado.TabIndex = 5;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(6, 20);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(61, 13);
+            this.label7.TabIndex = 6;
+            this.label7.Text = "Logradouro";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(265, 24);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(19, 13);
+            this.label8.TabIndex = 7;
+            this.label8.Text = "Nº";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(322, 24);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(28, 13);
+            this.label9.TabIndex = 8;
+            this.label9.Text = "CEP";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(10, 81);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(34, 13);
+            this.label10.TabIndex = 9;
+            this.label10.Text = "Bairro";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(179, 81);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(40, 13);
+            this.label11.TabIndex = 10;
+            this.label11.Text = "Cidade";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(373, 81);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(40, 13);
+            this.label12.TabIndex = 11;
+            this.label12.Text = "Estado";
+            // 
             // TelaPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -344,6 +476,8 @@ namespace GenesysGym
             this.grpboxDadosPessoais.PerformLayout();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
+            this.grpboxEndereco.ResumeLayout(false);
+            this.grpboxEndereco.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -382,6 +516,19 @@ namespace GenesysGym
         private System.Windows.Forms.ComboBox comboxDia;
         private System.Windows.Forms.MaskedTextBox maskRGCliente;
         private System.Windows.Forms.MaskedTextBox mskCPFCliente;
+        private System.Windows.Forms.GroupBox grpboxEndereco;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.TextBox txtEstado;
+        private System.Windows.Forms.TextBox txtCidade;
+        private System.Windows.Forms.TextBox txtBairro;
+        private System.Windows.Forms.MaskedTextBox maskCEP;
+        private System.Windows.Forms.TextBox txtNumLogradouro;
+        private System.Windows.Forms.TextBox txtLogradouro;
     }
 }
 
