@@ -47,6 +47,20 @@ namespace GenesysGym
             this.stripAlterarTreino = new System.Windows.Forms.ToolStripMenuItem();
             this.txtCodCliente = new System.Windows.Forms.TextBox();
             this.txtNomeCliente = new System.Windows.Forms.TextBox();
+            this.mskCPFCliente = new System.Windows.Forms.MaskedTextBox();
+            this.maskRGCliente = new System.Windows.Forms.MaskedTextBox();
+            this.dttimepickDataRegistro = new System.Windows.Forms.DateTimePicker();
+            this.comboxDia = new System.Windows.Forms.ComboBox();
+            this.comboxMes = new System.Windows.Forms.ComboBox();
+            this.comboxAno = new System.Windows.Forms.ComboBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.pnlCadastrarCliente.SuspendLayout();
             this.grpboxDadosPessoais.SuspendLayout();
             this.menuStrip1.SuspendLayout();
@@ -54,16 +68,31 @@ namespace GenesysGym
             // 
             // pnlCadastrarCliente
             // 
+            this.pnlCadastrarCliente.Controls.Add(this.label2);
+            this.pnlCadastrarCliente.Controls.Add(this.label1);
+            this.pnlCadastrarCliente.Controls.Add(this.dttimepickDataRegistro);
             this.pnlCadastrarCliente.Controls.Add(this.txtCodCliente);
+            this.pnlCadastrarCliente.Controls.Add(this.grpboxDadosPessoais);
             this.pnlCadastrarCliente.Location = new System.Drawing.Point(12, 27);
             this.pnlCadastrarCliente.Name = "pnlCadastrarCliente";
-            this.pnlCadastrarCliente.Size = new System.Drawing.Size(453, 351);
+            this.pnlCadastrarCliente.Size = new System.Drawing.Size(447, 481);
             this.pnlCadastrarCliente.TabIndex = 0;
             // 
             // grpboxDadosPessoais
             // 
+            this.grpboxDadosPessoais.Controls.Add(this.radioButton2);
+            this.grpboxDadosPessoais.Controls.Add(this.radioButton1);
+            this.grpboxDadosPessoais.Controls.Add(this.label6);
+            this.grpboxDadosPessoais.Controls.Add(this.label5);
+            this.grpboxDadosPessoais.Controls.Add(this.label4);
+            this.grpboxDadosPessoais.Controls.Add(this.label3);
+            this.grpboxDadosPessoais.Controls.Add(this.comboxAno);
+            this.grpboxDadosPessoais.Controls.Add(this.comboxMes);
+            this.grpboxDadosPessoais.Controls.Add(this.comboxDia);
+            this.grpboxDadosPessoais.Controls.Add(this.maskRGCliente);
+            this.grpboxDadosPessoais.Controls.Add(this.mskCPFCliente);
             this.grpboxDadosPessoais.Controls.Add(this.txtNomeCliente);
-            this.grpboxDadosPessoais.Location = new System.Drawing.Point(12, 175);
+            this.grpboxDadosPessoais.Location = new System.Drawing.Point(3, 59);
             this.grpboxDadosPessoais.Name = "grpboxDadosPessoais";
             this.grpboxDadosPessoais.Size = new System.Drawing.Size(439, 163);
             this.grpboxDadosPessoais.TabIndex = 0;
@@ -166,7 +195,7 @@ namespace GenesysGym
             // 
             // txtCodCliente
             // 
-            this.txtCodCliente.Location = new System.Drawing.Point(4, 22);
+            this.txtCodCliente.Location = new System.Drawing.Point(4, 33);
             this.txtCodCliente.Name = "txtCodCliente";
             this.txtCodCliente.Size = new System.Drawing.Size(100, 20);
             this.txtCodCliente.TabIndex = 0;
@@ -175,8 +204,129 @@ namespace GenesysGym
             // 
             this.txtNomeCliente.Location = new System.Drawing.Point(7, 48);
             this.txtNomeCliente.Name = "txtNomeCliente";
-            this.txtNomeCliente.Size = new System.Drawing.Size(100, 20);
+            this.txtNomeCliente.Size = new System.Drawing.Size(203, 20);
             this.txtNomeCliente.TabIndex = 0;
+            // 
+            // mskCPFCliente
+            // 
+            this.mskCPFCliente.Location = new System.Drawing.Point(216, 48);
+            this.mskCPFCliente.Name = "mskCPFCliente";
+            this.mskCPFCliente.Size = new System.Drawing.Size(100, 20);
+            this.mskCPFCliente.TabIndex = 1;
+            // 
+            // maskRGCliente
+            // 
+            this.maskRGCliente.Location = new System.Drawing.Point(322, 48);
+            this.maskRGCliente.Name = "maskRGCliente";
+            this.maskRGCliente.Size = new System.Drawing.Size(100, 20);
+            this.maskRGCliente.TabIndex = 2;
+            // 
+            // dttimepickDataRegistro
+            // 
+            this.dttimepickDataRegistro.Location = new System.Drawing.Point(239, 33);
+            this.dttimepickDataRegistro.Name = "dttimepickDataRegistro";
+            this.dttimepickDataRegistro.Size = new System.Drawing.Size(200, 20);
+            this.dttimepickDataRegistro.TabIndex = 1;
+            // 
+            // comboxDia
+            // 
+            this.comboxDia.FormattingEnabled = true;
+            this.comboxDia.Location = new System.Drawing.Point(7, 110);
+            this.comboxDia.Name = "comboxDia";
+            this.comboxDia.Size = new System.Drawing.Size(39, 21);
+            this.comboxDia.TabIndex = 3;
+            // 
+            // comboxMes
+            // 
+            this.comboxMes.FormattingEnabled = true;
+            this.comboxMes.Location = new System.Drawing.Point(52, 110);
+            this.comboxMes.Name = "comboxMes";
+            this.comboxMes.Size = new System.Drawing.Size(39, 21);
+            this.comboxMes.TabIndex = 4;
+            // 
+            // comboxAno
+            // 
+            this.comboxAno.FormattingEnabled = true;
+            this.comboxAno.Location = new System.Drawing.Point(97, 110);
+            this.comboxAno.Name = "comboxAno";
+            this.comboxAno.Size = new System.Drawing.Size(84, 21);
+            this.comboxAno.TabIndex = 5;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(4, 14);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(64, 13);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "Cod. Cliente";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(239, 14);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(78, 13);
+            this.label2.TabIndex = 3;
+            this.label2.Text = "Data Matrícula";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(7, 29);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(35, 13);
+            this.label3.TabIndex = 6;
+            this.label3.Text = "Nome";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(216, 28);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(27, 13);
+            this.label4.TabIndex = 7;
+            this.label4.Text = "CPF";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(322, 29);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(23, 13);
+            this.label5.TabIndex = 8;
+            this.label5.Text = "RG";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(10, 91);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(89, 13);
+            this.label6.TabIndex = 9;
+            this.label6.Text = "Data Nascimento";
+            // 
+            // radioButton1
+            // 
+            this.radioButton1.AutoSize = true;
+            this.radioButton1.Location = new System.Drawing.Point(258, 111);
+            this.radioButton1.Name = "radioButton1";
+            this.radioButton1.Size = new System.Drawing.Size(73, 17);
+            this.radioButton1.TabIndex = 10;
+            this.radioButton1.TabStop = true;
+            this.radioButton1.Text = "Masculino";
+            this.radioButton1.UseVisualStyleBackColor = true;
+            // 
+            // radioButton2
+            // 
+            this.radioButton2.AutoSize = true;
+            this.radioButton2.Location = new System.Drawing.Point(337, 111);
+            this.radioButton2.Name = "radioButton2";
+            this.radioButton2.Size = new System.Drawing.Size(67, 17);
+            this.radioButton2.TabIndex = 11;
+            this.radioButton2.TabStop = true;
+            this.radioButton2.Text = "Feminino";
+            this.radioButton2.UseVisualStyleBackColor = true;
             // 
             // TelaPrincipal
             // 
@@ -184,7 +334,6 @@ namespace GenesysGym
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1160, 656);
             this.Controls.Add(this.menuStrip1);
-            this.Controls.Add(this.grpboxDadosPessoais);
             this.Controls.Add(this.pnlCadastrarCliente);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "TelaPrincipal";
@@ -219,6 +368,20 @@ namespace GenesysGym
         private System.Windows.Forms.ToolStripMenuItem menuTreinos;
         private System.Windows.Forms.ToolStripMenuItem stripRegistrarTreino;
         private System.Windows.Forms.ToolStripMenuItem stripAlterarTreino;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.DateTimePicker dttimepickDataRegistro;
+        private System.Windows.Forms.RadioButton radioButton2;
+        private System.Windows.Forms.RadioButton radioButton1;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.ComboBox comboxAno;
+        private System.Windows.Forms.ComboBox comboxMes;
+        private System.Windows.Forms.ComboBox comboxDia;
+        private System.Windows.Forms.MaskedTextBox maskRGCliente;
+        private System.Windows.Forms.MaskedTextBox mskCPFCliente;
     }
 }
 
