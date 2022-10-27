@@ -70,11 +70,9 @@ namespace GenesysGym
             this.stripExcluirCliente = new System.Windows.Forms.ToolStripMenuItem();
             this.menuFuncionarios = new System.Windows.Forms.ToolStripMenuItem();
             this.stripCadastrarFuncionario = new System.Windows.Forms.ToolStripMenuItem();
-            this.stripPesquisarFuncionario = new System.Windows.Forms.ToolStripMenuItem();
             this.stripExcluirFuncionario = new System.Windows.Forms.ToolStripMenuItem();
             this.menuTreinos = new System.Windows.Forms.ToolStripMenuItem();
-            this.stripRegistrarTreino = new System.Windows.Forms.ToolStripMenuItem();
-            this.stripAlterarTreino = new System.Windows.Forms.ToolStripMenuItem();
+            this.stripRegistrarAlterarTreino = new System.Windows.Forms.ToolStripMenuItem();
             this.pnlPesquisarCliente = new System.Windows.Forms.Panel();
             this.btnPesquisarCliente = new System.Windows.Forms.Button();
             this.btnSairPesquisaCliente = new System.Windows.Forms.Button();
@@ -117,6 +115,7 @@ namespace GenesysGym
             this.btnSairCadastrarCliente.TabIndex = 7;
             this.btnSairCadastrarCliente.Text = "Sair";
             this.btnSairCadastrarCliente.UseVisualStyleBackColor = true;
+            this.btnSairCadastrarCliente.Click += new System.EventHandler(this.btnSairCadastrarCliente_Click);
             // 
             // btnLimparDadosCliente
             // 
@@ -473,14 +472,14 @@ namespace GenesysGym
             // stripCadastrarCliente
             // 
             this.stripCadastrarCliente.Name = "stripCadastrarCliente";
-            this.stripCadastrarCliente.Size = new System.Drawing.Size(270, 34);
+            this.stripCadastrarCliente.Size = new System.Drawing.Size(247, 34);
             this.stripCadastrarCliente.Text = "Cadastrar Cliente";
             this.stripCadastrarCliente.Click += new System.EventHandler(this.stripCadastrarCliente_Click);
             // 
             // stripPesquisarCliente
             // 
             this.stripPesquisarCliente.Name = "stripPesquisarCliente";
-            this.stripPesquisarCliente.Size = new System.Drawing.Size(270, 34);
+            this.stripPesquisarCliente.Size = new System.Drawing.Size(247, 34);
             this.stripPesquisarCliente.Text = "Pesquisar Cliente";
             this.stripPesquisarCliente.Click += new System.EventHandler(this.stripPesquisarCliente_Click);
             // 
@@ -494,7 +493,6 @@ namespace GenesysGym
             // 
             this.menuFuncionarios.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.stripCadastrarFuncionario,
-            this.stripPesquisarFuncionario,
             this.stripExcluirFuncionario});
             this.menuFuncionarios.Name = "menuFuncionarios";
             this.menuFuncionarios.Size = new System.Drawing.Size(128, 29);
@@ -503,42 +501,30 @@ namespace GenesysGym
             // stripCadastrarFuncionario
             // 
             this.stripCadastrarFuncionario.Name = "stripCadastrarFuncionario";
-            this.stripCadastrarFuncionario.Size = new System.Drawing.Size(286, 34);
-            this.stripCadastrarFuncionario.Text = "Cadastrar Funcionário";
+            this.stripCadastrarFuncionario.Size = new System.Drawing.Size(280, 34);
+            this.stripCadastrarFuncionario.Text = "Cadastrar / Pesquisar";
             this.stripCadastrarFuncionario.Click += new System.EventHandler(this.stripCadastrarFuncionario_Click);
-            // 
-            // stripPesquisarFuncionario
-            // 
-            this.stripPesquisarFuncionario.Name = "stripPesquisarFuncionario";
-            this.stripPesquisarFuncionario.Size = new System.Drawing.Size(286, 34);
-            this.stripPesquisarFuncionario.Text = "Pesquisar Funcionário";
             // 
             // stripExcluirFuncionario
             // 
             this.stripExcluirFuncionario.Name = "stripExcluirFuncionario";
-            this.stripExcluirFuncionario.Size = new System.Drawing.Size(286, 34);
+            this.stripExcluirFuncionario.Size = new System.Drawing.Size(280, 34);
             this.stripExcluirFuncionario.Text = "Excluir Funcionário";
             // 
             // menuTreinos
             // 
             this.menuTreinos.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.stripRegistrarTreino,
-            this.stripAlterarTreino});
+            this.stripRegistrarAlterarTreino});
             this.menuTreinos.Name = "menuTreinos";
             this.menuTreinos.Size = new System.Drawing.Size(83, 29);
             this.menuTreinos.Text = "Treinos";
             // 
-            // stripRegistrarTreino
+            // stripRegistrarAlterarTreino
             // 
-            this.stripRegistrarTreino.Name = "stripRegistrarTreino";
-            this.stripRegistrarTreino.Size = new System.Drawing.Size(235, 34);
-            this.stripRegistrarTreino.Text = "Registrar Treino";
-            // 
-            // stripAlterarTreino
-            // 
-            this.stripAlterarTreino.Name = "stripAlterarTreino";
-            this.stripAlterarTreino.Size = new System.Drawing.Size(235, 34);
-            this.stripAlterarTreino.Text = "Alterar Treino";
+            this.stripRegistrarAlterarTreino.Name = "stripRegistrarAlterarTreino";
+            this.stripRegistrarAlterarTreino.Size = new System.Drawing.Size(270, 34);
+            this.stripRegistrarAlterarTreino.Text = "Registrar / Alterar";
+            this.stripRegistrarAlterarTreino.Click += new System.EventHandler(this.stripRegistrarAlterarTreino_Click);
             // 
             // pnlPesquisarCliente
             // 
@@ -571,6 +557,7 @@ namespace GenesysGym
             this.btnSairPesquisaCliente.TabIndex = 8;
             this.btnSairPesquisaCliente.Text = "Sair";
             this.btnSairPesquisaCliente.UseVisualStyleBackColor = true;
+            this.btnSairPesquisaCliente.Click += new System.EventHandler(this.btnSairPesquisaCliente_Click);
             // 
             // dtgridClientesCadastrados
             // 
@@ -656,11 +643,9 @@ namespace GenesysGym
         private System.Windows.Forms.ToolStripMenuItem stripExcluirCliente;
         private System.Windows.Forms.ToolStripMenuItem menuFuncionarios;
         private System.Windows.Forms.ToolStripMenuItem stripCadastrarFuncionario;
-        private System.Windows.Forms.ToolStripMenuItem stripPesquisarFuncionario;
         private System.Windows.Forms.ToolStripMenuItem stripExcluirFuncionario;
         private System.Windows.Forms.ToolStripMenuItem menuTreinos;
-        private System.Windows.Forms.ToolStripMenuItem stripRegistrarTreino;
-        private System.Windows.Forms.ToolStripMenuItem stripAlterarTreino;
+        private System.Windows.Forms.ToolStripMenuItem stripRegistrarAlterarTreino;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DateTimePicker dttimepickDataRegistro;

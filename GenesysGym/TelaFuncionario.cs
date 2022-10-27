@@ -20,10 +20,30 @@ namespace GenesysGym
         private void TelaFuncionario_Load(object sender, EventArgs e)
         {   
             pnlCadastrarFuncionario.Visible = false;
-            pnlConsultarFuncionario.Visible = true;
+            pnlConsultarFuncionario.Visible = false;
 
         }
 
+        private void menuCadastrarFuncionario_Click(object sender, EventArgs e)
+        {
+            pnlCadastrarFuncionario.Visible = true;
+            pnlConsultarFuncionario.Visible = false;
+        }
 
+        private void menuConsultarFuncionario_Click(object sender, EventArgs e)
+        {
+            pnlConsultarFuncionario.Visible = true;
+            pnlCadastrarFuncionario.Visible = false;
+        }
+
+        private void btnSairCadastrarFuncionario_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
+        private void btnSairPesquisaFuncionario_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }

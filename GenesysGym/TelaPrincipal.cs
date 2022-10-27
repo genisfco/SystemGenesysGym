@@ -37,7 +37,26 @@ namespace GenesysGym
 
         private void stripCadastrarFuncionario_Click(object sender, EventArgs e)
         {
-            
+            TelaFuncionario abrirTelaFuncionario = new TelaFuncionario();
+            abrirTelaFuncionario.Show();                    
+                       
+        }
+
+        private void stripRegistrarAlterarTreino_Click(object sender, EventArgs e)
+        {
+            TelaTreinos abrirTelaTreinos = new TelaTreinos();
+            abrirTelaTreinos.Show();
+        }
+
+        private void btnSairCadastrarCliente_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
+        private void btnSairPesquisaCliente_Click(object sender, EventArgs e)
+        {
+            pnlPesquisarCliente.Visible = false;
+            pnlCadastrarCliente.Visible = true;
         }
     }
 }

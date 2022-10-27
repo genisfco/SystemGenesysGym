@@ -108,6 +108,7 @@
             this.btnSairCadastrarFuncionario.TabIndex = 10;
             this.btnSairCadastrarFuncionario.Text = "Sair";
             this.btnSairCadastrarFuncionario.UseVisualStyleBackColor = true;
+            this.btnSairCadastrarFuncionario.Click += new System.EventHandler(this.btnSairCadastrarFuncionario_Click);
             // 
             // btnLimparDadosFuncionario
             // 
@@ -468,6 +469,7 @@
             this.btnSairPesquisaFuncionario.TabIndex = 17;
             this.btnSairPesquisaFuncionario.Text = "Sair";
             this.btnSairPesquisaFuncionario.UseVisualStyleBackColor = true;
+            this.btnSairPesquisaFuncionario.Click += new System.EventHandler(this.btnSairPesquisaFuncionario_Click);
             // 
             // dtgridFuncionariosCadastrados
             // 
@@ -526,12 +528,14 @@
             this.menuCadastrarFuncionario.Name = "menuCadastrarFuncionario";
             this.menuCadastrarFuncionario.Size = new System.Drawing.Size(103, 29);
             this.menuCadastrarFuncionario.Text = "Cadastrar";
+            this.menuCadastrarFuncionario.Click += new System.EventHandler(this.menuCadastrarFuncionario_Click);
             // 
             // menuConsultarFuncionario
             // 
             this.menuConsultarFuncionario.Name = "menuConsultarFuncionario";
             this.menuConsultarFuncionario.Size = new System.Drawing.Size(103, 29);
             this.menuConsultarFuncionario.Text = "Consultar";
+            this.menuConsultarFuncionario.Click += new System.EventHandler(this.menuConsultarFuncionario_Click);
             // 
             // menuExcluirFuncionario
             // 
@@ -548,6 +552,7 @@
             this.Controls.Add(this.pnlCadastrarFuncionario);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
+            this.MaximizeBox = false;
             this.Name = "TelaFuncionario";
             this.Text = "Funcionários";
             this.Load += new System.EventHandler(this.TelaFuncionario_Load);
