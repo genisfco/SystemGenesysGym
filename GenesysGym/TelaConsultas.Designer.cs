@@ -31,13 +31,13 @@ namespace GenesysGym
         {
             this.pnlConsultarFuncionario = new System.Windows.Forms.Panel();
             this.pnl = new System.Windows.Forms.Panel();
-            this.maskCPFFuncionario = new System.Windows.Forms.MaskedTextBox();
-            this.btnPesquisarFuncionario = new System.Windows.Forms.Button();
-            this.dtgridPesquisaFuncionario = new System.Windows.Forms.DataGridView();
-            this.dtgridFuncionarios = new System.Windows.Forms.DataGridView();
-            this.pnlConsultarFuncionario.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dtgridPesquisaFuncionario)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dtgridFuncionarios)).BeginInit();
+            this.maskCPFCliente = new System.Windows.Forms.MaskedTextBox();
+            this.btnPesquisarCliente = new System.Windows.Forms.Button();
+            this.dtgridPesquisaCliente = new System.Windows.Forms.DataGridView();
+            this.dtgridClientes = new System.Windows.Forms.DataGridView();
+            this.pnl.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgridPesquisaCliente)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgridClientes)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlConsultarFuncionario
@@ -53,6 +53,10 @@ namespace GenesysGym
             // 
             // pnl
             // 
+            this.pnl.Controls.Add(this.dtgridClientes);
+            this.pnl.Controls.Add(this.dtgridPesquisaCliente);
+            this.pnl.Controls.Add(this.btnPesquisarCliente);
+            this.pnl.Controls.Add(this.maskCPFCliente);
             this.pnl.Location = new System.Drawing.Point(483, 12);
             this.pnl.Name = "pnl";
             this.pnl.Size = new System.Drawing.Size(447, 548);
@@ -94,7 +98,7 @@ namespace GenesysGym
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1004, 881);
+            this.ClientSize = new System.Drawing.Size(950, 881);
             this.Controls.Add(this.pnl);
             this.Controls.Add(this.pnlConsultarFuncionario);
             this.Name = "TelaConsultas";
