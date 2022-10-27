@@ -66,7 +66,7 @@ namespace GenesysGym
             this.comboxMes = new System.Windows.Forms.ComboBox();
             this.comboxDia = new System.Windows.Forms.ComboBox();
             this.maskRGCliente = new System.Windows.Forms.MaskedTextBox();
-            this.mskCPFCliente = new System.Windows.Forms.MaskedTextBox();
+            this.maskCPFCliente = new System.Windows.Forms.MaskedTextBox();
             this.txtNomeCliente = new System.Windows.Forms.TextBox();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.menuClientes = new System.Windows.Forms.ToolStripMenuItem();
@@ -372,7 +372,7 @@ namespace GenesysGym
             this.grpboxDadosPessoais.Controls.Add(this.comboxMes);
             this.grpboxDadosPessoais.Controls.Add(this.comboxDia);
             this.grpboxDadosPessoais.Controls.Add(this.maskRGCliente);
-            this.grpboxDadosPessoais.Controls.Add(this.mskCPFCliente);
+            this.grpboxDadosPessoais.Controls.Add(this.maskCPFCliente);
             this.grpboxDadosPessoais.Controls.Add(this.txtNomeCliente);
             this.grpboxDadosPessoais.Location = new System.Drawing.Point(4, 91);
             this.grpboxDadosPessoais.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
@@ -729,14 +729,14 @@ namespace GenesysGym
             this.maskRGCliente.Size = new System.Drawing.Size(105, 26);
             this.maskRGCliente.TabIndex = 2;
             // 
-            // mskCPFCliente
+            // maskCPFCliente
             // 
-            this.mskCPFCliente.Location = new System.Drawing.Point(406, 74);
-            this.mskCPFCliente.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.mskCPFCliente.Mask = "000.000.000-00";
-            this.mskCPFCliente.Name = "mskCPFCliente";
-            this.mskCPFCliente.Size = new System.Drawing.Size(121, 26);
-            this.mskCPFCliente.TabIndex = 1;
+            this.maskCPFCliente.Location = new System.Drawing.Point(406, 74);
+            this.maskCPFCliente.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.maskCPFCliente.Mask = "000.000.000-00";
+            this.maskCPFCliente.Name = "maskCPFCliente";
+            this.maskCPFCliente.Size = new System.Drawing.Size(121, 26);
+            this.maskCPFCliente.TabIndex = 1;
             // 
             // txtNomeCliente
             // 
@@ -756,7 +756,7 @@ namespace GenesysGym
             this.menuTreinos});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1378, 33);
+            this.menuStrip1.Size = new System.Drawing.Size(1371, 33);
             this.menuStrip1.TabIndex = 3;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -835,7 +835,7 @@ namespace GenesysGym
             this.pnlPesquisarCliente.Controls.Add(this.dtgridPesquisaCliente);
             this.pnlPesquisarCliente.Controls.Add(this.label13);
             this.pnlPesquisarCliente.Controls.Add(this.maskPesquisarCPFCliente);
-            this.pnlPesquisarCliente.Location = new System.Drawing.Point(696, 42);
+            this.pnlPesquisarCliente.Location = new System.Drawing.Point(690, 42);
             this.pnlPesquisarCliente.Name = "pnlPesquisarCliente";
             this.pnlPesquisarCliente.Size = new System.Drawing.Size(670, 712);
             this.pnlPesquisarCliente.TabIndex = 4;
@@ -903,7 +903,7 @@ namespace GenesysGym
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1378, 759);
+            this.ClientSize = new System.Drawing.Size(1371, 759);
             this.Controls.Add(this.pnlPesquisarCliente);
             this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.pnlCadastrarCliente);
@@ -962,7 +962,7 @@ namespace GenesysGym
         private System.Windows.Forms.ComboBox comboxMes;
         private System.Windows.Forms.ComboBox comboxDia;
         private System.Windows.Forms.MaskedTextBox maskRGCliente;
-        private System.Windows.Forms.MaskedTextBox mskCPFCliente;
+        private System.Windows.Forms.MaskedTextBox maskCPFCliente;
         private System.Windows.Forms.GroupBox grpboxEndereco;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label11;

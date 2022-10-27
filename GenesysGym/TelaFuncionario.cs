@@ -17,18 +17,20 @@ namespace GenesysGym
             InitializeComponent();
         }
 
-        /*private bool ValidarForm()
+        private bool ValidarForm()
         {
             bool FormValido;
 
-            if (txtCodFuncionario.Text == "" || txtNomeFuncionario.Text == "" || txtCargoFuncionario.Text == "" || txtTelefoneFuncionario.Text == "" || txtEmailFuncionario.Text == "")
+            if (txtCodFuncionario.Text == "" || txtCargoFuncionario.Text == "" || txtNomeFuncionario.Text == "" || maskCPFFuncionario.Text == "" || maskRGFuncionario.Text == "" ||
+                comboxDiaFuncionario == null || comboxMesFuncionario == null || comboxAnoFuncionario == null || rdbtnMascFuncionario.Checked == false || rdbtnFemFuncionario.Checked == false ||
+                txtLogradouroFuncionario.Text == "" || txtNumLogradouroFuncionario.Text == "" || txtBairroFuncionario.Text == "" || txtCidadeFuncionario.Text == "" || txtEstadoFuncionario.Text == "" ||
+                maskTelefoneFuncionario.Text == "" || txtEmailFuncionario.Text == "")
                 FormValido = false;
             else
                 FormValido = true;
 
             return FormValido;
         }
-        */
 
         private void TelaFuncionario_Load(object sender, EventArgs e)
         {   
