@@ -58,5 +58,10 @@ namespace GenesysGym
             pnlPesquisarCliente.Visible = false;
             pnlCadastrarCliente.Visible = true;
         }
+
+        private void maskCEP_Leave(object sender, EventArgs e)
+        {
+
+        }
     }
 }

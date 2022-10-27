@@ -252,6 +252,7 @@ namespace GenesysGym
             this.maskCEP.Name = "maskCEP";
             this.maskCEP.Size = new System.Drawing.Size(86, 26);
             this.maskCEP.TabIndex = 2;
+            this.maskCEP.Leave += new System.EventHandler(this.maskCEP_Leave);
             // 
             // txtNumLogradouro
             // 
@@ -302,7 +303,7 @@ namespace GenesysGym
             this.txtCodCliente.Location = new System.Drawing.Point(6, 51);
             this.txtCodCliente.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtCodCliente.Name = "txtCodCliente";
-            this.txtCodCliente.Size = new System.Drawing.Size(148, 26);
+            this.txtCodCliente.Size = new System.Drawing.Size(95, 26);
             this.txtCodCliente.TabIndex = 0;
             // 
             // grpboxDadosPessoais
@@ -455,7 +456,7 @@ namespace GenesysGym
             this.menuTreinos});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1418, 33);
+            this.menuStrip1.Size = new System.Drawing.Size(1375, 36);
             this.menuStrip1.TabIndex = 3;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -522,7 +523,7 @@ namespace GenesysGym
             // stripRegistrarAlterarTreino
             // 
             this.stripRegistrarAlterarTreino.Name = "stripRegistrarAlterarTreino";
-            this.stripRegistrarAlterarTreino.Size = new System.Drawing.Size(270, 34);
+            this.stripRegistrarAlterarTreino.Size = new System.Drawing.Size(252, 34);
             this.stripRegistrarAlterarTreino.Text = "Registrar / Alterar";
             this.stripRegistrarAlterarTreino.Click += new System.EventHandler(this.stripRegistrarAlterarTreino_Click);
             // 
@@ -602,7 +603,7 @@ namespace GenesysGym
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1418, 689);
+            this.ClientSize = new System.Drawing.Size(1375, 680);
             this.Controls.Add(this.pnlPesquisarCliente);
             this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.pnlCadastrarCliente);

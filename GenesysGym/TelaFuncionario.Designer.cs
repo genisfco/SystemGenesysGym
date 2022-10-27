@@ -245,6 +245,7 @@
             this.maskCEPFuncionario.Name = "maskCEPFuncionario";
             this.maskCEPFuncionario.Size = new System.Drawing.Size(90, 26);
             this.maskCEPFuncionario.TabIndex = 2;
+            this.maskCEPFuncionario.Leave += new System.EventHandler(this.maskCEPFuncionario_Leave);
             // 
             // txtNumLogradouroFuncionario
             // 
@@ -457,7 +458,7 @@
             this.btnPesquisarFuncionario.Name = "btnPesquisarFuncionario";
             this.btnPesquisarFuncionario.Size = new System.Drawing.Size(207, 55);
             this.btnPesquisarFuncionario.TabIndex = 20;
-            this.btnPesquisarFuncionario.Text = "Pesquisar Cliente";
+            this.btnPesquisarFuncionario.Text = "Pesquisar Funcionário";
             this.btnPesquisarFuncionario.UseVisualStyleBackColor = true;
             // 
             // btnSairPesquisaFuncionario
@@ -519,7 +520,7 @@
             this.menuExcluirFuncionario});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1418, 33);
+            this.menuStrip1.Size = new System.Drawing.Size(1371, 36);
             this.menuStrip1.TabIndex = 7;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -547,7 +548,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1418, 689);
+            this.ClientSize = new System.Drawing.Size(1371, 681);
             this.Controls.Add(this.pnlConsultarFuncionario);
             this.Controls.Add(this.pnlCadastrarFuncionario);
             this.Controls.Add(this.menuStrip1);

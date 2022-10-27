@@ -45,5 +45,10 @@ namespace GenesysGym
         {
             Close();
         }
+
+        private void maskCEPFuncionario_Leave(object sender, EventArgs e)
+        {
+
+        }
     }
 }
