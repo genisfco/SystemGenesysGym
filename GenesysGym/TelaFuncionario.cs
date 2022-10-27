@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace GenesysGym
 {
-    public partial class TelaConsultas : Form
+    public partial class TelaFuncionario : Form
     {
-        public TelaConsultas()
+        public TelaFuncionario()
         {
             InitializeComponent();
         }
