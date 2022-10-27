@@ -48,7 +48,21 @@ namespace GenesysGym
 
         private void maskCEPFuncionario_Leave(object sender, EventArgs e)
         {
-
+            using (var ws = new WSCorreios.AtendeClienteClient())
+            {
+                try
+                {
+                    var endereco = ws.consultaCEP(maskCEPFuncionario.Text.Trim());
+                    txtEstadoFuncionario.Text = endereco.uf;
+                    txtCidadeFuncionario.Text = endereco.cidade;
+                    txtBairroFuncionario.Text = endereco.bairro;
+                    txtLogradouroFuncionario.Text = endereco.end;
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message, this.Text, MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
         }
     }
 }
