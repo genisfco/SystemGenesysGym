@@ -31,6 +31,9 @@ namespace GenesysGym
         {
             this.components = new System.ComponentModel.Container();
             this.pnlCadastrarCliente = new System.Windows.Forms.Panel();
+            this.btnSairCadastrarCliente = new System.Windows.Forms.Button();
+            this.btnLimparDadosCliente = new System.Windows.Forms.Button();
+            this.btnCadastrarCliente = new System.Windows.Forms.Button();
             this.grpboxEndereco = new System.Windows.Forms.GroupBox();
             this.label12 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
@@ -49,8 +52,8 @@ namespace GenesysGym
             this.dttimepickDataRegistro = new System.Windows.Forms.DateTimePicker();
             this.txtCodCliente = new System.Windows.Forms.TextBox();
             this.grpboxDadosPessoais = new System.Windows.Forms.GroupBox();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.rdbtnFemCliente = new System.Windows.Forms.RadioButton();
+            this.rdbtnMascCliente = new System.Windows.Forms.RadioButton();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -74,47 +77,47 @@ namespace GenesysGym
             this.menuTreinos = new System.Windows.Forms.ToolStripMenuItem();
             this.stripRegistrarTreino = new System.Windows.Forms.ToolStripMenuItem();
             this.stripAlterarTreino = new System.Windows.Forms.ToolStripMenuItem();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.pnlCadastrarFuncionario = new System.Windows.Forms.Panel();
+            this.grpboxEnderecoFuncionario = new System.Windows.Forms.GroupBox();
             this.label13 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.txtEstadoFuncionario = new System.Windows.Forms.TextBox();
+            this.txtCidadeFuncionario = new System.Windows.Forms.TextBox();
+            this.txtBairroFuncionario = new System.Windows.Forms.TextBox();
+            this.maskCEPFuncionario = new System.Windows.Forms.MaskedTextBox();
+            this.txtNumLogradouroFuncionario = new System.Windows.Forms.TextBox();
+            this.txtLogradouroFuncionario = new System.Windows.Forms.TextBox();
             this.label19 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
             this.dttimepickDataAdmissao = new System.Windows.Forms.DateTimePicker();
             this.txtCodFuncionario = new System.Windows.Forms.TextBox();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.radioButton3 = new System.Windows.Forms.RadioButton();
-            this.radioButton4 = new System.Windows.Forms.RadioButton();
+            this.grpboxDadosPessoaisFuncionario = new System.Windows.Forms.GroupBox();
+            this.rdbtnFemFuncionario = new System.Windows.Forms.RadioButton();
+            this.rdbtnMascFuncionario = new System.Windows.Forms.RadioButton();
             this.label21 = new System.Windows.Forms.Label();
             this.label22 = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
-            this.maskedTextBox2 = new System.Windows.Forms.MaskedTextBox();
-            this.maskedTextBox3 = new System.Windows.Forms.MaskedTextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.btnCadastrarCliente = new System.Windows.Forms.Button();
-            this.btnLimparDadosCliente = new System.Windows.Forms.Button();
-            this.btnSairCadastrarCliente = new System.Windows.Forms.Button();
+            this.comboxAnoFuncionario = new System.Windows.Forms.ComboBox();
+            this.comboxMesFuncionario = new System.Windows.Forms.ComboBox();
+            this.comboxDiaFuncionario = new System.Windows.Forms.ComboBox();
+            this.mskRGFuncionario = new System.Windows.Forms.MaskedTextBox();
+            this.mskCPFFuncionario = new System.Windows.Forms.MaskedTextBox();
+            this.txtNomeFuncionario = new System.Windows.Forms.TextBox();
+            this.btnSairCadastrarFuncionario = new System.Windows.Forms.Button();
+            this.btnLimparDadosFuncionario = new System.Windows.Forms.Button();
+            this.btnCadastrarFuncionario = new System.Windows.Forms.Button();
             this.pnlCadastrarCliente.SuspendLayout();
             this.grpboxEndereco.SuspendLayout();
             this.grpboxDadosPessoais.SuspendLayout();
             this.menuStrip1.SuspendLayout();
-            this.panel1.SuspendLayout();
-            this.groupBox1.SuspendLayout();
-            this.groupBox2.SuspendLayout();
+            this.pnlCadastrarFuncionario.SuspendLayout();
+            this.grpboxEnderecoFuncionario.SuspendLayout();
+            this.grpboxDadosPessoaisFuncionario.SuspendLayout();
             this.SuspendLayout();
             // 
             // pnlCadastrarCliente
@@ -132,6 +135,33 @@ namespace GenesysGym
             this.pnlCadastrarCliente.Name = "pnlCadastrarCliente";
             this.pnlCadastrarCliente.Size = new System.Drawing.Size(447, 548);
             this.pnlCadastrarCliente.TabIndex = 0;
+            // 
+            // btnSairCadastrarCliente
+            // 
+            this.btnSairCadastrarCliente.Location = new System.Drawing.Point(340, 409);
+            this.btnSairCadastrarCliente.Name = "btnSairCadastrarCliente";
+            this.btnSairCadastrarCliente.Size = new System.Drawing.Size(75, 23);
+            this.btnSairCadastrarCliente.TabIndex = 7;
+            this.btnSairCadastrarCliente.Text = "Sair";
+            this.btnSairCadastrarCliente.UseVisualStyleBackColor = true;
+            // 
+            // btnLimparDadosCliente
+            // 
+            this.btnLimparDadosCliente.Location = new System.Drawing.Point(190, 409);
+            this.btnLimparDadosCliente.Name = "btnLimparDadosCliente";
+            this.btnLimparDadosCliente.Size = new System.Drawing.Size(75, 23);
+            this.btnLimparDadosCliente.TabIndex = 6;
+            this.btnLimparDadosCliente.Text = "Limpar Dados";
+            this.btnLimparDadosCliente.UseVisualStyleBackColor = true;
+            // 
+            // btnCadastrarCliente
+            // 
+            this.btnCadastrarCliente.Location = new System.Drawing.Point(16, 409);
+            this.btnCadastrarCliente.Name = "btnCadastrarCliente";
+            this.btnCadastrarCliente.Size = new System.Drawing.Size(75, 23);
+            this.btnCadastrarCliente.TabIndex = 5;
+            this.btnCadastrarCliente.Text = "Cadastrar";
+            this.btnCadastrarCliente.UseVisualStyleBackColor = true;
             // 
             // grpboxEndereco
             // 
@@ -284,8 +314,8 @@ namespace GenesysGym
             // 
             // grpboxDadosPessoais
             // 
-            this.grpboxDadosPessoais.Controls.Add(this.radioButton2);
-            this.grpboxDadosPessoais.Controls.Add(this.radioButton1);
+            this.grpboxDadosPessoais.Controls.Add(this.rdbtnFemCliente);
+            this.grpboxDadosPessoais.Controls.Add(this.rdbtnMascCliente);
             this.grpboxDadosPessoais.Controls.Add(this.label6);
             this.grpboxDadosPessoais.Controls.Add(this.label5);
             this.grpboxDadosPessoais.Controls.Add(this.label4);
@@ -303,27 +333,27 @@ namespace GenesysGym
             this.grpboxDadosPessoais.TabStop = false;
             this.grpboxDadosPessoais.Text = "Dados Pessoais";
             // 
-            // radioButton2
+            // rdbtnFemCliente
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(337, 111);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(67, 17);
-            this.radioButton2.TabIndex = 11;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "Feminino";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.rdbtnFemCliente.AutoSize = true;
+            this.rdbtnFemCliente.Location = new System.Drawing.Point(337, 111);
+            this.rdbtnFemCliente.Name = "rdbtnFemCliente";
+            this.rdbtnFemCliente.Size = new System.Drawing.Size(67, 17);
+            this.rdbtnFemCliente.TabIndex = 11;
+            this.rdbtnFemCliente.TabStop = true;
+            this.rdbtnFemCliente.Text = "Feminino";
+            this.rdbtnFemCliente.UseVisualStyleBackColor = true;
             // 
-            // radioButton1
+            // rdbtnMascCliente
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(258, 111);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(73, 17);
-            this.radioButton1.TabIndex = 10;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Masculino";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.rdbtnMascCliente.AutoSize = true;
+            this.rdbtnMascCliente.Location = new System.Drawing.Point(258, 111);
+            this.rdbtnMascCliente.Name = "rdbtnMascCliente";
+            this.rdbtnMascCliente.Size = new System.Drawing.Size(73, 17);
+            this.rdbtnMascCliente.TabIndex = 10;
+            this.rdbtnMascCliente.TabStop = true;
+            this.rdbtnMascCliente.Text = "Masculino";
+            this.rdbtnMascCliente.UseVisualStyleBackColor = true;
             // 
             // label6
             // 
@@ -500,39 +530,42 @@ namespace GenesysGym
             this.stripAlterarTreino.Size = new System.Drawing.Size(155, 22);
             this.stripAlterarTreino.Text = "Alterar Treino";
             // 
-            // panel1
+            // pnlCadastrarFuncionario
             // 
-            this.panel1.Controls.Add(this.groupBox1);
-            this.panel1.Controls.Add(this.label19);
-            this.panel1.Controls.Add(this.label20);
-            this.panel1.Controls.Add(this.dttimepickDataAdmissao);
-            this.panel1.Controls.Add(this.txtCodFuncionario);
-            this.panel1.Controls.Add(this.groupBox2);
-            this.panel1.Location = new System.Drawing.Point(485, 27);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(447, 548);
-            this.panel1.TabIndex = 4;
+            this.pnlCadastrarFuncionario.Controls.Add(this.btnSairCadastrarFuncionario);
+            this.pnlCadastrarFuncionario.Controls.Add(this.btnLimparDadosFuncionario);
+            this.pnlCadastrarFuncionario.Controls.Add(this.btnCadastrarFuncionario);
+            this.pnlCadastrarFuncionario.Controls.Add(this.grpboxEnderecoFuncionario);
+            this.pnlCadastrarFuncionario.Controls.Add(this.label19);
+            this.pnlCadastrarFuncionario.Controls.Add(this.label20);
+            this.pnlCadastrarFuncionario.Controls.Add(this.dttimepickDataAdmissao);
+            this.pnlCadastrarFuncionario.Controls.Add(this.txtCodFuncionario);
+            this.pnlCadastrarFuncionario.Controls.Add(this.grpboxDadosPessoaisFuncionario);
+            this.pnlCadastrarFuncionario.Location = new System.Drawing.Point(485, 27);
+            this.pnlCadastrarFuncionario.Name = "pnlCadastrarFuncionario";
+            this.pnlCadastrarFuncionario.Size = new System.Drawing.Size(447, 548);
+            this.pnlCadastrarFuncionario.TabIndex = 4;
             // 
-            // groupBox1
+            // grpboxEnderecoFuncionario
             // 
-            this.groupBox1.Controls.Add(this.label13);
-            this.groupBox1.Controls.Add(this.label14);
-            this.groupBox1.Controls.Add(this.label15);
-            this.groupBox1.Controls.Add(this.label16);
-            this.groupBox1.Controls.Add(this.label17);
-            this.groupBox1.Controls.Add(this.label18);
-            this.groupBox1.Controls.Add(this.textBox1);
-            this.groupBox1.Controls.Add(this.textBox2);
-            this.groupBox1.Controls.Add(this.textBox3);
-            this.groupBox1.Controls.Add(this.maskedTextBox1);
-            this.groupBox1.Controls.Add(this.textBox4);
-            this.groupBox1.Controls.Add(this.textBox5);
-            this.groupBox1.Location = new System.Drawing.Point(3, 239);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(436, 135);
-            this.groupBox1.TabIndex = 4;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Endereço";
+            this.grpboxEnderecoFuncionario.Controls.Add(this.label13);
+            this.grpboxEnderecoFuncionario.Controls.Add(this.label14);
+            this.grpboxEnderecoFuncionario.Controls.Add(this.label15);
+            this.grpboxEnderecoFuncionario.Controls.Add(this.label16);
+            this.grpboxEnderecoFuncionario.Controls.Add(this.label17);
+            this.grpboxEnderecoFuncionario.Controls.Add(this.label18);
+            this.grpboxEnderecoFuncionario.Controls.Add(this.txtEstadoFuncionario);
+            this.grpboxEnderecoFuncionario.Controls.Add(this.txtCidadeFuncionario);
+            this.grpboxEnderecoFuncionario.Controls.Add(this.txtBairroFuncionario);
+            this.grpboxEnderecoFuncionario.Controls.Add(this.maskCEPFuncionario);
+            this.grpboxEnderecoFuncionario.Controls.Add(this.txtNumLogradouroFuncionario);
+            this.grpboxEnderecoFuncionario.Controls.Add(this.txtLogradouroFuncionario);
+            this.grpboxEnderecoFuncionario.Location = new System.Drawing.Point(3, 239);
+            this.grpboxEnderecoFuncionario.Name = "grpboxEnderecoFuncionario";
+            this.grpboxEnderecoFuncionario.Size = new System.Drawing.Size(436, 135);
+            this.grpboxEnderecoFuncionario.TabIndex = 4;
+            this.grpboxEnderecoFuncionario.TabStop = false;
+            this.grpboxEnderecoFuncionario.Text = "Endereço";
             // 
             // label13
             // 
@@ -588,47 +621,47 @@ namespace GenesysGym
             this.label18.TabIndex = 6;
             this.label18.Text = "Logradouro";
             // 
-            // textBox1
+            // txtEstadoFuncionario
             // 
-            this.textBox1.Location = new System.Drawing.Point(376, 97);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(45, 20);
-            this.textBox1.TabIndex = 5;
+            this.txtEstadoFuncionario.Location = new System.Drawing.Point(376, 97);
+            this.txtEstadoFuncionario.Name = "txtEstadoFuncionario";
+            this.txtEstadoFuncionario.Size = new System.Drawing.Size(45, 20);
+            this.txtEstadoFuncionario.TabIndex = 5;
             // 
-            // textBox2
+            // txtCidadeFuncionario
             // 
-            this.textBox2.Location = new System.Drawing.Point(182, 97);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 4;
+            this.txtCidadeFuncionario.Location = new System.Drawing.Point(182, 97);
+            this.txtCidadeFuncionario.Name = "txtCidadeFuncionario";
+            this.txtCidadeFuncionario.Size = new System.Drawing.Size(100, 20);
+            this.txtCidadeFuncionario.TabIndex = 4;
             // 
-            // textBox3
+            // txtBairroFuncionario
             // 
-            this.textBox3.Location = new System.Drawing.Point(12, 97);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 20);
-            this.textBox3.TabIndex = 3;
+            this.txtBairroFuncionario.Location = new System.Drawing.Point(12, 97);
+            this.txtBairroFuncionario.Name = "txtBairroFuncionario";
+            this.txtBairroFuncionario.Size = new System.Drawing.Size(100, 20);
+            this.txtBairroFuncionario.TabIndex = 3;
             // 
-            // maskedTextBox1
+            // maskCEPFuncionario
             // 
-            this.maskedTextBox1.Location = new System.Drawing.Point(324, 40);
-            this.maskedTextBox1.Name = "maskedTextBox1";
-            this.maskedTextBox1.Size = new System.Drawing.Size(100, 20);
-            this.maskedTextBox1.TabIndex = 2;
+            this.maskCEPFuncionario.Location = new System.Drawing.Point(324, 40);
+            this.maskCEPFuncionario.Name = "maskCEPFuncionario";
+            this.maskCEPFuncionario.Size = new System.Drawing.Size(100, 20);
+            this.maskCEPFuncionario.TabIndex = 2;
             // 
-            // textBox4
+            // txtNumLogradouroFuncionario
             // 
-            this.textBox4.Location = new System.Drawing.Point(268, 40);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(45, 20);
-            this.textBox4.TabIndex = 1;
+            this.txtNumLogradouroFuncionario.Location = new System.Drawing.Point(268, 40);
+            this.txtNumLogradouroFuncionario.Name = "txtNumLogradouroFuncionario";
+            this.txtNumLogradouroFuncionario.Size = new System.Drawing.Size(45, 20);
+            this.txtNumLogradouroFuncionario.TabIndex = 1;
             // 
-            // textBox5
+            // txtLogradouroFuncionario
             // 
-            this.textBox5.Location = new System.Drawing.Point(6, 40);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(256, 20);
-            this.textBox5.TabIndex = 0;
+            this.txtLogradouroFuncionario.Location = new System.Drawing.Point(6, 40);
+            this.txtLogradouroFuncionario.Name = "txtLogradouroFuncionario";
+            this.txtLogradouroFuncionario.Size = new System.Drawing.Size(256, 20);
+            this.txtLogradouroFuncionario.TabIndex = 0;
             // 
             // label19
             // 
@@ -662,48 +695,48 @@ namespace GenesysGym
             this.txtCodFuncionario.Size = new System.Drawing.Size(100, 20);
             this.txtCodFuncionario.TabIndex = 0;
             // 
-            // groupBox2
+            // grpboxDadosPessoaisFuncionario
             // 
-            this.groupBox2.Controls.Add(this.radioButton3);
-            this.groupBox2.Controls.Add(this.radioButton4);
-            this.groupBox2.Controls.Add(this.label21);
-            this.groupBox2.Controls.Add(this.label22);
-            this.groupBox2.Controls.Add(this.label23);
-            this.groupBox2.Controls.Add(this.label24);
-            this.groupBox2.Controls.Add(this.comboBox1);
-            this.groupBox2.Controls.Add(this.comboBox2);
-            this.groupBox2.Controls.Add(this.comboBox3);
-            this.groupBox2.Controls.Add(this.maskedTextBox2);
-            this.groupBox2.Controls.Add(this.maskedTextBox3);
-            this.groupBox2.Controls.Add(this.textBox7);
-            this.groupBox2.Location = new System.Drawing.Point(3, 59);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(439, 163);
-            this.groupBox2.TabIndex = 0;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Dados Pessoais";
+            this.grpboxDadosPessoaisFuncionario.Controls.Add(this.rdbtnFemFuncionario);
+            this.grpboxDadosPessoaisFuncionario.Controls.Add(this.rdbtnMascFuncionario);
+            this.grpboxDadosPessoaisFuncionario.Controls.Add(this.label21);
+            this.grpboxDadosPessoaisFuncionario.Controls.Add(this.label22);
+            this.grpboxDadosPessoaisFuncionario.Controls.Add(this.label23);
+            this.grpboxDadosPessoaisFuncionario.Controls.Add(this.label24);
+            this.grpboxDadosPessoaisFuncionario.Controls.Add(this.comboxAnoFuncionario);
+            this.grpboxDadosPessoaisFuncionario.Controls.Add(this.comboxMesFuncionario);
+            this.grpboxDadosPessoaisFuncionario.Controls.Add(this.comboxDiaFuncionario);
+            this.grpboxDadosPessoaisFuncionario.Controls.Add(this.mskRGFuncionario);
+            this.grpboxDadosPessoaisFuncionario.Controls.Add(this.mskCPFFuncionario);
+            this.grpboxDadosPessoaisFuncionario.Controls.Add(this.txtNomeFuncionario);
+            this.grpboxDadosPessoaisFuncionario.Location = new System.Drawing.Point(3, 59);
+            this.grpboxDadosPessoaisFuncionario.Name = "grpboxDadosPessoaisFuncionario";
+            this.grpboxDadosPessoaisFuncionario.Size = new System.Drawing.Size(439, 163);
+            this.grpboxDadosPessoaisFuncionario.TabIndex = 0;
+            this.grpboxDadosPessoaisFuncionario.TabStop = false;
+            this.grpboxDadosPessoaisFuncionario.Text = "Dados Pessoais";
             // 
-            // radioButton3
+            // rdbtnFemFuncionario
             // 
-            this.radioButton3.AutoSize = true;
-            this.radioButton3.Location = new System.Drawing.Point(337, 111);
-            this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(67, 17);
-            this.radioButton3.TabIndex = 11;
-            this.radioButton3.TabStop = true;
-            this.radioButton3.Text = "Feminino";
-            this.radioButton3.UseVisualStyleBackColor = true;
+            this.rdbtnFemFuncionario.AutoSize = true;
+            this.rdbtnFemFuncionario.Location = new System.Drawing.Point(337, 111);
+            this.rdbtnFemFuncionario.Name = "rdbtnFemFuncionario";
+            this.rdbtnFemFuncionario.Size = new System.Drawing.Size(67, 17);
+            this.rdbtnFemFuncionario.TabIndex = 11;
+            this.rdbtnFemFuncionario.TabStop = true;
+            this.rdbtnFemFuncionario.Text = "Feminino";
+            this.rdbtnFemFuncionario.UseVisualStyleBackColor = true;
             // 
-            // radioButton4
+            // rdbtnMascFuncionario
             // 
-            this.radioButton4.AutoSize = true;
-            this.radioButton4.Location = new System.Drawing.Point(258, 111);
-            this.radioButton4.Name = "radioButton4";
-            this.radioButton4.Size = new System.Drawing.Size(73, 17);
-            this.radioButton4.TabIndex = 10;
-            this.radioButton4.TabStop = true;
-            this.radioButton4.Text = "Masculino";
-            this.radioButton4.UseVisualStyleBackColor = true;
+            this.rdbtnMascFuncionario.AutoSize = true;
+            this.rdbtnMascFuncionario.Location = new System.Drawing.Point(258, 111);
+            this.rdbtnMascFuncionario.Name = "rdbtnMascFuncionario";
+            this.rdbtnMascFuncionario.Size = new System.Drawing.Size(73, 17);
+            this.rdbtnMascFuncionario.TabIndex = 10;
+            this.rdbtnMascFuncionario.TabStop = true;
+            this.rdbtnMascFuncionario.Text = "Masculino";
+            this.rdbtnMascFuncionario.UseVisualStyleBackColor = true;
             // 
             // label21
             // 
@@ -741,84 +774,84 @@ namespace GenesysGym
             this.label24.TabIndex = 6;
             this.label24.Text = "Nome";
             // 
-            // comboBox1
+            // comboxAnoFuncionario
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(97, 110);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(84, 21);
-            this.comboBox1.TabIndex = 5;
+            this.comboxAnoFuncionario.FormattingEnabled = true;
+            this.comboxAnoFuncionario.Location = new System.Drawing.Point(97, 110);
+            this.comboxAnoFuncionario.Name = "comboxAnoFuncionario";
+            this.comboxAnoFuncionario.Size = new System.Drawing.Size(84, 21);
+            this.comboxAnoFuncionario.TabIndex = 5;
             // 
-            // comboBox2
+            // comboxMesFuncionario
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(52, 110);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(39, 21);
-            this.comboBox2.TabIndex = 4;
+            this.comboxMesFuncionario.FormattingEnabled = true;
+            this.comboxMesFuncionario.Location = new System.Drawing.Point(52, 110);
+            this.comboxMesFuncionario.Name = "comboxMesFuncionario";
+            this.comboxMesFuncionario.Size = new System.Drawing.Size(39, 21);
+            this.comboxMesFuncionario.TabIndex = 4;
             // 
-            // comboBox3
+            // comboxDiaFuncionario
             // 
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(7, 110);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(39, 21);
-            this.comboBox3.TabIndex = 3;
+            this.comboxDiaFuncionario.FormattingEnabled = true;
+            this.comboxDiaFuncionario.Location = new System.Drawing.Point(7, 110);
+            this.comboxDiaFuncionario.Name = "comboxDiaFuncionario";
+            this.comboxDiaFuncionario.Size = new System.Drawing.Size(39, 21);
+            this.comboxDiaFuncionario.TabIndex = 3;
             // 
-            // maskedTextBox2
+            // mskRGFuncionario
             // 
-            this.maskedTextBox2.Location = new System.Drawing.Point(322, 48);
-            this.maskedTextBox2.Name = "maskedTextBox2";
-            this.maskedTextBox2.Size = new System.Drawing.Size(100, 20);
-            this.maskedTextBox2.TabIndex = 2;
+            this.mskRGFuncionario.Location = new System.Drawing.Point(322, 48);
+            this.mskRGFuncionario.Name = "mskRGFuncionario";
+            this.mskRGFuncionario.Size = new System.Drawing.Size(100, 20);
+            this.mskRGFuncionario.TabIndex = 2;
             // 
-            // maskedTextBox3
+            // mskCPFFuncionario
             // 
-            this.maskedTextBox3.Location = new System.Drawing.Point(216, 48);
-            this.maskedTextBox3.Name = "maskedTextBox3";
-            this.maskedTextBox3.Size = new System.Drawing.Size(100, 20);
-            this.maskedTextBox3.TabIndex = 1;
+            this.mskCPFFuncionario.Location = new System.Drawing.Point(216, 48);
+            this.mskCPFFuncionario.Name = "mskCPFFuncionario";
+            this.mskCPFFuncionario.Size = new System.Drawing.Size(100, 20);
+            this.mskCPFFuncionario.TabIndex = 1;
             // 
-            // textBox7
+            // txtNomeFuncionario
             // 
-            this.textBox7.Location = new System.Drawing.Point(7, 48);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(203, 20);
-            this.textBox7.TabIndex = 0;
+            this.txtNomeFuncionario.Location = new System.Drawing.Point(7, 48);
+            this.txtNomeFuncionario.Name = "txtNomeFuncionario";
+            this.txtNomeFuncionario.Size = new System.Drawing.Size(203, 20);
+            this.txtNomeFuncionario.TabIndex = 0;
             // 
-            // btnCadastrarCliente
+            // btnSairCadastrarFuncionario
             // 
-            this.btnCadastrarCliente.Location = new System.Drawing.Point(16, 409);
-            this.btnCadastrarCliente.Name = "btnCadastrarCliente";
-            this.btnCadastrarCliente.Size = new System.Drawing.Size(75, 23);
-            this.btnCadastrarCliente.TabIndex = 5;
-            this.btnCadastrarCliente.Text = "Cadastrar";
-            this.btnCadastrarCliente.UseVisualStyleBackColor = true;
+            this.btnSairCadastrarFuncionario.Location = new System.Drawing.Point(340, 409);
+            this.btnSairCadastrarFuncionario.Name = "btnSairCadastrarFuncionario";
+            this.btnSairCadastrarFuncionario.Size = new System.Drawing.Size(75, 23);
+            this.btnSairCadastrarFuncionario.TabIndex = 10;
+            this.btnSairCadastrarFuncionario.Text = "Sair";
+            this.btnSairCadastrarFuncionario.UseVisualStyleBackColor = true;
             // 
-            // btnLimparDadosCliente
+            // btnLimparDadosFuncionario
             // 
-            this.btnLimparDadosCliente.Location = new System.Drawing.Point(190, 409);
-            this.btnLimparDadosCliente.Name = "btnLimparDadosCliente";
-            this.btnLimparDadosCliente.Size = new System.Drawing.Size(75, 23);
-            this.btnLimparDadosCliente.TabIndex = 6;
-            this.btnLimparDadosCliente.Text = "Limpar Dados";
-            this.btnLimparDadosCliente.UseVisualStyleBackColor = true;
+            this.btnLimparDadosFuncionario.Location = new System.Drawing.Point(190, 409);
+            this.btnLimparDadosFuncionario.Name = "btnLimparDadosFuncionario";
+            this.btnLimparDadosFuncionario.Size = new System.Drawing.Size(75, 23);
+            this.btnLimparDadosFuncionario.TabIndex = 9;
+            this.btnLimparDadosFuncionario.Text = "Limpar Dados";
+            this.btnLimparDadosFuncionario.UseVisualStyleBackColor = true;
             // 
-            // btnSairCadastrarCliente
+            // btnCadastrarFuncionario
             // 
-            this.btnSairCadastrarCliente.Location = new System.Drawing.Point(340, 409);
-            this.btnSairCadastrarCliente.Name = "btnSairCadastrarCliente";
-            this.btnSairCadastrarCliente.Size = new System.Drawing.Size(75, 23);
-            this.btnSairCadastrarCliente.TabIndex = 7;
-            this.btnSairCadastrarCliente.Text = "Sair";
-            this.btnSairCadastrarCliente.UseVisualStyleBackColor = true;
+            this.btnCadastrarFuncionario.Location = new System.Drawing.Point(16, 409);
+            this.btnCadastrarFuncionario.Name = "btnCadastrarFuncionario";
+            this.btnCadastrarFuncionario.Size = new System.Drawing.Size(75, 23);
+            this.btnCadastrarFuncionario.TabIndex = 8;
+            this.btnCadastrarFuncionario.Text = "Cadastrar";
+            this.btnCadastrarFuncionario.UseVisualStyleBackColor = true;
             // 
             // TelaPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1160, 656);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.pnlCadastrarFuncionario);
             this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.pnlCadastrarCliente);
             this.MainMenuStrip = this.menuStrip1;
@@ -832,12 +865,12 @@ namespace GenesysGym
             this.grpboxDadosPessoais.PerformLayout();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
+            this.pnlCadastrarFuncionario.ResumeLayout(false);
+            this.pnlCadastrarFuncionario.PerformLayout();
+            this.grpboxEnderecoFuncionario.ResumeLayout(false);
+            this.grpboxEnderecoFuncionario.PerformLayout();
+            this.grpboxDadosPessoaisFuncionario.ResumeLayout(false);
+            this.grpboxDadosPessoaisFuncionario.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -865,8 +898,8 @@ namespace GenesysGym
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DateTimePicker dttimepickDataRegistro;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.RadioButton radioButton1;
+        private System.Windows.Forms.RadioButton rdbtnFemCliente;
+        private System.Windows.Forms.RadioButton rdbtnMascCliente;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
@@ -889,40 +922,43 @@ namespace GenesysGym
         private System.Windows.Forms.MaskedTextBox maskCEP;
         private System.Windows.Forms.TextBox txtNumLogradouro;
         private System.Windows.Forms.TextBox txtLogradouro;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.Panel pnlCadastrarFuncionario;
+        private System.Windows.Forms.GroupBox grpboxEnderecoFuncionario;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox1;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox txtEstadoFuncionario;
+        private System.Windows.Forms.TextBox txtCidadeFuncionario;
+        private System.Windows.Forms.TextBox txtBairroFuncionario;
+        private System.Windows.Forms.MaskedTextBox maskCEPFuncionario;
+        private System.Windows.Forms.TextBox txtNumLogradouroFuncionario;
+        private System.Windows.Forms.TextBox txtLogradouroFuncionario;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.DateTimePicker dttimepickDataAdmissao;
         private System.Windows.Forms.TextBox txtCodFuncionario;
-        private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.RadioButton radioButton3;
-        private System.Windows.Forms.RadioButton radioButton4;
+        private System.Windows.Forms.GroupBox grpboxDadosPessoaisFuncionario;
+        private System.Windows.Forms.RadioButton rdbtnFemFuncionario;
+        private System.Windows.Forms.RadioButton rdbtnMascFuncionario;
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.Label label22;
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.Label label24;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.ComboBox comboBox3;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox2;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox3;
-        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.ComboBox comboxAnoFuncionario;
+        private System.Windows.Forms.ComboBox comboxMesFuncionario;
+        private System.Windows.Forms.ComboBox comboxDiaFuncionario;
+        private System.Windows.Forms.MaskedTextBox mskRGFuncionario;
+        private System.Windows.Forms.MaskedTextBox mskCPFFuncionario;
+        private System.Windows.Forms.TextBox txtNomeFuncionario;
         private System.Windows.Forms.Button btnSairCadastrarCliente;
         private System.Windows.Forms.Button btnLimparDadosCliente;
         private System.Windows.Forms.Button btnCadastrarCliente;
+        private System.Windows.Forms.Button btnSairCadastrarFuncionario;
+        private System.Windows.Forms.Button btnLimparDadosFuncionario;
+        private System.Windows.Forms.Button btnCadastrarFuncionario;
     }
 }
 
