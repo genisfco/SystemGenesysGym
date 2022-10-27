@@ -781,7 +781,7 @@ namespace GenesysGym
             this.pnlPesquisarCliente.Controls.Add(this.dtgridPesquisaCliente);
             this.pnlPesquisarCliente.Controls.Add(this.label13);
             this.pnlPesquisarCliente.Controls.Add(this.maskPesquisarCPFCliente);
-            this.pnlPesquisarCliente.Location = new System.Drawing.Point(705, 42);
+            this.pnlPesquisarCliente.Location = new System.Drawing.Point(693, 42);
             this.pnlPesquisarCliente.Name = "pnlPesquisarCliente";
             this.pnlPesquisarCliente.Size = new System.Drawing.Size(670, 634);
             this.pnlPesquisarCliente.TabIndex = 4;
