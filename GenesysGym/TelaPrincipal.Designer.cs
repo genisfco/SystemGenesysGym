@@ -189,6 +189,7 @@ namespace GenesysGym
             this.btnCadastrarCliente.TabIndex = 5;
             this.btnCadastrarCliente.Text = "Cadastrar";
             this.btnCadastrarCliente.UseVisualStyleBackColor = true;
+            this.btnCadastrarCliente.Click += new System.EventHandler(this.btnCadastrarCliente_Click);
             // 
             // grpboxEndereco
             // 
