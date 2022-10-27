@@ -30,6 +30,7 @@ namespace GenesysGym
         private void InitializeComponent()
         {
             this.pnlConsultarCliente = new System.Windows.Forms.Panel();
+            this.pnl = new System.Windows.Forms.Panel();
             this.SuspendLayout();
             // 
             // pnlConsultarCliente
@@ -39,11 +40,19 @@ namespace GenesysGym
             this.pnlConsultarCliente.Size = new System.Drawing.Size(447, 548);
             this.pnlConsultarCliente.TabIndex = 0;
             // 
+            // pnl
+            // 
+            this.pnl.Location = new System.Drawing.Point(483, 12);
+            this.pnl.Name = "pnl";
+            this.pnl.Size = new System.Drawing.Size(447, 548);
+            this.pnl.TabIndex = 1;
+            // 
             // TelaConsultas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1004, 881);
+            this.Controls.Add(this.pnl);
             this.Controls.Add(this.pnlConsultarCliente);
             this.Name = "TelaConsultas";
             this.Text = "TelaConsultas";
@@ -54,5 +63,6 @@ namespace GenesysGym
         #endregion
 
         private System.Windows.Forms.Panel pnlConsultarCliente;
+        private System.Windows.Forms.Panel pnl;
     }
 }
