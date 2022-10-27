@@ -31,6 +31,15 @@ namespace GenesysGym
         {
             this.pnlConsultarFuncionario = new System.Windows.Forms.Panel();
             this.pnl = new System.Windows.Forms.Panel();
+
+            this.maskCPFFuncionario = new System.Windows.Forms.MaskedTextBox();
+            this.btnPesquisarFuncionario = new System.Windows.Forms.Button();
+            this.dtgridPesquisaFuncionario = new System.Windows.Forms.DataGridView();
+            this.dtgridFuncionarios = new System.Windows.Forms.DataGridView();
+            this.pnlConsultarFuncionario.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgridPesquisaFuncionario)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgridFuncionarios)).BeginInit();
+
             this.maskCPFCliente = new System.Windows.Forms.MaskedTextBox();
             this.btnPesquisarCliente = new System.Windows.Forms.Button();
             this.dtgridPesquisaCliente = new System.Windows.Forms.DataGridView();
@@ -38,14 +47,17 @@ namespace GenesysGym
             this.pnl.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgridPesquisaCliente)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtgridClientes)).BeginInit();
+
             this.SuspendLayout();
             // 
             // pnlConsultarFuncionario
             // 
+
             this.pnlConsultarFuncionario.Controls.Add(this.dtgridFuncionarios);
             this.pnlConsultarFuncionario.Controls.Add(this.dtgridPesquisaFuncionario);
             this.pnlConsultarFuncionario.Controls.Add(this.btnPesquisarFuncionario);
             this.pnlConsultarFuncionario.Controls.Add(this.maskCPFFuncionario);
+
             this.pnlConsultarFuncionario.Location = new System.Drawing.Point(12, 12);
             this.pnlConsultarFuncionario.Name = "pnlConsultarFuncionario";
             this.pnlConsultarFuncionario.Size = new System.Drawing.Size(447, 548);
@@ -62,6 +74,7 @@ namespace GenesysGym
             this.pnl.Size = new System.Drawing.Size(447, 548);
             this.pnl.TabIndex = 1;
             // 
+<<<<<<< HEAD
             // maskCPFFuncionario
             // 
             this.maskCPFFuncionario.Location = new System.Drawing.Point(3, 49);
@@ -93,6 +106,39 @@ namespace GenesysGym
             this.dtgridFuncionarios.Name = "dtgridFuncionarios";
             this.dtgridFuncionarios.Size = new System.Drawing.Size(444, 296);
             this.dtgridFuncionarios.TabIndex = 3;
+=======
+            // maskCPFCliente
+            // 
+            this.maskCPFCliente.Location = new System.Drawing.Point(3, 41);
+            this.maskCPFCliente.Name = "maskCPFCliente";
+            this.maskCPFCliente.Size = new System.Drawing.Size(100, 20);
+            this.maskCPFCliente.TabIndex = 0;
+            // 
+            // btnPesquisarCliente
+            // 
+            this.btnPesquisarCliente.Location = new System.Drawing.Point(301, 41);
+            this.btnPesquisarCliente.Name = "btnPesquisarCliente";
+            this.btnPesquisarCliente.Size = new System.Drawing.Size(113, 23);
+            this.btnPesquisarCliente.TabIndex = 1;
+            this.btnPesquisarCliente.Text = "Pesquisar Cliente";
+            this.btnPesquisarCliente.UseVisualStyleBackColor = true;
+            // 
+            // dtgridPesquisaCliente
+            // 
+            this.dtgridPesquisaCliente.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtgridPesquisaCliente.Location = new System.Drawing.Point(3, 70);
+            this.dtgridPesquisaCliente.Name = "dtgridPesquisaCliente";
+            this.dtgridPesquisaCliente.Size = new System.Drawing.Size(441, 74);
+            this.dtgridPesquisaCliente.TabIndex = 2;
+            // 
+            // dtgridClientes
+            // 
+            this.dtgridClientes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtgridClientes.Location = new System.Drawing.Point(3, 233);
+            this.dtgridClientes.Name = "dtgridClientes";
+            this.dtgridClientes.Size = new System.Drawing.Size(441, 278);
+            this.dtgridClientes.TabIndex = 3;
+>>>>>>> 8fc0b6558e9455e1779bbe68324bce5df6ce32af
             // 
             // TelaConsultas
             // 
@@ -103,10 +149,17 @@ namespace GenesysGym
             this.Controls.Add(this.pnlConsultarFuncionario);
             this.Name = "TelaConsultas";
             this.Text = "TelaConsultas";
+<<<<<<< HEAD
             this.pnlConsultarFuncionario.ResumeLayout(false);
             this.pnlConsultarFuncionario.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgridPesquisaFuncionario)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtgridFuncionarios)).EndInit();
+=======
+            this.pnl.ResumeLayout(false);
+            this.pnl.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgridPesquisaCliente)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgridClientes)).EndInit();
+>>>>>>> 8fc0b6558e9455e1779bbe68324bce5df6ce32af
             this.ResumeLayout(false);
 
         }
@@ -115,9 +168,16 @@ namespace GenesysGym
 
         private System.Windows.Forms.Panel pnlConsultarFuncionario;
         private System.Windows.Forms.Panel pnl;
+<<<<<<< HEAD
         private System.Windows.Forms.DataGridView dtgridFuncionarios;
         private System.Windows.Forms.DataGridView dtgridPesquisaFuncionario;
         private System.Windows.Forms.Button btnPesquisarFuncionario;
         private System.Windows.Forms.MaskedTextBox maskCPFFuncionario;
+=======
+        private System.Windows.Forms.DataGridView dtgridPesquisaCliente;
+        private System.Windows.Forms.Button btnPesquisarCliente;
+        private System.Windows.Forms.MaskedTextBox maskCPFCliente;
+        private System.Windows.Forms.DataGridView dtgridClientes;
+>>>>>>> 8fc0b6558e9455e1779bbe68324bce5df6ce32af
     }
 }
