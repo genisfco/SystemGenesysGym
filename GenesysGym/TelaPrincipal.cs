@@ -16,14 +16,13 @@ namespace GenesysGym
         {
             InitializeComponent();
         }
-
-        
+                
         private bool ValidarForm()
         {
             bool FormValido;
 
             if (txtCodCliente.Text == "" || txtNomeCliente.Text == "" || maskCPFCliente.Text == "" || maskRGCliente.Text == "" || 
-                comboxDia == null || comboxMes == null || comboxAno == null || rdbtnMascCliente.Checked == false || rdbtnFemCliente.Checked == false ||
+                comboxDia.Text == "" || comboxMes.Text == "" || comboxAno.Text == "" || rdbtnMascCliente.Checked == false && rdbtnFemCliente.Checked == false ||
                 txtLogradouro.Text == "" || txtNumLogradouro.Text == "" || txtBairro.Text == "" || txtCidade.Text == "" || txtEstado.Text == "" ||
                 maskTelefone.Text == "" || txtEmail.Text == "")
                 FormValido = false;
@@ -51,7 +50,6 @@ namespace GenesysGym
                 }
             }
         }
-
 
         private void TelaPrincipal_Load(object sender, EventArgs e)
         {
@@ -102,6 +100,35 @@ namespace GenesysGym
 
         private void btnCadastrarCliente_Click(object sender, EventArgs e)
         {
+            // Exigir preenchimento completo dos campos obrigatórios
+            if (ValidarForm() == false)
+            {
+                MessageBox.Show("ATENÇÃO: Todos os campos precisam ser preenchidos!");
+            }
+
+            // Aplicando Classe para validação de RG e CPF
+            else if (ClassValidacao.validarCpf(maskCPFCliente.Text) == false)
+            {
+                MessageBox.Show("CPF inválido!");
+            }
+            else if (ClassValidacao.validarRg(maskRGCliente.Text) == false)
+            {
+                MessageBox.Show("RG inválido!");
+            }
+
+            // Dados válidos -> Processo de Insert 
+            else if (ValidarForm() && ClassValidacao.validarCpf(maskCPFCliente.Text) && ClassValidacao.validarRg(maskRGCliente.Text))
+            {
+                string year = dttimepickDataMatricula.Value.Year.ToString();
+                string month = dttimepickDataMatricula.Value.Month.ToString();
+                string day = dttimepickDataMatricula.Value.Day.ToString();
+                string data_matricula = year + "-" + month + "-" + day;
+
+                // FAZER O INSERT DOS DADOS PARA A TABELA PACIENTE
+
+                MessageBox.Show("Paciente cadastrado com sucesso!");
+
+            }
 
         }
     }

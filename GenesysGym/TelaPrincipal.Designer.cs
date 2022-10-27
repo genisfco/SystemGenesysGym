@@ -53,7 +53,7 @@ namespace GenesysGym
             this.txtLogradouro = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.dttimepickDataRegistro = new System.Windows.Forms.DateTimePicker();
+            this.dttimepickDataMatricula = new System.Windows.Forms.DateTimePicker();
             this.txtCodCliente = new System.Windows.Forms.TextBox();
             this.grpboxDadosPessoais = new System.Windows.Forms.GroupBox();
             this.rdbtnFemCliente = new System.Windows.Forms.RadioButton();
@@ -104,7 +104,7 @@ namespace GenesysGym
             this.pnlCadastrarCliente.Controls.Add(this.grpboxEndereco);
             this.pnlCadastrarCliente.Controls.Add(this.label2);
             this.pnlCadastrarCliente.Controls.Add(this.label1);
-            this.pnlCadastrarCliente.Controls.Add(this.dttimepickDataRegistro);
+            this.pnlCadastrarCliente.Controls.Add(this.dttimepickDataMatricula);
             this.pnlCadastrarCliente.Controls.Add(this.txtCodCliente);
             this.pnlCadastrarCliente.Controls.Add(this.grpboxDadosPessoais);
             this.pnlCadastrarCliente.Location = new System.Drawing.Point(13, 42);
@@ -344,14 +344,14 @@ namespace GenesysGym
             this.label1.TabIndex = 2;
             this.label1.Text = "Cod. Cliente";
             // 
-            // dttimepickDataRegistro
+            // dttimepickDataMatricula
             // 
-            this.dttimepickDataRegistro.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dttimepickDataRegistro.Location = new System.Drawing.Point(520, 51);
-            this.dttimepickDataRegistro.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.dttimepickDataRegistro.Name = "dttimepickDataRegistro";
-            this.dttimepickDataRegistro.Size = new System.Drawing.Size(136, 26);
-            this.dttimepickDataRegistro.TabIndex = 1;
+            this.dttimepickDataMatricula.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dttimepickDataMatricula.Location = new System.Drawing.Point(520, 51);
+            this.dttimepickDataMatricula.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.dttimepickDataMatricula.Name = "dttimepickDataMatricula";
+            this.dttimepickDataMatricula.Size = new System.Drawing.Size(136, 26);
+            this.dttimepickDataMatricula.TabIndex = 1;
             // 
             // txtCodCliente
             // 
@@ -725,7 +725,7 @@ namespace GenesysGym
             // 
             this.maskRGCliente.Location = new System.Drawing.Point(545, 74);
             this.maskRGCliente.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.maskRGCliente.Mask = "00.000.000-?";
+            this.maskRGCliente.Mask = "00.000.000-0";
             this.maskRGCliente.Name = "maskRGCliente";
             this.maskRGCliente.Size = new System.Drawing.Size(105, 26);
             this.maskRGCliente.TabIndex = 2;
@@ -952,7 +952,7 @@ namespace GenesysGym
         private System.Windows.Forms.ToolStripMenuItem stripRegistrarAlterarTreino;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.DateTimePicker dttimepickDataRegistro;
+        private System.Windows.Forms.DateTimePicker dttimepickDataMatricula;
         private System.Windows.Forms.RadioButton rdbtnFemCliente;
         private System.Windows.Forms.RadioButton rdbtnMascCliente;
         private System.Windows.Forms.Label label6;
