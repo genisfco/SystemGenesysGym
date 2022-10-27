@@ -16,5 +16,14 @@ namespace GenesysGym
         {
             InitializeComponent();
         }
+
+        private void TelaFuncionario_Load(object sender, EventArgs e)
+        {   
+            pnlCadastrarFuncionario.Visible = false;
+            pnlConsultarFuncionario.Visible = true;
+
+        }
+
+
     }
 }

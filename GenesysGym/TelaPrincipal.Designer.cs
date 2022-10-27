@@ -29,7 +29,6 @@ namespace GenesysGym
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             this.pnlCadastrarCliente = new System.Windows.Forms.Panel();
             this.btnSairCadastrarCliente = new System.Windows.Forms.Button();
             this.btnLimparDadosCliente = new System.Windows.Forms.Button();
@@ -64,7 +63,6 @@ namespace GenesysGym
             this.maskRGCliente = new System.Windows.Forms.MaskedTextBox();
             this.mskCPFCliente = new System.Windows.Forms.MaskedTextBox();
             this.txtNomeCliente = new System.Windows.Forms.TextBox();
-            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.menuClientes = new System.Windows.Forms.ToolStripMenuItem();
             this.stripCadastrarCliente = new System.Windows.Forms.ToolStripMenuItem();
@@ -448,12 +446,6 @@ namespace GenesysGym
             this.txtNomeCliente.Size = new System.Drawing.Size(355, 26);
             this.txtNomeCliente.TabIndex = 0;
             // 
-            // contextMenuStrip1
-            // 
-            this.contextMenuStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
-            this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
-            // 
             // menuStrip1
             // 
             this.menuStrip1.GripMargin = new System.Windows.Forms.Padding(2, 2, 0, 2);
@@ -481,14 +473,16 @@ namespace GenesysGym
             // stripCadastrarCliente
             // 
             this.stripCadastrarCliente.Name = "stripCadastrarCliente";
-            this.stripCadastrarCliente.Size = new System.Drawing.Size(247, 34);
+            this.stripCadastrarCliente.Size = new System.Drawing.Size(270, 34);
             this.stripCadastrarCliente.Text = "Cadastrar Cliente";
+            this.stripCadastrarCliente.Click += new System.EventHandler(this.stripCadastrarCliente_Click);
             // 
             // stripPesquisarCliente
             // 
             this.stripPesquisarCliente.Name = "stripPesquisarCliente";
-            this.stripPesquisarCliente.Size = new System.Drawing.Size(247, 34);
+            this.stripPesquisarCliente.Size = new System.Drawing.Size(270, 34);
             this.stripPesquisarCliente.Text = "Pesquisar Cliente";
+            this.stripPesquisarCliente.Click += new System.EventHandler(this.stripPesquisarCliente_Click);
             // 
             // stripExcluirCliente
             // 
@@ -511,6 +505,7 @@ namespace GenesysGym
             this.stripCadastrarFuncionario.Name = "stripCadastrarFuncionario";
             this.stripCadastrarFuncionario.Size = new System.Drawing.Size(286, 34);
             this.stripCadastrarFuncionario.Text = "Cadastrar Funcionário";
+            this.stripCadastrarFuncionario.Click += new System.EventHandler(this.stripCadastrarFuncionario_Click);
             // 
             // stripPesquisarFuncionario
             // 
@@ -553,7 +548,7 @@ namespace GenesysGym
             this.pnlPesquisarCliente.Controls.Add(this.dtgridPesquisaCliente);
             this.pnlPesquisarCliente.Controls.Add(this.label13);
             this.pnlPesquisarCliente.Controls.Add(this.maskPesquisarCPFCliente);
-            this.pnlPesquisarCliente.Location = new System.Drawing.Point(736, 42);
+            this.pnlPesquisarCliente.Location = new System.Drawing.Point(690, 43);
             this.pnlPesquisarCliente.Name = "pnlPesquisarCliente";
             this.pnlPesquisarCliente.Size = new System.Drawing.Size(670, 634);
             this.pnlPesquisarCliente.TabIndex = 4;
@@ -626,8 +621,11 @@ namespace GenesysGym
             this.Controls.Add(this.pnlCadastrarCliente);
             this.MainMenuStrip = this.menuStrip1;
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.MaximizeBox = false;
             this.Name = "TelaPrincipal";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "GenesysGym";
+            this.Load += new System.EventHandler(this.TelaPrincipal_Load);
             this.pnlCadastrarCliente.ResumeLayout(false);
             this.pnlCadastrarCliente.PerformLayout();
             this.grpboxEndereco.ResumeLayout(false);
@@ -651,7 +649,6 @@ namespace GenesysGym
         private System.Windows.Forms.TextBox txtCodCliente;
         private System.Windows.Forms.GroupBox grpboxDadosPessoais;
         private System.Windows.Forms.TextBox txtNomeCliente;
-        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem menuClientes;
         private System.Windows.Forms.ToolStripMenuItem stripCadastrarCliente;

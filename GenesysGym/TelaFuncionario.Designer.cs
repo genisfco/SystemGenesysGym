@@ -69,12 +69,17 @@
             this.dtgridPesquisaFuncionario = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
             this.txtPesquisarCodFuncionario = new System.Windows.Forms.TextBox();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.menuCadastrarFuncionario = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuConsultarFuncionario = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuExcluirFuncionario = new System.Windows.Forms.ToolStripMenuItem();
             this.pnlCadastrarFuncionario.SuspendLayout();
             this.grpboxEnderecoFuncionario.SuspendLayout();
             this.grpboxDadosPessoaisFuncionario.SuspendLayout();
             this.pnlConsultarFuncionario.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgridFuncionariosCadastrados)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtgridPesquisaFuncionario)).BeginInit();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // pnlCadastrarFuncionario
@@ -440,7 +445,7 @@
             this.pnlConsultarFuncionario.Controls.Add(this.dtgridPesquisaFuncionario);
             this.pnlConsultarFuncionario.Controls.Add(this.label1);
             this.pnlConsultarFuncionario.Controls.Add(this.txtPesquisarCodFuncionario);
-            this.pnlConsultarFuncionario.Location = new System.Drawing.Point(736, 42);
+            this.pnlConsultarFuncionario.Location = new System.Drawing.Point(690, 43);
             this.pnlConsultarFuncionario.Name = "pnlConsultarFuncionario";
             this.pnlConsultarFuncionario.Size = new System.Drawing.Size(670, 634);
             this.pnlConsultarFuncionario.TabIndex = 6;
@@ -502,6 +507,38 @@
             this.txtPesquisarCodFuncionario.Size = new System.Drawing.Size(75, 26);
             this.txtPesquisarCodFuncionario.TabIndex = 11;
             // 
+            // menuStrip1
+            // 
+            this.menuStrip1.GripMargin = new System.Windows.Forms.Padding(2, 2, 0, 2);
+            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.menuCadastrarFuncionario,
+            this.menuConsultarFuncionario,
+            this.menuExcluirFuncionario});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(1418, 33);
+            this.menuStrip1.TabIndex = 7;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // menuCadastrarFuncionario
+            // 
+            this.menuCadastrarFuncionario.Name = "menuCadastrarFuncionario";
+            this.menuCadastrarFuncionario.Size = new System.Drawing.Size(103, 29);
+            this.menuCadastrarFuncionario.Text = "Cadastrar";
+            // 
+            // menuConsultarFuncionario
+            // 
+            this.menuConsultarFuncionario.Name = "menuConsultarFuncionario";
+            this.menuConsultarFuncionario.Size = new System.Drawing.Size(103, 29);
+            this.menuConsultarFuncionario.Text = "Consultar";
+            // 
+            // menuExcluirFuncionario
+            // 
+            this.menuExcluirFuncionario.Name = "menuExcluirFuncionario";
+            this.menuExcluirFuncionario.Size = new System.Drawing.Size(77, 29);
+            this.menuExcluirFuncionario.Text = "Excluir";
+            // 
             // TelaFuncionario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -509,8 +546,11 @@
             this.ClientSize = new System.Drawing.Size(1418, 689);
             this.Controls.Add(this.pnlConsultarFuncionario);
             this.Controls.Add(this.pnlCadastrarFuncionario);
+            this.Controls.Add(this.menuStrip1);
+            this.MainMenuStrip = this.menuStrip1;
             this.Name = "TelaFuncionario";
             this.Text = "Funcionários";
+            this.Load += new System.EventHandler(this.TelaFuncionario_Load);
             this.pnlCadastrarFuncionario.ResumeLayout(false);
             this.pnlCadastrarFuncionario.PerformLayout();
             this.grpboxEnderecoFuncionario.ResumeLayout(false);
@@ -521,7 +561,10 @@
             this.pnlConsultarFuncionario.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgridFuncionariosCadastrados)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtgridPesquisaFuncionario)).EndInit();
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -568,5 +611,9 @@
         private System.Windows.Forms.Button btnSairPesquisaFuncionario;
         private System.Windows.Forms.DataGridView dtgridFuncionariosCadastrados;
         private System.Windows.Forms.DataGridView dtgridPesquisaFuncionario;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem menuCadastrarFuncionario;
+        private System.Windows.Forms.ToolStripMenuItem menuConsultarFuncionario;
+        private System.Windows.Forms.ToolStripMenuItem menuExcluirFuncionario;
     }
 }
