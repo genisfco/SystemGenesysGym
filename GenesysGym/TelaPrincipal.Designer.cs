@@ -78,6 +78,9 @@ namespace GenesysGym
             this.stripRegistrarTreino = new System.Windows.Forms.ToolStripMenuItem();
             this.stripAlterarTreino = new System.Windows.Forms.ToolStripMenuItem();
             this.pnlCadastrarFuncionario = new System.Windows.Forms.Panel();
+            this.btnSairCadastrarFuncionario = new System.Windows.Forms.Button();
+            this.btnLimparDadosFuncionario = new System.Windows.Forms.Button();
+            this.btnCadastrarFuncionario = new System.Windows.Forms.Button();
             this.grpboxEnderecoFuncionario = new System.Windows.Forms.GroupBox();
             this.label13 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
@@ -108,9 +111,6 @@ namespace GenesysGym
             this.mskRGFuncionario = new System.Windows.Forms.MaskedTextBox();
             this.mskCPFFuncionario = new System.Windows.Forms.MaskedTextBox();
             this.txtNomeFuncionario = new System.Windows.Forms.TextBox();
-            this.btnSairCadastrarFuncionario = new System.Windows.Forms.Button();
-            this.btnLimparDadosFuncionario = new System.Windows.Forms.Button();
-            this.btnCadastrarFuncionario = new System.Windows.Forms.Button();
             this.pnlCadastrarCliente.SuspendLayout();
             this.grpboxEndereco.SuspendLayout();
             this.grpboxDadosPessoais.SuspendLayout();
@@ -449,7 +449,7 @@ namespace GenesysGym
             this.menuTreinos});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1160, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(944, 24);
             this.menuStrip1.TabIndex = 3;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -545,6 +545,33 @@ namespace GenesysGym
             this.pnlCadastrarFuncionario.Name = "pnlCadastrarFuncionario";
             this.pnlCadastrarFuncionario.Size = new System.Drawing.Size(447, 548);
             this.pnlCadastrarFuncionario.TabIndex = 4;
+            // 
+            // btnSairCadastrarFuncionario
+            // 
+            this.btnSairCadastrarFuncionario.Location = new System.Drawing.Point(340, 409);
+            this.btnSairCadastrarFuncionario.Name = "btnSairCadastrarFuncionario";
+            this.btnSairCadastrarFuncionario.Size = new System.Drawing.Size(75, 23);
+            this.btnSairCadastrarFuncionario.TabIndex = 10;
+            this.btnSairCadastrarFuncionario.Text = "Sair";
+            this.btnSairCadastrarFuncionario.UseVisualStyleBackColor = true;
+            // 
+            // btnLimparDadosFuncionario
+            // 
+            this.btnLimparDadosFuncionario.Location = new System.Drawing.Point(190, 409);
+            this.btnLimparDadosFuncionario.Name = "btnLimparDadosFuncionario";
+            this.btnLimparDadosFuncionario.Size = new System.Drawing.Size(75, 23);
+            this.btnLimparDadosFuncionario.TabIndex = 9;
+            this.btnLimparDadosFuncionario.Text = "Limpar Dados";
+            this.btnLimparDadosFuncionario.UseVisualStyleBackColor = true;
+            // 
+            // btnCadastrarFuncionario
+            // 
+            this.btnCadastrarFuncionario.Location = new System.Drawing.Point(16, 409);
+            this.btnCadastrarFuncionario.Name = "btnCadastrarFuncionario";
+            this.btnCadastrarFuncionario.Size = new System.Drawing.Size(75, 23);
+            this.btnCadastrarFuncionario.TabIndex = 8;
+            this.btnCadastrarFuncionario.Text = "Cadastrar";
+            this.btnCadastrarFuncionario.UseVisualStyleBackColor = true;
             // 
             // grpboxEnderecoFuncionario
             // 
@@ -819,38 +846,11 @@ namespace GenesysGym
             this.txtNomeFuncionario.Size = new System.Drawing.Size(203, 20);
             this.txtNomeFuncionario.TabIndex = 0;
             // 
-            // btnSairCadastrarFuncionario
-            // 
-            this.btnSairCadastrarFuncionario.Location = new System.Drawing.Point(340, 409);
-            this.btnSairCadastrarFuncionario.Name = "btnSairCadastrarFuncionario";
-            this.btnSairCadastrarFuncionario.Size = new System.Drawing.Size(75, 23);
-            this.btnSairCadastrarFuncionario.TabIndex = 10;
-            this.btnSairCadastrarFuncionario.Text = "Sair";
-            this.btnSairCadastrarFuncionario.UseVisualStyleBackColor = true;
-            // 
-            // btnLimparDadosFuncionario
-            // 
-            this.btnLimparDadosFuncionario.Location = new System.Drawing.Point(190, 409);
-            this.btnLimparDadosFuncionario.Name = "btnLimparDadosFuncionario";
-            this.btnLimparDadosFuncionario.Size = new System.Drawing.Size(75, 23);
-            this.btnLimparDadosFuncionario.TabIndex = 9;
-            this.btnLimparDadosFuncionario.Text = "Limpar Dados";
-            this.btnLimparDadosFuncionario.UseVisualStyleBackColor = true;
-            // 
-            // btnCadastrarFuncionario
-            // 
-            this.btnCadastrarFuncionario.Location = new System.Drawing.Point(16, 409);
-            this.btnCadastrarFuncionario.Name = "btnCadastrarFuncionario";
-            this.btnCadastrarFuncionario.Size = new System.Drawing.Size(75, 23);
-            this.btnCadastrarFuncionario.TabIndex = 8;
-            this.btnCadastrarFuncionario.Text = "Cadastrar";
-            this.btnCadastrarFuncionario.UseVisualStyleBackColor = true;
-            // 
             // TelaPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1160, 656);
+            this.ClientSize = new System.Drawing.Size(944, 881);
             this.Controls.Add(this.pnlCadastrarFuncionario);
             this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.pnlCadastrarCliente);

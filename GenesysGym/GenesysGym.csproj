@@ -52,6 +52,12 @@
     <Reference Include="WindowsFormsIntegration" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="TelaConsultas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TelaConsultas.Designer.cs">
+      <DependentUpon>TelaConsultas.cs</DependentUpon>
+    </Compile>
     <Compile Include="TelaPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -69,6 +75,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="TelaConsultas.resx">
+      <DependentUpon>TelaConsultas.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="TelaPrincipal.resx">
       <DependentUpon>TelaPrincipal.cs</DependentUpon>
     </EmbeddedResource>
