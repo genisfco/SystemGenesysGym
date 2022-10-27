@@ -105,6 +105,9 @@ namespace GenesysGym
             this.maskedTextBox2 = new System.Windows.Forms.MaskedTextBox();
             this.maskedTextBox3 = new System.Windows.Forms.MaskedTextBox();
             this.textBox7 = new System.Windows.Forms.TextBox();
+            this.btnCadastrarCliente = new System.Windows.Forms.Button();
+            this.btnLimparDadosCliente = new System.Windows.Forms.Button();
+            this.btnSairCadastrarCliente = new System.Windows.Forms.Button();
             this.pnlCadastrarCliente.SuspendLayout();
             this.grpboxEndereco.SuspendLayout();
             this.grpboxDadosPessoais.SuspendLayout();
@@ -116,6 +119,9 @@ namespace GenesysGym
             // 
             // pnlCadastrarCliente
             // 
+            this.pnlCadastrarCliente.Controls.Add(this.btnSairCadastrarCliente);
+            this.pnlCadastrarCliente.Controls.Add(this.btnLimparDadosCliente);
+            this.pnlCadastrarCliente.Controls.Add(this.btnCadastrarCliente);
             this.pnlCadastrarCliente.Controls.Add(this.grpboxEndereco);
             this.pnlCadastrarCliente.Controls.Add(this.label2);
             this.pnlCadastrarCliente.Controls.Add(this.label1);
@@ -780,6 +786,33 @@ namespace GenesysGym
             this.textBox7.Size = new System.Drawing.Size(203, 20);
             this.textBox7.TabIndex = 0;
             // 
+            // btnCadastrarCliente
+            // 
+            this.btnCadastrarCliente.Location = new System.Drawing.Point(16, 409);
+            this.btnCadastrarCliente.Name = "btnCadastrarCliente";
+            this.btnCadastrarCliente.Size = new System.Drawing.Size(75, 23);
+            this.btnCadastrarCliente.TabIndex = 5;
+            this.btnCadastrarCliente.Text = "Cadastrar";
+            this.btnCadastrarCliente.UseVisualStyleBackColor = true;
+            // 
+            // btnLimparDadosCliente
+            // 
+            this.btnLimparDadosCliente.Location = new System.Drawing.Point(190, 409);
+            this.btnLimparDadosCliente.Name = "btnLimparDadosCliente";
+            this.btnLimparDadosCliente.Size = new System.Drawing.Size(75, 23);
+            this.btnLimparDadosCliente.TabIndex = 6;
+            this.btnLimparDadosCliente.Text = "Limpar Dados";
+            this.btnLimparDadosCliente.UseVisualStyleBackColor = true;
+            // 
+            // btnSairCadastrarCliente
+            // 
+            this.btnSairCadastrarCliente.Location = new System.Drawing.Point(340, 409);
+            this.btnSairCadastrarCliente.Name = "btnSairCadastrarCliente";
+            this.btnSairCadastrarCliente.Size = new System.Drawing.Size(75, 23);
+            this.btnSairCadastrarCliente.TabIndex = 7;
+            this.btnSairCadastrarCliente.Text = "Sair";
+            this.btnSairCadastrarCliente.UseVisualStyleBackColor = true;
+            // 
             // TelaPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -887,6 +920,9 @@ namespace GenesysGym
         private System.Windows.Forms.MaskedTextBox maskedTextBox2;
         private System.Windows.Forms.MaskedTextBox maskedTextBox3;
         private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.Button btnSairCadastrarCliente;
+        private System.Windows.Forms.Button btnLimparDadosCliente;
+        private System.Windows.Forms.Button btnCadastrarCliente;
     }
 }
 
