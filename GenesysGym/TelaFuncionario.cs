@@ -17,6 +17,19 @@ namespace GenesysGym
             InitializeComponent();
         }
 
+        /*private bool ValidarForm()
+        {
+            bool FormValido;
+
+            if (txtCodFuncionario.Text == "" || txtNomeFuncionario.Text == "" || txtCargoFuncionario.Text == "" || txtTelefoneFuncionario.Text == "" || txtEmailFuncionario.Text == "")
+                FormValido = false;
+            else
+                FormValido = true;
+
+            return FormValido;
+        }
+        */
+
         private void TelaFuncionario_Load(object sender, EventArgs e)
         {   
             pnlCadastrarFuncionario.Visible = false;

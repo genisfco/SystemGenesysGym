@@ -73,6 +73,13 @@
             this.menuCadastrarFuncionario = new System.Windows.Forms.ToolStripMenuItem();
             this.menuConsultarFuncionario = new System.Windows.Forms.ToolStripMenuItem();
             this.menuExcluirFuncionario = new System.Windows.Forms.ToolStripMenuItem();
+            this.grpboxContatosFuncionario = new System.Windows.Forms.GroupBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.txtEmailFuncionario = new System.Windows.Forms.TextBox();
+            this.maskTelefoneFuncionario = new System.Windows.Forms.MaskedTextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.txtCargoFuncionario = new System.Windows.Forms.TextBox();
             this.pnlCadastrarFuncionario.SuspendLayout();
             this.grpboxEnderecoFuncionario.SuspendLayout();
             this.grpboxDadosPessoaisFuncionario.SuspendLayout();
@@ -80,10 +87,14 @@
             ((System.ComponentModel.ISupportInitialize)(this.dtgridFuncionariosCadastrados)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtgridPesquisaFuncionario)).BeginInit();
             this.menuStrip1.SuspendLayout();
+            this.grpboxContatosFuncionario.SuspendLayout();
             this.SuspendLayout();
             // 
             // pnlCadastrarFuncionario
             // 
+            this.pnlCadastrarFuncionario.Controls.Add(this.label4);
+            this.pnlCadastrarFuncionario.Controls.Add(this.txtCargoFuncionario);
+            this.pnlCadastrarFuncionario.Controls.Add(this.grpboxContatosFuncionario);
             this.pnlCadastrarFuncionario.Controls.Add(this.btnSairCadastrarFuncionario);
             this.pnlCadastrarFuncionario.Controls.Add(this.btnLimparDadosFuncionario);
             this.pnlCadastrarFuncionario.Controls.Add(this.btnCadastrarFuncionario);
@@ -96,12 +107,12 @@
             this.pnlCadastrarFuncionario.Location = new System.Drawing.Point(13, 42);
             this.pnlCadastrarFuncionario.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pnlCadastrarFuncionario.Name = "pnlCadastrarFuncionario";
-            this.pnlCadastrarFuncionario.Size = new System.Drawing.Size(670, 634);
+            this.pnlCadastrarFuncionario.Size = new System.Drawing.Size(670, 711);
             this.pnlCadastrarFuncionario.TabIndex = 5;
             // 
             // btnSairCadastrarFuncionario
             // 
-            this.btnSairCadastrarFuncionario.Location = new System.Drawing.Point(541, 586);
+            this.btnSairCadastrarFuncionario.Location = new System.Drawing.Point(543, 668);
             this.btnSairCadastrarFuncionario.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnSairCadastrarFuncionario.Name = "btnSairCadastrarFuncionario";
             this.btnSairCadastrarFuncionario.Size = new System.Drawing.Size(112, 35);
@@ -112,7 +123,7 @@
             // 
             // btnLimparDadosFuncionario
             // 
-            this.btnLimparDadosFuncionario.Location = new System.Drawing.Point(316, 586);
+            this.btnLimparDadosFuncionario.Location = new System.Drawing.Point(318, 668);
             this.btnLimparDadosFuncionario.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnLimparDadosFuncionario.Name = "btnLimparDadosFuncionario";
             this.btnLimparDadosFuncionario.Size = new System.Drawing.Size(112, 35);
@@ -122,7 +133,7 @@
             // 
             // btnCadastrarFuncionario
             // 
-            this.btnCadastrarFuncionario.Location = new System.Drawing.Point(10, 586);
+            this.btnCadastrarFuncionario.Location = new System.Drawing.Point(12, 668);
             this.btnCadastrarFuncionario.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnCadastrarFuncionario.Name = "btnCadastrarFuncionario";
             this.btnCadastrarFuncionario.Size = new System.Drawing.Size(112, 35);
@@ -144,11 +155,11 @@
             this.grpboxEnderecoFuncionario.Controls.Add(this.maskCEPFuncionario);
             this.grpboxEnderecoFuncionario.Controls.Add(this.txtNumLogradouroFuncionario);
             this.grpboxEnderecoFuncionario.Controls.Add(this.txtLogradouroFuncionario);
-            this.grpboxEnderecoFuncionario.Location = new System.Drawing.Point(4, 368);
+            this.grpboxEnderecoFuncionario.Location = new System.Drawing.Point(4, 315);
             this.grpboxEnderecoFuncionario.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.grpboxEnderecoFuncionario.Name = "grpboxEnderecoFuncionario";
             this.grpboxEnderecoFuncionario.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.grpboxEnderecoFuncionario.Size = new System.Drawing.Size(654, 208);
+            this.grpboxEnderecoFuncionario.Size = new System.Drawing.Size(658, 190);
             this.grpboxEnderecoFuncionario.TabIndex = 4;
             this.grpboxEnderecoFuncionario.TabStop = false;
             this.grpboxEnderecoFuncionario.Text = "Endereço";
@@ -266,7 +277,7 @@
             // label19
             // 
             this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(358, 22);
+            this.label19.Location = new System.Drawing.Point(506, 21);
             this.label19.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(118, 20);
@@ -285,15 +296,16 @@
             // 
             // dttimepickDataAdmissao
             // 
-            this.dttimepickDataAdmissao.Location = new System.Drawing.Point(358, 51);
+            this.dttimepickDataAdmissao.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dttimepickDataAdmissao.Location = new System.Drawing.Point(510, 46);
             this.dttimepickDataAdmissao.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.dttimepickDataAdmissao.Name = "dttimepickDataAdmissao";
-            this.dttimepickDataAdmissao.Size = new System.Drawing.Size(298, 26);
+            this.dttimepickDataAdmissao.Size = new System.Drawing.Size(145, 26);
             this.dttimepickDataAdmissao.TabIndex = 1;
             // 
             // txtCodFuncionario
             // 
-            this.txtCodFuncionario.Location = new System.Drawing.Point(23, 47);
+            this.txtCodFuncionario.Location = new System.Drawing.Point(10, 47);
             this.txtCodFuncionario.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtCodFuncionario.Name = "txtCodFuncionario";
             this.txtCodFuncionario.Size = new System.Drawing.Size(64, 26);
@@ -317,7 +329,7 @@
             this.grpboxDadosPessoaisFuncionario.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.grpboxDadosPessoaisFuncionario.Name = "grpboxDadosPessoaisFuncionario";
             this.grpboxDadosPessoaisFuncionario.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.grpboxDadosPessoaisFuncionario.Size = new System.Drawing.Size(658, 251);
+            this.grpboxDadosPessoaisFuncionario.Size = new System.Drawing.Size(658, 214);
             this.grpboxDadosPessoaisFuncionario.TabIndex = 0;
             this.grpboxDadosPessoaisFuncionario.TabStop = false;
             this.grpboxDadosPessoaisFuncionario.Text = "Dados Pessoais";
@@ -695,7 +707,7 @@
             this.pnlConsultarFuncionario.Controls.Add(this.txtPesquisarCodFuncionario);
             this.pnlConsultarFuncionario.Location = new System.Drawing.Point(690, 43);
             this.pnlConsultarFuncionario.Name = "pnlConsultarFuncionario";
-            this.pnlConsultarFuncionario.Size = new System.Drawing.Size(670, 634);
+            this.pnlConsultarFuncionario.Size = new System.Drawing.Size(670, 710);
             this.pnlConsultarFuncionario.TabIndex = 6;
             // 
             // btnPesquisarFuncionario
@@ -709,7 +721,7 @@
             // 
             // btnSairPesquisaFuncionario
             // 
-            this.btnSairPesquisaFuncionario.Location = new System.Drawing.Point(543, 582);
+            this.btnSairPesquisaFuncionario.Location = new System.Drawing.Point(544, 667);
             this.btnSairPesquisaFuncionario.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnSairPesquisaFuncionario.Name = "btnSairPesquisaFuncionario";
             this.btnSairPesquisaFuncionario.Size = new System.Drawing.Size(112, 35);
@@ -758,7 +770,6 @@
             // 
             // menuStrip1
             // 
-            this.menuStrip1.GripMargin = new System.Windows.Forms.Padding(2, 2, 0, 2);
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.menuCadastrarFuncionario,
@@ -766,7 +777,7 @@
             this.menuExcluirFuncionario});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1371, 33);
+            this.menuStrip1.Size = new System.Drawing.Size(1418, 33);
             this.menuStrip1.TabIndex = 7;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -790,11 +801,75 @@
             this.menuExcluirFuncionario.Size = new System.Drawing.Size(77, 29);
             this.menuExcluirFuncionario.Text = "Excluir";
             // 
+            // grpboxContatosFuncionario
+            // 
+            this.grpboxContatosFuncionario.Controls.Add(this.label2);
+            this.grpboxContatosFuncionario.Controls.Add(this.label3);
+            this.grpboxContatosFuncionario.Controls.Add(this.txtEmailFuncionario);
+            this.grpboxContatosFuncionario.Controls.Add(this.maskTelefoneFuncionario);
+            this.grpboxContatosFuncionario.Location = new System.Drawing.Point(8, 513);
+            this.grpboxContatosFuncionario.Name = "grpboxContatosFuncionario";
+            this.grpboxContatosFuncionario.Size = new System.Drawing.Size(654, 131);
+            this.grpboxContatosFuncionario.TabIndex = 11;
+            this.grpboxContatosFuncionario.TabStop = false;
+            this.grpboxContatosFuncionario.Text = "Contatos";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(354, 58);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(48, 20);
+            this.label2.TabIndex = 3;
+            this.label2.Text = "Email";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(9, 58);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(71, 20);
+            this.label3.TabIndex = 2;
+            this.label3.Text = "Telefone";
+            // 
+            // txtEmailFuncionario
+            // 
+            this.txtEmailFuncionario.Location = new System.Drawing.Point(354, 81);
+            this.txtEmailFuncionario.Name = "txtEmailFuncionario";
+            this.txtEmailFuncionario.Size = new System.Drawing.Size(276, 26);
+            this.txtEmailFuncionario.TabIndex = 1;
+            // 
+            // maskTelefoneFuncionario
+            // 
+            this.maskTelefoneFuncionario.Location = new System.Drawing.Point(10, 81);
+            this.maskTelefoneFuncionario.Mask = "(00)000000000";
+            this.maskTelefoneFuncionario.Name = "maskTelefoneFuncionario";
+            this.maskTelefoneFuncionario.Size = new System.Drawing.Size(100, 26);
+            this.maskTelefoneFuncionario.TabIndex = 0;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(189, 23);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(52, 20);
+            this.label4.TabIndex = 13;
+            this.label4.Text = "Cargo";
+            // 
+            // txtCargoFuncionario
+            // 
+            this.txtCargoFuncionario.Location = new System.Drawing.Point(193, 48);
+            this.txtCargoFuncionario.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtCargoFuncionario.Name = "txtCargoFuncionario";
+            this.txtCargoFuncionario.Size = new System.Drawing.Size(111, 26);
+            this.txtCargoFuncionario.TabIndex = 12;
+            // 
             // TelaFuncionario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1371, 681);
+            this.ClientSize = new System.Drawing.Size(1418, 759);
             this.Controls.Add(this.pnlConsultarFuncionario);
             this.Controls.Add(this.pnlCadastrarFuncionario);
             this.Controls.Add(this.menuStrip1);
@@ -815,6 +890,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.dtgridPesquisaFuncionario)).EndInit();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
+            this.grpboxContatosFuncionario.ResumeLayout(false);
+            this.grpboxContatosFuncionario.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -867,5 +944,12 @@
         private System.Windows.Forms.ToolStripMenuItem menuCadastrarFuncionario;
         private System.Windows.Forms.ToolStripMenuItem menuConsultarFuncionario;
         private System.Windows.Forms.ToolStripMenuItem menuExcluirFuncionario;
+        private System.Windows.Forms.GroupBox grpboxContatosFuncionario;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox txtEmailFuncionario;
+        private System.Windows.Forms.MaskedTextBox maskTelefoneFuncionario;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox txtCargoFuncionario;
     }
 }

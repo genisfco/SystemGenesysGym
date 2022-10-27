@@ -30,6 +30,11 @@ namespace GenesysGym
         private void InitializeComponent()
         {
             this.pnlCadastrarCliente = new System.Windows.Forms.Panel();
+            this.grpboxContatos = new System.Windows.Forms.GroupBox();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.txtEmail = new System.Windows.Forms.TextBox();
+            this.maskTelefone = new System.Windows.Forms.MaskedTextBox();
             this.btnSairCadastrarCliente = new System.Windows.Forms.Button();
             this.btnLimparDadosCliente = new System.Windows.Forms.Button();
             this.btnCadastrarCliente = new System.Windows.Forms.Button();
@@ -74,13 +79,14 @@ namespace GenesysGym
             this.menuTreinos = new System.Windows.Forms.ToolStripMenuItem();
             this.stripRegistrarAlterarTreino = new System.Windows.Forms.ToolStripMenuItem();
             this.pnlPesquisarCliente = new System.Windows.Forms.Panel();
+            this.btnSairPesquisarCliente = new System.Windows.Forms.Button();
             this.btnPesquisarCliente = new System.Windows.Forms.Button();
-            this.btnSairPesquisaCliente = new System.Windows.Forms.Button();
             this.dtgridClientesCadastrados = new System.Windows.Forms.DataGridView();
             this.dtgridPesquisaCliente = new System.Windows.Forms.DataGridView();
             this.label13 = new System.Windows.Forms.Label();
             this.maskPesquisarCPFCliente = new System.Windows.Forms.MaskedTextBox();
             this.pnlCadastrarCliente.SuspendLayout();
+            this.grpboxContatos.SuspendLayout();
             this.grpboxEndereco.SuspendLayout();
             this.grpboxDadosPessoais.SuspendLayout();
             this.menuStrip1.SuspendLayout();
@@ -91,6 +97,7 @@ namespace GenesysGym
             // 
             // pnlCadastrarCliente
             // 
+            this.pnlCadastrarCliente.Controls.Add(this.grpboxContatos);
             this.pnlCadastrarCliente.Controls.Add(this.btnSairCadastrarCliente);
             this.pnlCadastrarCliente.Controls.Add(this.btnLimparDadosCliente);
             this.pnlCadastrarCliente.Controls.Add(this.btnCadastrarCliente);
@@ -103,12 +110,58 @@ namespace GenesysGym
             this.pnlCadastrarCliente.Location = new System.Drawing.Point(13, 42);
             this.pnlCadastrarCliente.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pnlCadastrarCliente.Name = "pnlCadastrarCliente";
-            this.pnlCadastrarCliente.Size = new System.Drawing.Size(670, 634);
+            this.pnlCadastrarCliente.Size = new System.Drawing.Size(670, 712);
             this.pnlCadastrarCliente.TabIndex = 0;
+            // 
+            // grpboxContatos
+            // 
+            this.grpboxContatos.Controls.Add(this.label15);
+            this.grpboxContatos.Controls.Add(this.label14);
+            this.grpboxContatos.Controls.Add(this.txtEmail);
+            this.grpboxContatos.Controls.Add(this.maskTelefone);
+            this.grpboxContatos.Location = new System.Drawing.Point(6, 507);
+            this.grpboxContatos.Name = "grpboxContatos";
+            this.grpboxContatos.Size = new System.Drawing.Size(654, 131);
+            this.grpboxContatos.TabIndex = 8;
+            this.grpboxContatos.TabStop = false;
+            this.grpboxContatos.Text = "Contatos";
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(354, 58);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(48, 20);
+            this.label15.TabIndex = 3;
+            this.label15.Text = "Email";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(9, 58);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(71, 20);
+            this.label14.TabIndex = 2;
+            this.label14.Text = "Telefone";
+            // 
+            // txtEmail
+            // 
+            this.txtEmail.Location = new System.Drawing.Point(354, 81);
+            this.txtEmail.Name = "txtEmail";
+            this.txtEmail.Size = new System.Drawing.Size(276, 26);
+            this.txtEmail.TabIndex = 1;
+            // 
+            // maskTelefone
+            // 
+            this.maskTelefone.Location = new System.Drawing.Point(10, 81);
+            this.maskTelefone.Mask = "(00)000000000";
+            this.maskTelefone.Name = "maskTelefone";
+            this.maskTelefone.Size = new System.Drawing.Size(100, 26);
+            this.maskTelefone.TabIndex = 0;
             // 
             // btnSairCadastrarCliente
             // 
-            this.btnSairCadastrarCliente.Location = new System.Drawing.Point(541, 586);
+            this.btnSairCadastrarCliente.Location = new System.Drawing.Point(544, 663);
             this.btnSairCadastrarCliente.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnSairCadastrarCliente.Name = "btnSairCadastrarCliente";
             this.btnSairCadastrarCliente.Size = new System.Drawing.Size(112, 35);
@@ -119,7 +172,7 @@ namespace GenesysGym
             // 
             // btnLimparDadosCliente
             // 
-            this.btnLimparDadosCliente.Location = new System.Drawing.Point(316, 586);
+            this.btnLimparDadosCliente.Location = new System.Drawing.Point(314, 663);
             this.btnLimparDadosCliente.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnLimparDadosCliente.Name = "btnLimparDadosCliente";
             this.btnLimparDadosCliente.Size = new System.Drawing.Size(112, 35);
@@ -129,7 +182,7 @@ namespace GenesysGym
             // 
             // btnCadastrarCliente
             // 
-            this.btnCadastrarCliente.Location = new System.Drawing.Point(6, 586);
+            this.btnCadastrarCliente.Location = new System.Drawing.Point(10, 663);
             this.btnCadastrarCliente.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnCadastrarCliente.Name = "btnCadastrarCliente";
             this.btnCadastrarCliente.Size = new System.Drawing.Size(112, 35);
@@ -151,11 +204,11 @@ namespace GenesysGym
             this.grpboxEndereco.Controls.Add(this.maskCEP);
             this.grpboxEndereco.Controls.Add(this.txtNumLogradouro);
             this.grpboxEndereco.Controls.Add(this.txtLogradouro);
-            this.grpboxEndereco.Location = new System.Drawing.Point(4, 368);
+            this.grpboxEndereco.Location = new System.Drawing.Point(4, 308);
             this.grpboxEndereco.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.grpboxEndereco.Name = "grpboxEndereco";
             this.grpboxEndereco.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.grpboxEndereco.Size = new System.Drawing.Size(654, 208);
+            this.grpboxEndereco.Size = new System.Drawing.Size(654, 191);
             this.grpboxEndereco.TabIndex = 4;
             this.grpboxEndereco.TabStop = false;
             this.grpboxEndereco.Text = "Endereço";
@@ -273,7 +326,7 @@ namespace GenesysGym
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(358, 22);
+            this.label2.Location = new System.Drawing.Point(516, 22);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(112, 20);
@@ -292,10 +345,11 @@ namespace GenesysGym
             // 
             // dttimepickDataRegistro
             // 
-            this.dttimepickDataRegistro.Location = new System.Drawing.Point(358, 51);
+            this.dttimepickDataRegistro.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dttimepickDataRegistro.Location = new System.Drawing.Point(520, 51);
             this.dttimepickDataRegistro.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.dttimepickDataRegistro.Name = "dttimepickDataRegistro";
-            this.dttimepickDataRegistro.Size = new System.Drawing.Size(298, 26);
+            this.dttimepickDataRegistro.Size = new System.Drawing.Size(136, 26);
             this.dttimepickDataRegistro.TabIndex = 1;
             // 
             // txtCodCliente
@@ -324,7 +378,7 @@ namespace GenesysGym
             this.grpboxDadosPessoais.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.grpboxDadosPessoais.Name = "grpboxDadosPessoais";
             this.grpboxDadosPessoais.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.grpboxDadosPessoais.Size = new System.Drawing.Size(658, 251);
+            this.grpboxDadosPessoais.Size = new System.Drawing.Size(658, 207);
             this.grpboxDadosPessoais.TabIndex = 0;
             this.grpboxDadosPessoais.TabStop = false;
             this.grpboxDadosPessoais.Text = "Dados Pessoais";
@@ -702,7 +756,7 @@ namespace GenesysGym
             this.menuTreinos});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1375, 33);
+            this.menuStrip1.Size = new System.Drawing.Size(1378, 33);
             this.menuStrip1.TabIndex = 3;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -775,16 +829,27 @@ namespace GenesysGym
             // 
             // pnlPesquisarCliente
             // 
+            this.pnlPesquisarCliente.Controls.Add(this.btnSairPesquisarCliente);
             this.pnlPesquisarCliente.Controls.Add(this.btnPesquisarCliente);
-            this.pnlPesquisarCliente.Controls.Add(this.btnSairPesquisaCliente);
             this.pnlPesquisarCliente.Controls.Add(this.dtgridClientesCadastrados);
             this.pnlPesquisarCliente.Controls.Add(this.dtgridPesquisaCliente);
             this.pnlPesquisarCliente.Controls.Add(this.label13);
             this.pnlPesquisarCliente.Controls.Add(this.maskPesquisarCPFCliente);
-            this.pnlPesquisarCliente.Location = new System.Drawing.Point(693, 42);
+            this.pnlPesquisarCliente.Location = new System.Drawing.Point(696, 42);
             this.pnlPesquisarCliente.Name = "pnlPesquisarCliente";
-            this.pnlPesquisarCliente.Size = new System.Drawing.Size(670, 634);
+            this.pnlPesquisarCliente.Size = new System.Drawing.Size(670, 712);
             this.pnlPesquisarCliente.TabIndex = 4;
+            // 
+            // btnSairPesquisarCliente
+            // 
+            this.btnSairPesquisarCliente.Location = new System.Drawing.Point(554, 663);
+            this.btnSairPesquisarCliente.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnSairPesquisarCliente.Name = "btnSairPesquisarCliente";
+            this.btnSairPesquisarCliente.Size = new System.Drawing.Size(112, 35);
+            this.btnSairPesquisarCliente.TabIndex = 9;
+            this.btnSairPesquisarCliente.Text = "Sair";
+            this.btnSairPesquisarCliente.UseVisualStyleBackColor = true;
+            this.btnSairPesquisarCliente.Click += new System.EventHandler(this.btnSairPesquisarCliente_Click);
             // 
             // btnPesquisarCliente
             // 
@@ -794,17 +859,6 @@ namespace GenesysGym
             this.btnPesquisarCliente.TabIndex = 16;
             this.btnPesquisarCliente.Text = "Pesquisar Cliente";
             this.btnPesquisarCliente.UseVisualStyleBackColor = true;
-            // 
-            // btnSairPesquisaCliente
-            // 
-            this.btnSairPesquisaCliente.Location = new System.Drawing.Point(543, 586);
-            this.btnSairPesquisaCliente.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.btnSairPesquisaCliente.Name = "btnSairPesquisaCliente";
-            this.btnSairPesquisaCliente.Size = new System.Drawing.Size(112, 35);
-            this.btnSairPesquisaCliente.TabIndex = 8;
-            this.btnSairPesquisaCliente.Text = "Sair";
-            this.btnSairPesquisaCliente.UseVisualStyleBackColor = true;
-            this.btnSairPesquisaCliente.Click += new System.EventHandler(this.btnSairPesquisaCliente_Click);
             // 
             // dtgridClientesCadastrados
             // 
@@ -849,7 +903,7 @@ namespace GenesysGym
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1375, 680);
+            this.ClientSize = new System.Drawing.Size(1378, 759);
             this.Controls.Add(this.pnlPesquisarCliente);
             this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.pnlCadastrarCliente);
@@ -862,6 +916,8 @@ namespace GenesysGym
             this.Load += new System.EventHandler(this.TelaPrincipal_Load);
             this.pnlCadastrarCliente.ResumeLayout(false);
             this.pnlCadastrarCliente.PerformLayout();
+            this.grpboxContatos.ResumeLayout(false);
+            this.grpboxContatos.PerformLayout();
             this.grpboxEndereco.ResumeLayout(false);
             this.grpboxEndereco.PerformLayout();
             this.grpboxDadosPessoais.ResumeLayout(false);
@@ -927,9 +983,14 @@ namespace GenesysGym
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.MaskedTextBox maskPesquisarCPFCliente;
         private System.Windows.Forms.Button btnPesquisarCliente;
-        private System.Windows.Forms.Button btnSairPesquisaCliente;
         private System.Windows.Forms.DataGridView dtgridClientesCadastrados;
         private System.Windows.Forms.DataGridView dtgridPesquisaCliente;
+        private System.Windows.Forms.GroupBox grpboxContatos;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.TextBox txtEmail;
+        private System.Windows.Forms.MaskedTextBox maskTelefone;
+        private System.Windows.Forms.Button btnSairPesquisarCliente;
     }
 }
 

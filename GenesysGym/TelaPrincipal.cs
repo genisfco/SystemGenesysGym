@@ -17,6 +17,21 @@ namespace GenesysGym
             InitializeComponent();
         }
 
+        /*
+        private bool ValidarForm()
+        {
+            bool FormValido;
+
+            if (txtCodFuncionario.Text == "" || maskboxCPFFuncionario.Text == "" || maskboxRGFuncionario.Text == "" || txtNomeFuncionario.Text == "" || txtDtAdmFuncionario.Text == "" || txtCargoFuncionario.Text == "" || txtTelefoneFuncionario.Text == "" || txtEmailFuncionario.Text == "")
+                FormValido = false;
+            else
+                FormValido = true;
+
+            return FormValido;
+        }
+        */
+
+
         private void TelaPrincipal_Load(object sender, EventArgs e)
         {
             pnlCadastrarCliente.Visible = true;
@@ -53,11 +68,13 @@ namespace GenesysGym
             Close();
         }
 
-        private void btnSairPesquisaCliente_Click(object sender, EventArgs e)
+        private void btnSairPesquisarCliente_Click(object sender, EventArgs e)
         {
             pnlPesquisarCliente.Visible = false;
             pnlCadastrarCliente.Visible = true;
         }
+
+
 
         private void maskCEP_Leave(object sender, EventArgs e)
         {
@@ -77,5 +94,7 @@ namespace GenesysGym
                 }
             }
         }
+
+        
     }
 }
