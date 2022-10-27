@@ -21,10 +21,13 @@ namespace GenesysGym
         {
             bool FormValido;
 
-            if (txtCodCliente.Text == "" || txtNomeCliente.Text == "" || maskCPFCliente.Text == "" || maskRGCliente.Text == "" || 
-                comboxDia.Text == "" || comboxMes.Text == "" || comboxAno.Text == "" || rdbtnMascCliente.Checked == false && rdbtnFemCliente.Checked == false ||
-                txtLogradouro.Text == "" || txtNumLogradouro.Text == "" || txtBairro.Text == "" || txtCidade.Text == "" || txtEstado.Text == "" ||
-                maskTelefone.Text == "" || txtEmail.Text == "")
+            if (txtCodCliente.Text == "" || txtNomeCliente.Text == "" || comboxDia.Text == "" || comboxMes.Text == "" || comboxAno.Text == "")
+                FormValido = false;
+            else if (rdbtnMascCliente.Checked == false && rdbtnFemCliente.Checked == false)
+                FormValido = false;
+            else if (txtLogradouro.Text == "" || txtNumLogradouro.Text == "" || maskCEP.Text.Length != 9 || txtBairro.Text == "" || txtCidade.Text == "" || txtEstado.Text == "")
+                FormValido = false;
+            else if (maskTelefone.Text.Length != 13 || txtEmail.Text == "")
                 FormValido = false;
             else
                 FormValido = true;
@@ -94,16 +97,16 @@ namespace GenesysGym
         }
 
 
-
-
-
-
         private void btnCadastrarCliente_Click(object sender, EventArgs e)
         {
             // Exigir preenchimento completo dos campos obrigatórios
             if (ValidarForm() == false)
             {
                 MessageBox.Show("ATENÇÃO: Todos os campos precisam ser preenchidos!");
+            }
+            else if (maskCPFCliente.Text.Length != 14)
+            {
+                MessageBox.Show("CPF incompleto, digite todos os digítos!");
             }
 
             // Aplicando Classe para validação de RG e CPF
@@ -124,12 +127,10 @@ namespace GenesysGym
                 string day = dttimepickDataMatricula.Value.Day.ToString();
                 string data_matricula = year + "-" + month + "-" + day;
 
-                // FAZER O INSERT DOS DADOS PARA A TABELA PACIENTE
+                // FAZER O INSERT DOS DADOS PARA A TABELA CLIENTE
 
-                MessageBox.Show("Paciente cadastrado com sucesso!");
-
+                MessageBox.Show("Cliente cadastrado com sucesso!");
             }
-
         }
     }
 }
