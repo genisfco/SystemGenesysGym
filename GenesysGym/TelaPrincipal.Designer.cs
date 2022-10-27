@@ -78,19 +78,19 @@ namespace GenesysGym
             this.stripRegistrarTreino = new System.Windows.Forms.ToolStripMenuItem();
             this.stripAlterarTreino = new System.Windows.Forms.ToolStripMenuItem();
             this.pnlPesquisarCliente = new System.Windows.Forms.Panel();
+            this.btnPesquisarCliente = new System.Windows.Forms.Button();
+            this.btnSairPesquisaCliente = new System.Windows.Forms.Button();
+            this.dtgridClientesCadastrados = new System.Windows.Forms.DataGridView();
+            this.dtgridPesquisaCliente = new System.Windows.Forms.DataGridView();
             this.label13 = new System.Windows.Forms.Label();
             this.maskPesquisarCPFCliente = new System.Windows.Forms.MaskedTextBox();
-            this.dtgridPesquisaCliente = new System.Windows.Forms.DataGridView();
-            this.dtgridClientesCadastrados = new System.Windows.Forms.DataGridView();
-            this.btnSairPesquisaCliente = new System.Windows.Forms.Button();
-            this.btnPesquisarCliente = new System.Windows.Forms.Button();
             this.pnlCadastrarCliente.SuspendLayout();
             this.grpboxEndereco.SuspendLayout();
             this.grpboxDadosPessoais.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.pnlPesquisarCliente.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dtgridPesquisaCliente)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtgridClientesCadastrados)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgridPesquisaCliente)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlCadastrarCliente
@@ -196,7 +196,7 @@ namespace GenesysGym
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(483, 37);
+            this.label9.Location = new System.Drawing.Point(547, 37);
             this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(41, 20);
@@ -206,7 +206,7 @@ namespace GenesysGym
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(398, 37);
+            this.label8.Location = new System.Drawing.Point(440, 37);
             this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(26, 20);
@@ -249,15 +249,16 @@ namespace GenesysGym
             // 
             // maskCEP
             // 
-            this.maskCEP.Location = new System.Drawing.Point(486, 62);
+            this.maskCEP.Location = new System.Drawing.Point(550, 62);
             this.maskCEP.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.maskCEP.Mask = "00000-000";
             this.maskCEP.Name = "maskCEP";
-            this.maskCEP.Size = new System.Drawing.Size(148, 26);
+            this.maskCEP.Size = new System.Drawing.Size(86, 26);
             this.maskCEP.TabIndex = 2;
             // 
             // txtNumLogradouro
             // 
-            this.txtNumLogradouro.Location = new System.Drawing.Point(402, 62);
+            this.txtNumLogradouro.Location = new System.Drawing.Point(444, 62);
             this.txtNumLogradouro.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtNumLogradouro.Name = "txtNumLogradouro";
             this.txtNumLogradouro.Size = new System.Drawing.Size(66, 26);
@@ -367,7 +368,7 @@ namespace GenesysGym
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(483, 45);
+            this.label5.Location = new System.Drawing.Point(541, 45);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(34, 20);
@@ -377,7 +378,7 @@ namespace GenesysGym
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(324, 43);
+            this.label4.Location = new System.Drawing.Point(406, 43);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(40, 20);
@@ -423,18 +424,20 @@ namespace GenesysGym
             // 
             // maskRGCliente
             // 
-            this.maskRGCliente.Location = new System.Drawing.Point(483, 74);
+            this.maskRGCliente.Location = new System.Drawing.Point(545, 74);
             this.maskRGCliente.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.maskRGCliente.Mask = "00.000.000-?";
             this.maskRGCliente.Name = "maskRGCliente";
-            this.maskRGCliente.Size = new System.Drawing.Size(148, 26);
+            this.maskRGCliente.Size = new System.Drawing.Size(105, 26);
             this.maskRGCliente.TabIndex = 2;
             // 
             // mskCPFCliente
             // 
-            this.mskCPFCliente.Location = new System.Drawing.Point(324, 74);
+            this.mskCPFCliente.Location = new System.Drawing.Point(406, 74);
             this.mskCPFCliente.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.mskCPFCliente.Mask = "000.000.000-00";
             this.mskCPFCliente.Name = "mskCPFCliente";
-            this.mskCPFCliente.Size = new System.Drawing.Size(148, 26);
+            this.mskCPFCliente.Size = new System.Drawing.Size(121, 26);
             this.mskCPFCliente.TabIndex = 1;
             // 
             // txtNomeCliente
@@ -442,7 +445,7 @@ namespace GenesysGym
             this.txtNomeCliente.Location = new System.Drawing.Point(10, 74);
             this.txtNomeCliente.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtNomeCliente.Name = "txtNomeCliente";
-            this.txtNomeCliente.Size = new System.Drawing.Size(302, 26);
+            this.txtNomeCliente.Size = new System.Drawing.Size(355, 26);
             this.txtNomeCliente.TabIndex = 0;
             // 
             // contextMenuStrip1
@@ -555,6 +558,45 @@ namespace GenesysGym
             this.pnlPesquisarCliente.Size = new System.Drawing.Size(670, 634);
             this.pnlPesquisarCliente.TabIndex = 4;
             // 
+            // btnPesquisarCliente
+            // 
+            this.btnPesquisarCliente.Location = new System.Drawing.Point(381, 22);
+            this.btnPesquisarCliente.Name = "btnPesquisarCliente";
+            this.btnPesquisarCliente.Size = new System.Drawing.Size(207, 55);
+            this.btnPesquisarCliente.TabIndex = 16;
+            this.btnPesquisarCliente.Text = "Pesquisar Cliente";
+            this.btnPesquisarCliente.UseVisualStyleBackColor = true;
+            // 
+            // btnSairPesquisaCliente
+            // 
+            this.btnSairPesquisaCliente.Location = new System.Drawing.Point(543, 586);
+            this.btnSairPesquisaCliente.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnSairPesquisaCliente.Name = "btnSairPesquisaCliente";
+            this.btnSairPesquisaCliente.Size = new System.Drawing.Size(112, 35);
+            this.btnSairPesquisaCliente.TabIndex = 8;
+            this.btnSairPesquisaCliente.Text = "Sair";
+            this.btnSairPesquisaCliente.UseVisualStyleBackColor = true;
+            // 
+            // dtgridClientesCadastrados
+            // 
+            this.dtgridClientesCadastrados.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtgridClientesCadastrados.Location = new System.Drawing.Point(4, 263);
+            this.dtgridClientesCadastrados.Name = "dtgridClientesCadastrados";
+            this.dtgridClientesCadastrados.RowHeadersWidth = 62;
+            this.dtgridClientesCadastrados.RowTemplate.Height = 28;
+            this.dtgridClientesCadastrados.Size = new System.Drawing.Size(663, 313);
+            this.dtgridClientesCadastrados.TabIndex = 15;
+            // 
+            // dtgridPesquisaCliente
+            // 
+            this.dtgridPesquisaCliente.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtgridPesquisaCliente.Location = new System.Drawing.Point(4, 118);
+            this.dtgridPesquisaCliente.Name = "dtgridPesquisaCliente";
+            this.dtgridPesquisaCliente.RowHeadersWidth = 62;
+            this.dtgridPesquisaCliente.RowTemplate.Height = 28;
+            this.dtgridPesquisaCliente.Size = new System.Drawing.Size(663, 109);
+            this.dtgridPesquisaCliente.TabIndex = 14;
+            // 
             // label13
             // 
             this.label13.AutoSize = true;
@@ -569,48 +611,10 @@ namespace GenesysGym
             // 
             this.maskPesquisarCPFCliente.Location = new System.Drawing.Point(4, 53);
             this.maskPesquisarCPFCliente.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.maskPesquisarCPFCliente.Mask = "000.000.000-00";
             this.maskPesquisarCPFCliente.Name = "maskPesquisarCPFCliente";
-            this.maskPesquisarCPFCliente.Size = new System.Drawing.Size(148, 26);
+            this.maskPesquisarCPFCliente.Size = new System.Drawing.Size(124, 26);
             this.maskPesquisarCPFCliente.TabIndex = 12;
-            // 
-            // dtgridPesquisaCliente
-            // 
-            this.dtgridPesquisaCliente.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtgridPesquisaCliente.Location = new System.Drawing.Point(4, 118);
-            this.dtgridPesquisaCliente.Name = "dtgridPesquisaCliente";
-            this.dtgridPesquisaCliente.RowHeadersWidth = 62;
-            this.dtgridPesquisaCliente.RowTemplate.Height = 28;
-            this.dtgridPesquisaCliente.Size = new System.Drawing.Size(663, 109);
-            this.dtgridPesquisaCliente.TabIndex = 14;
-            // 
-            // dtgridClientesCadastrados
-            // 
-            this.dtgridClientesCadastrados.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtgridClientesCadastrados.Location = new System.Drawing.Point(4, 263);
-            this.dtgridClientesCadastrados.Name = "dtgridClientesCadastrados";
-            this.dtgridClientesCadastrados.RowHeadersWidth = 62;
-            this.dtgridClientesCadastrados.RowTemplate.Height = 28;
-            this.dtgridClientesCadastrados.Size = new System.Drawing.Size(663, 313);
-            this.dtgridClientesCadastrados.TabIndex = 15;
-            // 
-            // btnSairPesquisaCliente
-            // 
-            this.btnSairPesquisaCliente.Location = new System.Drawing.Point(543, 586);
-            this.btnSairPesquisaCliente.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.btnSairPesquisaCliente.Name = "btnSairPesquisaCliente";
-            this.btnSairPesquisaCliente.Size = new System.Drawing.Size(112, 35);
-            this.btnSairPesquisaCliente.TabIndex = 8;
-            this.btnSairPesquisaCliente.Text = "Sair";
-            this.btnSairPesquisaCliente.UseVisualStyleBackColor = true;
-            // 
-            // btnPesquisarCliente
-            // 
-            this.btnPesquisarCliente.Location = new System.Drawing.Point(381, 22);
-            this.btnPesquisarCliente.Name = "btnPesquisarCliente";
-            this.btnPesquisarCliente.Size = new System.Drawing.Size(207, 55);
-            this.btnPesquisarCliente.TabIndex = 16;
-            this.btnPesquisarCliente.Text = "Pesquisar Cliente";
-            this.btnPesquisarCliente.UseVisualStyleBackColor = true;
             // 
             // TelaPrincipal
             // 
@@ -634,8 +638,8 @@ namespace GenesysGym
             this.menuStrip1.PerformLayout();
             this.pnlPesquisarCliente.ResumeLayout(false);
             this.pnlPesquisarCliente.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dtgridPesquisaCliente)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtgridClientesCadastrados)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgridPesquisaCliente)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
