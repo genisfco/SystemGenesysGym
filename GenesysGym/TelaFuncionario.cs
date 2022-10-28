@@ -21,10 +21,20 @@ namespace GenesysGym
         {
             bool FormValido;
 
-            if (txtCodFuncionario.Text == "" || txtCargoFuncionario.Text == "" || txtNomeFuncionario.Text == "" || maskCPFFuncionario.Text == "" || maskRGFuncionario.Text == "" ||
-                comboxDiaFuncionario == null || comboxMesFuncionario == null || comboxAnoFuncionario == null || rdbtnMascFuncionario.Checked == false || rdbtnFemFuncionario.Checked == false ||
-                txtLogradouroFuncionario.Text == "" || txtNumLogradouroFuncionario.Text == "" || txtBairroFuncionario.Text == "" || txtCidadeFuncionario.Text == "" || txtEstadoFuncionario.Text == "" ||
-                maskTelefoneFuncionario.Text == "" || txtEmailFuncionario.Text == "")
+            if (txtCodFuncionario.Text == "" 
+                || txtCargoFuncionario.Text == "" 
+                || txtNomeFuncionario.Text == "" 
+                || comboxDiaFuncionario.Text == "" 
+                || comboxMesFuncionario.Text == "" 
+                || comboxAnoFuncionario.Text == "")
+                FormValido = false;
+            else if (rdbtnMascFuncionario.Checked == false && rdbtnFemFuncionario.Checked == false)
+                FormValido = false;
+            else if (txtLogradouroFuncionario.Text == "" || txtNumLogradouroFuncionario.Text == "" 
+                || maskCEPFuncionario.Text.Length != 9 || txtBairroFuncionario.Text == "" 
+                || txtCidadeFuncionario.Text == "" || txtEstadoFuncionario.Text == "")
+                FormValido = false;
+            else if (maskTelefoneFuncionario.Text.Length != 13 || txtEmailFuncionario.Text == "")
                 FormValido = false;
             else
                 FormValido = true;
@@ -83,6 +93,41 @@ namespace GenesysGym
             Close();
         }
 
-        
+        private void btnCadastrarFuncionario_Click(object sender, EventArgs e)
+        {
+            // Exigir preenchimento completo dos campos obrigatórios
+            if (ValidarForm() == false)
+            {
+                MessageBox.Show("ATENÇÃO: Todos os campos precisam ser preenchidos!");
+            }
+            else if (maskCPFFuncionario.Text.Length != 14)
+            {
+                MessageBox.Show("CPF incompleto, digite todos os digítos!");
+            }
+
+            // Aplicando Classe para validação de RG e CPF
+            else if (ClassValidacao.validarCpf(maskCPFFuncionario.Text) == false)
+            {
+                MessageBox.Show("CPF inválido!");
+            }
+            else if (ClassValidacao.validarRg(maskRGFuncionario.Text) == false)
+            {
+                MessageBox.Show("RG inválido!");
+            }
+
+            // Dados válidos -> Processo de Insert 
+            else if (ValidarForm() && ClassValidacao.validarCpf(maskCPFFuncionario.Text) && ClassValidacao.validarRg(maskRGFuncionario.Text))
+            {
+                string year = dttimepickDataAdmissao.Value.Year.ToString();
+                string month = dttimepickDataAdmissao.Value.Month.ToString();
+                string day = dttimepickDataAdmissao.Value.Day.ToString();
+                string data_matricula = year + "-" + month + "-" + day;
+
+                // FAZER O INSERT DOS DADOS PARA A TABELA CLIENTE
+
+                MessageBox.Show("Cliente cadastrado com sucesso!");
+            }
+
+        }
     }
 }

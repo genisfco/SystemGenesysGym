@@ -21,11 +21,16 @@ namespace GenesysGym
         {
             bool FormValido;
 
-            if (txtCodCliente.Text == "" || txtNomeCliente.Text == "" || comboxDia.Text == "" || comboxMes.Text == "" || comboxAno.Text == "")
+            if (txtCodCliente.Text == "" 
+                || txtNomeCliente.Text == "" 
+                || comboxDia.Text == "" 
+                || comboxMes.Text == "" 
+                || comboxAno.Text == "")
                 FormValido = false;
             else if (rdbtnMascCliente.Checked == false && rdbtnFemCliente.Checked == false)
                 FormValido = false;
-            else if (txtLogradouro.Text == "" || txtNumLogradouro.Text == "" || maskCEP.Text.Length != 9 || txtBairro.Text == "" || txtCidade.Text == "" || txtEstado.Text == "")
+            else if (txtLogradouro.Text == "" || txtNumLogradouro.Text == "" || maskCEP.Text.Length != 9 
+                || txtBairro.Text == "" || txtCidade.Text == "" || txtEstado.Text == "")
                 FormValido = false;
             else if (maskTelefone.Text.Length != 13 || txtEmail.Text == "")
                 FormValido = false;
