@@ -119,9 +119,9 @@ namespace GenesysGym
             this.grpboxContatos.Controls.Add(this.txtEmail);
             this.grpboxContatos.Controls.Add(this.maskTelefone);
             this.grpboxContatos.Location = new System.Drawing.Point(4, 330);
-            this.grpboxContatos.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.grpboxContatos.Margin = new System.Windows.Forms.Padding(2);
             this.grpboxContatos.Name = "grpboxContatos";
-            this.grpboxContatos.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.grpboxContatos.Padding = new System.Windows.Forms.Padding(2);
             this.grpboxContatos.Size = new System.Drawing.Size(436, 85);
             this.grpboxContatos.TabIndex = 8;
             this.grpboxContatos.TabStop = false;
@@ -150,7 +150,7 @@ namespace GenesysGym
             // txtEmail
             // 
             this.txtEmail.Location = new System.Drawing.Point(236, 53);
-            this.txtEmail.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtEmail.Margin = new System.Windows.Forms.Padding(2);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(185, 20);
             this.txtEmail.TabIndex = 1;
@@ -158,7 +158,7 @@ namespace GenesysGym
             // maskTelefone
             // 
             this.maskTelefone.Location = new System.Drawing.Point(7, 53);
-            this.maskTelefone.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.maskTelefone.Margin = new System.Windows.Forms.Padding(2);
             this.maskTelefone.Mask = "(00)000000000";
             this.maskTelefone.Name = "maskTelefone";
             this.maskTelefone.Size = new System.Drawing.Size(68, 20);
@@ -333,9 +333,9 @@ namespace GenesysGym
             // dttimepickDataMatricula
             // 
             this.dttimepickDataMatricula.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dttimepickDataMatricula.Location = new System.Drawing.Point(347, 33);
+            this.dttimepickDataMatricula.Location = new System.Drawing.Point(340, 33);
             this.dttimepickDataMatricula.Name = "dttimepickDataMatricula";
-            this.dttimepickDataMatricula.Size = new System.Drawing.Size(92, 20);
+            this.dttimepickDataMatricula.Size = new System.Drawing.Size(99, 20);
             this.dttimepickDataMatricula.TabIndex = 1;
             // 
             // txtCodCliente
@@ -807,7 +807,7 @@ namespace GenesysGym
             this.pnlPesquisarCliente.Controls.Add(this.label13);
             this.pnlPesquisarCliente.Controls.Add(this.maskPesquisarCPFCliente);
             this.pnlPesquisarCliente.Location = new System.Drawing.Point(460, 27);
-            this.pnlPesquisarCliente.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pnlPesquisarCliente.Margin = new System.Windows.Forms.Padding(2);
             this.pnlPesquisarCliente.Name = "pnlPesquisarCliente";
             this.pnlPesquisarCliente.Size = new System.Drawing.Size(447, 463);
             this.pnlPesquisarCliente.TabIndex = 4;
@@ -825,7 +825,7 @@ namespace GenesysGym
             // btnPesquisarCliente
             // 
             this.btnPesquisarCliente.Location = new System.Drawing.Point(254, 14);
-            this.btnPesquisarCliente.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnPesquisarCliente.Margin = new System.Windows.Forms.Padding(2);
             this.btnPesquisarCliente.Name = "btnPesquisarCliente";
             this.btnPesquisarCliente.Size = new System.Drawing.Size(138, 36);
             this.btnPesquisarCliente.TabIndex = 16;
@@ -836,7 +836,7 @@ namespace GenesysGym
             // 
             this.dtgridClientesCadastrados.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtgridClientesCadastrados.Location = new System.Drawing.Point(3, 171);
-            this.dtgridClientesCadastrados.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dtgridClientesCadastrados.Margin = new System.Windows.Forms.Padding(2);
             this.dtgridClientesCadastrados.Name = "dtgridClientesCadastrados";
             this.dtgridClientesCadastrados.RowHeadersWidth = 62;
             this.dtgridClientesCadastrados.RowTemplate.Height = 28;
@@ -847,7 +847,7 @@ namespace GenesysGym
             // 
             this.dtgridPesquisaCliente.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtgridPesquisaCliente.Location = new System.Drawing.Point(3, 77);
-            this.dtgridPesquisaCliente.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dtgridPesquisaCliente.Margin = new System.Windows.Forms.Padding(2);
             this.dtgridPesquisaCliente.Name = "dtgridPesquisaCliente";
             this.dtgridPesquisaCliente.RowHeadersWidth = 62;
             this.dtgridPesquisaCliente.RowTemplate.Height = 28;
