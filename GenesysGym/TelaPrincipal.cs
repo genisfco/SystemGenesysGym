@@ -2,11 +2,14 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MySql.Data.MySqlClient;
+
 
 namespace GenesysGym
 {
@@ -126,15 +129,59 @@ namespace GenesysGym
 
             // Dados válidos -> Processo de Insert 
             else if (ValidarForm() && ClassValidacao.validarCpf(maskCPFCliente.Text) && ClassValidacao.validarRg(maskRGCliente.Text))
-            {
+            {                
+                string cpf = maskCPFCliente.Text;
+                string rg = maskRGCliente.Text;
+                cpf = cpf.Replace(",", "").Replace("-", "");
+                rg = rg.Replace(",", "").Replace("-", "");
+
+                bool sexo;
+                if (rdbtnMascCliente.Checked == true)
+                {
+                    sexo = true;
+                }
+                else
+                {
+                    sexo = false;
+                }
+
                 string year = dttimepickDataMatricula.Value.Year.ToString();
                 string month = dttimepickDataMatricula.Value.Month.ToString();
                 string day = dttimepickDataMatricula.Value.Day.ToString();
                 string data_matricula = year + "-" + month + "-" + day;
 
+                string data_nasc = comboxAno.Text + "-" + comboxMes.Text + "-" + comboxDia.Text;
+
+
                 // FAZER O INSERT DOS DADOS PARA A TABELA CLIENTE
 
-                MessageBox.Show("Cliente cadastrado com sucesso!");
+                string connection_mysql = @"Server=localhost;Database=Academia;Uid=root;Pwd='1234'";
+
+                MySqlConnection msConnection = new MySqlConnection();
+                msConnection.ConnectionString = connection_mysql;
+                msConnection.Open();
+                MySqlCommand msCommand = new MySqlCommand();
+                msCommand.CommandText = "insert into cliente values (" 
+                           + txtCodCliente.Text +
+                    ", '" + txtNomeCliente.Text +
+                    "', '" + cpf +
+                    "', '" + rg +
+                    "', '" + sexo +
+                    "', '" + data_matricula +
+                    "', '" + data_nasc +
+                    "', '" + txtLogradouro.Text +
+                    "', '" + txtNumLogradouro.Text +
+                    "', '" + txtBairro.Text +
+                    "', '" + txtCidade.Text +
+                    "', '" + txtEstado.Text +
+                    "', '" + maskCEP.Text +
+                    "');";
+                
+                msCommand.Connection = msConnection;
+                msCommand.ExecuteNonQuery();
+                msConnection.Close();
+
+                MessageBox.Show("Cliente cadastrado com sucesso!"); 
             }
         }
     }
