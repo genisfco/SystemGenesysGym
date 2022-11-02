@@ -52,6 +52,7 @@
             // 
             // menuStrip1
             // 
+            this.menuStrip1.GripMargin = new System.Windows.Forms.Padding(2, 2, 0, 2);
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.menuNovoTreino,
@@ -76,19 +77,19 @@
             this.stripABC,
             this.stripABCD});
             this.stripDivisoesTreino.Name = "stripDivisoesTreino";
-            this.stripDivisoesTreino.Size = new System.Drawing.Size(270, 34);
+            this.stripDivisoesTreino.Size = new System.Drawing.Size(257, 34);
             this.stripDivisoesTreino.Text = "Divisões de Treino";
             // 
             // stripABC
             // 
             this.stripABC.Name = "stripABC";
-            this.stripABC.Size = new System.Drawing.Size(270, 34);
+            this.stripABC.Size = new System.Drawing.Size(160, 34);
             this.stripABC.Text = "ABC";
             // 
             // stripABCD
             // 
             this.stripABCD.Name = "stripABCD";
-            this.stripABCD.Size = new System.Drawing.Size(270, 34);
+            this.stripABCD.Size = new System.Drawing.Size(160, 34);
             this.stripABCD.Text = "ABCD";
             // 
             // menuAlterarTreino
@@ -215,6 +216,7 @@
             this.btnAddTreinoB.TabIndex = 21;
             this.btnAddTreinoB.Text = "Adicionar Treino  B";
             this.btnAddTreinoB.UseVisualStyleBackColor = true;
+            this.btnAddTreinoB.Click += new System.EventHandler(this.btnAddTreinoB_Click);
             // 
             // TelaTreinos
             // 
@@ -241,6 +243,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Treinos";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.TelaTreinos_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);

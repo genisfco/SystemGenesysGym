@@ -20,6 +20,8 @@ namespace GenesysGym
             InitializeComponent();
         }
 
+
+
         // MÉTODO PARA ADICIONAR COMBOBOX COM LISTA 
         private void AddComboBoxList(ComboBox cbo, int locH, int locV, int sizeH, int sizeV, Array popular)
         {
@@ -63,33 +65,71 @@ namespace GenesysGym
             this.Controls.Add(btnAdd);
         }
 
-
-
+        
         private void btnAddTreinoA_Click(object sender, EventArgs e)
         {
-            var cboGrupoMuscular = new ComboBox();
-            string[] itensGrupoMuscular = { "PEITORAL", "DORSAIS", "OMBROS e TRAPÉZIOS", "TRÍCEPS", "BÍCEPS", "PERNAS", "PANTURRILHAS", "ABDOMEN" };
+            for (int i = 116; i < 300 ; i+=30)
+            {
+                int locV = i;
 
-            var cboExercicio = new ComboBox();
+                var cboGrupoMuscular = new ComboBox();
+                string[] itensGrupoMuscular = { "PEITORAL", "DORSAIS", "OMBROS e TRAPÉZIOS", "TRÍCEPS", "BÍCEPS", "PERNAS", "PANTURRILHAS", "ABDOMEN" };
 
-            var cboSeries = new ComboBox();
-            string[] itensSeries = { "01", "02", "03", "04", "05", "06", "07", "08", "09", "10" };
+                var cboExercicio = new ComboBox();
 
-            var cboRepeticoes = new ComboBox();
-            string[] itensRepeticoes = { "01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30" };
+                var cboSeries = new ComboBox();
+                string[] itensSeries = { "01", "02", "03", "04", "05", "06", "07", "08", "09", "10" };
 
-            var btnAdd = new Button();
+                var cboRepeticoes = new ComboBox();
+                string[] itensRepeticoes = { "01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30" };
 
-            AddComboBoxList(cboGrupoMuscular, 13, 116, 145, 28, itensGrupoMuscular);
-            AddComboBox(cboExercicio, 168, 116, 160, 28);
-            AddComboBoxList(cboSeries, 338, 116, 40, 28, itensSeries);
-            AddComboBoxList(cboRepeticoes, 388, 116, 40, 28, itensRepeticoes);
-            AddBtnExercicio(btnAdd, 438, 115, 30, 23);
+                var btnAdd = new Button();
 
-            btnAddTreinoA.Enabled = false;
-            btnAddTreinoB.Enabled = true;
+                AddComboBoxList(cboGrupoMuscular, 13, locV, 145, 28, itensGrupoMuscular);
+                AddComboBox(cboExercicio, 168, locV, 160, 28);
+                AddComboBoxList(cboSeries, 338, locV, 40, 28, itensSeries);
+                AddComboBoxList(cboRepeticoes, 388, locV, 40, 28, itensRepeticoes);
+                //AddBtnExercicio(btnAdd, 438, 115, 30, 23);
 
-            
+                btnAddTreinoA.Enabled = false;
+                btnAddTreinoB.Enabled = true;
+
+            }
+        }
+
+        private void TelaTreinos_Load(object sender, EventArgs e)
+        {
+            btnAddTreinoB.Enabled = false;
+        }
+
+        private void btnAddTreinoB_Click(object sender, EventArgs e)
+        {
+            for (int i = 116; i < 300; i += 30)
+            {
+                int locV = i;
+
+                var cboGrupoMuscular = new ComboBox();
+                string[] itensGrupoMuscular = { "PEITORAL", "DORSAIS", "OMBROS e TRAPÉZIOS", "TRÍCEPS", "BÍCEPS", "PERNAS", "PANTURRILHAS", "ABDOMEN" };
+
+                var cboExercicio = new ComboBox();
+
+                var cboSeries = new ComboBox();
+                string[] itensSeries = { "01", "02", "03", "04", "05", "06", "07", "08", "09", "10" };
+
+                var cboRepeticoes = new ComboBox();
+                string[] itensRepeticoes = { "01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30" };
+
+                var btnAdd = new Button();
+
+                AddComboBoxList(cboGrupoMuscular, 750, locV, 145, 28, itensGrupoMuscular);
+                AddComboBox(cboExercicio, 905, locV, 160, 28);
+                AddComboBoxList(cboSeries, 1075, locV, 40, 28, itensSeries);
+                AddComboBoxList(cboRepeticoes, 1125, locV, 40, 28, itensRepeticoes);
+                //AddBtnExercicio(btnAdd, 438, 115, 30, 23);
+
+                btnAddTreinoB.Enabled = false;
+
+            }
         }
     }
 }
