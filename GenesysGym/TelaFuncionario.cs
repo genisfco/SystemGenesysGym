@@ -8,6 +8,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MySql.Data.MySqlClient;
+
 
 namespace GenesysGym
 {
@@ -104,6 +106,23 @@ namespace GenesysGym
         {
             pnlConsultarFuncionario.Visible = true;
             pnlCadastrarFuncionario.Visible = false;
+
+            btnAlterarDadosFuncionario.Enabled = false;
+
+            DataTable dt = new DataTable();
+
+            string connection_mysql = @"Server=localhost;Database=GenesysGym;Uid=root;Pwd='1234'";
+
+            MySqlConnection msConnection = new MySqlConnection();
+            msConnection.ConnectionString = connection_mysql;
+            msConnection.Open();
+            MySqlCommand msCommand = new MySqlCommand();
+            msCommand.CommandText = "select * from funcionario";
+            msCommand.Connection = msConnection;
+            MySqlDataAdapter msdAdapter = new MySqlDataAdapter(msCommand);
+            msdAdapter.Fill(dt);
+
+            dtgridFuncionariosCadastrados.DataSource = dt;
         }
 
         private void btnSairCadastrarFuncionario_Click(object sender, EventArgs e)
@@ -202,6 +221,11 @@ namespace GenesysGym
         private void btnLimparDadosFuncionario_Click(object sender, EventArgs e)
         {
             LimparForm();
+        }
+
+        private void btnSairPesquisaFuncionario_Click_1(object sender, EventArgs e)
+        {
+            Close();
         }
     }
 }
