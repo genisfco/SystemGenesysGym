@@ -129,7 +129,8 @@ namespace GenesysGym
 
             // Dados válidos -> Processo de Insert 
             else if (ValidarForm() && ClassValidacao.validarCpf(maskCPFCliente.Text) && ClassValidacao.validarRg(maskRGCliente.Text))
-            {                
+            {   
+                // TRATAMENTO DOS DADOS PARA O INSERT
                 string cpf = maskCPFCliente.Text;
                 string rg = maskRGCliente.Text;
                 cpf = cpf.Replace(",", "").Replace("-", "");
@@ -140,7 +141,7 @@ namespace GenesysGym
                 {
                     sexo = "M";
                 }
-                else
+                else 
                 {
                     sexo = "F";
                 }
@@ -153,8 +154,7 @@ namespace GenesysGym
                 string data_nasc = comboxAno.Text + "-" + comboxMes.Text + "-" + comboxDia.Text;
 
 
-                // FAZER O INSERT DOS DADOS PARA A TABELA CLIENTE
-
+                // INSERT DOS DADOS PARA A TABELA CLIENTE
                 string connection_mysql = @"Server=localhost;Database=GenesysGym;Uid=root;Pwd='1234'";
 
                 MySqlConnection msConnection = new MySqlConnection();
@@ -183,6 +183,11 @@ namespace GenesysGym
 
                 MessageBox.Show("Cliente cadastrado com sucesso!"); 
             }
+        }
+
+        private void btnLimparDadosCliente_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
