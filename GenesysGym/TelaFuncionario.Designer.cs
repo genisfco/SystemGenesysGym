@@ -845,7 +845,7 @@
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(6, 2, 0, 2);
-            this.menuStrip1.Size = new System.Drawing.Size(1371, 33);
+            this.menuStrip1.Size = new System.Drawing.Size(1372, 33);
             this.menuStrip1.TabIndex = 7;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -873,14 +873,18 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1371, 758);
+            this.BackColor = System.Drawing.Color.PeachPuff;
+            this.ClientSize = new System.Drawing.Size(1372, 754);
             this.Controls.Add(this.pnlConsultarFuncionario);
             this.Controls.Add(this.pnlCadastrarFuncionario);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(1394, 810);
+            this.MinimumSize = new System.Drawing.Size(1394, 810);
             this.Name = "TelaFuncionario";
             this.Text = "Funcionários";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.TelaFuncionario_Load);
             this.pnlCadastrarFuncionario.ResumeLayout(false);
             this.pnlCadastrarFuncionario.PerformLayout();
