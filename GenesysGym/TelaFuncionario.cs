@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -40,6 +41,28 @@ namespace GenesysGym
                 FormValido = true;
 
             return FormValido;
+        }
+
+        private void LimparForm()
+        {
+            txtCodFuncionario.Text = string.Empty;
+            txtCargoFuncionario.Text = string.Empty;
+            txtNomeFuncionario.Text = string.Empty;
+            maskCPFFuncionario.Text = string.Empty;
+            maskRGFuncionario.Text = string.Empty;
+            comboxDiaFuncionario.Text = string.Empty;
+            comboxMesFuncionario.Text = string.Empty;
+            comboxAnoFuncionario.Text = string.Empty;
+            rdbtnMascFuncionario.Checked = false;
+            rdbtnFemFuncionario.Checked = false;
+            txtLogradouroFuncionario.Text = string.Empty;
+            txtNumLogradouroFuncionario.Text = string.Empty;
+            maskCEPFuncionario.Text = string.Empty;
+            txtBairroFuncionario.Text = string.Empty;
+            txtCidadeFuncionario.Text = string.Empty;
+            txtEstadoFuncionario.Text = string.Empty;
+            maskTelefoneFuncionario.Text = string.Empty;
+            txtEmailFuncionario.Text = string.Empty;
         }
 
 
@@ -118,16 +141,67 @@ namespace GenesysGym
             // Dados válidos -> Processo de Insert 
             else if (ValidarForm() && ClassValidacao.validarCpf(maskCPFFuncionario.Text) && ClassValidacao.validarRg(maskRGFuncionario.Text))
             {
+                // TRATAMENTO DOS DADOS PARA O INSERT
+                string cpf = maskCPFFuncionario.Text;
+                string rg = maskRGFuncionario.Text;
+                cpf = cpf.Replace(",", "").Replace("-", "");
+                rg = rg.Replace(",", "").Replace("-", "");
+
+                string sexo;
+                if (rdbtnMascFuncionario.Checked == true)
+                {
+                    sexo = "M";
+                }
+                else
+                {
+                    sexo = "F";
+                }
+
                 string year = dttimepickDataAdmissao.Value.Year.ToString();
                 string month = dttimepickDataAdmissao.Value.Month.ToString();
                 string day = dttimepickDataAdmissao.Value.Day.ToString();
-                string data_matricula = year + "-" + month + "-" + day;
+                string data_admissao = year + "-" + month + "-" + day;
 
-                // FAZER O INSERT DOS DADOS PARA A TABELA CLIENTE
+                string data_nasc = comboxAnoFuncionario.Text + "-" + comboxMesFuncionario.Text + "-" + comboxDiaFuncionario.Text;
 
-                MessageBox.Show("Cliente cadastrado com sucesso!");
+
+                // INSERT DOS DADOS PARA A TABELA CLIENTE
+                string connection_mysql = @"Server=localhost;Database=GenesysGym;Uid=root;Pwd='1234'";
+
+                MySqlConnection msConnection = new MySqlConnection();
+                msConnection.ConnectionString = connection_mysql;
+                msConnection.Open();
+                MySqlCommand msCommand = new MySqlCommand();
+                msCommand.CommandText = "insert into funcionario values ("
+                          + txtCodFuncionario.Text +
+                    ", '" + txtNomeFuncionario.Text +
+                    "', '" + cpf +
+                    "', '" + rg +
+                    "', '" + sexo +
+                    "', '" + data_admissao +
+                    "', '" + data_nasc +
+                    "', '" + txtLogradouroFuncionario.Text +
+                    "', '" + txtNumLogradouroFuncionario.Text +
+                    "', '" + txtBairroFuncionario.Text +
+                    "', '" + txtCidadeFuncionario.Text +
+                    "', '" + txtEstadoFuncionario.Text +
+                    "', '" + maskCEPFuncionario.Text +
+                    "', '" + txtCargoFuncionario.Text +
+                    "');";
+
+                msCommand.Connection = msConnection;
+                msCommand.ExecuteNonQuery();
+                msConnection.Close();
+
+                MessageBox.Show("Funcionário cadastrado com sucesso!");
+                LimparForm();
             }
 
+        }
+
+        private void btnLimparDadosFuncionario_Click(object sender, EventArgs e)
+        {
+            LimparForm();
         }
     }
 }

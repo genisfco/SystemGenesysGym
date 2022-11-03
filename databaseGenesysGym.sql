@@ -32,7 +32,7 @@ bairro varchar (150),
 cidade varchar (50),
 estado char (2),
 cep varchar (9),
-cargo char (1) not null
+cargo char (20) not null
 );
 select * from funcionario;
 

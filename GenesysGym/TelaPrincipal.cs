@@ -43,6 +43,27 @@ namespace GenesysGym
             return FormValido;
         }
 
+        private void LimparForm()
+        {
+            txtCodCliente.Text = string.Empty;
+            txtNomeCliente.Text = string.Empty;
+            maskCPFCliente.Text = string.Empty;
+            maskRGCliente.Text = string.Empty;
+            comboxDia.Text = string.Empty;
+            comboxMes.Text = string.Empty;
+            comboxAno.Text = string.Empty;
+            rdbtnMascCliente.Checked = false;
+            rdbtnFemCliente.Checked = false;
+            txtLogradouro.Text = string.Empty;
+            txtNumLogradouro.Text = string.Empty;
+            maskCEP.Text = string.Empty;
+            txtBairro.Text = string.Empty;
+            txtCidade.Text = string.Empty;
+            txtEstado.Text = string.Empty;
+            maskTelefone.Text = string.Empty;
+            txtEmail.Text = string.Empty;
+        }
+
         private void maskCEP_Leave(object sender, EventArgs e)
         {
             using (var ws = new WSCorreios.AtendeClienteClient())
@@ -181,13 +202,14 @@ namespace GenesysGym
                 msCommand.ExecuteNonQuery();
                 msConnection.Close();
 
-                MessageBox.Show("Cliente cadastrado com sucesso!"); 
+                MessageBox.Show("Cliente cadastrado com sucesso!");
+                LimparForm();
             }
         }
 
         private void btnLimparDadosCliente_Click(object sender, EventArgs e)
         {
-
+            LimparForm();
         }
     }
 }
