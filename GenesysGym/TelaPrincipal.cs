@@ -135,14 +135,14 @@ namespace GenesysGym
                 cpf = cpf.Replace(",", "").Replace("-", "");
                 rg = rg.Replace(",", "").Replace("-", "");
 
-                bool sexo;
+                string sexo;
                 if (rdbtnMascCliente.Checked == true)
                 {
-                    sexo = true;
+                    sexo = "M";
                 }
                 else
                 {
-                    sexo = false;
+                    sexo = "F";
                 }
 
                 string year = dttimepickDataMatricula.Value.Year.ToString();
@@ -155,7 +155,7 @@ namespace GenesysGym
 
                 // FAZER O INSERT DOS DADOS PARA A TABELA CLIENTE
 
-                string connection_mysql = @"Server=localhost;Database=Academia;Uid=root;Pwd='1234'";
+                string connection_mysql = @"Server=localhost;Database=GenesysGym;Uid=root;Pwd='1234'";
 
                 MySqlConnection msConnection = new MySqlConnection();
                 msConnection.ConnectionString = connection_mysql;
