@@ -198,6 +198,7 @@
             // 
             // btnCadastrarFuncionario
             // 
+            this.btnCadastrarFuncionario.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
             this.btnCadastrarFuncionario.Location = new System.Drawing.Point(12, 668);
             this.btnCadastrarFuncionario.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnCadastrarFuncionario.Name = "btnCadastrarFuncionario";
@@ -778,6 +779,7 @@
             // 
             // btnPesquisarFuncionario
             // 
+            this.btnPesquisarFuncionario.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
             this.btnPesquisarFuncionario.Location = new System.Drawing.Point(381, 18);
             this.btnPesquisarFuncionario.Name = "btnPesquisarFuncionario";
             this.btnPesquisarFuncionario.Size = new System.Drawing.Size(207, 55);
@@ -844,7 +846,6 @@
             this.menuExcluirFuncionario});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Padding = new System.Windows.Forms.Padding(6, 2, 0, 2);
             this.menuStrip1.Size = new System.Drawing.Size(1372, 33);
             this.menuStrip1.TabIndex = 7;
             this.menuStrip1.Text = "menuStrip1";
