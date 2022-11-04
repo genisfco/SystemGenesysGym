@@ -29,6 +29,10 @@ namespace GenesysGym
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle45 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle46 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle47 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle48 = new System.Windows.Forms.DataGridViewCellStyle();
             this.pnlCadastrarCliente = new System.Windows.Forms.Panel();
             this.grpboxContatos = new System.Windows.Forms.GroupBox();
             this.label15 = new System.Windows.Forms.Label();
@@ -758,7 +762,7 @@ namespace GenesysGym
             this.menuTreinos});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1372, 35);
+            this.menuStrip1.Size = new System.Drawing.Size(1372, 36);
             this.menuStrip1.TabIndex = 3;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -769,7 +773,7 @@ namespace GenesysGym
             this.stripPesquisarCliente,
             this.stripExcluirCliente});
             this.menuClientes.Name = "menuClientes";
-            this.menuClientes.Size = new System.Drawing.Size(89, 30);
+            this.menuClientes.Size = new System.Drawing.Size(89, 29);
             this.menuClientes.Text = "Clientes";
             // 
             // stripCadastrarCliente
@@ -798,7 +802,7 @@ namespace GenesysGym
             this.stripCadastrarFuncionario,
             this.stripExcluirFuncionario});
             this.menuFuncionarios.Name = "menuFuncionarios";
-            this.menuFuncionarios.Size = new System.Drawing.Size(128, 30);
+            this.menuFuncionarios.Size = new System.Drawing.Size(128, 29);
             this.menuFuncionarios.Text = "Funcionários";
             // 
             // stripCadastrarFuncionario
@@ -819,7 +823,7 @@ namespace GenesysGym
             this.menuTreinos.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.stripRegistrarAlterarTreino});
             this.menuTreinos.Name = "menuTreinos";
-            this.menuTreinos.Size = new System.Drawing.Size(83, 30);
+            this.menuTreinos.Size = new System.Drawing.Size(83, 29);
             this.menuTreinos.Text = "Treinos";
             // 
             // stripRegistrarAlterarTreino
@@ -864,7 +868,23 @@ namespace GenesysGym
             // 
             // dtgridClientesCadastrados
             // 
+            dataGridViewCellStyle45.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle45.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle45.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle45.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle45.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle45.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle45.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtgridClientesCadastrados.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle45;
             this.dtgridClientesCadastrados.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle46.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle46.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle46.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle46.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle46.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle46.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle46.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dtgridClientesCadastrados.DefaultCellStyle = dataGridViewCellStyle46;
             this.dtgridClientesCadastrados.Location = new System.Drawing.Point(4, 263);
             this.dtgridClientesCadastrados.Name = "dtgridClientesCadastrados";
             this.dtgridClientesCadastrados.RowHeadersWidth = 62;
@@ -874,7 +894,23 @@ namespace GenesysGym
             // 
             // dtgridPesquisaCliente
             // 
+            dataGridViewCellStyle47.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle47.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle47.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle47.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle47.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle47.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle47.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtgridPesquisaCliente.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle47;
             this.dtgridPesquisaCliente.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle48.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle48.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle48.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle48.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle48.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle48.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle48.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dtgridPesquisaCliente.DefaultCellStyle = dataGridViewCellStyle48;
             this.dtgridPesquisaCliente.Location = new System.Drawing.Point(4, 118);
             this.dtgridPesquisaCliente.Name = "dtgridPesquisaCliente";
             this.dtgridPesquisaCliente.RowHeadersWidth = 62;
@@ -903,9 +939,9 @@ namespace GenesysGym
             // 
             // TelaPrincipal
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.AutoScaleDimensions = new System.Drawing.SizeF(144F, 144F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
+            this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(1372, 754);
             this.Controls.Add(this.pnlPesquisarCliente);
             this.Controls.Add(this.menuStrip1);
@@ -913,9 +949,11 @@ namespace GenesysGym
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.MainMenuStrip = this.menuStrip1;
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.MaximumSize = new System.Drawing.Size(1394, 810);
+            this.MinimumSize = new System.Drawing.Size(1394, 810);
             this.Name = "TelaPrincipal";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "GenesysGym";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.TelaPrincipal_Load);
             this.pnlCadastrarCliente.ResumeLayout(false);
             this.pnlCadastrarCliente.PerformLayout();

@@ -1195,34 +1195,34 @@
             this.menuExcluirFuncionario});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1372, 33);
+            this.menuStrip1.Size = new System.Drawing.Size(1372, 36);
             this.menuStrip1.TabIndex = 7;
             this.menuStrip1.Text = "menuStrip1";
             // 
             // menuCadastrarFuncionario
             // 
             this.menuCadastrarFuncionario.Name = "menuCadastrarFuncionario";
-            this.menuCadastrarFuncionario.Size = new System.Drawing.Size(103, 29);
+            this.menuCadastrarFuncionario.Size = new System.Drawing.Size(103, 32);
             this.menuCadastrarFuncionario.Text = "Cadastrar";
             this.menuCadastrarFuncionario.Click += new System.EventHandler(this.menuCadastrarFuncionario_Click);
             // 
             // menuConsultarFuncionario
             // 
             this.menuConsultarFuncionario.Name = "menuConsultarFuncionario";
-            this.menuConsultarFuncionario.Size = new System.Drawing.Size(103, 29);
+            this.menuConsultarFuncionario.Size = new System.Drawing.Size(103, 32);
             this.menuConsultarFuncionario.Text = "Consultar";
             this.menuConsultarFuncionario.Click += new System.EventHandler(this.menuConsultarFuncionario_Click);
             // 
             // menuExcluirFuncionario
             // 
             this.menuExcluirFuncionario.Name = "menuExcluirFuncionario";
-            this.menuExcluirFuncionario.Size = new System.Drawing.Size(77, 29);
+            this.menuExcluirFuncionario.Size = new System.Drawing.Size(77, 32);
             this.menuExcluirFuncionario.Text = "Excluir";
             // 
             // TelaFuncionario
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleDimensions = new System.Drawing.SizeF(144F, 144F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.PeachPuff;
             this.ClientSize = new System.Drawing.Size(1372, 754);
             this.Controls.Add(this.pnlConsultarFuncionario);
@@ -1233,6 +1233,7 @@
             this.MinimumSize = new System.Drawing.Size(1394, 810);
             this.Name = "TelaFuncionario";
             this.Text = "Funcionários";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.TelaFuncionario_Load);
             this.pnlCadastrarFuncionario.ResumeLayout(false);
             this.pnlCadastrarFuncionario.PerformLayout();
