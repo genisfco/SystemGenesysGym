@@ -758,7 +758,7 @@ namespace GenesysGym
             this.menuTreinos});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1372, 33);
+            this.menuStrip1.Size = new System.Drawing.Size(1372, 35);
             this.menuStrip1.TabIndex = 3;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -769,7 +769,7 @@ namespace GenesysGym
             this.stripPesquisarCliente,
             this.stripExcluirCliente});
             this.menuClientes.Name = "menuClientes";
-            this.menuClientes.Size = new System.Drawing.Size(89, 29);
+            this.menuClientes.Size = new System.Drawing.Size(89, 30);
             this.menuClientes.Text = "Clientes";
             // 
             // stripCadastrarCliente
@@ -798,7 +798,7 @@ namespace GenesysGym
             this.stripCadastrarFuncionario,
             this.stripExcluirFuncionario});
             this.menuFuncionarios.Name = "menuFuncionarios";
-            this.menuFuncionarios.Size = new System.Drawing.Size(128, 29);
+            this.menuFuncionarios.Size = new System.Drawing.Size(128, 30);
             this.menuFuncionarios.Text = "Funcionários";
             // 
             // stripCadastrarFuncionario
@@ -819,13 +819,13 @@ namespace GenesysGym
             this.menuTreinos.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.stripRegistrarAlterarTreino});
             this.menuTreinos.Name = "menuTreinos";
-            this.menuTreinos.Size = new System.Drawing.Size(83, 29);
+            this.menuTreinos.Size = new System.Drawing.Size(83, 30);
             this.menuTreinos.Text = "Treinos";
             // 
             // stripRegistrarAlterarTreino
             // 
             this.stripRegistrarAlterarTreino.Name = "stripRegistrarAlterarTreino";
-            this.stripRegistrarAlterarTreino.Size = new System.Drawing.Size(270, 34);
+            this.stripRegistrarAlterarTreino.Size = new System.Drawing.Size(252, 34);
             this.stripRegistrarAlterarTreino.Text = "Registrar / Alterar";
             this.stripRegistrarAlterarTreino.Click += new System.EventHandler(this.stripRegistrarAlterarTreino_Click);
             // 
@@ -910,15 +910,12 @@ namespace GenesysGym
             this.Controls.Add(this.pnlPesquisarCliente);
             this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.pnlCadastrarCliente);
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.MainMenuStrip = this.menuStrip1;
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.MaximizeBox = false;
-            this.MaximumSize = new System.Drawing.Size(1394, 810);
-            this.MinimumSize = new System.Drawing.Size(1394, 810);
             this.Name = "TelaPrincipal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "GenesysGym";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.TelaPrincipal_Load);
             this.pnlCadastrarCliente.ResumeLayout(false);
             this.pnlCadastrarCliente.PerformLayout();

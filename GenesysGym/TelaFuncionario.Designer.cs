@@ -29,51 +29,55 @@
         private void InitializeComponent()
         {
             this.pnlCadastrarFuncionario = new System.Windows.Forms.Panel();
+            this.label4 = new System.Windows.Forms.Label();
+            this.txtCargoFuncionario = new System.Windows.Forms.TextBox();
+            this.grpboxContatosFuncionario = new System.Windows.Forms.GroupBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.txtEmailFuncionario = new System.Windows.Forms.TextBox();
+            this.maskTelefoneFuncionario = new System.Windows.Forms.MaskedTextBox();
             this.btnSairCadastrarFuncionario = new System.Windows.Forms.Button();
             this.btnLimparDadosFuncionario = new System.Windows.Forms.Button();
             this.btnCadastrarFuncionario = new System.Windows.Forms.Button();
-            this.pnlConsultarFuncionario = new System.Windows.Forms.Panel();
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.menuCadastrarFuncionario = new System.Windows.Forms.ToolStripMenuItem();
-            this.menuConsultarFuncionario = new System.Windows.Forms.ToolStripMenuItem();
-            this.menuExcluirFuncionario = new System.Windows.Forms.ToolStripMenuItem();
-            this.txtNomeFuncionario = new System.Windows.Forms.TextBox();
-            this.maskCPFFuncionario = new System.Windows.Forms.MaskedTextBox();
-            this.maskRGFuncionario = new System.Windows.Forms.MaskedTextBox();
-            this.comboxDiaFuncionario = new System.Windows.Forms.ComboBox();
-            this.comboxMesFuncionario = new System.Windows.Forms.ComboBox();
-            this.comboxAnoFuncionario = new System.Windows.Forms.ComboBox();
-            this.label24 = new System.Windows.Forms.Label();
-            this.label23 = new System.Windows.Forms.Label();
-            this.label22 = new System.Windows.Forms.Label();
-            this.label21 = new System.Windows.Forms.Label();
-            this.rdbtnMascFuncionario = new System.Windows.Forms.RadioButton();
-            this.rdbtnFemFuncionario = new System.Windows.Forms.RadioButton();
-            this.grpboxDadosPessoaisFuncionario = new System.Windows.Forms.GroupBox();
-            this.txtCodFuncionario = new System.Windows.Forms.TextBox();
-            this.dttimepickDataAdmissao = new System.Windows.Forms.DateTimePicker();
-            this.label20 = new System.Windows.Forms.Label();
-            this.label19 = new System.Windows.Forms.Label();
-            this.txtLogradouroFuncionario = new System.Windows.Forms.TextBox();
-            this.txtNumLogradouroFuncionario = new System.Windows.Forms.TextBox();
-            this.maskCEPFuncionario = new System.Windows.Forms.MaskedTextBox();
-            this.txtBairroFuncionario = new System.Windows.Forms.TextBox();
-            this.txtCidadeFuncionario = new System.Windows.Forms.TextBox();
-            this.txtEstadoFuncionario = new System.Windows.Forms.TextBox();
-            this.label18 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
             this.grpboxEnderecoFuncionario = new System.Windows.Forms.GroupBox();
-            this.maskTelefoneFuncionario = new System.Windows.Forms.MaskedTextBox();
-            this.txtEmailFuncionario = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.grpboxContatosFuncionario = new System.Windows.Forms.GroupBox();
-            this.txtCargoFuncionario = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
+            this.txtEstadoFuncionario = new System.Windows.Forms.TextBox();
+            this.txtCidadeFuncionario = new System.Windows.Forms.TextBox();
+            this.txtBairroFuncionario = new System.Windows.Forms.TextBox();
+            this.maskCEPFuncionario = new System.Windows.Forms.MaskedTextBox();
+            this.txtNumLogradouroFuncionario = new System.Windows.Forms.TextBox();
+            this.txtLogradouroFuncionario = new System.Windows.Forms.TextBox();
+            this.label19 = new System.Windows.Forms.Label();
+            this.label20 = new System.Windows.Forms.Label();
+            this.dttimepickDataAdmissao = new System.Windows.Forms.DateTimePicker();
+            this.txtCodFuncionario = new System.Windows.Forms.TextBox();
+            this.grpboxDadosPessoaisFuncionario = new System.Windows.Forms.GroupBox();
+            this.rdbtnFemFuncionario = new System.Windows.Forms.RadioButton();
+            this.rdbtnMascFuncionario = new System.Windows.Forms.RadioButton();
+            this.label21 = new System.Windows.Forms.Label();
+            this.label22 = new System.Windows.Forms.Label();
+            this.label23 = new System.Windows.Forms.Label();
+            this.label24 = new System.Windows.Forms.Label();
+            this.comboxAnoFuncionario = new System.Windows.Forms.ComboBox();
+            this.comboxMesFuncionario = new System.Windows.Forms.ComboBox();
+            this.comboxDiaFuncionario = new System.Windows.Forms.ComboBox();
+            this.maskRGFuncionario = new System.Windows.Forms.MaskedTextBox();
+            this.maskCPFFuncionario = new System.Windows.Forms.MaskedTextBox();
+            this.txtNomeFuncionario = new System.Windows.Forms.TextBox();
+            this.pnlConsultarFuncionario = new System.Windows.Forms.Panel();
+            this.btnAlterarDadosFuncionario = new System.Windows.Forms.Button();
+            this.label32 = new System.Windows.Forms.Label();
+            this.btnPesquisarFuncionario = new System.Windows.Forms.Button();
+            this.btnSairPesquisaFuncionario = new System.Windows.Forms.Button();
+            this.dtgridFuncionariosCadastrados = new System.Windows.Forms.DataGridView();
+            this.dtgridPesquisaFuncionario = new System.Windows.Forms.DataGridView();
+            this.label1 = new System.Windows.Forms.Label();
+            this.txtPesquisarCodFuncionario = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.txtCargoFuncAlter = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
@@ -103,25 +107,21 @@
             this.maskRGFuncAlter = new System.Windows.Forms.MaskedTextBox();
             this.maskCPFFuncAlter = new System.Windows.Forms.MaskedTextBox();
             this.txtNomeFuncAlter = new System.Windows.Forms.TextBox();
-            this.btnPesquisarFuncionario = new System.Windows.Forms.Button();
-            this.btnSairPesquisaFuncionario = new System.Windows.Forms.Button();
-            this.dtgridFuncionariosCadastrados = new System.Windows.Forms.DataGridView();
-            this.dtgridPesquisaFuncionario = new System.Windows.Forms.DataGridView();
-            this.label1 = new System.Windows.Forms.Label();
-            this.txtPesquisarCodFuncionario = new System.Windows.Forms.TextBox();
-            this.label32 = new System.Windows.Forms.Label();
-            this.btnAlterarDadosFuncionario = new System.Windows.Forms.Button();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.menuCadastrarFuncionario = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuConsultarFuncionario = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuExcluirFuncionario = new System.Windows.Forms.ToolStripMenuItem();
             this.pnlCadastrarFuncionario.SuspendLayout();
-            this.pnlConsultarFuncionario.SuspendLayout();
-            this.menuStrip1.SuspendLayout();
-            this.grpboxDadosPessoaisFuncionario.SuspendLayout();
-            this.grpboxEnderecoFuncionario.SuspendLayout();
             this.grpboxContatosFuncionario.SuspendLayout();
+            this.grpboxEnderecoFuncionario.SuspendLayout();
+            this.grpboxDadosPessoaisFuncionario.SuspendLayout();
+            this.pnlConsultarFuncionario.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgridFuncionariosCadastrados)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgridPesquisaFuncionario)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dtgridFuncionariosCadastrados)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dtgridPesquisaFuncionario)).BeginInit();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // pnlCadastrarFuncionario
@@ -143,6 +143,70 @@
             this.pnlCadastrarFuncionario.Name = "pnlCadastrarFuncionario";
             this.pnlCadastrarFuncionario.Size = new System.Drawing.Size(670, 711);
             this.pnlCadastrarFuncionario.TabIndex = 5;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(189, 23);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(52, 20);
+            this.label4.TabIndex = 13;
+            this.label4.Text = "Cargo";
+            // 
+            // txtCargoFuncionario
+            // 
+            this.txtCargoFuncionario.Location = new System.Drawing.Point(194, 48);
+            this.txtCargoFuncionario.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtCargoFuncionario.Name = "txtCargoFuncionario";
+            this.txtCargoFuncionario.Size = new System.Drawing.Size(110, 26);
+            this.txtCargoFuncionario.TabIndex = 12;
+            // 
+            // grpboxContatosFuncionario
+            // 
+            this.grpboxContatosFuncionario.Controls.Add(this.label2);
+            this.grpboxContatosFuncionario.Controls.Add(this.label3);
+            this.grpboxContatosFuncionario.Controls.Add(this.txtEmailFuncionario);
+            this.grpboxContatosFuncionario.Controls.Add(this.maskTelefoneFuncionario);
+            this.grpboxContatosFuncionario.Location = new System.Drawing.Point(8, 512);
+            this.grpboxContatosFuncionario.Name = "grpboxContatosFuncionario";
+            this.grpboxContatosFuncionario.Size = new System.Drawing.Size(654, 131);
+            this.grpboxContatosFuncionario.TabIndex = 11;
+            this.grpboxContatosFuncionario.TabStop = false;
+            this.grpboxContatosFuncionario.Text = "Contatos";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(354, 58);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(48, 20);
+            this.label2.TabIndex = 3;
+            this.label2.Text = "Email";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(9, 58);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(71, 20);
+            this.label3.TabIndex = 2;
+            this.label3.Text = "Telefone";
+            // 
+            // txtEmailFuncionario
+            // 
+            this.txtEmailFuncionario.Location = new System.Drawing.Point(354, 82);
+            this.txtEmailFuncionario.Name = "txtEmailFuncionario";
+            this.txtEmailFuncionario.Size = new System.Drawing.Size(276, 26);
+            this.txtEmailFuncionario.TabIndex = 1;
+            // 
+            // maskTelefoneFuncionario
+            // 
+            this.maskTelefoneFuncionario.Location = new System.Drawing.Point(10, 82);
+            this.maskTelefoneFuncionario.Mask = "(00)000000000";
+            this.maskTelefoneFuncionario.Name = "maskTelefoneFuncionario";
+            this.maskTelefoneFuncionario.Size = new System.Drawing.Size(100, 26);
+            this.maskTelefoneFuncionario.TabIndex = 0;
             // 
             // btnSairCadastrarFuncionario
             // 
@@ -178,149 +242,262 @@
             this.btnCadastrarFuncionario.UseVisualStyleBackColor = true;
             this.btnCadastrarFuncionario.Click += new System.EventHandler(this.btnCadastrarFuncionario_Click);
             // 
-            // pnlConsultarFuncionario
+            // grpboxEnderecoFuncionario
             // 
-            this.pnlConsultarFuncionario.Controls.Add(this.btnAlterarDadosFuncionario);
-            this.pnlConsultarFuncionario.Controls.Add(this.label32);
-            this.pnlConsultarFuncionario.Controls.Add(this.btnPesquisarFuncionario);
-            this.pnlConsultarFuncionario.Controls.Add(this.btnSairPesquisaFuncionario);
-            this.pnlConsultarFuncionario.Controls.Add(this.dtgridFuncionariosCadastrados);
-            this.pnlConsultarFuncionario.Controls.Add(this.dtgridPesquisaFuncionario);
-            this.pnlConsultarFuncionario.Controls.Add(this.label1);
-            this.pnlConsultarFuncionario.Controls.Add(this.txtPesquisarCodFuncionario);
-            this.pnlConsultarFuncionario.Controls.Add(this.label5);
-            this.pnlConsultarFuncionario.Controls.Add(this.txtCargoFuncAlter);
-            this.pnlConsultarFuncionario.Controls.Add(this.groupBox1);
-            this.pnlConsultarFuncionario.Controls.Add(this.groupBox2);
-            this.pnlConsultarFuncionario.Controls.Add(this.label27);
-            this.pnlConsultarFuncionario.Controls.Add(this.txtCodFuncAlter);
-            this.pnlConsultarFuncionario.Controls.Add(this.groupBox3);
-            this.pnlConsultarFuncionario.Location = new System.Drawing.Point(14, 42);
-            this.pnlConsultarFuncionario.Name = "pnlConsultarFuncionario";
-            this.pnlConsultarFuncionario.Size = new System.Drawing.Size(1346, 709);
-            this.pnlConsultarFuncionario.TabIndex = 6;
+            this.grpboxEnderecoFuncionario.Controls.Add(this.label13);
+            this.grpboxEnderecoFuncionario.Controls.Add(this.label14);
+            this.grpboxEnderecoFuncionario.Controls.Add(this.label15);
+            this.grpboxEnderecoFuncionario.Controls.Add(this.label16);
+            this.grpboxEnderecoFuncionario.Controls.Add(this.label17);
+            this.grpboxEnderecoFuncionario.Controls.Add(this.label18);
+            this.grpboxEnderecoFuncionario.Controls.Add(this.txtEstadoFuncionario);
+            this.grpboxEnderecoFuncionario.Controls.Add(this.txtCidadeFuncionario);
+            this.grpboxEnderecoFuncionario.Controls.Add(this.txtBairroFuncionario);
+            this.grpboxEnderecoFuncionario.Controls.Add(this.maskCEPFuncionario);
+            this.grpboxEnderecoFuncionario.Controls.Add(this.txtNumLogradouroFuncionario);
+            this.grpboxEnderecoFuncionario.Controls.Add(this.txtLogradouroFuncionario);
+            this.grpboxEnderecoFuncionario.Location = new System.Drawing.Point(4, 315);
+            this.grpboxEnderecoFuncionario.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.grpboxEnderecoFuncionario.Name = "grpboxEnderecoFuncionario";
+            this.grpboxEnderecoFuncionario.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.grpboxEnderecoFuncionario.Size = new System.Drawing.Size(658, 189);
+            this.grpboxEnderecoFuncionario.TabIndex = 4;
+            this.grpboxEnderecoFuncionario.TabStop = false;
+            this.grpboxEnderecoFuncionario.Text = "Endereço";
             // 
-            // menuStrip1
+            // label13
             // 
-            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.menuCadastrarFuncionario,
-            this.menuConsultarFuncionario,
-            this.menuExcluirFuncionario});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1372, 33);
-            this.menuStrip1.TabIndex = 7;
-            this.menuStrip1.Text = "menuStrip1";
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(560, 125);
+            this.label13.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(60, 20);
+            this.label13.TabIndex = 11;
+            this.label13.Text = "Estado";
             // 
-            // menuCadastrarFuncionario
+            // label14
             // 
-            this.menuCadastrarFuncionario.Name = "menuCadastrarFuncionario";
-            this.menuCadastrarFuncionario.Size = new System.Drawing.Size(103, 29);
-            this.menuCadastrarFuncionario.Text = "Cadastrar";
-            this.menuCadastrarFuncionario.Click += new System.EventHandler(this.menuCadastrarFuncionario_Click);
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(268, 125);
+            this.label14.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(59, 20);
+            this.label14.TabIndex = 10;
+            this.label14.Text = "Cidade";
             // 
-            // menuConsultarFuncionario
+            // label15
             // 
-            this.menuConsultarFuncionario.Name = "menuConsultarFuncionario";
-            this.menuConsultarFuncionario.Size = new System.Drawing.Size(103, 29);
-            this.menuConsultarFuncionario.Text = "Consultar";
-            this.menuConsultarFuncionario.Click += new System.EventHandler(this.menuConsultarFuncionario_Click);
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(15, 125);
+            this.label15.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(51, 20);
+            this.label15.TabIndex = 9;
+            this.label15.Text = "Bairro";
             // 
-            // menuExcluirFuncionario
+            // label16
             // 
-            this.menuExcluirFuncionario.Name = "menuExcluirFuncionario";
-            this.menuExcluirFuncionario.Size = new System.Drawing.Size(77, 29);
-            this.menuExcluirFuncionario.Text = "Excluir";
+            this.label16.AutoSize = true;
+            this.label16.Location = new System.Drawing.Point(552, 37);
+            this.label16.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(41, 20);
+            this.label16.TabIndex = 8;
+            this.label16.Text = "CEP";
             // 
-            // txtNomeFuncionario
+            // label17
             // 
-            this.txtNomeFuncionario.Location = new System.Drawing.Point(14, 74);
-            this.txtNomeFuncionario.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.txtNomeFuncionario.Name = "txtNomeFuncionario";
-            this.txtNomeFuncionario.Size = new System.Drawing.Size(362, 26);
-            this.txtNomeFuncionario.TabIndex = 0;
+            this.label17.AutoSize = true;
+            this.label17.Location = new System.Drawing.Point(466, 37);
+            this.label17.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(26, 20);
+            this.label17.TabIndex = 7;
+            this.label17.Text = "Nº";
             // 
-            // maskCPFFuncionario
+            // label18
             // 
-            this.maskCPFFuncionario.Location = new System.Drawing.Point(398, 74);
-            this.maskCPFFuncionario.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.maskCPFFuncionario.Mask = "000.000.000-00";
-            this.maskCPFFuncionario.Name = "maskCPFFuncionario";
-            this.maskCPFFuncionario.Size = new System.Drawing.Size(115, 26);
-            this.maskCPFFuncionario.TabIndex = 1;
+            this.label18.AutoSize = true;
+            this.label18.Location = new System.Drawing.Point(9, 31);
+            this.label18.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(91, 20);
+            this.label18.TabIndex = 6;
+            this.label18.Text = "Logradouro";
             // 
-            // maskRGFuncionario
+            // txtEstadoFuncionario
             // 
-            this.maskRGFuncionario.Location = new System.Drawing.Point(542, 74);
-            this.maskRGFuncionario.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.maskRGFuncionario.Mask = "00.000.000-C";
-            this.maskRGFuncionario.Name = "maskRGFuncionario";
-            this.maskRGFuncionario.Size = new System.Drawing.Size(108, 26);
-            this.maskRGFuncionario.TabIndex = 2;
+            this.txtEstadoFuncionario.Location = new System.Drawing.Point(564, 149);
+            this.txtEstadoFuncionario.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtEstadoFuncionario.Name = "txtEstadoFuncionario";
+            this.txtEstadoFuncionario.Size = new System.Drawing.Size(66, 26);
+            this.txtEstadoFuncionario.TabIndex = 5;
             // 
-            // comboxDiaFuncionario
+            // txtCidadeFuncionario
             // 
-            this.comboxDiaFuncionario.FormattingEnabled = true;
-            this.comboxDiaFuncionario.Items.AddRange(new object[] {
-            "01",
-            "02",
-            "03",
-            "04",
-            "05",
-            "06",
-            "07",
-            "08",
-            "09",
-            "10",
-            "11",
-            "12",
-            "13",
-            "14",
-            "15",
-            "16",
-            "17",
-            "18",
-            "19",
-            "20",
-            "21",
-            "22",
-            "23",
-            "24",
-            "25",
-            "26",
-            "27",
-            "28",
-            "29",
-            "30",
-            "31"});
-            this.comboxDiaFuncionario.Location = new System.Drawing.Point(10, 169);
-            this.comboxDiaFuncionario.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.comboxDiaFuncionario.Name = "comboxDiaFuncionario";
-            this.comboxDiaFuncionario.Size = new System.Drawing.Size(56, 28);
-            this.comboxDiaFuncionario.TabIndex = 3;
+            this.txtCidadeFuncionario.Location = new System.Drawing.Point(273, 149);
+            this.txtCidadeFuncionario.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtCidadeFuncionario.Name = "txtCidadeFuncionario";
+            this.txtCidadeFuncionario.Size = new System.Drawing.Size(148, 26);
+            this.txtCidadeFuncionario.TabIndex = 4;
             // 
-            // comboxMesFuncionario
+            // txtBairroFuncionario
             // 
-            this.comboxMesFuncionario.FormattingEnabled = true;
-            this.comboxMesFuncionario.Items.AddRange(new object[] {
-            "01",
-            "02",
-            "03",
-            "04",
-            "05",
-            "06",
-            "07",
-            "08",
-            "09",
-            "10",
-            "11",
-            "12"});
-            this.comboxMesFuncionario.Location = new System.Drawing.Point(78, 169);
-            this.comboxMesFuncionario.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.comboxMesFuncionario.Name = "comboxMesFuncionario";
-            this.comboxMesFuncionario.Size = new System.Drawing.Size(56, 28);
-            this.comboxMesFuncionario.TabIndex = 4;
+            this.txtBairroFuncionario.Location = new System.Drawing.Point(18, 149);
+            this.txtBairroFuncionario.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtBairroFuncionario.Name = "txtBairroFuncionario";
+            this.txtBairroFuncionario.Size = new System.Drawing.Size(148, 26);
+            this.txtBairroFuncionario.TabIndex = 3;
+            // 
+            // maskCEPFuncionario
+            // 
+            this.maskCEPFuncionario.Location = new System.Drawing.Point(556, 62);
+            this.maskCEPFuncionario.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.maskCEPFuncionario.Mask = "00000-000";
+            this.maskCEPFuncionario.Name = "maskCEPFuncionario";
+            this.maskCEPFuncionario.Size = new System.Drawing.Size(90, 26);
+            this.maskCEPFuncionario.TabIndex = 2;
+            this.maskCEPFuncionario.Leave += new System.EventHandler(this.maskCEPFuncionario_Leave);
+            // 
+            // txtNumLogradouroFuncionario
+            // 
+            this.txtNumLogradouroFuncionario.Location = new System.Drawing.Point(470, 62);
+            this.txtNumLogradouroFuncionario.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtNumLogradouroFuncionario.Name = "txtNumLogradouroFuncionario";
+            this.txtNumLogradouroFuncionario.Size = new System.Drawing.Size(66, 26);
+            this.txtNumLogradouroFuncionario.TabIndex = 1;
+            // 
+            // txtLogradouroFuncionario
+            // 
+            this.txtLogradouroFuncionario.Location = new System.Drawing.Point(8, 62);
+            this.txtLogradouroFuncionario.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtLogradouroFuncionario.Name = "txtLogradouroFuncionario";
+            this.txtLogradouroFuncionario.Size = new System.Drawing.Size(430, 26);
+            this.txtLogradouroFuncionario.TabIndex = 0;
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Location = new System.Drawing.Point(506, 22);
+            this.label19.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(118, 20);
+            this.label19.TabIndex = 3;
+            this.label19.Text = "Data Admissão";
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Location = new System.Drawing.Point(6, 22);
+            this.label20.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(129, 20);
+            this.label20.TabIndex = 2;
+            this.label20.Text = "Cod. Funcionário";
+            // 
+            // dttimepickDataAdmissao
+            // 
+            this.dttimepickDataAdmissao.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dttimepickDataAdmissao.Location = new System.Drawing.Point(510, 46);
+            this.dttimepickDataAdmissao.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.dttimepickDataAdmissao.Name = "dttimepickDataAdmissao";
+            this.dttimepickDataAdmissao.Size = new System.Drawing.Size(145, 26);
+            this.dttimepickDataAdmissao.TabIndex = 1;
+            // 
+            // txtCodFuncionario
+            // 
+            this.txtCodFuncionario.Location = new System.Drawing.Point(10, 48);
+            this.txtCodFuncionario.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtCodFuncionario.Name = "txtCodFuncionario";
+            this.txtCodFuncionario.Size = new System.Drawing.Size(64, 26);
+            this.txtCodFuncionario.TabIndex = 0;
+            // 
+            // grpboxDadosPessoaisFuncionario
+            // 
+            this.grpboxDadosPessoaisFuncionario.Controls.Add(this.rdbtnFemFuncionario);
+            this.grpboxDadosPessoaisFuncionario.Controls.Add(this.rdbtnMascFuncionario);
+            this.grpboxDadosPessoaisFuncionario.Controls.Add(this.label21);
+            this.grpboxDadosPessoaisFuncionario.Controls.Add(this.label22);
+            this.grpboxDadosPessoaisFuncionario.Controls.Add(this.label23);
+            this.grpboxDadosPessoaisFuncionario.Controls.Add(this.label24);
+            this.grpboxDadosPessoaisFuncionario.Controls.Add(this.comboxAnoFuncionario);
+            this.grpboxDadosPessoaisFuncionario.Controls.Add(this.comboxMesFuncionario);
+            this.grpboxDadosPessoaisFuncionario.Controls.Add(this.comboxDiaFuncionario);
+            this.grpboxDadosPessoaisFuncionario.Controls.Add(this.maskRGFuncionario);
+            this.grpboxDadosPessoaisFuncionario.Controls.Add(this.maskCPFFuncionario);
+            this.grpboxDadosPessoaisFuncionario.Controls.Add(this.txtNomeFuncionario);
+            this.grpboxDadosPessoaisFuncionario.Location = new System.Drawing.Point(4, 91);
+            this.grpboxDadosPessoaisFuncionario.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.grpboxDadosPessoaisFuncionario.Name = "grpboxDadosPessoaisFuncionario";
+            this.grpboxDadosPessoaisFuncionario.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.grpboxDadosPessoaisFuncionario.Size = new System.Drawing.Size(658, 214);
+            this.grpboxDadosPessoaisFuncionario.TabIndex = 0;
+            this.grpboxDadosPessoaisFuncionario.TabStop = false;
+            this.grpboxDadosPessoaisFuncionario.Text = "Dados Pessoais";
+            // 
+            // rdbtnFemFuncionario
+            // 
+            this.rdbtnFemFuncionario.AutoSize = true;
+            this.rdbtnFemFuncionario.Location = new System.Drawing.Point(506, 171);
+            this.rdbtnFemFuncionario.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.rdbtnFemFuncionario.Name = "rdbtnFemFuncionario";
+            this.rdbtnFemFuncionario.Size = new System.Drawing.Size(99, 24);
+            this.rdbtnFemFuncionario.TabIndex = 11;
+            this.rdbtnFemFuncionario.TabStop = true;
+            this.rdbtnFemFuncionario.Text = "Feminino";
+            this.rdbtnFemFuncionario.UseVisualStyleBackColor = true;
+            // 
+            // rdbtnMascFuncionario
+            // 
+            this.rdbtnMascFuncionario.AutoSize = true;
+            this.rdbtnMascFuncionario.Location = new System.Drawing.Point(387, 171);
+            this.rdbtnMascFuncionario.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.rdbtnMascFuncionario.Name = "rdbtnMascFuncionario";
+            this.rdbtnMascFuncionario.Size = new System.Drawing.Size(105, 24);
+            this.rdbtnMascFuncionario.TabIndex = 10;
+            this.rdbtnMascFuncionario.TabStop = true;
+            this.rdbtnMascFuncionario.Text = "Masculino";
+            this.rdbtnMascFuncionario.UseVisualStyleBackColor = true;
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Location = new System.Drawing.Point(15, 140);
+            this.label21.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(132, 20);
+            this.label21.TabIndex = 9;
+            this.label21.Text = "Data Nascimento";
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Location = new System.Drawing.Point(542, 45);
+            this.label22.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(34, 20);
+            this.label22.TabIndex = 8;
+            this.label22.Text = "RG";
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.Location = new System.Drawing.Point(398, 43);
+            this.label23.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(40, 20);
+            this.label23.TabIndex = 7;
+            this.label23.Text = "CPF";
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.Location = new System.Drawing.Point(10, 45);
+            this.label24.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(51, 20);
+            this.label24.TabIndex = 6;
+            this.label24.Text = "Nome";
             // 
             // comboxAnoFuncionario
             // 
@@ -532,326 +709,194 @@
             this.comboxAnoFuncionario.Size = new System.Drawing.Size(124, 28);
             this.comboxAnoFuncionario.TabIndex = 5;
             // 
-            // label24
+            // comboxMesFuncionario
             // 
-            this.label24.AutoSize = true;
-            this.label24.Location = new System.Drawing.Point(10, 45);
-            this.label24.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(51, 20);
-            this.label24.TabIndex = 6;
-            this.label24.Text = "Nome";
+            this.comboxMesFuncionario.FormattingEnabled = true;
+            this.comboxMesFuncionario.Items.AddRange(new object[] {
+            "01",
+            "02",
+            "03",
+            "04",
+            "05",
+            "06",
+            "07",
+            "08",
+            "09",
+            "10",
+            "11",
+            "12"});
+            this.comboxMesFuncionario.Location = new System.Drawing.Point(78, 169);
+            this.comboxMesFuncionario.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.comboxMesFuncionario.Name = "comboxMesFuncionario";
+            this.comboxMesFuncionario.Size = new System.Drawing.Size(56, 28);
+            this.comboxMesFuncionario.TabIndex = 4;
             // 
-            // label23
+            // comboxDiaFuncionario
             // 
-            this.label23.AutoSize = true;
-            this.label23.Location = new System.Drawing.Point(398, 43);
-            this.label23.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(40, 20);
-            this.label23.TabIndex = 7;
-            this.label23.Text = "CPF";
+            this.comboxDiaFuncionario.FormattingEnabled = true;
+            this.comboxDiaFuncionario.Items.AddRange(new object[] {
+            "01",
+            "02",
+            "03",
+            "04",
+            "05",
+            "06",
+            "07",
+            "08",
+            "09",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22",
+            "23",
+            "24",
+            "25",
+            "26",
+            "27",
+            "28",
+            "29",
+            "30",
+            "31"});
+            this.comboxDiaFuncionario.Location = new System.Drawing.Point(10, 169);
+            this.comboxDiaFuncionario.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.comboxDiaFuncionario.Name = "comboxDiaFuncionario";
+            this.comboxDiaFuncionario.Size = new System.Drawing.Size(56, 28);
+            this.comboxDiaFuncionario.TabIndex = 3;
             // 
-            // label22
+            // maskRGFuncionario
             // 
-            this.label22.AutoSize = true;
-            this.label22.Location = new System.Drawing.Point(542, 45);
-            this.label22.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(34, 20);
-            this.label22.TabIndex = 8;
-            this.label22.Text = "RG";
+            this.maskRGFuncionario.Location = new System.Drawing.Point(542, 74);
+            this.maskRGFuncionario.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.maskRGFuncionario.Mask = "00.000.000-C";
+            this.maskRGFuncionario.Name = "maskRGFuncionario";
+            this.maskRGFuncionario.Size = new System.Drawing.Size(108, 26);
+            this.maskRGFuncionario.TabIndex = 2;
             // 
-            // label21
+            // maskCPFFuncionario
             // 
-            this.label21.AutoSize = true;
-            this.label21.Location = new System.Drawing.Point(15, 140);
-            this.label21.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(132, 20);
-            this.label21.TabIndex = 9;
-            this.label21.Text = "Data Nascimento";
+            this.maskCPFFuncionario.Location = new System.Drawing.Point(398, 74);
+            this.maskCPFFuncionario.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.maskCPFFuncionario.Mask = "000.000.000-00";
+            this.maskCPFFuncionario.Name = "maskCPFFuncionario";
+            this.maskCPFFuncionario.Size = new System.Drawing.Size(115, 26);
+            this.maskCPFFuncionario.TabIndex = 1;
             // 
-            // rdbtnMascFuncionario
+            // txtNomeFuncionario
             // 
-            this.rdbtnMascFuncionario.AutoSize = true;
-            this.rdbtnMascFuncionario.Location = new System.Drawing.Point(387, 171);
-            this.rdbtnMascFuncionario.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.rdbtnMascFuncionario.Name = "rdbtnMascFuncionario";
-            this.rdbtnMascFuncionario.Size = new System.Drawing.Size(105, 24);
-            this.rdbtnMascFuncionario.TabIndex = 10;
-            this.rdbtnMascFuncionario.TabStop = true;
-            this.rdbtnMascFuncionario.Text = "Masculino";
-            this.rdbtnMascFuncionario.UseVisualStyleBackColor = true;
+            this.txtNomeFuncionario.Location = new System.Drawing.Point(14, 74);
+            this.txtNomeFuncionario.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtNomeFuncionario.Name = "txtNomeFuncionario";
+            this.txtNomeFuncionario.Size = new System.Drawing.Size(362, 26);
+            this.txtNomeFuncionario.TabIndex = 0;
             // 
-            // rdbtnFemFuncionario
+            // pnlConsultarFuncionario
             // 
-            this.rdbtnFemFuncionario.AutoSize = true;
-            this.rdbtnFemFuncionario.Location = new System.Drawing.Point(506, 171);
-            this.rdbtnFemFuncionario.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.rdbtnFemFuncionario.Name = "rdbtnFemFuncionario";
-            this.rdbtnFemFuncionario.Size = new System.Drawing.Size(99, 24);
-            this.rdbtnFemFuncionario.TabIndex = 11;
-            this.rdbtnFemFuncionario.TabStop = true;
-            this.rdbtnFemFuncionario.Text = "Feminino";
-            this.rdbtnFemFuncionario.UseVisualStyleBackColor = true;
+            this.pnlConsultarFuncionario.Controls.Add(this.btnAlterarDadosFuncionario);
+            this.pnlConsultarFuncionario.Controls.Add(this.label32);
+            this.pnlConsultarFuncionario.Controls.Add(this.btnPesquisarFuncionario);
+            this.pnlConsultarFuncionario.Controls.Add(this.btnSairPesquisaFuncionario);
+            this.pnlConsultarFuncionario.Controls.Add(this.dtgridFuncionariosCadastrados);
+            this.pnlConsultarFuncionario.Controls.Add(this.dtgridPesquisaFuncionario);
+            this.pnlConsultarFuncionario.Controls.Add(this.label1);
+            this.pnlConsultarFuncionario.Controls.Add(this.txtPesquisarCodFuncionario);
+            this.pnlConsultarFuncionario.Controls.Add(this.label5);
+            this.pnlConsultarFuncionario.Controls.Add(this.txtCargoFuncAlter);
+            this.pnlConsultarFuncionario.Controls.Add(this.groupBox1);
+            this.pnlConsultarFuncionario.Controls.Add(this.groupBox2);
+            this.pnlConsultarFuncionario.Controls.Add(this.label27);
+            this.pnlConsultarFuncionario.Controls.Add(this.txtCodFuncAlter);
+            this.pnlConsultarFuncionario.Controls.Add(this.groupBox3);
+            this.pnlConsultarFuncionario.Location = new System.Drawing.Point(14, 42);
+            this.pnlConsultarFuncionario.Name = "pnlConsultarFuncionario";
+            this.pnlConsultarFuncionario.Size = new System.Drawing.Size(1346, 709);
+            this.pnlConsultarFuncionario.TabIndex = 6;
             // 
-            // grpboxDadosPessoaisFuncionario
+            // btnAlterarDadosFuncionario
             // 
-            this.grpboxDadosPessoaisFuncionario.Controls.Add(this.rdbtnFemFuncionario);
-            this.grpboxDadosPessoaisFuncionario.Controls.Add(this.rdbtnMascFuncionario);
-            this.grpboxDadosPessoaisFuncionario.Controls.Add(this.label21);
-            this.grpboxDadosPessoaisFuncionario.Controls.Add(this.label22);
-            this.grpboxDadosPessoaisFuncionario.Controls.Add(this.label23);
-            this.grpboxDadosPessoaisFuncionario.Controls.Add(this.label24);
-            this.grpboxDadosPessoaisFuncionario.Controls.Add(this.comboxAnoFuncionario);
-            this.grpboxDadosPessoaisFuncionario.Controls.Add(this.comboxMesFuncionario);
-            this.grpboxDadosPessoaisFuncionario.Controls.Add(this.comboxDiaFuncionario);
-            this.grpboxDadosPessoaisFuncionario.Controls.Add(this.maskRGFuncionario);
-            this.grpboxDadosPessoaisFuncionario.Controls.Add(this.maskCPFFuncionario);
-            this.grpboxDadosPessoaisFuncionario.Controls.Add(this.txtNomeFuncionario);
-            this.grpboxDadosPessoaisFuncionario.Location = new System.Drawing.Point(4, 91);
-            this.grpboxDadosPessoaisFuncionario.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.grpboxDadosPessoaisFuncionario.Name = "grpboxDadosPessoaisFuncionario";
-            this.grpboxDadosPessoaisFuncionario.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.grpboxDadosPessoaisFuncionario.Size = new System.Drawing.Size(658, 214);
-            this.grpboxDadosPessoaisFuncionario.TabIndex = 0;
-            this.grpboxDadosPessoaisFuncionario.TabStop = false;
-            this.grpboxDadosPessoaisFuncionario.Text = "Dados Pessoais";
+            this.btnAlterarDadosFuncionario.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
+            this.btnAlterarDadosFuncionario.Location = new System.Drawing.Point(1101, 13);
+            this.btnAlterarDadosFuncionario.Name = "btnAlterarDadosFuncionario";
+            this.btnAlterarDadosFuncionario.Size = new System.Drawing.Size(207, 55);
+            this.btnAlterarDadosFuncionario.TabIndex = 37;
+            this.btnAlterarDadosFuncionario.Text = "Alterar Dados";
+            this.btnAlterarDadosFuncionario.UseVisualStyleBackColor = true;
             // 
-            // txtCodFuncionario
+            // label32
             // 
-            this.txtCodFuncionario.Location = new System.Drawing.Point(10, 48);
-            this.txtCodFuncionario.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.txtCodFuncionario.Name = "txtCodFuncionario";
-            this.txtCodFuncionario.Size = new System.Drawing.Size(64, 26);
-            this.txtCodFuncionario.TabIndex = 0;
+            this.label32.AutoSize = true;
+            this.label32.Location = new System.Drawing.Point(685, 252);
+            this.label32.Name = "label32";
+            this.label32.Size = new System.Drawing.Size(195, 20);
+            this.label32.TabIndex = 36;
+            this.label32.Text = "Funcionários Cadastrados";
             // 
-            // dttimepickDataAdmissao
+            // btnPesquisarFuncionario
             // 
-            this.dttimepickDataAdmissao.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dttimepickDataAdmissao.Location = new System.Drawing.Point(510, 46);
-            this.dttimepickDataAdmissao.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.dttimepickDataAdmissao.Name = "dttimepickDataAdmissao";
-            this.dttimepickDataAdmissao.Size = new System.Drawing.Size(145, 26);
-            this.dttimepickDataAdmissao.TabIndex = 1;
+            this.btnPesquisarFuncionario.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
+            this.btnPesquisarFuncionario.Location = new System.Drawing.Point(826, 13);
+            this.btnPesquisarFuncionario.Name = "btnPesquisarFuncionario";
+            this.btnPesquisarFuncionario.Size = new System.Drawing.Size(207, 55);
+            this.btnPesquisarFuncionario.TabIndex = 35;
+            this.btnPesquisarFuncionario.Text = "Pesquisar Funcionário";
+            this.btnPesquisarFuncionario.UseVisualStyleBackColor = true;
             // 
-            // label20
+            // btnSairPesquisaFuncionario
             // 
-            this.label20.AutoSize = true;
-            this.label20.Location = new System.Drawing.Point(6, 22);
-            this.label20.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(129, 20);
-            this.label20.TabIndex = 2;
-            this.label20.Text = "Cod. Funcionário";
+            this.btnSairPesquisaFuncionario.Location = new System.Drawing.Point(1221, 659);
+            this.btnSairPesquisaFuncionario.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnSairPesquisaFuncionario.Name = "btnSairPesquisaFuncionario";
+            this.btnSairPesquisaFuncionario.Size = new System.Drawing.Size(112, 35);
+            this.btnSairPesquisaFuncionario.TabIndex = 32;
+            this.btnSairPesquisaFuncionario.Text = "Sair";
+            this.btnSairPesquisaFuncionario.UseVisualStyleBackColor = true;
+            this.btnSairPesquisaFuncionario.Click += new System.EventHandler(this.btnSairPesquisaFuncionario_Click_1);
             // 
-            // label19
+            // dtgridFuncionariosCadastrados
             // 
-            this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(506, 22);
-            this.label19.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(118, 20);
-            this.label19.TabIndex = 3;
-            this.label19.Text = "Data Admissão";
+            this.dtgridFuncionariosCadastrados.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtgridFuncionariosCadastrados.Location = new System.Drawing.Point(685, 278);
+            this.dtgridFuncionariosCadastrados.Name = "dtgridFuncionariosCadastrados";
+            this.dtgridFuncionariosCadastrados.RowHeadersWidth = 62;
+            this.dtgridFuncionariosCadastrados.RowTemplate.Height = 28;
+            this.dtgridFuncionariosCadastrados.Size = new System.Drawing.Size(658, 365);
+            this.dtgridFuncionariosCadastrados.TabIndex = 34;
             // 
-            // txtLogradouroFuncionario
+            // dtgridPesquisaFuncionario
             // 
-            this.txtLogradouroFuncionario.Location = new System.Drawing.Point(8, 62);
-            this.txtLogradouroFuncionario.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.txtLogradouroFuncionario.Name = "txtLogradouroFuncionario";
-            this.txtLogradouroFuncionario.Size = new System.Drawing.Size(430, 26);
-            this.txtLogradouroFuncionario.TabIndex = 0;
+            this.dtgridPesquisaFuncionario.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtgridPesquisaFuncionario.Location = new System.Drawing.Point(685, 110);
+            this.dtgridPesquisaFuncionario.Name = "dtgridPesquisaFuncionario";
+            this.dtgridPesquisaFuncionario.RowHeadersWidth = 62;
+            this.dtgridPesquisaFuncionario.RowTemplate.Height = 28;
+            this.dtgridPesquisaFuncionario.Size = new System.Drawing.Size(658, 109);
+            this.dtgridPesquisaFuncionario.TabIndex = 33;
             // 
-            // txtNumLogradouroFuncionario
+            // label1
             // 
-            this.txtNumLogradouroFuncionario.Location = new System.Drawing.Point(470, 62);
-            this.txtNumLogradouroFuncionario.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.txtNumLogradouroFuncionario.Name = "txtNumLogradouroFuncionario";
-            this.txtNumLogradouroFuncionario.Size = new System.Drawing.Size(66, 26);
-            this.txtNumLogradouroFuncionario.TabIndex = 1;
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(681, 13);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(129, 20);
+            this.label1.TabIndex = 31;
+            this.label1.Text = "Cod. Funcionário";
             // 
-            // maskCEPFuncionario
+            // txtPesquisarCodFuncionario
             // 
-            this.maskCEPFuncionario.Location = new System.Drawing.Point(556, 62);
-            this.maskCEPFuncionario.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.maskCEPFuncionario.Mask = "00000-000";
-            this.maskCEPFuncionario.Name = "maskCEPFuncionario";
-            this.maskCEPFuncionario.Size = new System.Drawing.Size(90, 26);
-            this.maskCEPFuncionario.TabIndex = 2;
-            this.maskCEPFuncionario.Leave += new System.EventHandler(this.maskCEPFuncionario_Leave);
-            // 
-            // txtBairroFuncionario
-            // 
-            this.txtBairroFuncionario.Location = new System.Drawing.Point(18, 149);
-            this.txtBairroFuncionario.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.txtBairroFuncionario.Name = "txtBairroFuncionario";
-            this.txtBairroFuncionario.Size = new System.Drawing.Size(148, 26);
-            this.txtBairroFuncionario.TabIndex = 3;
-            // 
-            // txtCidadeFuncionario
-            // 
-            this.txtCidadeFuncionario.Location = new System.Drawing.Point(273, 149);
-            this.txtCidadeFuncionario.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.txtCidadeFuncionario.Name = "txtCidadeFuncionario";
-            this.txtCidadeFuncionario.Size = new System.Drawing.Size(148, 26);
-            this.txtCidadeFuncionario.TabIndex = 4;
-            // 
-            // txtEstadoFuncionario
-            // 
-            this.txtEstadoFuncionario.Location = new System.Drawing.Point(564, 149);
-            this.txtEstadoFuncionario.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.txtEstadoFuncionario.Name = "txtEstadoFuncionario";
-            this.txtEstadoFuncionario.Size = new System.Drawing.Size(66, 26);
-            this.txtEstadoFuncionario.TabIndex = 5;
-            // 
-            // label18
-            // 
-            this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(9, 31);
-            this.label18.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(91, 20);
-            this.label18.TabIndex = 6;
-            this.label18.Text = "Logradouro";
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(466, 37);
-            this.label17.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(26, 20);
-            this.label17.TabIndex = 7;
-            this.label17.Text = "Nº";
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(552, 37);
-            this.label16.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(41, 20);
-            this.label16.TabIndex = 8;
-            this.label16.Text = "CEP";
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(15, 125);
-            this.label15.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(51, 20);
-            this.label15.TabIndex = 9;
-            this.label15.Text = "Bairro";
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(268, 125);
-            this.label14.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(59, 20);
-            this.label14.TabIndex = 10;
-            this.label14.Text = "Cidade";
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(560, 125);
-            this.label13.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(60, 20);
-            this.label13.TabIndex = 11;
-            this.label13.Text = "Estado";
-            // 
-            // grpboxEnderecoFuncionario
-            // 
-            this.grpboxEnderecoFuncionario.Controls.Add(this.label13);
-            this.grpboxEnderecoFuncionario.Controls.Add(this.label14);
-            this.grpboxEnderecoFuncionario.Controls.Add(this.label15);
-            this.grpboxEnderecoFuncionario.Controls.Add(this.label16);
-            this.grpboxEnderecoFuncionario.Controls.Add(this.label17);
-            this.grpboxEnderecoFuncionario.Controls.Add(this.label18);
-            this.grpboxEnderecoFuncionario.Controls.Add(this.txtEstadoFuncionario);
-            this.grpboxEnderecoFuncionario.Controls.Add(this.txtCidadeFuncionario);
-            this.grpboxEnderecoFuncionario.Controls.Add(this.txtBairroFuncionario);
-            this.grpboxEnderecoFuncionario.Controls.Add(this.maskCEPFuncionario);
-            this.grpboxEnderecoFuncionario.Controls.Add(this.txtNumLogradouroFuncionario);
-            this.grpboxEnderecoFuncionario.Controls.Add(this.txtLogradouroFuncionario);
-            this.grpboxEnderecoFuncionario.Location = new System.Drawing.Point(4, 315);
-            this.grpboxEnderecoFuncionario.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.grpboxEnderecoFuncionario.Name = "grpboxEnderecoFuncionario";
-            this.grpboxEnderecoFuncionario.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.grpboxEnderecoFuncionario.Size = new System.Drawing.Size(658, 189);
-            this.grpboxEnderecoFuncionario.TabIndex = 4;
-            this.grpboxEnderecoFuncionario.TabStop = false;
-            this.grpboxEnderecoFuncionario.Text = "Endereço";
-            // 
-            // maskTelefoneFuncionario
-            // 
-            this.maskTelefoneFuncionario.Location = new System.Drawing.Point(10, 82);
-            this.maskTelefoneFuncionario.Mask = "(00)000000000";
-            this.maskTelefoneFuncionario.Name = "maskTelefoneFuncionario";
-            this.maskTelefoneFuncionario.Size = new System.Drawing.Size(100, 26);
-            this.maskTelefoneFuncionario.TabIndex = 0;
-            // 
-            // txtEmailFuncionario
-            // 
-            this.txtEmailFuncionario.Location = new System.Drawing.Point(354, 82);
-            this.txtEmailFuncionario.Name = "txtEmailFuncionario";
-            this.txtEmailFuncionario.Size = new System.Drawing.Size(276, 26);
-            this.txtEmailFuncionario.TabIndex = 1;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(9, 58);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(71, 20);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "Telefone";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(354, 58);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(48, 20);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "Email";
-            // 
-            // grpboxContatosFuncionario
-            // 
-            this.grpboxContatosFuncionario.Controls.Add(this.label2);
-            this.grpboxContatosFuncionario.Controls.Add(this.label3);
-            this.grpboxContatosFuncionario.Controls.Add(this.txtEmailFuncionario);
-            this.grpboxContatosFuncionario.Controls.Add(this.maskTelefoneFuncionario);
-            this.grpboxContatosFuncionario.Location = new System.Drawing.Point(8, 512);
-            this.grpboxContatosFuncionario.Name = "grpboxContatosFuncionario";
-            this.grpboxContatosFuncionario.Size = new System.Drawing.Size(654, 131);
-            this.grpboxContatosFuncionario.TabIndex = 11;
-            this.grpboxContatosFuncionario.TabStop = false;
-            this.grpboxContatosFuncionario.Text = "Contatos";
-            // 
-            // txtCargoFuncionario
-            // 
-            this.txtCargoFuncionario.Location = new System.Drawing.Point(194, 48);
-            this.txtCargoFuncionario.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.txtCargoFuncionario.Name = "txtCargoFuncionario";
-            this.txtCargoFuncionario.Size = new System.Drawing.Size(110, 26);
-            this.txtCargoFuncionario.TabIndex = 12;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(189, 23);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(52, 20);
-            this.label4.TabIndex = 13;
-            this.label4.Text = "Cargo";
+            this.txtPesquisarCodFuncionario.Location = new System.Drawing.Point(703, 39);
+            this.txtPesquisarCodFuncionario.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtPesquisarCodFuncionario.Name = "txtPesquisarCodFuncionario";
+            this.txtPesquisarCodFuncionario.Size = new System.Drawing.Size(74, 26);
+            this.txtPesquisarCodFuncionario.TabIndex = 30;
             // 
             // label5
             // 
@@ -1140,83 +1185,39 @@
             this.txtNomeFuncAlter.Size = new System.Drawing.Size(362, 26);
             this.txtNomeFuncAlter.TabIndex = 0;
             // 
-            // btnPesquisarFuncionario
+            // menuStrip1
             // 
-            this.btnPesquisarFuncionario.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
-            this.btnPesquisarFuncionario.Location = new System.Drawing.Point(826, 13);
-            this.btnPesquisarFuncionario.Name = "btnPesquisarFuncionario";
-            this.btnPesquisarFuncionario.Size = new System.Drawing.Size(207, 55);
-            this.btnPesquisarFuncionario.TabIndex = 35;
-            this.btnPesquisarFuncionario.Text = "Pesquisar Funcionário";
-            this.btnPesquisarFuncionario.UseVisualStyleBackColor = true;
+            this.menuStrip1.GripMargin = new System.Windows.Forms.Padding(2, 2, 0, 2);
+            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.menuCadastrarFuncionario,
+            this.menuConsultarFuncionario,
+            this.menuExcluirFuncionario});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(1372, 33);
+            this.menuStrip1.TabIndex = 7;
+            this.menuStrip1.Text = "menuStrip1";
             // 
-            // btnSairPesquisaFuncionario
+            // menuCadastrarFuncionario
             // 
-            this.btnSairPesquisaFuncionario.Location = new System.Drawing.Point(1221, 659);
-            this.btnSairPesquisaFuncionario.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.btnSairPesquisaFuncionario.Name = "btnSairPesquisaFuncionario";
-            this.btnSairPesquisaFuncionario.Size = new System.Drawing.Size(112, 35);
-            this.btnSairPesquisaFuncionario.TabIndex = 32;
-            this.btnSairPesquisaFuncionario.Text = "Sair";
-            this.btnSairPesquisaFuncionario.UseVisualStyleBackColor = true;
-            this.btnSairPesquisaFuncionario.Click += new System.EventHandler(this.btnSairPesquisaFuncionario_Click_1);
+            this.menuCadastrarFuncionario.Name = "menuCadastrarFuncionario";
+            this.menuCadastrarFuncionario.Size = new System.Drawing.Size(103, 29);
+            this.menuCadastrarFuncionario.Text = "Cadastrar";
+            this.menuCadastrarFuncionario.Click += new System.EventHandler(this.menuCadastrarFuncionario_Click);
             // 
-            // dtgridFuncionariosCadastrados
+            // menuConsultarFuncionario
             // 
-            this.dtgridFuncionariosCadastrados.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtgridFuncionariosCadastrados.Location = new System.Drawing.Point(685, 278);
-            this.dtgridFuncionariosCadastrados.Name = "dtgridFuncionariosCadastrados";
-            this.dtgridFuncionariosCadastrados.RowHeadersWidth = 62;
-            this.dtgridFuncionariosCadastrados.RowTemplate.Height = 28;
-            this.dtgridFuncionariosCadastrados.Size = new System.Drawing.Size(658, 365);
-            this.dtgridFuncionariosCadastrados.TabIndex = 34;
+            this.menuConsultarFuncionario.Name = "menuConsultarFuncionario";
+            this.menuConsultarFuncionario.Size = new System.Drawing.Size(103, 29);
+            this.menuConsultarFuncionario.Text = "Consultar";
+            this.menuConsultarFuncionario.Click += new System.EventHandler(this.menuConsultarFuncionario_Click);
             // 
-            // dtgridPesquisaFuncionario
+            // menuExcluirFuncionario
             // 
-            this.dtgridPesquisaFuncionario.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtgridPesquisaFuncionario.Location = new System.Drawing.Point(685, 110);
-            this.dtgridPesquisaFuncionario.Name = "dtgridPesquisaFuncionario";
-            this.dtgridPesquisaFuncionario.RowHeadersWidth = 62;
-            this.dtgridPesquisaFuncionario.RowTemplate.Height = 28;
-            this.dtgridPesquisaFuncionario.Size = new System.Drawing.Size(658, 109);
-            this.dtgridPesquisaFuncionario.TabIndex = 33;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(681, 13);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(129, 20);
-            this.label1.TabIndex = 31;
-            this.label1.Text = "Cod. Funcionário";
-            // 
-            // txtPesquisarCodFuncionario
-            // 
-            this.txtPesquisarCodFuncionario.Location = new System.Drawing.Point(703, 39);
-            this.txtPesquisarCodFuncionario.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.txtPesquisarCodFuncionario.Name = "txtPesquisarCodFuncionario";
-            this.txtPesquisarCodFuncionario.Size = new System.Drawing.Size(74, 26);
-            this.txtPesquisarCodFuncionario.TabIndex = 30;
-            // 
-            // label32
-            // 
-            this.label32.AutoSize = true;
-            this.label32.Location = new System.Drawing.Point(685, 252);
-            this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(195, 20);
-            this.label32.TabIndex = 36;
-            this.label32.Text = "Funcionários Cadastrados";
-            // 
-            // btnAlterarDadosFuncionario
-            // 
-            this.btnAlterarDadosFuncionario.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
-            this.btnAlterarDadosFuncionario.Location = new System.Drawing.Point(1101, 13);
-            this.btnAlterarDadosFuncionario.Name = "btnAlterarDadosFuncionario";
-            this.btnAlterarDadosFuncionario.Size = new System.Drawing.Size(207, 55);
-            this.btnAlterarDadosFuncionario.TabIndex = 37;
-            this.btnAlterarDadosFuncionario.Text = "Alterar Dados";
-            this.btnAlterarDadosFuncionario.UseVisualStyleBackColor = true;
+            this.menuExcluirFuncionario.Name = "menuExcluirFuncionario";
+            this.menuExcluirFuncionario.Size = new System.Drawing.Size(77, 29);
+            this.menuExcluirFuncionario.Text = "Excluir";
             // 
             // TelaFuncionario
             // 
@@ -1228,33 +1229,31 @@
             this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.pnlCadastrarFuncionario);
             this.MainMenuStrip = this.menuStrip1;
-            this.MaximizeBox = false;
             this.MaximumSize = new System.Drawing.Size(1394, 810);
             this.MinimumSize = new System.Drawing.Size(1394, 810);
             this.Name = "TelaFuncionario";
             this.Text = "Funcionários";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.TelaFuncionario_Load);
             this.pnlCadastrarFuncionario.ResumeLayout(false);
             this.pnlCadastrarFuncionario.PerformLayout();
-            this.pnlConsultarFuncionario.ResumeLayout(false);
-            this.pnlConsultarFuncionario.PerformLayout();
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
-            this.grpboxDadosPessoaisFuncionario.ResumeLayout(false);
-            this.grpboxDadosPessoaisFuncionario.PerformLayout();
-            this.grpboxEnderecoFuncionario.ResumeLayout(false);
-            this.grpboxEnderecoFuncionario.PerformLayout();
             this.grpboxContatosFuncionario.ResumeLayout(false);
             this.grpboxContatosFuncionario.PerformLayout();
+            this.grpboxEnderecoFuncionario.ResumeLayout(false);
+            this.grpboxEnderecoFuncionario.PerformLayout();
+            this.grpboxDadosPessoaisFuncionario.ResumeLayout(false);
+            this.grpboxDadosPessoaisFuncionario.PerformLayout();
+            this.pnlConsultarFuncionario.ResumeLayout(false);
+            this.pnlConsultarFuncionario.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgridFuncionariosCadastrados)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgridPesquisaFuncionario)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dtgridFuncionariosCadastrados)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dtgridPesquisaFuncionario)).EndInit();
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
