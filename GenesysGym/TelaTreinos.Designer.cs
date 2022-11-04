@@ -143,7 +143,7 @@
             this.stripDivisoesTreino});
             this.menuNovoTreino.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.menuNovoTreino.Name = "menuNovoTreino";
-            this.menuNovoTreino.Size = new System.Drawing.Size(124, 32);
+            this.menuNovoTreino.Size = new System.Drawing.Size(124, 29);
             this.menuNovoTreino.Text = "Novo Treino";
             // 
             // stripDivisoesTreino
@@ -171,7 +171,7 @@
             // 
             this.menuAlterarTreino.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.menuAlterarTreino.Name = "menuAlterarTreino";
-            this.menuAlterarTreino.Size = new System.Drawing.Size(132, 32);
+            this.menuAlterarTreino.Size = new System.Drawing.Size(132, 29);
             this.menuAlterarTreino.Text = "Alterar Treino";
             // 
             // label2
@@ -1019,6 +1019,7 @@
             this.cboGrup1.Name = "cboGrup1";
             this.cboGrup1.Size = new System.Drawing.Size(190, 28);
             this.cboGrup1.TabIndex = 0;
+            this.cboGrup1.SelectedIndexChanged += new System.EventHandler(this.cboGrup1_SelectedIndexChanged);
             // 
             // groupBox2
             // 

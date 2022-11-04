@@ -20,8 +20,24 @@ namespace GenesysGym
             InitializeComponent();
         }
 
-             
-        
-        
+        private void cboGrup1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cboGrup1.SelectedIndex == 0)
+            {
+                string[] itensExercPeitoral = { " Supino Reto ",
+                                            " Supino Inclinado ",
+                                            " Supino Declinado ",
+                                            " Crucifixo Reto ",
+                                            " Crucifixo Inclinado ",
+                                            " Fly Reto ",
+                                            " Fly Inclinado ",
+                                            " Peck Deck ",
+                                            " Cross-Over ",
+                                            " Flexão de braços ",
+                                            " Pull-Over " };
+                cboExerc1.Items.Add (itensExercPeitoral);
+                cboExerc1.SelectedIndex = 0;
+            }
+        }
     }
 }
