@@ -33,7 +33,6 @@
             this.stripDivisoesTreino = new System.Windows.Forms.ToolStripMenuItem();
             this.stripABC = new System.Windows.Forms.ToolStripMenuItem();
             this.stripABCD = new System.Windows.Forms.ToolStripMenuItem();
-            this.menuAlterarTreino = new System.Windows.Forms.ToolStripMenuItem();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.maskCPFCliente = new System.Windows.Forms.MaskedTextBox();
@@ -119,6 +118,10 @@
             this.cboSerie12 = new System.Windows.Forms.ComboBox();
             this.cboGrup13 = new System.Windows.Forms.ComboBox();
             this.cboRep12 = new System.Windows.Forms.ComboBox();
+            this.btnLimparTreinoA = new System.Windows.Forms.Button();
+            this.btnLimparTreinoB = new System.Windows.Forms.Button();
+            this.btnGravarTreino = new System.Windows.Forms.Button();
+            this.btnSairTreino = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -126,11 +129,9 @@
             // 
             // menuStrip1
             // 
-            this.menuStrip1.GripMargin = new System.Windows.Forms.Padding(2, 2, 0, 2);
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.menuNovoTreino,
-            this.menuAlterarTreino});
+            this.menuNovoTreino});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(1428, 33);
@@ -152,27 +153,20 @@
             this.stripABC,
             this.stripABCD});
             this.stripDivisoesTreino.Name = "stripDivisoesTreino";
-            this.stripDivisoesTreino.Size = new System.Drawing.Size(257, 34);
+            this.stripDivisoesTreino.Size = new System.Drawing.Size(270, 34);
             this.stripDivisoesTreino.Text = "Divisões de Treino";
             // 
             // stripABC
             // 
             this.stripABC.Name = "stripABC";
-            this.stripABC.Size = new System.Drawing.Size(160, 34);
+            this.stripABC.Size = new System.Drawing.Size(270, 34);
             this.stripABC.Text = "ABC";
             // 
             // stripABCD
             // 
             this.stripABCD.Name = "stripABCD";
-            this.stripABCD.Size = new System.Drawing.Size(160, 34);
+            this.stripABCD.Size = new System.Drawing.Size(270, 34);
             this.stripABCD.Text = "ABCD";
-            // 
-            // menuAlterarTreino
-            // 
-            this.menuAlterarTreino.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.menuAlterarTreino.Name = "menuAlterarTreino";
-            this.menuAlterarTreino.Size = new System.Drawing.Size(132, 29);
-            this.menuAlterarTreino.Text = "Alterar Treino";
             // 
             // label2
             // 
@@ -278,6 +272,7 @@
             // 
             this.groupBox1.Controls.Add(this.label8);
             this.groupBox1.Controls.Add(this.label7);
+            this.groupBox1.Controls.Add(this.btnLimparTreinoA);
             this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.cboRep8);
@@ -428,7 +423,7 @@
             this.cboGrup8.Items.AddRange(new object[] {
             "PEITORAL",
             "COSTAS",
-            "OMBROS e TRAPÉZIOS",
+            "OMBROS",
             "TRÍCEPS",
             "BÍCEPS",
             "PERNAS",
@@ -438,6 +433,7 @@
             this.cboGrup8.Name = "cboGrup8";
             this.cboGrup8.Size = new System.Drawing.Size(190, 28);
             this.cboGrup8.TabIndex = 28;
+            this.cboGrup8.SelectedIndexChanged += new System.EventHandler(this.cboGrup8_SelectedIndexChanged);
             // 
             // cboRep7
             // 
@@ -511,7 +507,7 @@
             this.cboGrup7.Items.AddRange(new object[] {
             "PEITORAL",
             "COSTAS",
-            "OMBROS e TRAPÉZIOS",
+            "OMBROS",
             "TRÍCEPS",
             "BÍCEPS",
             "PERNAS",
@@ -521,6 +517,7 @@
             this.cboGrup7.Name = "cboGrup7";
             this.cboGrup7.Size = new System.Drawing.Size(190, 28);
             this.cboGrup7.TabIndex = 24;
+            this.cboGrup7.SelectedIndexChanged += new System.EventHandler(this.cboGrup7_SelectedIndexChanged);
             // 
             // cboRep6
             // 
@@ -594,7 +591,7 @@
             this.cboGrup6.Items.AddRange(new object[] {
             "PEITORAL",
             "COSTAS",
-            "OMBROS e TRAPÉZIOS",
+            "OMBROS",
             "TRÍCEPS",
             "BÍCEPS",
             "PERNAS",
@@ -604,6 +601,7 @@
             this.cboGrup6.Name = "cboGrup6";
             this.cboGrup6.Size = new System.Drawing.Size(190, 28);
             this.cboGrup6.TabIndex = 20;
+            this.cboGrup6.SelectedIndexChanged += new System.EventHandler(this.cboGrup6_SelectedIndexChanged);
             // 
             // cboRep5
             // 
@@ -677,7 +675,7 @@
             this.cboGrup5.Items.AddRange(new object[] {
             "PEITORAL",
             "COSTAS",
-            "OMBROS e TRAPÉZIOS",
+            "OMBROS",
             "TRÍCEPS",
             "BÍCEPS",
             "PERNAS",
@@ -687,6 +685,7 @@
             this.cboGrup5.Name = "cboGrup5";
             this.cboGrup5.Size = new System.Drawing.Size(190, 28);
             this.cboGrup5.TabIndex = 16;
+            this.cboGrup5.SelectedIndexChanged += new System.EventHandler(this.cboGrup5_SelectedIndexChanged);
             // 
             // cboRep4
             // 
@@ -760,7 +759,7 @@
             this.cboGrup4.Items.AddRange(new object[] {
             "PEITORAL",
             "COSTAS",
-            "OMBROS e TRAPÉZIOS",
+            "OMBROS",
             "TRÍCEPS",
             "BÍCEPS",
             "PERNAS",
@@ -770,6 +769,7 @@
             this.cboGrup4.Name = "cboGrup4";
             this.cboGrup4.Size = new System.Drawing.Size(190, 28);
             this.cboGrup4.TabIndex = 12;
+            this.cboGrup4.SelectedIndexChanged += new System.EventHandler(this.cboGrup4_SelectedIndexChanged);
             // 
             // cboRep3
             // 
@@ -843,7 +843,7 @@
             this.cboGrup3.Items.AddRange(new object[] {
             "PEITORAL",
             "COSTAS",
-            "OMBROS e TRAPÉZIOS",
+            "OMBROS",
             "TRÍCEPS",
             "BÍCEPS",
             "PERNAS",
@@ -853,6 +853,7 @@
             this.cboGrup3.Name = "cboGrup3";
             this.cboGrup3.Size = new System.Drawing.Size(190, 28);
             this.cboGrup3.TabIndex = 8;
+            this.cboGrup3.SelectedIndexChanged += new System.EventHandler(this.cboGrup3_SelectedIndexChanged);
             // 
             // cboRep2
             // 
@@ -926,7 +927,7 @@
             this.cboGrup2.Items.AddRange(new object[] {
             "PEITORAL",
             "COSTAS",
-            "OMBROS e TRAPÉZIOS",
+            "OMBROS",
             "TRÍCEPS",
             "BÍCEPS",
             "PERNAS",
@@ -1010,7 +1011,7 @@
             this.cboGrup1.Items.AddRange(new object[] {
             "PEITORAL",
             "COSTAS",
-            "OMBROS e TRAPÉZIOS",
+            "OMBROS",
             "TRÍCEPS",
             "BÍCEPS",
             "PERNAS",
@@ -1025,6 +1026,7 @@
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.label9);
+            this.groupBox2.Controls.Add(this.btnLimparTreinoB);
             this.groupBox2.Controls.Add(this.cboRep16);
             this.groupBox2.Controls.Add(this.label10);
             this.groupBox2.Controls.Add(this.cboGrup9);
@@ -1131,7 +1133,7 @@
             this.cboGrup9.Items.AddRange(new object[] {
             "PEITORAL",
             "COSTAS",
-            "OMBROS e TRAPÉZIOS",
+            "OMBROS",
             "TRÍCEPS",
             "BÍCEPS",
             "PERNAS",
@@ -1220,7 +1222,7 @@
             this.cboGrup16.Items.AddRange(new object[] {
             "PEITORAL",
             "COSTAS",
-            "OMBROS e TRAPÉZIOS",
+            "OMBROS",
             "TRÍCEPS",
             "BÍCEPS",
             "PERNAS",
@@ -1315,7 +1317,7 @@
             this.cboGrup10.Items.AddRange(new object[] {
             "PEITORAL",
             "COSTAS",
-            "OMBROS e TRAPÉZIOS",
+            "OMBROS",
             "TRÍCEPS",
             "BÍCEPS",
             "PERNAS",
@@ -1386,7 +1388,7 @@
             this.cboGrup15.Items.AddRange(new object[] {
             "PEITORAL",
             "COSTAS",
-            "OMBROS e TRAPÉZIOS",
+            "OMBROS",
             "TRÍCEPS",
             "BÍCEPS",
             "PERNAS",
@@ -1481,7 +1483,7 @@
             this.cboGrup11.Items.AddRange(new object[] {
             "PEITORAL",
             "COSTAS",
-            "OMBROS e TRAPÉZIOS",
+            "OMBROS",
             "TRÍCEPS",
             "BÍCEPS",
             "PERNAS",
@@ -1552,7 +1554,7 @@
             this.cboGrup14.Items.AddRange(new object[] {
             "PEITORAL",
             "COSTAS",
-            "OMBROS e TRAPÉZIOS",
+            "OMBROS",
             "TRÍCEPS",
             "BÍCEPS",
             "PERNAS",
@@ -1647,7 +1649,7 @@
             this.cboGrup12.Items.AddRange(new object[] {
             "PEITORAL",
             "COSTAS",
-            "OMBROS e TRAPÉZIOS",
+            "OMBROS",
             "TRÍCEPS",
             "BÍCEPS",
             "PERNAS",
@@ -1718,7 +1720,7 @@
             this.cboGrup13.Items.AddRange(new object[] {
             "PEITORAL",
             "COSTAS",
-            "OMBROS e TRAPÉZIOS",
+            "OMBROS",
             "TRÍCEPS",
             "BÍCEPS",
             "PERNAS",
@@ -1768,12 +1770,55 @@
             this.cboRep12.Size = new System.Drawing.Size(58, 28);
             this.cboRep12.TabIndex = 47;
             // 
+            // btnLimparTreinoA
+            // 
+            this.btnLimparTreinoA.Location = new System.Drawing.Point(261, 14);
+            this.btnLimparTreinoA.Name = "btnLimparTreinoA";
+            this.btnLimparTreinoA.Size = new System.Drawing.Size(166, 35);
+            this.btnLimparTreinoA.TabIndex = 22;
+            this.btnLimparTreinoA.Text = "Limpar Treino A";
+            this.btnLimparTreinoA.UseVisualStyleBackColor = true;
+            this.btnLimparTreinoA.Click += new System.EventHandler(this.btnLimparTreinoA_Click);
+            // 
+            // btnLimparTreinoB
+            // 
+            this.btnLimparTreinoB.Location = new System.Drawing.Point(254, 14);
+            this.btnLimparTreinoB.Name = "btnLimparTreinoB";
+            this.btnLimparTreinoB.Size = new System.Drawing.Size(166, 35);
+            this.btnLimparTreinoB.TabIndex = 23;
+            this.btnLimparTreinoB.Text = "Limpar Treino B";
+            this.btnLimparTreinoB.UseVisualStyleBackColor = true;
+            this.btnLimparTreinoB.Click += new System.EventHandler(this.btnLimparTreinoB_Click);
+            // 
+            // btnGravarTreino
+            // 
+            this.btnGravarTreino.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGravarTreino.Location = new System.Drawing.Point(513, 667);
+            this.btnGravarTreino.Name = "btnGravarTreino";
+            this.btnGravarTreino.Size = new System.Drawing.Size(403, 56);
+            this.btnGravarTreino.TabIndex = 24;
+            this.btnGravarTreino.Text = "Gravar Treino";
+            this.btnGravarTreino.UseVisualStyleBackColor = true;
+            // 
+            // btnSairTreino
+            // 
+            this.btnSairTreino.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSairTreino.Location = new System.Drawing.Point(1246, 667);
+            this.btnSairTreino.Name = "btnSairTreino";
+            this.btnSairTreino.Size = new System.Drawing.Size(166, 56);
+            this.btnSairTreino.TabIndex = 25;
+            this.btnSairTreino.Text = "Sair";
+            this.btnSairTreino.UseVisualStyleBackColor = true;
+            this.btnSairTreino.Click += new System.EventHandler(this.btnSairTreino_Click);
+            // 
             // TelaTreinos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(144F, 144F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.ClientSize = new System.Drawing.Size(1428, 744);
+            this.Controls.Add(this.btnSairTreino);
+            this.Controls.Add(this.btnGravarTreino);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label24);
@@ -1812,7 +1857,6 @@
         private System.Windows.Forms.ToolStripMenuItem stripDivisoesTreino;
         private System.Windows.Forms.ToolStripMenuItem stripABC;
         private System.Windows.Forms.ToolStripMenuItem stripABCD;
-        private System.Windows.Forms.ToolStripMenuItem menuAlterarTreino;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.MaskedTextBox maskCPFCliente;
@@ -1898,5 +1942,9 @@
         private System.Windows.Forms.ComboBox cboSerie12;
         private System.Windows.Forms.ComboBox cboGrup13;
         private System.Windows.Forms.ComboBox cboRep12;
+        private System.Windows.Forms.Button btnLimparTreinoA;
+        private System.Windows.Forms.Button btnLimparTreinoB;
+        private System.Windows.Forms.Button btnGravarTreino;
+        private System.Windows.Forms.Button btnSairTreino;
     }
 }
