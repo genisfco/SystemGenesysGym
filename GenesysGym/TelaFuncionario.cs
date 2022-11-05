@@ -233,12 +233,41 @@ namespace GenesysGym
         private void btnPesquisarFuncionario_Click(object sender, EventArgs e)
         {
             btnAlterarDadosFuncionario.Enabled = true;
-        }
 
+            string cod = txtPesquisarCodFuncionario.Text;
+
+            if (cod == "")
+            {
+                MessageBox.Show("Obrigatório preencher o Código do Funcionário!");
+            }
+
+            else
+            {
+                DataTable dt = new DataTable();
+
+                string connection_mysql = @"Server=localhost;Database=GenesysGym;Uid=root;Pwd='1234'";
+
+                MySqlConnection msConnection = new MySqlConnection();
+                msConnection.ConnectionString = connection_mysql;
+                msConnection.Open();
+                MySqlCommand msCommand = new MySqlCommand();
+                string pesquisarcod = " and codfuncionario = '" + cod + "'";
+                string texto = "select * from funcionario where 1=1";
+
+                msCommand.CommandText = texto;
+                msCommand.Connection = msConnection;
+                MySqlDataAdapter msdAdapter = new MySqlDataAdapter(msCommand);
+                msdAdapter.Fill(dt);
+
+                dtgridPesquisaFuncionario.DataSource = dt;
+                msConnection.Close();
+
+            }
+        }
         private void btnAlterarDadosFuncionario_Click(object sender, EventArgs e)
         {
-            btnAlterarDadosFuncionario.Enabled = false;
-            btnSalvarAlterFuncion.Enabled = true;
-        }
+                btnAlterarDadosFuncionario.Enabled = false;
+                btnSalvarAlterFuncion.Enabled = true;
+        }        
     }
 }

@@ -233,7 +233,40 @@ namespace GenesysGym
         private void btnPesquisarCliente_Click(object sender, EventArgs e)
         {
             btnAlterDadosCliente.Enabled = true;
+
+            string cpf = maskPesquisarCPFCliente.Text;
+            cpf = cpf.Replace(",", "").Replace("-", "");
+
+            if (cpf.Length != 11)
+            {
+                MessageBox.Show("Obrigatório preencher o CPF completo!");
+            }
             
+            else
+            {
+                DataTable dt = new DataTable();
+
+
+                string connection_mysql = @"Server=localhost;Database=GenesysGym;Uid=root;Pwd='1234'";
+
+                MySqlConnection msConnection = new MySqlConnection();
+                msConnection.ConnectionString = connection_mysql;
+                msConnection.Open();
+                MySqlCommand msCommand = new MySqlCommand();
+                string pesquisarCPF = " and cpf = '" + cpf + "'";
+                string texto = "select * from cliente where 1=1";
+                //MessageBox.Show("Nome: "+(nome == "")+  "\nCPF: " + (cpf == "         ") + "\n REG: " + (registro == ""));
+                if (cpf != "         ") texto += pesquisarCPF;
+
+                msCommand.CommandText = texto;
+                msCommand.Connection = msConnection;
+                MySqlDataAdapter msdAdapter = new MySqlDataAdapter(msCommand);
+                msdAdapter.Fill(dt);
+
+                dtgridPesquisaCliente.DataSource = dt;
+                msConnection.Close();
+            }
+
         }
 
         private void btnAlterDadosCliente_Click(object sender, EventArgs e)

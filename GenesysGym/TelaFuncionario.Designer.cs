@@ -70,6 +70,7 @@
             this.maskCPFFuncionario = new System.Windows.Forms.MaskedTextBox();
             this.txtNomeFuncionario = new System.Windows.Forms.TextBox();
             this.pnlConsultarFuncionario = new System.Windows.Forms.Panel();
+            this.btnSalvarAlterFuncion = new System.Windows.Forms.Button();
             this.btnAlterarDadosFuncionario = new System.Windows.Forms.Button();
             this.label32 = new System.Windows.Forms.Label();
             this.btnPesquisarFuncionario = new System.Windows.Forms.Button();
@@ -109,7 +110,6 @@
             this.menuCadastrarFuncionario = new System.Windows.Forms.ToolStripMenuItem();
             this.menuConsultarFuncionario = new System.Windows.Forms.ToolStripMenuItem();
             this.menuExcluirFuncionario = new System.Windows.Forms.ToolStripMenuItem();
-            this.btnSalvarAlterFuncion = new System.Windows.Forms.Button();
             this.pnlCadastrarFuncionario.SuspendLayout();
             this.grpboxContatosFuncionario.SuspendLayout();
             this.grpboxEnderecoFuncionario.SuspendLayout();
@@ -209,10 +209,10 @@
             // 
             // btnSairCadastrarFuncionario
             // 
-            this.btnSairCadastrarFuncionario.Location = new System.Drawing.Point(543, 668);
+            this.btnSairCadastrarFuncionario.Location = new System.Drawing.Point(504, 651);
             this.btnSairCadastrarFuncionario.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnSairCadastrarFuncionario.Name = "btnSairCadastrarFuncionario";
-            this.btnSairCadastrarFuncionario.Size = new System.Drawing.Size(112, 35);
+            this.btnSairCadastrarFuncionario.Size = new System.Drawing.Size(150, 50);
             this.btnSairCadastrarFuncionario.TabIndex = 10;
             this.btnSairCadastrarFuncionario.Text = "Sair";
             this.btnSairCadastrarFuncionario.UseVisualStyleBackColor = true;
@@ -220,10 +220,10 @@
             // 
             // btnLimparDadosFuncionario
             // 
-            this.btnLimparDadosFuncionario.Location = new System.Drawing.Point(318, 668);
+            this.btnLimparDadosFuncionario.Location = new System.Drawing.Point(292, 650);
             this.btnLimparDadosFuncionario.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnLimparDadosFuncionario.Name = "btnLimparDadosFuncionario";
-            this.btnLimparDadosFuncionario.Size = new System.Drawing.Size(112, 35);
+            this.btnLimparDadosFuncionario.Size = new System.Drawing.Size(150, 50);
             this.btnLimparDadosFuncionario.TabIndex = 9;
             this.btnLimparDadosFuncionario.Text = "Limpar Dados";
             this.btnLimparDadosFuncionario.UseVisualStyleBackColor = true;
@@ -232,10 +232,10 @@
             // btnCadastrarFuncionario
             // 
             this.btnCadastrarFuncionario.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
-            this.btnCadastrarFuncionario.Location = new System.Drawing.Point(12, 668);
+            this.btnCadastrarFuncionario.Location = new System.Drawing.Point(10, 651);
             this.btnCadastrarFuncionario.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnCadastrarFuncionario.Name = "btnCadastrarFuncionario";
-            this.btnCadastrarFuncionario.Size = new System.Drawing.Size(112, 35);
+            this.btnCadastrarFuncionario.Size = new System.Drawing.Size(150, 50);
             this.btnCadastrarFuncionario.TabIndex = 8;
             this.btnCadastrarFuncionario.Text = "Cadastrar";
             this.btnCadastrarFuncionario.UseVisualStyleBackColor = true;
@@ -818,6 +818,16 @@
             this.pnlConsultarFuncionario.Size = new System.Drawing.Size(1346, 709);
             this.pnlConsultarFuncionario.TabIndex = 6;
             // 
+            // btnSalvarAlterFuncion
+            // 
+            this.btnSalvarAlterFuncion.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
+            this.btnSalvarAlterFuncion.Location = new System.Drawing.Point(12, 645);
+            this.btnSalvarAlterFuncion.Name = "btnSalvarAlterFuncion";
+            this.btnSalvarAlterFuncion.Size = new System.Drawing.Size(207, 55);
+            this.btnSalvarAlterFuncion.TabIndex = 38;
+            this.btnSalvarAlterFuncion.Text = "Salvar Alterações";
+            this.btnSalvarAlterFuncion.UseVisualStyleBackColor = true;
+            // 
             // btnAlterarDadosFuncionario
             // 
             this.btnAlterarDadosFuncionario.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
@@ -1177,7 +1187,7 @@
             this.menuExcluirFuncionario});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1372, 33);
+            this.menuStrip1.Size = new System.Drawing.Size(1372, 36);
             this.menuStrip1.TabIndex = 7;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -1201,25 +1211,15 @@
             this.menuExcluirFuncionario.Size = new System.Drawing.Size(77, 32);
             this.menuExcluirFuncionario.Text = "Excluir";
             // 
-            // btnSalvarAlterFuncion
-            // 
-            this.btnSalvarAlterFuncion.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
-            this.btnSalvarAlterFuncion.Location = new System.Drawing.Point(12, 645);
-            this.btnSalvarAlterFuncion.Name = "btnSalvarAlterFuncion";
-            this.btnSalvarAlterFuncion.Size = new System.Drawing.Size(207, 55);
-            this.btnSalvarAlterFuncion.TabIndex = 38;
-            this.btnSalvarAlterFuncion.Text = "Salvar Alterações";
-            this.btnSalvarAlterFuncion.UseVisualStyleBackColor = true;
-            // 
             // TelaFuncionario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(144F, 144F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.PeachPuff;
             this.ClientSize = new System.Drawing.Size(1372, 754);
-            this.Controls.Add(this.pnlConsultarFuncionario);
             this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.pnlCadastrarFuncionario);
+            this.Controls.Add(this.pnlConsultarFuncionario);
             this.MainMenuStrip = this.menuStrip1;
             this.MaximumSize = new System.Drawing.Size(1394, 810);
             this.MinimumSize = new System.Drawing.Size(1394, 810);
