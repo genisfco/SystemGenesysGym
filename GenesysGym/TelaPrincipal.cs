@@ -100,6 +100,7 @@ namespace GenesysGym
             pnlPesquisarCliente.Visible = true;
             pnlCadastrarCliente.Visible=false;
             btnAlterDadosCliente.Enabled = false;
+            btnSalvarAlter.Enabled = false;
 
             DataTable dt = new DataTable();
 
@@ -233,6 +234,13 @@ namespace GenesysGym
         {
             btnAlterDadosCliente.Enabled = true;
             
+        }
+
+        private void btnAlterDadosCliente_Click(object sender, EventArgs e)
+        {
+            btnAlterDadosCliente.Enabled = false;
+            btnSalvarAlter.Enabled = true;
+           
         }
     }
 }

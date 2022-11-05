@@ -827,6 +827,7 @@
             this.btnAlterarDadosFuncionario.TabIndex = 37;
             this.btnAlterarDadosFuncionario.Text = "Alterar Dados";
             this.btnAlterarDadosFuncionario.UseVisualStyleBackColor = true;
+            this.btnAlterarDadosFuncionario.Click += new System.EventHandler(this.btnAlterarDadosFuncionario_Click);
             // 
             // label32
             // 
@@ -1176,7 +1177,7 @@
             this.menuExcluirFuncionario});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1372, 36);
+            this.menuStrip1.Size = new System.Drawing.Size(1372, 33);
             this.menuStrip1.TabIndex = 7;
             this.menuStrip1.Text = "menuStrip1";
             // 

@@ -108,6 +108,7 @@ namespace GenesysGym
             pnlCadastrarFuncionario.Visible = false;
 
             btnAlterarDadosFuncionario.Enabled = false;
+            btnSalvarAlterFuncion.Enabled = false;
 
             DataTable dt = new DataTable();
 
@@ -234,6 +235,10 @@ namespace GenesysGym
             btnAlterarDadosFuncionario.Enabled = true;
         }
 
-        
+        private void btnAlterarDadosFuncionario_Click(object sender, EventArgs e)
+        {
+            btnAlterarDadosFuncionario.Enabled = false;
+            btnSalvarAlterFuncion.Enabled = true;
+        }
     }
 }
