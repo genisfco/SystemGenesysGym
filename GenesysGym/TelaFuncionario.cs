@@ -9,7 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
-
+using System.Diagnostics;
 
 namespace GenesysGym
 {
@@ -123,6 +123,7 @@ namespace GenesysGym
             msdAdapter.Fill(dt);
 
             dtgridFuncionariosCadastrados.DataSource = dt;
+            msConnection.Close();
         }
 
         private void btnSairCadastrarFuncionario_Click(object sender, EventArgs e)
@@ -227,5 +228,12 @@ namespace GenesysGym
         {
             Close();
         }
+
+        private void btnPesquisarFuncionario_Click(object sender, EventArgs e)
+        {
+            btnAlterarDadosFuncionario.Enabled = true;
+        }
+
+        
     }
 }

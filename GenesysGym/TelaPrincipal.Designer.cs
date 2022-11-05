@@ -29,10 +29,10 @@ namespace GenesysGym
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle45 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle46 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle47 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle48 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.pnlCadastrarCliente = new System.Windows.Forms.Panel();
             this.grpboxContatos = new System.Windows.Forms.GroupBox();
             this.label15 = new System.Windows.Forms.Label();
@@ -89,6 +89,34 @@ namespace GenesysGym
             this.dtgridPesquisaCliente = new System.Windows.Forms.DataGridView();
             this.label13 = new System.Windows.Forms.Label();
             this.maskPesquisarCPFCliente = new System.Windows.Forms.MaskedTextBox();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
+            this.txtEmailAlter = new System.Windows.Forms.TextBox();
+            this.maskTelefoneAlter = new System.Windows.Forms.MaskedTextBox();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.label18 = new System.Windows.Forms.Label();
+            this.label19 = new System.Windows.Forms.Label();
+            this.label20 = new System.Windows.Forms.Label();
+            this.label21 = new System.Windows.Forms.Label();
+            this.label22 = new System.Windows.Forms.Label();
+            this.label23 = new System.Windows.Forms.Label();
+            this.txtEstadoAlter = new System.Windows.Forms.TextBox();
+            this.txtCidadeAlter = new System.Windows.Forms.TextBox();
+            this.txtBairroAlter = new System.Windows.Forms.TextBox();
+            this.maskCEPAlter = new System.Windows.Forms.MaskedTextBox();
+            this.txtNumLogradouroAlter = new System.Windows.Forms.TextBox();
+            this.txtLogradouroAlter = new System.Windows.Forms.TextBox();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.label27 = new System.Windows.Forms.Label();
+            this.label28 = new System.Windows.Forms.Label();
+            this.label29 = new System.Windows.Forms.Label();
+            this.maskRGAlter = new System.Windows.Forms.MaskedTextBox();
+            this.maskCPFAlter = new System.Windows.Forms.MaskedTextBox();
+            this.txtNomeClientAlter = new System.Windows.Forms.TextBox();
+            this.label25 = new System.Windows.Forms.Label();
+            this.btnAlterDadosCliente = new System.Windows.Forms.Button();
+            this.btnSalvarAlter = new System.Windows.Forms.Button();
             this.pnlCadastrarCliente.SuspendLayout();
             this.grpboxContatos.SuspendLayout();
             this.grpboxEndereco.SuspendLayout();
@@ -97,6 +125,9 @@ namespace GenesysGym
             this.pnlPesquisarCliente.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgridClientesCadastrados)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtgridPesquisaCliente)).BeginInit();
+            this.groupBox1.SuspendLayout();
+            this.groupBox2.SuspendLayout();
+            this.groupBox3.SuspendLayout();
             this.SuspendLayout();
             // 
             // pnlCadastrarCliente
@@ -762,7 +793,7 @@ namespace GenesysGym
             this.menuTreinos});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1372, 36);
+            this.menuStrip1.Size = new System.Drawing.Size(1372, 33);
             this.menuStrip1.TabIndex = 3;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -779,21 +810,21 @@ namespace GenesysGym
             // stripCadastrarCliente
             // 
             this.stripCadastrarCliente.Name = "stripCadastrarCliente";
-            this.stripCadastrarCliente.Size = new System.Drawing.Size(247, 34);
+            this.stripCadastrarCliente.Size = new System.Drawing.Size(270, 34);
             this.stripCadastrarCliente.Text = "Cadastrar Cliente";
             this.stripCadastrarCliente.Click += new System.EventHandler(this.stripCadastrarCliente_Click);
             // 
             // stripPesquisarCliente
             // 
             this.stripPesquisarCliente.Name = "stripPesquisarCliente";
-            this.stripPesquisarCliente.Size = new System.Drawing.Size(247, 34);
+            this.stripPesquisarCliente.Size = new System.Drawing.Size(270, 34);
             this.stripPesquisarCliente.Text = "Pesquisar Cliente";
             this.stripPesquisarCliente.Click += new System.EventHandler(this.stripPesquisarCliente_Click);
             // 
             // stripExcluirCliente
             // 
             this.stripExcluirCliente.Name = "stripExcluirCliente";
-            this.stripExcluirCliente.Size = new System.Drawing.Size(247, 34);
+            this.stripExcluirCliente.Size = new System.Drawing.Size(270, 34);
             this.stripExcluirCliente.Text = "Excluir Cliente";
             // 
             // menuFuncionarios
@@ -829,29 +860,35 @@ namespace GenesysGym
             // stripRegistrarAlterarTreino
             // 
             this.stripRegistrarAlterarTreino.Name = "stripRegistrarAlterarTreino";
-            this.stripRegistrarAlterarTreino.Size = new System.Drawing.Size(252, 34);
+            this.stripRegistrarAlterarTreino.Size = new System.Drawing.Size(270, 34);
             this.stripRegistrarAlterarTreino.Text = "Registrar / Alterar";
             this.stripRegistrarAlterarTreino.Click += new System.EventHandler(this.stripRegistrarAlterarTreino_Click);
             // 
             // pnlPesquisarCliente
             // 
+            this.pnlPesquisarCliente.Controls.Add(this.btnSalvarAlter);
+            this.pnlPesquisarCliente.Controls.Add(this.btnAlterDadosCliente);
+            this.pnlPesquisarCliente.Controls.Add(this.label25);
+            this.pnlPesquisarCliente.Controls.Add(this.groupBox1);
+            this.pnlPesquisarCliente.Controls.Add(this.groupBox2);
+            this.pnlPesquisarCliente.Controls.Add(this.groupBox3);
             this.pnlPesquisarCliente.Controls.Add(this.btnSairPesquisarCliente);
             this.pnlPesquisarCliente.Controls.Add(this.btnPesquisarCliente);
             this.pnlPesquisarCliente.Controls.Add(this.dtgridClientesCadastrados);
             this.pnlPesquisarCliente.Controls.Add(this.dtgridPesquisaCliente);
             this.pnlPesquisarCliente.Controls.Add(this.label13);
             this.pnlPesquisarCliente.Controls.Add(this.maskPesquisarCPFCliente);
-            this.pnlPesquisarCliente.Location = new System.Drawing.Point(690, 42);
+            this.pnlPesquisarCliente.Location = new System.Drawing.Point(14, 42);
             this.pnlPesquisarCliente.Name = "pnlPesquisarCliente";
-            this.pnlPesquisarCliente.Size = new System.Drawing.Size(670, 712);
+            this.pnlPesquisarCliente.Size = new System.Drawing.Size(1346, 712);
             this.pnlPesquisarCliente.TabIndex = 4;
             // 
             // btnSairPesquisarCliente
             // 
-            this.btnSairPesquisarCliente.Location = new System.Drawing.Point(554, 663);
+            this.btnSairPesquisarCliente.Location = new System.Drawing.Point(1192, 657);
             this.btnSairPesquisarCliente.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnSairPesquisarCliente.Name = "btnSairPesquisarCliente";
-            this.btnSairPesquisarCliente.Size = new System.Drawing.Size(112, 35);
+            this.btnSairPesquisarCliente.Size = new System.Drawing.Size(150, 50);
             this.btnSairPesquisarCliente.TabIndex = 9;
             this.btnSairPesquisarCliente.Text = "Sair";
             this.btnSairPesquisarCliente.UseVisualStyleBackColor = true;
@@ -859,33 +896,34 @@ namespace GenesysGym
             // 
             // btnPesquisarCliente
             // 
-            this.btnPesquisarCliente.Location = new System.Drawing.Point(381, 22);
+            this.btnPesquisarCliente.Location = new System.Drawing.Point(860, 22);
             this.btnPesquisarCliente.Name = "btnPesquisarCliente";
             this.btnPesquisarCliente.Size = new System.Drawing.Size(207, 55);
             this.btnPesquisarCliente.TabIndex = 16;
             this.btnPesquisarCliente.Text = "Pesquisar Cliente";
             this.btnPesquisarCliente.UseVisualStyleBackColor = true;
+            this.btnPesquisarCliente.Click += new System.EventHandler(this.btnPesquisarCliente_Click);
             // 
             // dtgridClientesCadastrados
             // 
-            dataGridViewCellStyle45.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle45.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle45.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle45.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle45.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle45.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle45.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dtgridClientesCadastrados.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle45;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtgridClientesCadastrados.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dtgridClientesCadastrados.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle46.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle46.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle46.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle46.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle46.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle46.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle46.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dtgridClientesCadastrados.DefaultCellStyle = dataGridViewCellStyle46;
-            this.dtgridClientesCadastrados.Location = new System.Drawing.Point(4, 263);
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dtgridClientesCadastrados.DefaultCellStyle = dataGridViewCellStyle2;
+            this.dtgridClientesCadastrados.Location = new System.Drawing.Point(678, 327);
             this.dtgridClientesCadastrados.Name = "dtgridClientesCadastrados";
             this.dtgridClientesCadastrados.RowHeadersWidth = 62;
             this.dtgridClientesCadastrados.RowTemplate.Height = 28;
@@ -894,24 +932,24 @@ namespace GenesysGym
             // 
             // dtgridPesquisaCliente
             // 
-            dataGridViewCellStyle47.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle47.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle47.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle47.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle47.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle47.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle47.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dtgridPesquisaCliente.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle47;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtgridPesquisaCliente.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dtgridPesquisaCliente.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle48.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle48.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle48.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle48.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle48.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle48.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle48.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dtgridPesquisaCliente.DefaultCellStyle = dataGridViewCellStyle48;
-            this.dtgridPesquisaCliente.Location = new System.Drawing.Point(4, 118);
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dtgridPesquisaCliente.DefaultCellStyle = dataGridViewCellStyle4;
+            this.dtgridPesquisaCliente.Location = new System.Drawing.Point(678, 118);
             this.dtgridPesquisaCliente.Name = "dtgridPesquisaCliente";
             this.dtgridPesquisaCliente.RowHeadersWidth = 62;
             this.dtgridPesquisaCliente.RowTemplate.Height = 28;
@@ -921,7 +959,7 @@ namespace GenesysGym
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(4, 22);
+            this.label13.Location = new System.Drawing.Point(678, 22);
             this.label13.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(40, 20);
@@ -930,18 +968,296 @@ namespace GenesysGym
             // 
             // maskPesquisarCPFCliente
             // 
-            this.maskPesquisarCPFCliente.Location = new System.Drawing.Point(4, 52);
+            this.maskPesquisarCPFCliente.Location = new System.Drawing.Point(678, 52);
             this.maskPesquisarCPFCliente.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.maskPesquisarCPFCliente.Mask = "000.000.000-00";
             this.maskPesquisarCPFCliente.Name = "maskPesquisarCPFCliente";
             this.maskPesquisarCPFCliente.Size = new System.Drawing.Size(124, 26);
             this.maskPesquisarCPFCliente.TabIndex = 12;
             // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.label16);
+            this.groupBox1.Controls.Add(this.label17);
+            this.groupBox1.Controls.Add(this.txtEmailAlter);
+            this.groupBox1.Controls.Add(this.maskTelefoneAlter);
+            this.groupBox1.Location = new System.Drawing.Point(6, 508);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(654, 131);
+            this.groupBox1.TabIndex = 23;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Contatos";
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Location = new System.Drawing.Point(354, 58);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(48, 20);
+            this.label16.TabIndex = 3;
+            this.label16.Text = "Email";
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Location = new System.Drawing.Point(9, 58);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(71, 20);
+            this.label17.TabIndex = 2;
+            this.label17.Text = "Telefone";
+            // 
+            // txtEmailAlter
+            // 
+            this.txtEmailAlter.Location = new System.Drawing.Point(354, 82);
+            this.txtEmailAlter.Name = "txtEmailAlter";
+            this.txtEmailAlter.Size = new System.Drawing.Size(276, 26);
+            this.txtEmailAlter.TabIndex = 1;
+            // 
+            // maskTelefoneAlter
+            // 
+            this.maskTelefoneAlter.Location = new System.Drawing.Point(10, 82);
+            this.maskTelefoneAlter.Mask = "(00)000000000";
+            this.maskTelefoneAlter.Name = "maskTelefoneAlter";
+            this.maskTelefoneAlter.Size = new System.Drawing.Size(100, 26);
+            this.maskTelefoneAlter.TabIndex = 0;
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.label18);
+            this.groupBox2.Controls.Add(this.label19);
+            this.groupBox2.Controls.Add(this.label20);
+            this.groupBox2.Controls.Add(this.label21);
+            this.groupBox2.Controls.Add(this.label22);
+            this.groupBox2.Controls.Add(this.label23);
+            this.groupBox2.Controls.Add(this.txtEstadoAlter);
+            this.groupBox2.Controls.Add(this.txtCidadeAlter);
+            this.groupBox2.Controls.Add(this.txtBairroAlter);
+            this.groupBox2.Controls.Add(this.maskCEPAlter);
+            this.groupBox2.Controls.Add(this.txtNumLogradouroAlter);
+            this.groupBox2.Controls.Add(this.txtLogradouroAlter);
+            this.groupBox2.Location = new System.Drawing.Point(4, 308);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.groupBox2.Size = new System.Drawing.Size(654, 191);
+            this.groupBox2.TabIndex = 22;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Endereço";
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Location = new System.Drawing.Point(560, 125);
+            this.label18.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(60, 20);
+            this.label18.TabIndex = 11;
+            this.label18.Text = "Estado";
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Location = new System.Drawing.Point(268, 125);
+            this.label19.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(59, 20);
+            this.label19.TabIndex = 10;
+            this.label19.Text = "Cidade";
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Location = new System.Drawing.Point(15, 125);
+            this.label20.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(51, 20);
+            this.label20.TabIndex = 9;
+            this.label20.Text = "Bairro";
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Location = new System.Drawing.Point(548, 37);
+            this.label21.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(41, 20);
+            this.label21.TabIndex = 8;
+            this.label21.Text = "CEP";
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Location = new System.Drawing.Point(440, 37);
+            this.label22.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(26, 20);
+            this.label22.TabIndex = 7;
+            this.label22.Text = "Nº";
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.Location = new System.Drawing.Point(9, 31);
+            this.label23.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(91, 20);
+            this.label23.TabIndex = 6;
+            this.label23.Text = "Logradouro";
+            // 
+            // txtEstadoAlter
+            // 
+            this.txtEstadoAlter.Location = new System.Drawing.Point(564, 149);
+            this.txtEstadoAlter.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtEstadoAlter.Name = "txtEstadoAlter";
+            this.txtEstadoAlter.Size = new System.Drawing.Size(66, 26);
+            this.txtEstadoAlter.TabIndex = 5;
+            // 
+            // txtCidadeAlter
+            // 
+            this.txtCidadeAlter.Location = new System.Drawing.Point(273, 149);
+            this.txtCidadeAlter.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtCidadeAlter.Name = "txtCidadeAlter";
+            this.txtCidadeAlter.Size = new System.Drawing.Size(148, 26);
+            this.txtCidadeAlter.TabIndex = 4;
+            // 
+            // txtBairroAlter
+            // 
+            this.txtBairroAlter.Location = new System.Drawing.Point(18, 149);
+            this.txtBairroAlter.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtBairroAlter.Name = "txtBairroAlter";
+            this.txtBairroAlter.Size = new System.Drawing.Size(148, 26);
+            this.txtBairroAlter.TabIndex = 3;
+            // 
+            // maskCEPAlter
+            // 
+            this.maskCEPAlter.Location = new System.Drawing.Point(550, 62);
+            this.maskCEPAlter.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.maskCEPAlter.Mask = "00000-000";
+            this.maskCEPAlter.Name = "maskCEPAlter";
+            this.maskCEPAlter.Size = new System.Drawing.Size(86, 26);
+            this.maskCEPAlter.TabIndex = 2;
+            // 
+            // txtNumLogradouroAlter
+            // 
+            this.txtNumLogradouroAlter.Location = new System.Drawing.Point(444, 62);
+            this.txtNumLogradouroAlter.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtNumLogradouroAlter.Name = "txtNumLogradouroAlter";
+            this.txtNumLogradouroAlter.Size = new System.Drawing.Size(66, 26);
+            this.txtNumLogradouroAlter.TabIndex = 1;
+            // 
+            // txtLogradouroAlter
+            // 
+            this.txtLogradouroAlter.Location = new System.Drawing.Point(9, 62);
+            this.txtLogradouroAlter.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtLogradouroAlter.Name = "txtLogradouroAlter";
+            this.txtLogradouroAlter.Size = new System.Drawing.Size(382, 26);
+            this.txtLogradouroAlter.TabIndex = 0;
+            // 
+            // groupBox3
+            // 
+            this.groupBox3.Controls.Add(this.label27);
+            this.groupBox3.Controls.Add(this.label28);
+            this.groupBox3.Controls.Add(this.label29);
+            this.groupBox3.Controls.Add(this.maskRGAlter);
+            this.groupBox3.Controls.Add(this.maskCPFAlter);
+            this.groupBox3.Controls.Add(this.txtNomeClientAlter);
+            this.groupBox3.Location = new System.Drawing.Point(4, 91);
+            this.groupBox3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.groupBox3.Size = new System.Drawing.Size(658, 136);
+            this.groupBox3.TabIndex = 18;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "Dados Pessoais";
+            // 
+            // label27
+            // 
+            this.label27.AutoSize = true;
+            this.label27.Location = new System.Drawing.Point(542, 45);
+            this.label27.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(34, 20);
+            this.label27.TabIndex = 8;
+            this.label27.Text = "RG";
+            // 
+            // label28
+            // 
+            this.label28.AutoSize = true;
+            this.label28.Location = new System.Drawing.Point(406, 43);
+            this.label28.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(40, 20);
+            this.label28.TabIndex = 7;
+            this.label28.Text = "CPF";
+            // 
+            // label29
+            // 
+            this.label29.AutoSize = true;
+            this.label29.Location = new System.Drawing.Point(10, 45);
+            this.label29.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(51, 20);
+            this.label29.TabIndex = 6;
+            this.label29.Text = "Nome";
+            // 
+            // maskRGAlter
+            // 
+            this.maskRGAlter.Location = new System.Drawing.Point(544, 74);
+            this.maskRGAlter.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.maskRGAlter.Mask = "00.000.000-C";
+            this.maskRGAlter.Name = "maskRGAlter";
+            this.maskRGAlter.Size = new System.Drawing.Size(104, 26);
+            this.maskRGAlter.TabIndex = 2;
+            // 
+            // maskCPFAlter
+            // 
+            this.maskCPFAlter.Location = new System.Drawing.Point(406, 74);
+            this.maskCPFAlter.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.maskCPFAlter.Mask = "000.000.000-00";
+            this.maskCPFAlter.Name = "maskCPFAlter";
+            this.maskCPFAlter.Size = new System.Drawing.Size(121, 26);
+            this.maskCPFAlter.TabIndex = 1;
+            // 
+            // txtNomeClientAlter
+            // 
+            this.txtNomeClientAlter.Location = new System.Drawing.Point(10, 74);
+            this.txtNomeClientAlter.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtNomeClientAlter.Name = "txtNomeClientAlter";
+            this.txtNomeClientAlter.Size = new System.Drawing.Size(380, 26);
+            this.txtNomeClientAlter.TabIndex = 0;
+            // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.Location = new System.Drawing.Point(687, 304);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(161, 20);
+            this.label25.TabIndex = 24;
+            this.label25.Text = "Clientes Cadastrados";
+            // 
+            // btnAlterDadosCliente
+            // 
+            this.btnAlterDadosCliente.Location = new System.Drawing.Point(1117, 23);
+            this.btnAlterDadosCliente.Name = "btnAlterDadosCliente";
+            this.btnAlterDadosCliente.Size = new System.Drawing.Size(207, 55);
+            this.btnAlterDadosCliente.TabIndex = 25;
+            this.btnAlterDadosCliente.Text = "Alterar Dados";
+            this.btnAlterDadosCliente.UseVisualStyleBackColor = true;
+            // 
+            // btnSalvarAlter
+            // 
+            this.btnSalvarAlter.Location = new System.Drawing.Point(6, 653);
+            this.btnSalvarAlter.Name = "btnSalvarAlter";
+            this.btnSalvarAlter.Size = new System.Drawing.Size(207, 55);
+            this.btnSalvarAlter.TabIndex = 26;
+            this.btnSalvarAlter.Text = "Salvar Alterações";
+            this.btnSalvarAlter.UseVisualStyleBackColor = true;
+            // 
             // TelaPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(144F, 144F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
-            this.BackColor = System.Drawing.SystemColors.Control;
+            this.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.ClientSize = new System.Drawing.Size(1372, 754);
             this.Controls.Add(this.pnlPesquisarCliente);
             this.Controls.Add(this.menuStrip1);
@@ -969,6 +1285,12 @@ namespace GenesysGym
             this.pnlPesquisarCliente.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgridClientesCadastrados)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtgridPesquisaCliente)).EndInit();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
+            this.groupBox3.ResumeLayout(false);
+            this.groupBox3.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1032,6 +1354,34 @@ namespace GenesysGym
         private System.Windows.Forms.MaskedTextBox maskTelefone;
         private System.Windows.Forms.Button btnSairPesquisarCliente;
         public System.Windows.Forms.DateTimePicker dttimepickDataMatricula;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.TextBox txtEmailAlter;
+        private System.Windows.Forms.MaskedTextBox maskTelefoneAlter;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.Label label22;
+        private System.Windows.Forms.Label label23;
+        private System.Windows.Forms.TextBox txtEstadoAlter;
+        private System.Windows.Forms.TextBox txtCidadeAlter;
+        private System.Windows.Forms.TextBox txtBairroAlter;
+        private System.Windows.Forms.MaskedTextBox maskCEPAlter;
+        private System.Windows.Forms.TextBox txtNumLogradouroAlter;
+        private System.Windows.Forms.TextBox txtLogradouroAlter;
+        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.Label label27;
+        private System.Windows.Forms.Label label28;
+        private System.Windows.Forms.Label label29;
+        private System.Windows.Forms.MaskedTextBox maskRGAlter;
+        private System.Windows.Forms.MaskedTextBox maskCPFAlter;
+        private System.Windows.Forms.TextBox txtNomeClientAlter;
+        private System.Windows.Forms.Label label25;
+        private System.Windows.Forms.Button btnAlterDadosCliente;
+        private System.Windows.Forms.Button btnSalvarAlter;
     }
 }
 

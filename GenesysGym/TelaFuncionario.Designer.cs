@@ -98,8 +98,6 @@
             this.maskCEPFuncAlter = new System.Windows.Forms.MaskedTextBox();
             this.txtNumLogradouroFuncAlter = new System.Windows.Forms.TextBox();
             this.txtLogradouroFuncAlter = new System.Windows.Forms.TextBox();
-            this.label27 = new System.Windows.Forms.Label();
-            this.txtCodFuncAlter = new System.Windows.Forms.TextBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.label29 = new System.Windows.Forms.Label();
             this.label30 = new System.Windows.Forms.Label();
@@ -111,6 +109,7 @@
             this.menuCadastrarFuncionario = new System.Windows.Forms.ToolStripMenuItem();
             this.menuConsultarFuncionario = new System.Windows.Forms.ToolStripMenuItem();
             this.menuExcluirFuncionario = new System.Windows.Forms.ToolStripMenuItem();
+            this.btnSalvarAlterFuncion = new System.Windows.Forms.Button();
             this.pnlCadastrarFuncionario.SuspendLayout();
             this.grpboxContatosFuncionario.SuspendLayout();
             this.grpboxEnderecoFuncionario.SuspendLayout();
@@ -800,6 +799,7 @@
             // 
             // pnlConsultarFuncionario
             // 
+            this.pnlConsultarFuncionario.Controls.Add(this.btnSalvarAlterFuncion);
             this.pnlConsultarFuncionario.Controls.Add(this.btnAlterarDadosFuncionario);
             this.pnlConsultarFuncionario.Controls.Add(this.label32);
             this.pnlConsultarFuncionario.Controls.Add(this.btnPesquisarFuncionario);
@@ -812,8 +812,6 @@
             this.pnlConsultarFuncionario.Controls.Add(this.txtCargoFuncAlter);
             this.pnlConsultarFuncionario.Controls.Add(this.groupBox1);
             this.pnlConsultarFuncionario.Controls.Add(this.groupBox2);
-            this.pnlConsultarFuncionario.Controls.Add(this.label27);
-            this.pnlConsultarFuncionario.Controls.Add(this.txtCodFuncAlter);
             this.pnlConsultarFuncionario.Controls.Add(this.groupBox3);
             this.pnlConsultarFuncionario.Location = new System.Drawing.Point(14, 42);
             this.pnlConsultarFuncionario.Name = "pnlConsultarFuncionario";
@@ -823,7 +821,7 @@
             // btnAlterarDadosFuncionario
             // 
             this.btnAlterarDadosFuncionario.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
-            this.btnAlterarDadosFuncionario.Location = new System.Drawing.Point(1101, 13);
+            this.btnAlterarDadosFuncionario.Location = new System.Drawing.Point(1101, 22);
             this.btnAlterarDadosFuncionario.Name = "btnAlterarDadosFuncionario";
             this.btnAlterarDadosFuncionario.Size = new System.Drawing.Size(207, 55);
             this.btnAlterarDadosFuncionario.TabIndex = 37;
@@ -833,7 +831,7 @@
             // label32
             // 
             this.label32.AutoSize = true;
-            this.label32.Location = new System.Drawing.Point(685, 252);
+            this.label32.Location = new System.Drawing.Point(699, 264);
             this.label32.Name = "label32";
             this.label32.Size = new System.Drawing.Size(195, 20);
             this.label32.TabIndex = 36;
@@ -842,19 +840,20 @@
             // btnPesquisarFuncionario
             // 
             this.btnPesquisarFuncionario.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
-            this.btnPesquisarFuncionario.Location = new System.Drawing.Point(826, 13);
+            this.btnPesquisarFuncionario.Location = new System.Drawing.Point(826, 22);
             this.btnPesquisarFuncionario.Name = "btnPesquisarFuncionario";
             this.btnPesquisarFuncionario.Size = new System.Drawing.Size(207, 55);
             this.btnPesquisarFuncionario.TabIndex = 35;
             this.btnPesquisarFuncionario.Text = "Pesquisar Funcionário";
             this.btnPesquisarFuncionario.UseVisualStyleBackColor = true;
+            this.btnPesquisarFuncionario.Click += new System.EventHandler(this.btnPesquisarFuncionario_Click);
             // 
             // btnSairPesquisaFuncionario
             // 
-            this.btnSairPesquisaFuncionario.Location = new System.Drawing.Point(1221, 659);
+            this.btnSairPesquisaFuncionario.Location = new System.Drawing.Point(1192, 651);
             this.btnSairPesquisaFuncionario.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnSairPesquisaFuncionario.Name = "btnSairPesquisaFuncionario";
-            this.btnSairPesquisaFuncionario.Size = new System.Drawing.Size(112, 35);
+            this.btnSairPesquisaFuncionario.Size = new System.Drawing.Size(150, 50);
             this.btnSairPesquisaFuncionario.TabIndex = 32;
             this.btnSairPesquisaFuncionario.Text = "Sair";
             this.btnSairPesquisaFuncionario.UseVisualStyleBackColor = true;
@@ -863,11 +862,11 @@
             // dtgridFuncionariosCadastrados
             // 
             this.dtgridFuncionariosCadastrados.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtgridFuncionariosCadastrados.Location = new System.Drawing.Point(685, 278);
+            this.dtgridFuncionariosCadastrados.Location = new System.Drawing.Point(685, 289);
             this.dtgridFuncionariosCadastrados.Name = "dtgridFuncionariosCadastrados";
             this.dtgridFuncionariosCadastrados.RowHeadersWidth = 62;
             this.dtgridFuncionariosCadastrados.RowTemplate.Height = 28;
-            this.dtgridFuncionariosCadastrados.Size = new System.Drawing.Size(658, 365);
+            this.dtgridFuncionariosCadastrados.Size = new System.Drawing.Size(658, 343);
             this.dtgridFuncionariosCadastrados.TabIndex = 34;
             // 
             // dtgridPesquisaFuncionario
@@ -883,7 +882,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(681, 13);
+            this.label1.Location = new System.Drawing.Point(681, 22);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(129, 20);
@@ -892,7 +891,7 @@
             // 
             // txtPesquisarCodFuncionario
             // 
-            this.txtPesquisarCodFuncionario.Location = new System.Drawing.Point(703, 39);
+            this.txtPesquisarCodFuncionario.Location = new System.Drawing.Point(703, 48);
             this.txtPesquisarCodFuncionario.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtPesquisarCodFuncionario.Name = "txtPesquisarCodFuncionario";
             this.txtPesquisarCodFuncionario.Size = new System.Drawing.Size(74, 26);
@@ -901,7 +900,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(191, 23);
+            this.label5.Location = new System.Drawing.Point(18, 12);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(52, 20);
@@ -910,10 +909,10 @@
             // 
             // txtCargoFuncAlter
             // 
-            this.txtCargoFuncAlter.Location = new System.Drawing.Point(196, 48);
+            this.txtCargoFuncAlter.Location = new System.Drawing.Point(23, 37);
             this.txtCargoFuncAlter.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtCargoFuncAlter.Name = "txtCargoFuncAlter";
-            this.txtCargoFuncAlter.Size = new System.Drawing.Size(110, 26);
+            this.txtCargoFuncAlter.Size = new System.Drawing.Size(208, 26);
             this.txtCargoFuncAlter.TabIndex = 28;
             // 
             // groupBox1
@@ -922,7 +921,7 @@
             this.groupBox1.Controls.Add(this.label7);
             this.groupBox1.Controls.Add(this.txtEmailFuncAlter);
             this.groupBox1.Controls.Add(this.maskTelefoneFuncAlter);
-            this.groupBox1.Location = new System.Drawing.Point(10, 512);
+            this.groupBox1.Location = new System.Drawing.Point(6, 498);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(654, 131);
             this.groupBox1.TabIndex = 27;
@@ -976,7 +975,7 @@
             this.groupBox2.Controls.Add(this.maskCEPFuncAlter);
             this.groupBox2.Controls.Add(this.txtNumLogradouroFuncAlter);
             this.groupBox2.Controls.Add(this.txtLogradouroFuncAlter);
-            this.groupBox2.Location = new System.Drawing.Point(6, 278);
+            this.groupBox2.Location = new System.Drawing.Point(2, 278);
             this.groupBox2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
@@ -1094,24 +1093,6 @@
             this.txtLogradouroFuncAlter.Size = new System.Drawing.Size(430, 26);
             this.txtLogradouroFuncAlter.TabIndex = 0;
             // 
-            // label27
-            // 
-            this.label27.AutoSize = true;
-            this.label27.Location = new System.Drawing.Point(8, 22);
-            this.label27.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(129, 20);
-            this.label27.TabIndex = 24;
-            this.label27.Text = "Cod. Funcionário";
-            // 
-            // txtCodFuncAlter
-            // 
-            this.txtCodFuncAlter.Location = new System.Drawing.Point(12, 48);
-            this.txtCodFuncAlter.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.txtCodFuncAlter.Name = "txtCodFuncAlter";
-            this.txtCodFuncAlter.Size = new System.Drawing.Size(64, 26);
-            this.txtCodFuncAlter.TabIndex = 21;
-            // 
             // groupBox3
             // 
             this.groupBox3.Controls.Add(this.label29);
@@ -1120,7 +1101,7 @@
             this.groupBox3.Controls.Add(this.maskRGFuncAlter);
             this.groupBox3.Controls.Add(this.maskCPFFuncAlter);
             this.groupBox3.Controls.Add(this.txtNomeFuncAlter);
-            this.groupBox3.Location = new System.Drawing.Point(6, 91);
+            this.groupBox3.Location = new System.Drawing.Point(2, 91);
             this.groupBox3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
@@ -1218,6 +1199,16 @@
             this.menuExcluirFuncionario.Name = "menuExcluirFuncionario";
             this.menuExcluirFuncionario.Size = new System.Drawing.Size(77, 32);
             this.menuExcluirFuncionario.Text = "Excluir";
+            // 
+            // btnSalvarAlterFuncion
+            // 
+            this.btnSalvarAlterFuncion.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
+            this.btnSalvarAlterFuncion.Location = new System.Drawing.Point(12, 645);
+            this.btnSalvarAlterFuncion.Name = "btnSalvarAlterFuncion";
+            this.btnSalvarAlterFuncion.Size = new System.Drawing.Size(207, 55);
+            this.btnSalvarAlterFuncion.TabIndex = 38;
+            this.btnSalvarAlterFuncion.Text = "Salvar Alterações";
+            this.btnSalvarAlterFuncion.UseVisualStyleBackColor = true;
             // 
             // TelaFuncionario
             // 
@@ -1328,8 +1319,6 @@
         private System.Windows.Forms.MaskedTextBox maskCEPFuncAlter;
         private System.Windows.Forms.TextBox txtNumLogradouroFuncAlter;
         private System.Windows.Forms.TextBox txtLogradouroFuncAlter;
-        private System.Windows.Forms.Label label27;
-        private System.Windows.Forms.TextBox txtCodFuncAlter;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.Label label29;
         private System.Windows.Forms.Label label30;
@@ -1345,5 +1334,6 @@
         private System.Windows.Forms.TextBox txtPesquisarCodFuncionario;
         private System.Windows.Forms.Button btnAlterarDadosFuncionario;
         private System.Windows.Forms.Label label32;
+        private System.Windows.Forms.Button btnSalvarAlterFuncion;
     }
 }

@@ -99,6 +99,23 @@ namespace GenesysGym
         {
             pnlPesquisarCliente.Visible = true;
             pnlCadastrarCliente.Visible=false;
+            btnAlterDadosCliente.Enabled = false;
+
+            DataTable dt = new DataTable();
+
+            string connection_mysql = @"Server=localhost;Database=GenesysGym;Uid=root;Pwd='1234'";
+
+            MySqlConnection msConnection = new MySqlConnection();
+            msConnection.ConnectionString = connection_mysql;
+            msConnection.Open();
+            MySqlCommand msCommand = new MySqlCommand();
+            msCommand.CommandText = "select * from cliente";
+            msCommand.Connection = msConnection;
+            MySqlDataAdapter msdAdapter = new MySqlDataAdapter(msCommand);
+            msdAdapter.Fill(dt);
+
+            dtgridClientesCadastrados.DataSource = dt;
+            msConnection.Close();
         }
 
         private void stripCadastrarFuncionario_Click(object sender, EventArgs e)
@@ -210,6 +227,12 @@ namespace GenesysGym
         private void btnLimparDadosCliente_Click(object sender, EventArgs e)
         {
             LimparForm();
+        }
+
+        private void btnPesquisarCliente_Click(object sender, EventArgs e)
+        {
+            btnAlterDadosCliente.Enabled = true;
+            
         }
     }
 }
