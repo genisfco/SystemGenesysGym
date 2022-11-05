@@ -133,7 +133,7 @@
             this.menuAlterarTreino});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1428, 36);
+            this.menuStrip1.Size = new System.Drawing.Size(1428, 33);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -936,6 +936,7 @@
             this.cboGrup2.Name = "cboGrup2";
             this.cboGrup2.Size = new System.Drawing.Size(190, 28);
             this.cboGrup2.TabIndex = 4;
+            this.cboGrup2.SelectedIndexChanged += new System.EventHandler(this.cboGrup2_SelectedIndexChanged);
             // 
             // cboRep1
             // 
