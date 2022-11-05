@@ -47,6 +47,7 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
+            this.btnLimparTreinoA = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.cboRep8 = new System.Windows.Forms.ComboBox();
@@ -83,6 +84,7 @@
             this.cboGrup1 = new System.Windows.Forms.ComboBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.label9 = new System.Windows.Forms.Label();
+            this.btnLimparTreinoB = new System.Windows.Forms.Button();
             this.cboRep16 = new System.Windows.Forms.ComboBox();
             this.label10 = new System.Windows.Forms.Label();
             this.cboGrup9 = new System.Windows.Forms.ComboBox();
@@ -118,8 +120,6 @@
             this.cboSerie12 = new System.Windows.Forms.ComboBox();
             this.cboGrup13 = new System.Windows.Forms.ComboBox();
             this.cboRep12 = new System.Windows.Forms.ComboBox();
-            this.btnLimparTreinoA = new System.Windows.Forms.Button();
-            this.btnLimparTreinoB = new System.Windows.Forms.Button();
             this.btnGravarTreino = new System.Windows.Forms.Button();
             this.btnSairTreino = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
@@ -129,12 +129,13 @@
             // 
             // menuStrip1
             // 
+            this.menuStrip1.GripMargin = new System.Windows.Forms.Padding(2, 2, 0, 2);
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.menuNovoTreino});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1428, 33);
+            this.menuStrip1.Size = new System.Drawing.Size(1428, 36);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -153,19 +154,19 @@
             this.stripABC,
             this.stripABCD});
             this.stripDivisoesTreino.Name = "stripDivisoesTreino";
-            this.stripDivisoesTreino.Size = new System.Drawing.Size(270, 34);
+            this.stripDivisoesTreino.Size = new System.Drawing.Size(257, 34);
             this.stripDivisoesTreino.Text = "Divisões de Treino";
             // 
             // stripABC
             // 
             this.stripABC.Name = "stripABC";
-            this.stripABC.Size = new System.Drawing.Size(270, 34);
+            this.stripABC.Size = new System.Drawing.Size(160, 34);
             this.stripABC.Text = "ABC";
             // 
             // stripABCD
             // 
             this.stripABCD.Name = "stripABCD";
-            this.stripABCD.Size = new System.Drawing.Size(270, 34);
+            this.stripABCD.Size = new System.Drawing.Size(160, 34);
             this.stripABCD.Text = "ABCD";
             // 
             // label2
@@ -213,6 +214,7 @@
             this.btnBuscarCliente.TabIndex = 6;
             this.btnBuscarCliente.Text = "Buscar";
             this.btnBuscarCliente.UseVisualStyleBackColor = true;
+            this.btnBuscarCliente.Click += new System.EventHandler(this.btnBuscarCliente_Click);
             // 
             // label1
             // 
@@ -332,6 +334,16 @@
             this.label7.Size = new System.Drawing.Size(54, 20);
             this.label7.TabIndex = 34;
             this.label7.Text = "Séries";
+            // 
+            // btnLimparTreinoA
+            // 
+            this.btnLimparTreinoA.Location = new System.Drawing.Point(261, 14);
+            this.btnLimparTreinoA.Name = "btnLimparTreinoA";
+            this.btnLimparTreinoA.Size = new System.Drawing.Size(166, 35);
+            this.btnLimparTreinoA.TabIndex = 22;
+            this.btnLimparTreinoA.Text = "Limpar Treino A";
+            this.btnLimparTreinoA.UseVisualStyleBackColor = true;
+            this.btnLimparTreinoA.Click += new System.EventHandler(this.btnLimparTreinoA_Click);
             // 
             // label6
             // 
@@ -1079,6 +1091,16 @@
             this.label9.TabIndex = 39;
             this.label9.Text = "Rep.";
             // 
+            // btnLimparTreinoB
+            // 
+            this.btnLimparTreinoB.Location = new System.Drawing.Point(254, 14);
+            this.btnLimparTreinoB.Name = "btnLimparTreinoB";
+            this.btnLimparTreinoB.Size = new System.Drawing.Size(166, 35);
+            this.btnLimparTreinoB.TabIndex = 23;
+            this.btnLimparTreinoB.Text = "Limpar Treino B";
+            this.btnLimparTreinoB.UseVisualStyleBackColor = true;
+            this.btnLimparTreinoB.Click += new System.EventHandler(this.btnLimparTreinoB_Click);
+            // 
             // cboRep16
             // 
             this.cboRep16.FormattingEnabled = true;
@@ -1143,6 +1165,7 @@
             this.cboGrup9.Name = "cboGrup9";
             this.cboGrup9.Size = new System.Drawing.Size(190, 28);
             this.cboGrup9.TabIndex = 32;
+            this.cboGrup9.SelectedIndexChanged += new System.EventHandler(this.cboGrup9_SelectedIndexChanged);
             // 
             // label11
             // 
@@ -1232,6 +1255,7 @@
             this.cboGrup16.Name = "cboGrup16";
             this.cboGrup16.Size = new System.Drawing.Size(190, 28);
             this.cboGrup16.TabIndex = 60;
+            this.cboGrup16.SelectedIndexChanged += new System.EventHandler(this.cboGrup16_SelectedIndexChanged);
             // 
             // cboRep9
             // 
@@ -1327,6 +1351,7 @@
             this.cboGrup10.Name = "cboGrup10";
             this.cboGrup10.Size = new System.Drawing.Size(190, 28);
             this.cboGrup10.TabIndex = 36;
+            this.cboGrup10.SelectedIndexChanged += new System.EventHandler(this.cboGrup10_SelectedIndexChanged);
             // 
             // cboSerie15
             // 
@@ -1398,6 +1423,7 @@
             this.cboGrup15.Name = "cboGrup15";
             this.cboGrup15.Size = new System.Drawing.Size(190, 28);
             this.cboGrup15.TabIndex = 56;
+            this.cboGrup15.SelectedIndexChanged += new System.EventHandler(this.cboGrup15_SelectedIndexChanged);
             // 
             // cboRep10
             // 
@@ -1493,6 +1519,7 @@
             this.cboGrup11.Name = "cboGrup11";
             this.cboGrup11.Size = new System.Drawing.Size(190, 28);
             this.cboGrup11.TabIndex = 40;
+            this.cboGrup11.SelectedIndexChanged += new System.EventHandler(this.cboGrup11_SelectedIndexChanged);
             // 
             // cboSerie14
             // 
@@ -1564,6 +1591,7 @@
             this.cboGrup14.Name = "cboGrup14";
             this.cboGrup14.Size = new System.Drawing.Size(190, 28);
             this.cboGrup14.TabIndex = 52;
+            this.cboGrup14.SelectedIndexChanged += new System.EventHandler(this.cboGrup14_SelectedIndexChanged);
             // 
             // cboRep11
             // 
@@ -1659,6 +1687,7 @@
             this.cboGrup12.Name = "cboGrup12";
             this.cboGrup12.Size = new System.Drawing.Size(190, 28);
             this.cboGrup12.TabIndex = 44;
+            this.cboGrup12.SelectedIndexChanged += new System.EventHandler(this.cboGrup12_SelectedIndexChanged);
             // 
             // cboSerie13
             // 
@@ -1730,6 +1759,7 @@
             this.cboGrup13.Name = "cboGrup13";
             this.cboGrup13.Size = new System.Drawing.Size(190, 28);
             this.cboGrup13.TabIndex = 48;
+            this.cboGrup13.SelectedIndexChanged += new System.EventHandler(this.cboGrup13_SelectedIndexChanged);
             // 
             // cboRep12
             // 
@@ -1770,26 +1800,6 @@
             this.cboRep12.Size = new System.Drawing.Size(58, 28);
             this.cboRep12.TabIndex = 47;
             // 
-            // btnLimparTreinoA
-            // 
-            this.btnLimparTreinoA.Location = new System.Drawing.Point(261, 14);
-            this.btnLimparTreinoA.Name = "btnLimparTreinoA";
-            this.btnLimparTreinoA.Size = new System.Drawing.Size(166, 35);
-            this.btnLimparTreinoA.TabIndex = 22;
-            this.btnLimparTreinoA.Text = "Limpar Treino A";
-            this.btnLimparTreinoA.UseVisualStyleBackColor = true;
-            this.btnLimparTreinoA.Click += new System.EventHandler(this.btnLimparTreinoA_Click);
-            // 
-            // btnLimparTreinoB
-            // 
-            this.btnLimparTreinoB.Location = new System.Drawing.Point(254, 14);
-            this.btnLimparTreinoB.Name = "btnLimparTreinoB";
-            this.btnLimparTreinoB.Size = new System.Drawing.Size(166, 35);
-            this.btnLimparTreinoB.TabIndex = 23;
-            this.btnLimparTreinoB.Text = "Limpar Treino B";
-            this.btnLimparTreinoB.UseVisualStyleBackColor = true;
-            this.btnLimparTreinoB.Click += new System.EventHandler(this.btnLimparTreinoB_Click);
-            // 
             // btnGravarTreino
             // 
             this.btnGravarTreino.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -1799,6 +1809,7 @@
             this.btnGravarTreino.TabIndex = 24;
             this.btnGravarTreino.Text = "Gravar Treino";
             this.btnGravarTreino.UseVisualStyleBackColor = true;
+            this.btnGravarTreino.Click += new System.EventHandler(this.btnGravarTreino_Click);
             // 
             // btnSairTreino
             // 

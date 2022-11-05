@@ -1185,6 +1185,8 @@ namespace GenesysGym
             // 
             // dtgridClientesCadastrados
             // 
+            this.dtgridClientesCadastrados.AllowUserToAddRows = false;
+            this.dtgridClientesCadastrados.AllowUserToDeleteRows = false;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
             dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -1204,6 +1206,7 @@ namespace GenesysGym
             this.dtgridClientesCadastrados.DefaultCellStyle = dataGridViewCellStyle2;
             this.dtgridClientesCadastrados.Location = new System.Drawing.Point(678, 327);
             this.dtgridClientesCadastrados.Name = "dtgridClientesCadastrados";
+            this.dtgridClientesCadastrados.ReadOnly = true;
             this.dtgridClientesCadastrados.RowHeadersWidth = 62;
             this.dtgridClientesCadastrados.RowTemplate.Height = 28;
             this.dtgridClientesCadastrados.Size = new System.Drawing.Size(663, 312);
@@ -1211,6 +1214,8 @@ namespace GenesysGym
             // 
             // dtgridPesquisaCliente
             // 
+            this.dtgridPesquisaCliente.AllowUserToAddRows = false;
+            this.dtgridPesquisaCliente.AllowUserToDeleteRows = false;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -1230,6 +1235,7 @@ namespace GenesysGym
             this.dtgridPesquisaCliente.DefaultCellStyle = dataGridViewCellStyle4;
             this.dtgridPesquisaCliente.Location = new System.Drawing.Point(678, 118);
             this.dtgridPesquisaCliente.Name = "dtgridPesquisaCliente";
+            this.dtgridPesquisaCliente.ReadOnly = true;
             this.dtgridPesquisaCliente.RowHeadersWidth = 62;
             this.dtgridPesquisaCliente.RowTemplate.Height = 28;
             this.dtgridPesquisaCliente.Size = new System.Drawing.Size(663, 109);

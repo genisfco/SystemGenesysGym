@@ -110,6 +110,9 @@ namespace GenesysGym
             "Roda abdominal",
         };
 
+
+
+
         
         
         private void cboGrup1_SelectedIndexChanged(object sender, EventArgs e)
@@ -335,8 +338,8 @@ namespace GenesysGym
             }
             else if (cboGrup5.SelectedIndex == 6)
             {
-                cboExerc4.Items.AddRange(exercPanturrilhas);
-                cboExerc4.SelectedIndex = 0;
+                cboExerc5.Items.AddRange(exercPanturrilhas);
+                cboExerc5.SelectedIndex = 0;
             }
             else if (cboGrup5.SelectedIndex == 7)
             {
@@ -514,6 +517,384 @@ namespace GenesysGym
         private void btnSairTreino_Click(object sender, EventArgs e)
         {
             Close();
+        }
+
+        private void btnGravarTreino_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnBuscarCliente_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cboGrup9_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            cboExerc9.Items.Clear();
+
+            if (cboGrup9.SelectedIndex == 0)
+            {
+                cboExerc9.Items.AddRange(exercPeitoral);
+                cboExerc9.SelectedIndex = 0;
+            }
+            else if (cboGrup9.SelectedIndex == 1)
+            {
+                cboExerc9.Items.AddRange(exercCostas);
+                cboExerc9.SelectedIndex = 0;
+            }
+            else if (cboGrup9.SelectedIndex == 2)
+            {
+                cboExerc9.Items.AddRange(exercOmbros);
+                cboExerc9.SelectedIndex = 0;
+            }
+            else if (cboGrup9.SelectedIndex == 3)
+            {
+                cboExerc9.Items.AddRange(exercTriceps);
+                cboExerc9.SelectedIndex = 0;
+            }
+            else if (cboGrup9.SelectedIndex == 4)
+            {
+                cboExerc9.Items.AddRange(exercBiceps);
+                cboExerc9.SelectedIndex = 0;
+            }
+            else if (cboGrup9.SelectedIndex == 5)
+            {
+                cboExerc9.Items.AddRange(exercPernas);
+                cboExerc9.SelectedIndex = 0;
+            }
+            else if (cboGrup9.SelectedIndex == 6)
+            {
+                cboExerc9.Items.AddRange(exercPanturrilhas);
+                cboExerc9.SelectedIndex = 0;
+            }
+            else if (cboGrup9.SelectedIndex == 7)
+            {
+                cboExerc9.Items.AddRange(exercAbdomen);
+                cboExerc9.SelectedIndex = 0;
+            }
+        }
+
+        private void cboGrup10_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            cboExerc10.Items.Clear();
+
+            if (cboGrup10.SelectedIndex == 0)
+            {
+                cboExerc10.Items.AddRange(exercPeitoral);
+                cboExerc10.SelectedIndex = 0;
+            }
+            else if (cboGrup10.SelectedIndex == 1)
+            {
+                cboExerc10.Items.AddRange(exercCostas);
+                cboExerc10.SelectedIndex = 0;
+            }
+            else if (cboGrup10.SelectedIndex == 2)
+            {
+                cboExerc10.Items.AddRange(exercOmbros);
+                cboExerc10.SelectedIndex = 0;
+            }
+            else if (cboGrup10.SelectedIndex == 3)
+            {
+                cboExerc10.Items.AddRange(exercTriceps);
+                cboExerc10.SelectedIndex = 0;
+            }
+            else if (cboGrup10.SelectedIndex == 4)
+            {
+                cboExerc10.Items.AddRange(exercBiceps);
+                cboExerc10.SelectedIndex = 0;
+            }
+            else if (cboGrup10.SelectedIndex == 5)
+            {
+                cboExerc10.Items.AddRange(exercPernas);
+                cboExerc10.SelectedIndex = 0;
+            }
+            else if (cboGrup10.SelectedIndex == 6)
+            {
+                cboExerc10.Items.AddRange(exercPanturrilhas);
+                cboExerc10.SelectedIndex = 0;
+            }
+            else if (cboGrup10.SelectedIndex == 7)
+            {
+                cboExerc10.Items.AddRange(exercAbdomen);
+                cboExerc10.SelectedIndex = 0;
+            }
+        }
+
+        private void cboGrup11_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            cboExerc11.Items.Clear();
+
+            if (cboGrup11.SelectedIndex == 0)
+            {
+                cboExerc11.Items.AddRange(exercPeitoral);
+                cboExerc11.SelectedIndex = 0;
+            }
+            else if (cboGrup11.SelectedIndex == 1)
+            {
+                cboExerc11.Items.AddRange(exercCostas);
+                cboExerc11.SelectedIndex = 0;
+            }
+            else if (cboGrup11.SelectedIndex == 2)
+            {
+                cboExerc11.Items.AddRange(exercOmbros);
+                cboExerc11.SelectedIndex = 0;
+            }
+            else if (cboGrup11.SelectedIndex == 3)
+            {
+                cboExerc11.Items.AddRange(exercTriceps);
+                cboExerc11.SelectedIndex = 0;
+            }
+            else if (cboGrup11.SelectedIndex == 4)
+            {
+                cboExerc11.Items.AddRange(exercBiceps);
+                cboExerc11.SelectedIndex = 0;
+            }
+            else if (cboGrup11.SelectedIndex == 5)
+            {
+                cboExerc11.Items.AddRange(exercPernas);
+                cboExerc11.SelectedIndex = 0;
+            }
+            else if (cboGrup11.SelectedIndex == 6)
+            {
+                cboExerc11.Items.AddRange(exercPanturrilhas);
+                cboExerc11.SelectedIndex = 0;
+            }
+            else if (cboGrup11.SelectedIndex == 7)
+            {
+                cboExerc11.Items.AddRange(exercAbdomen);
+                cboExerc11.SelectedIndex = 0;
+            }
+        }
+
+        private void cboGrup12_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            cboExerc12.Items.Clear();
+
+            if (cboGrup12.SelectedIndex == 0)
+            {
+                cboExerc12.Items.AddRange(exercPeitoral);
+                cboExerc12.SelectedIndex = 0;
+            }
+            else if (cboGrup12.SelectedIndex == 1)
+            {
+                cboExerc12.Items.AddRange(exercCostas);
+                cboExerc12.SelectedIndex = 0;
+            }
+            else if (cboGrup12.SelectedIndex == 2)
+            {
+                cboExerc12.Items.AddRange(exercOmbros);
+                cboExerc12.SelectedIndex = 0;
+            }
+            else if (cboGrup12.SelectedIndex == 3)
+            {
+                cboExerc12.Items.AddRange(exercTriceps);
+                cboExerc12.SelectedIndex = 0;
+            }
+            else if (cboGrup12.SelectedIndex == 4)
+            {
+                cboExerc12.Items.AddRange(exercBiceps);
+                cboExerc12.SelectedIndex = 0;
+            }
+            else if (cboGrup12.SelectedIndex == 5)
+            {
+                cboExerc12.Items.AddRange(exercPernas);
+                cboExerc12.SelectedIndex = 0;
+            }
+            else if (cboGrup12.SelectedIndex == 6)
+            {
+                cboExerc12.Items.AddRange(exercPanturrilhas);
+                cboExerc12.SelectedIndex = 0;
+            }
+            else if (cboGrup12.SelectedIndex == 7)
+            {
+                cboExerc12.Items.AddRange(exercAbdomen);
+                cboExerc12.SelectedIndex = 0;
+            }
+        }
+
+        private void cboGrup13_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            cboExerc13.Items.Clear();
+
+            if (cboGrup13.SelectedIndex == 0)
+            {
+                cboExerc13.Items.AddRange(exercPeitoral);
+                cboExerc13.SelectedIndex = 0;
+            }
+            else if (cboGrup13.SelectedIndex == 1)
+            {
+                cboExerc13.Items.AddRange(exercCostas);
+                cboExerc13.SelectedIndex = 0;
+            }
+            else if (cboGrup13.SelectedIndex == 2)
+            {
+                cboExerc13.Items.AddRange(exercOmbros);
+                cboExerc13.SelectedIndex = 0;
+            }
+            else if (cboGrup13.SelectedIndex == 3)
+            {
+                cboExerc13.Items.AddRange(exercTriceps);
+                cboExerc13.SelectedIndex = 0;
+            }
+            else if (cboGrup13.SelectedIndex == 4)
+            {
+                cboExerc13.Items.AddRange(exercBiceps);
+                cboExerc13.SelectedIndex = 0;
+            }
+            else if (cboGrup13.SelectedIndex == 5)
+            {
+                cboExerc13.Items.AddRange(exercPernas);
+                cboExerc13.SelectedIndex = 0;
+            }
+            else if (cboGrup13.SelectedIndex == 6)
+            {
+                cboExerc13.Items.AddRange(exercPanturrilhas);
+                cboExerc13.SelectedIndex = 0;
+            }
+            else if (cboGrup13.SelectedIndex == 7)
+            {
+                cboExerc13.Items.AddRange(exercAbdomen);
+                cboExerc13.SelectedIndex = 0;
+            }
+        }
+
+        private void cboGrup14_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            cboExerc14.Items.Clear();
+
+            if (cboGrup14.SelectedIndex == 0)
+            {
+                cboExerc14.Items.AddRange(exercPeitoral);
+                cboExerc14.SelectedIndex = 0;
+            }
+            else if (cboGrup14.SelectedIndex == 1)
+            {
+                cboExerc14.Items.AddRange(exercCostas);
+                cboExerc14.SelectedIndex = 0;
+            }
+            else if (cboGrup14.SelectedIndex == 2)
+            {
+                cboExerc14.Items.AddRange(exercOmbros);
+                cboExerc14.SelectedIndex = 0;
+            }
+            else if (cboGrup14.SelectedIndex == 3)
+            {
+                cboExerc14.Items.AddRange(exercTriceps);
+                cboExerc14.SelectedIndex = 0;
+            }
+            else if (cboGrup14.SelectedIndex == 4)
+            {
+                cboExerc14.Items.AddRange(exercBiceps);
+                cboExerc14.SelectedIndex = 0;
+            }
+            else if (cboGrup14.SelectedIndex == 5)
+            {
+                cboExerc14.Items.AddRange(exercPernas);
+                cboExerc14.SelectedIndex = 0;
+            }
+            else if (cboGrup14.SelectedIndex == 6)
+            {
+                cboExerc14.Items.AddRange(exercPanturrilhas);
+                cboExerc14.SelectedIndex = 0;
+            }
+            else if (cboGrup14.SelectedIndex == 7)
+            {
+                cboExerc14.Items.AddRange(exercAbdomen);
+                cboExerc14.SelectedIndex = 0;
+            }
+        }
+
+        private void cboGrup15_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            cboExerc15.Items.Clear();
+
+            if (cboGrup15.SelectedIndex == 0)
+            {
+                cboExerc15.Items.AddRange(exercPeitoral);
+                cboExerc15.SelectedIndex = 0;
+            }
+            else if (cboGrup15.SelectedIndex == 1)
+            {
+                cboExerc15.Items.AddRange(exercCostas);
+                cboExerc15.SelectedIndex = 0;
+            }
+            else if (cboGrup15.SelectedIndex == 2)
+            {
+                cboExerc15.Items.AddRange(exercOmbros);
+                cboExerc15.SelectedIndex = 0;
+            }
+            else if (cboGrup15.SelectedIndex == 3)
+            {
+                cboExerc15.Items.AddRange(exercTriceps);
+                cboExerc15.SelectedIndex = 0;
+            }
+            else if (cboGrup15.SelectedIndex == 4)
+            {
+                cboExerc15.Items.AddRange(exercBiceps);
+                cboExerc15.SelectedIndex = 0;
+            }
+            else if (cboGrup15.SelectedIndex == 5)
+            {
+                cboExerc15.Items.AddRange(exercPernas);
+                cboExerc15.SelectedIndex = 0;
+            }
+            else if (cboGrup15.SelectedIndex == 6)
+            {
+                cboExerc15.Items.AddRange(exercPanturrilhas);
+                cboExerc15.SelectedIndex = 0;
+            }
+            else if (cboGrup15.SelectedIndex == 7)
+            {
+                cboExerc15.Items.AddRange(exercAbdomen);
+                cboExerc15.SelectedIndex = 0;
+            }
+        }
+
+        private void cboGrup16_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            cboExerc16.Items.Clear();
+
+            if (cboGrup16.SelectedIndex == 0)
+            {
+                cboExerc16.Items.AddRange(exercPeitoral);
+                cboExerc16.SelectedIndex = 0;
+            }
+            else if (cboGrup16.SelectedIndex == 1)
+            {
+                cboExerc16.Items.AddRange(exercCostas);
+                cboExerc16.SelectedIndex = 0;
+            }
+            else if (cboGrup16.SelectedIndex == 2)
+            {
+                cboExerc16.Items.AddRange(exercOmbros);
+                cboExerc16.SelectedIndex = 0;
+            }
+            else if (cboGrup16.SelectedIndex == 3)
+            {
+                cboExerc16.Items.AddRange(exercTriceps);
+                cboExerc16.SelectedIndex = 0;
+            }
+            else if (cboGrup16.SelectedIndex == 4)
+            {
+                cboExerc16.Items.AddRange(exercBiceps);
+                cboExerc16.SelectedIndex = 0;
+            }
+            else if (cboGrup16.SelectedIndex == 5)
+            {
+                cboExerc16.Items.AddRange(exercPernas);
+                cboExerc16.SelectedIndex = 0;
+            }
+            else if (cboGrup16.SelectedIndex == 6)
+            {
+                cboExerc16.Items.AddRange(exercPanturrilhas);
+                cboExerc16.SelectedIndex = 0;
+            }
+            else if (cboGrup16.SelectedIndex == 7)
+            {
+                cboExerc16.Items.AddRange(exercAbdomen);
+                cboExerc16.SelectedIndex = 0;
+            }
         }
     }
 }

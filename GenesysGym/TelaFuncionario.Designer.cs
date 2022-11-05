@@ -872,9 +872,12 @@
             // 
             // dtgridFuncionariosCadastrados
             // 
+            this.dtgridFuncionariosCadastrados.AllowUserToAddRows = false;
+            this.dtgridFuncionariosCadastrados.AllowUserToDeleteRows = false;
             this.dtgridFuncionariosCadastrados.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtgridFuncionariosCadastrados.Location = new System.Drawing.Point(685, 289);
             this.dtgridFuncionariosCadastrados.Name = "dtgridFuncionariosCadastrados";
+            this.dtgridFuncionariosCadastrados.ReadOnly = true;
             this.dtgridFuncionariosCadastrados.RowHeadersWidth = 62;
             this.dtgridFuncionariosCadastrados.RowTemplate.Height = 28;
             this.dtgridFuncionariosCadastrados.Size = new System.Drawing.Size(658, 343);
@@ -882,9 +885,12 @@
             // 
             // dtgridPesquisaFuncionario
             // 
+            this.dtgridPesquisaFuncionario.AllowUserToAddRows = false;
+            this.dtgridPesquisaFuncionario.AllowUserToDeleteRows = false;
             this.dtgridPesquisaFuncionario.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtgridPesquisaFuncionario.Location = new System.Drawing.Point(685, 110);
             this.dtgridPesquisaFuncionario.Name = "dtgridPesquisaFuncionario";
+            this.dtgridPesquisaFuncionario.ReadOnly = true;
             this.dtgridPesquisaFuncionario.RowHeadersWidth = 62;
             this.dtgridPesquisaFuncionario.RowTemplate.Height = 28;
             this.dtgridPesquisaFuncionario.Size = new System.Drawing.Size(658, 109);
@@ -1187,28 +1193,28 @@
             this.menuExcluirFuncionario});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1372, 36);
+            this.menuStrip1.Size = new System.Drawing.Size(1372, 33);
             this.menuStrip1.TabIndex = 7;
             this.menuStrip1.Text = "menuStrip1";
             // 
             // menuCadastrarFuncionario
             // 
             this.menuCadastrarFuncionario.Name = "menuCadastrarFuncionario";
-            this.menuCadastrarFuncionario.Size = new System.Drawing.Size(103, 32);
+            this.menuCadastrarFuncionario.Size = new System.Drawing.Size(103, 29);
             this.menuCadastrarFuncionario.Text = "Cadastrar";
             this.menuCadastrarFuncionario.Click += new System.EventHandler(this.menuCadastrarFuncionario_Click);
             // 
             // menuConsultarFuncionario
             // 
             this.menuConsultarFuncionario.Name = "menuConsultarFuncionario";
-            this.menuConsultarFuncionario.Size = new System.Drawing.Size(103, 32);
+            this.menuConsultarFuncionario.Size = new System.Drawing.Size(103, 29);
             this.menuConsultarFuncionario.Text = "Consultar";
             this.menuConsultarFuncionario.Click += new System.EventHandler(this.menuConsultarFuncionario_Click);
             // 
             // menuExcluirFuncionario
             // 
             this.menuExcluirFuncionario.Name = "menuExcluirFuncionario";
-            this.menuExcluirFuncionario.Size = new System.Drawing.Size(77, 32);
+            this.menuExcluirFuncionario.Size = new System.Drawing.Size(77, 29);
             this.menuExcluirFuncionario.Text = "Excluir";
             // 
             // TelaFuncionario
