@@ -42,10 +42,10 @@
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.btnNovoUser = new System.Windows.Forms.Button();
-            this.btnSalvarUser = new System.Windows.Forms.Button();
-            this.btnCancelar = new System.Windows.Forms.Button();
             this.btnFechar = new System.Windows.Forms.Button();
+            this.btnLimpar = new System.Windows.Forms.Button();
+            this.btnSalvarUser = new System.Windows.Forms.Button();
+            this.btnNovoUser = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.nup_Nivel)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -68,6 +68,7 @@
             // 
             this.txt_Senha.Location = new System.Drawing.Point(534, 36);
             this.txt_Senha.Name = "txt_Senha";
+            this.txt_Senha.PasswordChar = '*';
             this.txt_Senha.Size = new System.Drawing.Size(145, 26);
             this.txt_Senha.TabIndex = 2;
             // 
@@ -180,7 +181,7 @@
             // panel1
             // 
             this.panel1.Controls.Add(this.btnFechar);
-            this.panel1.Controls.Add(this.btnCancelar);
+            this.panel1.Controls.Add(this.btnLimpar);
             this.panel1.Controls.Add(this.btnSalvarUser);
             this.panel1.Controls.Add(this.btnNovoUser);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
@@ -188,36 +189,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(764, 65);
             this.panel1.TabIndex = 13;
-            // 
-            // btnNovoUser
-            // 
-            this.btnNovoUser.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnNovoUser.Location = new System.Drawing.Point(13, 4);
-            this.btnNovoUser.Name = "btnNovoUser";
-            this.btnNovoUser.Size = new System.Drawing.Size(99, 49);
-            this.btnNovoUser.TabIndex = 0;
-            this.btnNovoUser.Text = "Novo";
-            this.btnNovoUser.UseVisualStyleBackColor = true;
-            // 
-            // btnSalvarUser
-            // 
-            this.btnSalvarUser.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnSalvarUser.Location = new System.Drawing.Point(135, 4);
-            this.btnSalvarUser.Name = "btnSalvarUser";
-            this.btnSalvarUser.Size = new System.Drawing.Size(99, 49);
-            this.btnSalvarUser.TabIndex = 1;
-            this.btnSalvarUser.Text = "Salvar";
-            this.btnSalvarUser.UseVisualStyleBackColor = true;
-            // 
-            // btnCancelar
-            // 
-            this.btnCancelar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnCancelar.Location = new System.Drawing.Point(259, 4);
-            this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(99, 49);
-            this.btnCancelar.TabIndex = 2;
-            this.btnCancelar.Text = "Cancelar";
-            this.btnCancelar.UseVisualStyleBackColor = true;
             // 
             // btnFechar
             // 
@@ -228,6 +199,40 @@
             this.btnFechar.TabIndex = 3;
             this.btnFechar.Text = "Fechar";
             this.btnFechar.UseVisualStyleBackColor = true;
+            this.btnFechar.Click += new System.EventHandler(this.btnFechar_Click);
+            // 
+            // btnLimpar
+            // 
+            this.btnLimpar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnLimpar.Location = new System.Drawing.Point(259, 4);
+            this.btnLimpar.Name = "btnLimpar";
+            this.btnLimpar.Size = new System.Drawing.Size(99, 49);
+            this.btnLimpar.TabIndex = 2;
+            this.btnLimpar.Text = "Limpar";
+            this.btnLimpar.UseVisualStyleBackColor = true;
+            this.btnLimpar.Click += new System.EventHandler(this.btnLimpar_Click);
+            // 
+            // btnSalvarUser
+            // 
+            this.btnSalvarUser.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnSalvarUser.Location = new System.Drawing.Point(135, 4);
+            this.btnSalvarUser.Name = "btnSalvarUser";
+            this.btnSalvarUser.Size = new System.Drawing.Size(99, 49);
+            this.btnSalvarUser.TabIndex = 1;
+            this.btnSalvarUser.Text = "Salvar";
+            this.btnSalvarUser.UseVisualStyleBackColor = true;
+            this.btnSalvarUser.Click += new System.EventHandler(this.btnSalvarUser_Click);
+            // 
+            // btnNovoUser
+            // 
+            this.btnNovoUser.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnNovoUser.Location = new System.Drawing.Point(13, 4);
+            this.btnNovoUser.Name = "btnNovoUser";
+            this.btnNovoUser.Size = new System.Drawing.Size(99, 49);
+            this.btnNovoUser.TabIndex = 0;
+            this.btnNovoUser.Text = "Novo";
+            this.btnNovoUser.UseVisualStyleBackColor = true;
+            this.btnNovoUser.Click += new System.EventHandler(this.btnNovoUser_Click);
             // 
             // TelaNovoUser
             // 
@@ -274,7 +279,7 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button btnFechar;
-        private System.Windows.Forms.Button btnCancelar;
+        private System.Windows.Forms.Button btnLimpar;
         private System.Windows.Forms.Button btnSalvarUser;
         private System.Windows.Forms.Button btnNovoUser;
     }

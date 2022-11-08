@@ -11,7 +11,6 @@ nivel_user int
 );
 select * from usuarios; 
 
-
 create table cliente(
 codCliente int not null,
 nmCliente varchar (300),
