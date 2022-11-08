@@ -108,6 +108,12 @@
     <Compile Include="TelaFuncionario.Designer.cs">
       <DependentUpon>TelaFuncionario.cs</DependentUpon>
     </Compile>
+    <Compile Include="TelaGestaoUsers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TelaGestaoUsers.Designer.cs">
+      <DependentUpon>TelaGestaoUsers.cs</DependentUpon>
+    </Compile>
     <Compile Include="TelaNovoUser.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -144,6 +150,9 @@
     </Compile>
     <EmbeddedResource Include="TelaFuncionario.resx">
       <DependentUpon>TelaFuncionario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TelaGestaoUsers.resx">
+      <DependentUpon>TelaGestaoUsers.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TelaNovoUser.resx">
       <DependentUpon>TelaNovoUser.cs</DependentUpon>

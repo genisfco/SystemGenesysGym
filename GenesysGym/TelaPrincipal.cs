@@ -410,7 +410,8 @@ namespace GenesysGym
             {
                 if (Globais.nivel == 3)
                 {
-                    ////PROCEDIMENTOS TELA
+                    TelaGestaoUsers abrirTelaGestaoUsers = new TelaGestaoUsers();
+                    abrirTelaGestaoUsers.ShowDialog();
                 }
                 else
                 {

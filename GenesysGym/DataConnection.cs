@@ -33,19 +33,18 @@ namespace GenesysGym
 
             try
             {
-                using (var cmd = ConexaoBanco().CreateCommand()) 
-                {
-                    cmd.CommandText = "SELECT * FROM usuarios";
-                    msdAdapter = new MySqlDataAdapter(cmd.CommandText, ConexaoBanco());
-                    msdAdapter.Fill(dt);
-                    ConexaoBanco().Close();
+                var vcon = ConexaoBanco();
+                var cmd = vcon.CreateCommand();
+                cmd.CommandText = "SELECT * FROM usuarios";
+                msdAdapter = new MySqlDataAdapter(cmd.CommandText, vcon);
+                msdAdapter.Fill(dt);
+                vcon.Close();
 
-                    return dt;
-                }
+                return dt;
+                
             }
             catch (Exception ex)
             {
-                ConexaoBanco().Close();
                 throw ex;
             }
         }
@@ -57,19 +56,16 @@ namespace GenesysGym
 
             try
             {
-                using (var cmd = ConexaoBanco().CreateCommand())
-                {
-                    cmd.CommandText = sql;
-                    msdAdapter = new MySqlDataAdapter(cmd.CommandText, ConexaoBanco());
-                    msdAdapter.Fill(dt);
-                    ConexaoBanco().Close();
-
-                    return dt;
-                }
+                var vcon = ConexaoBanco();
+                var cmd = vcon.CreateCommand();                
+                cmd.CommandText = sql;
+                msdAdapter = new MySqlDataAdapter (cmd.CommandText, vcon);
+                msdAdapter.Fill(dt);
+                vcon.Close();
+                return dt;                
             }
             catch (Exception ex)
             {
-                ConexaoBanco().Close();
                 throw ex; 
             }
 
@@ -86,7 +82,8 @@ namespace GenesysGym
             }
             try
             {
-                var cmd = ConexaoBanco().CreateCommand();
+                var vcon = ConexaoBanco();
+                var cmd = vcon.CreateCommand();
                 cmd.CommandText = "INSERT INTO usuarios (nome_user, username, senha_user, status_user, nivel_user) VALUES (@nome, @username, @password, @status, @nivel)";
 
                 cmd.Parameters.AddWithValue("@nome", user.nome);
@@ -98,12 +95,11 @@ namespace GenesysGym
                 cmd.ExecuteNonQuery();
 
                 MessageBox.Show("Novo Usuário Cadastrado!");
-                ConexaoBanco().Close();
+                vcon.Close();
             }
             catch (Exception ex)
             {
                 MessageBox.Show("Erro ao gravar novo usuário!");
-                ConexaoBanco().Close();
             }
         }
 
@@ -114,9 +110,10 @@ namespace GenesysGym
             MySqlDataAdapter msdAdapter = null;
             DataTable dt = new DataTable();
 
-            var cmd=ConexaoBanco().CreateCommand();
+            var vcon = ConexaoBanco();
+            var cmd = vcon.CreateCommand();
             cmd.CommandText = "SELECT username FROM usuarios WHERE username='"+user.username+"'";
-            msdAdapter = new MySqlDataAdapter(cmd.CommandText, ConexaoBanco());
+            msdAdapter = new MySqlDataAdapter(cmd.CommandText, vcon);
             msdAdapter.Fill(dt);
 
             if(dt.Rows.Count > 0)
@@ -127,15 +124,40 @@ namespace GenesysGym
             {
                 res = false;
             }
+            vcon.Close();
             return res;
+        }
+        // FIM DAS FUNÇÕES TELA NOVO USER
+        //
+        //
+        //
+        // FUNÇÕES DA TELA GESTÃO DE USUARIOS
+
+        public static DataTable ObterUsuariosIdNome()
+        {
+            MySqlDataAdapter msdAdapter = null;
+            DataTable dt = new DataTable();
+
+            try
+            {
+                var vcon = ConexaoBanco();
+                var cmd = vcon.CreateCommand();
+                cmd.CommandText = "SELECT id_user as 'ID Usuário', nome_user as 'Nome Usuário' FROM usuarios";
+                msdAdapter = new MySqlDataAdapter(cmd.CommandText, vcon);
+                msdAdapter.Fill(dt);
+                vcon.Close();
+
+                return dt;
+
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
         }
 
 
-
-
-
-
-        // FIM DAS FUNÇÕES TELA NOVO USER
+        // FIM DAS FUNÇOES TELA GESTÃO USUARIOS
     }   
 
 }
