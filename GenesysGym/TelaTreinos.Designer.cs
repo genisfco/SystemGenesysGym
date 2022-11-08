@@ -135,7 +135,7 @@
             this.menuNovoTreino});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1428, 36);
+            this.menuStrip1.Size = new System.Drawing.Size(1428, 33);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -208,6 +208,7 @@
             // 
             // btnBuscarCliente
             // 
+            this.btnBuscarCliente.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnBuscarCliente.Location = new System.Drawing.Point(553, 47);
             this.btnBuscarCliente.Name = "btnBuscarCliente";
             this.btnBuscarCliente.Size = new System.Drawing.Size(126, 51);
@@ -337,6 +338,7 @@
             // 
             // btnLimparTreinoA
             // 
+            this.btnLimparTreinoA.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnLimparTreinoA.Location = new System.Drawing.Point(261, 14);
             this.btnLimparTreinoA.Name = "btnLimparTreinoA";
             this.btnLimparTreinoA.Size = new System.Drawing.Size(166, 35);
@@ -1093,6 +1095,7 @@
             // 
             // btnLimparTreinoB
             // 
+            this.btnLimparTreinoB.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnLimparTreinoB.Location = new System.Drawing.Point(254, 14);
             this.btnLimparTreinoB.Name = "btnLimparTreinoB";
             this.btnLimparTreinoB.Size = new System.Drawing.Size(166, 35);
@@ -1802,6 +1805,7 @@
             // 
             // btnGravarTreino
             // 
+            this.btnGravarTreino.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnGravarTreino.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGravarTreino.Location = new System.Drawing.Point(513, 667);
             this.btnGravarTreino.Name = "btnGravarTreino";
@@ -1813,6 +1817,7 @@
             // 
             // btnSairTreino
             // 
+            this.btnSairTreino.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnSairTreino.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSairTreino.Location = new System.Drawing.Point(1246, 667);
             this.btnSairTreino.Name = "btnSairTreino";
@@ -1827,7 +1832,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(144F, 144F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.ClientSize = new System.Drawing.Size(1428, 744);
+            this.ClientSize = new System.Drawing.Size(1428, 754);
             this.Controls.Add(this.btnSairTreino);
             this.Controls.Add(this.btnGravarTreino);
             this.Controls.Add(this.groupBox2);
@@ -1845,7 +1850,8 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.menuStrip1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.MaximumSize = new System.Drawing.Size(1450, 800);
+            this.MaximumSize = new System.Drawing.Size(1450, 810);
+            this.MinimumSize = new System.Drawing.Size(1450, 810);
             this.Name = "TelaTreinos";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Treinos";

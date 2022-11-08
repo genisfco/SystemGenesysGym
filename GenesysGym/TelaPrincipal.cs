@@ -18,6 +18,9 @@ namespace GenesysGym
         public TelaPrincipal()
         {
             InitializeComponent();
+            TelaLogin telaLogin = new TelaLogin(this);
+            telaLogin.ShowDialog();      
+
         }
                 
         private bool ValidarForm()
@@ -85,51 +88,116 @@ namespace GenesysGym
 
         private void TelaPrincipal_Load(object sender, EventArgs e)
         {
-            pnlCadastrarCliente.Visible = true;
+            pnlCadastrarCliente.Visible = false;
             pnlPesquisarCliente.Visible = false;
+            
         }        
 
         private void stripCadastrarCliente_Click(object sender, EventArgs e)
         {
-            pnlCadastrarCliente.Visible = true;
-            pnlPesquisarCliente.Visible = false;
+            if (Globais.logado == true)
+            {
+                if (Globais.nivel >= 2)
+                {
+                    ////PROCEDIMENTOS TELA
+                    pnlCadastrarCliente.Visible = true;
+                    pnlPesquisarCliente.Visible = false;
+                }
+                else
+                {
+                    MessageBox.Show("Acesso não permitido!");
+                }
+            }
+            else
+            {
+                MessageBox.Show("Necessário ter um Usuário logado!");
+            }
+
+
+           
         }
 
         private void stripPesquisarCliente_Click(object sender, EventArgs e)
         {
-            pnlPesquisarCliente.Visible = true;
-            pnlCadastrarCliente.Visible=false;
-            btnAlterDadosCliente.Enabled = false;
-            btnSalvarAlter.Enabled = false;
+            if (Globais.logado == true)
+            {
+                if (Globais.nivel >= 2)
+                {
+                    ////PROCEDIMENTOS TELA
+                    pnlPesquisarCliente.Visible = true;
+                    pnlCadastrarCliente.Visible = false;
+                    btnAlterDadosCliente.Enabled = false;
+                    btnSalvarAlter.Enabled = false;
 
-            DataTable dt = new DataTable();
+                    DataTable dt = new DataTable();
 
-            string connection_mysql = @"Server=localhost;Database=GenesysGym;Uid=root;Pwd='1234'";
+                    string connection_mysql = @"Server=localhost;Database=GenesysGym;Uid=root;Pwd='1234'";
 
-            MySqlConnection msConnection = new MySqlConnection();
-            msConnection.ConnectionString = connection_mysql;
-            msConnection.Open();
-            MySqlCommand msCommand = new MySqlCommand();
-            msCommand.CommandText = "select * from cliente";
-            msCommand.Connection = msConnection;
-            MySqlDataAdapter msdAdapter = new MySqlDataAdapter(msCommand);
-            msdAdapter.Fill(dt);
+                    MySqlConnection msConnection = new MySqlConnection();
+                    msConnection.ConnectionString = connection_mysql;
+                    msConnection.Open();
+                    MySqlCommand msCommand = new MySqlCommand();
+                    msCommand.CommandText = "select * from cliente";
+                    msCommand.Connection = msConnection;
+                    MySqlDataAdapter msdAdapter = new MySqlDataAdapter(msCommand);
+                    msdAdapter.Fill(dt);
 
-            dtgridClientesCadastrados.DataSource = dt;
-            msConnection.Close();
+                    dtgridClientesCadastrados.DataSource = dt;
+                    msConnection.Close();
+
+                }
+                else
+                {
+                    MessageBox.Show("Acesso não permitido!");
+                }
+            }
+            else
+            {
+                MessageBox.Show("Necessário ter um Usuário logado!");
+            }            
         }
 
         private void stripCadastrarFuncionario_Click(object sender, EventArgs e)
         {
-            TelaFuncionario abrirTelaFuncionario = new TelaFuncionario();
-            abrirTelaFuncionario.Show();                    
+            if (Globais.logado == true)
+            {
+                if (Globais.nivel == 3)
+                {
+                    ////PROCEDIMENTOS TELA
+                    TelaFuncionario abrirTelaFuncionario = new TelaFuncionario();
+                    abrirTelaFuncionario.Show();
+                }
+                else
+                {
+                    MessageBox.Show("Acesso não permitido!");
+                }
+            }
+            else
+            {
+                MessageBox.Show("Necessário ter um Usuário logado!");
+            }                             
                        
         }
 
         private void stripRegistrarAlterarTreino_Click(object sender, EventArgs e)
         {
-            TelaTreinos abrirTelaTreinos = new TelaTreinos();
-            abrirTelaTreinos.Show();
+            if (Globais.logado == true)
+            {
+                if (Globais.nivel == 1)
+                {
+                    ////PROCEDIMENTOS TELA
+                    TelaTreinos abrirTelaTreinos = new TelaTreinos();
+                    abrirTelaTreinos.Show();
+                }
+                else
+                {
+                    MessageBox.Show("Acesso não permitido!");
+                }
+            }
+            else
+            {
+                MessageBox.Show("Necessário ter um Usuário logado!");
+            }            
         }
 
         private void btnSairCadastrarCliente_Click(object sender, EventArgs e)
@@ -274,6 +342,126 @@ namespace GenesysGym
             btnAlterDadosCliente.Enabled = false;
             btnSalvarAlter.Enabled = true;
            
+        }
+
+        private void strip_Logon_Click(object sender, EventArgs e)
+        {
+            TelaLogin telaLogin = new TelaLogin(this);
+            telaLogin.ShowDialog();
+            
+        }
+
+        private void strip_logoff_Click(object sender, EventArgs e)
+        {
+            lb_Acesso.Text = "0";
+            lb_NomeUsuario.Text = "---";
+            pb_ledLogado.Image = Properties.Resources.vermelho_led;
+
+            Globais.nivel = 0;
+            Globais.logado = false;
+
+            pnlCadastrarCliente.Visible = false;
+            pnlPesquisarCliente.Visible = false;
+           
+        }
+
+        private void strip_BancoDados_Click(object sender, EventArgs e)
+        {
+            if(Globais.logado == true)
+            {   
+                if(Globais.nivel == 3)
+                {
+                    ////PROCEDIMENTOS TELA
+                }
+                else
+                {
+                    MessageBox.Show("Acesso não permitido!");
+                }
+            }
+            else
+            {
+                MessageBox.Show("Necessário ter um Usuário logado!");
+            }
+        }
+
+        private void strip_NovoUser_Click(object sender, EventArgs e)
+        {
+            if (Globais.logado == true)
+            {
+                if (Globais.nivel == 3)
+                {
+                    TelaNovoUser abrirTelaNovoUser = new TelaNovoUser();
+                    abrirTelaNovoUser.ShowDialog();
+                }
+                else
+                {
+                    MessageBox.Show("Acesso não permitido!");
+                }
+            }
+            else
+            {
+                MessageBox.Show("Necessário ter um Usuário logado!");
+            }
+        }
+
+        private void strip_GestaoUser_Click(object sender, EventArgs e)
+        {
+            if (Globais.logado == true)
+            {
+                if (Globais.nivel == 3)
+                {
+                    ////PROCEDIMENTOS TELA
+                }
+                else
+                {
+                    MessageBox.Show("Acesso não permitido!");
+                }
+            }
+            else
+            {
+                MessageBox.Show("Necessário ter um Usuário logado!");
+            }
+        }
+
+        private void stripExcluirFuncionario_Click(object sender, EventArgs e)
+        {
+            if (Globais.logado == true)
+            {
+                if (Globais.nivel == 3)
+                {
+                    ////PROCEDIMENTOS TELA
+                    
+                }
+                else
+                {
+                    MessageBox.Show("Acesso não permitido!");
+                }
+            }
+            else
+            {
+                MessageBox.Show("Necessário ter um Usuário logado!");
+            }
+
+        }
+
+        private void stripExcluirCliente_Click(object sender, EventArgs e)
+        {
+            if (Globais.logado == true)
+            {
+                if (Globais.nivel == 3)
+                {
+                    ////PROCEDIMENTOS TELA
+                }
+                else
+                {
+                    MessageBox.Show("Acesso não permitido!");
+                }
+            }
+            else
+            {
+                MessageBox.Show("Necessário ter um Usuário logado!");
+            }
+
         }
     }
 }

@@ -9,7 +9,7 @@ senha_user varchar (20),
 status_user varchar (1),
 nivel_user int
 );
-select * from usuarios;
+select * from usuarios; 
 
 
 create table cliente(

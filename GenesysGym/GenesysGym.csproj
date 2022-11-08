@@ -94,11 +94,25 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Compile>
+    <Compile Include="DataConnection.cs" />
+    <Compile Include="Globais.cs" />
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
     <Compile Include="TelaFuncionario.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="TelaFuncionario.Designer.cs">
       <DependentUpon>TelaFuncionario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TelaNovoUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TelaNovoUser.Designer.cs">
+      <DependentUpon>TelaNovoUser.cs</DependentUpon>
     </Compile>
     <Compile Include="TelaPrincipal.cs">
       <SubType>Form</SubType>
@@ -114,6 +128,9 @@
     <Compile Include="TelaTreinos.Designer.cs">
       <DependentUpon>TelaTreinos.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -122,9 +139,13 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="TelaFuncionario.resx">
       <DependentUpon>TelaFuncionario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TelaNovoUser.resx">
+      <DependentUpon>TelaNovoUser.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TelaPrincipal.resx">
       <DependentUpon>TelaPrincipal.cs</DependentUpon>
@@ -329,6 +350,12 @@
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vermelho_led.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\verde_led.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -209,6 +209,7 @@
             // 
             // btnSairCadastrarFuncionario
             // 
+            this.btnSairCadastrarFuncionario.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnSairCadastrarFuncionario.Location = new System.Drawing.Point(504, 651);
             this.btnSairCadastrarFuncionario.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnSairCadastrarFuncionario.Name = "btnSairCadastrarFuncionario";
@@ -220,6 +221,7 @@
             // 
             // btnLimparDadosFuncionario
             // 
+            this.btnLimparDadosFuncionario.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnLimparDadosFuncionario.Location = new System.Drawing.Point(292, 650);
             this.btnLimparDadosFuncionario.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnLimparDadosFuncionario.Name = "btnLimparDadosFuncionario";
@@ -830,6 +832,7 @@
             // 
             // btnAlterarDadosFuncionario
             // 
+            this.btnAlterarDadosFuncionario.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnAlterarDadosFuncionario.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
             this.btnAlterarDadosFuncionario.Location = new System.Drawing.Point(1101, 22);
             this.btnAlterarDadosFuncionario.Name = "btnAlterarDadosFuncionario";
@@ -842,7 +845,7 @@
             // label32
             // 
             this.label32.AutoSize = true;
-            this.label32.Location = new System.Drawing.Point(699, 264);
+            this.label32.Location = new System.Drawing.Point(681, 323);
             this.label32.Name = "label32";
             this.label32.Size = new System.Drawing.Size(195, 20);
             this.label32.TabIndex = 36;
@@ -850,6 +853,7 @@
             // 
             // btnPesquisarFuncionario
             // 
+            this.btnPesquisarFuncionario.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnPesquisarFuncionario.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
             this.btnPesquisarFuncionario.Location = new System.Drawing.Point(826, 22);
             this.btnPesquisarFuncionario.Name = "btnPesquisarFuncionario";
@@ -861,6 +865,7 @@
             // 
             // btnSairPesquisaFuncionario
             // 
+            this.btnSairPesquisaFuncionario.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnSairPesquisaFuncionario.Location = new System.Drawing.Point(1192, 651);
             this.btnSairPesquisaFuncionario.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnSairPesquisaFuncionario.Name = "btnSairPesquisaFuncionario";
@@ -875,12 +880,12 @@
             this.dtgridFuncionariosCadastrados.AllowUserToAddRows = false;
             this.dtgridFuncionariosCadastrados.AllowUserToDeleteRows = false;
             this.dtgridFuncionariosCadastrados.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtgridFuncionariosCadastrados.Location = new System.Drawing.Point(685, 289);
+            this.dtgridFuncionariosCadastrados.Location = new System.Drawing.Point(685, 346);
             this.dtgridFuncionariosCadastrados.Name = "dtgridFuncionariosCadastrados";
             this.dtgridFuncionariosCadastrados.ReadOnly = true;
             this.dtgridFuncionariosCadastrados.RowHeadersWidth = 62;
             this.dtgridFuncionariosCadastrados.RowTemplate.Height = 28;
-            this.dtgridFuncionariosCadastrados.Size = new System.Drawing.Size(658, 343);
+            this.dtgridFuncionariosCadastrados.Size = new System.Drawing.Size(658, 286);
             this.dtgridFuncionariosCadastrados.TabIndex = 34;
             // 
             // dtgridPesquisaFuncionario
@@ -893,7 +898,7 @@
             this.dtgridPesquisaFuncionario.ReadOnly = true;
             this.dtgridPesquisaFuncionario.RowHeadersWidth = 62;
             this.dtgridPesquisaFuncionario.RowTemplate.Height = 28;
-            this.dtgridPesquisaFuncionario.Size = new System.Drawing.Size(658, 109);
+            this.dtgridPesquisaFuncionario.Size = new System.Drawing.Size(658, 141);
             this.dtgridPesquisaFuncionario.TabIndex = 33;
             // 
             // label1
