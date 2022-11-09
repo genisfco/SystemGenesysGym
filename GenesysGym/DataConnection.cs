@@ -226,9 +226,33 @@ namespace GenesysGym
                 throw ex;
             }
         }
-
-
         // FIM DAS FUNÇOES TELA GESTÃO USUARIOS
+
+
+        //FUNÇÕES PARA PESQUISA E ALTERAÇÃO DE CLIENTES
+
+        public static DataTable ObterDadosCliente(string cpf)
+        {
+            MySqlDataAdapter msdAdapter = null;
+            DataTable dt = new DataTable();
+
+            try
+            {
+                var vcon = ConexaoBanco();
+                var cmd = vcon.CreateCommand();
+                cmd.CommandText = "SELECT * FROM cliente WHERE cpf =" + cpf;
+                msdAdapter = new MySqlDataAdapter(cmd.CommandText, vcon);
+                msdAdapter.Fill(dt);
+                vcon.Close();
+
+                return dt;
+
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
     }   
 
 }

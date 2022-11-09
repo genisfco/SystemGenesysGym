@@ -92,7 +92,6 @@ namespace GenesysGym
             this.strip_NovoUser = new System.Windows.Forms.ToolStripMenuItem();
             this.pnlPesquisarCliente = new System.Windows.Forms.Panel();
             this.btnSalvarAlter = new System.Windows.Forms.Button();
-            this.btnAlterDadosCliente = new System.Windows.Forms.Button();
             this.label25 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label16 = new System.Windows.Forms.Label();
@@ -131,6 +130,7 @@ namespace GenesysGym
             this.lb_Acesso = new System.Windows.Forms.Label();
             this.label26 = new System.Windows.Forms.Label();
             this.pb_ledLogado = new System.Windows.Forms.PictureBox();
+            this.btnAlterDadosCliente = new System.Windows.Forms.Button();
             this.pnlCadastrarCliente.SuspendLayout();
             this.grpboxContatos.SuspendLayout();
             this.grpboxEndereco.SuspendLayout();
@@ -804,7 +804,6 @@ namespace GenesysGym
             // 
             // menuStrip1
             // 
-            this.menuStrip1.GripMargin = new System.Windows.Forms.Padding(2, 2, 0, 2);
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.menu_Login,
@@ -815,7 +814,7 @@ namespace GenesysGym
             this.menu_Usuarios});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1372, 36);
+            this.menuStrip1.Size = new System.Drawing.Size(1372, 33);
             this.menuStrip1.TabIndex = 3;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -825,7 +824,7 @@ namespace GenesysGym
             this.strip_Logon,
             this.strip_logoff});
             this.menu_Login.Name = "menu_Login";
-            this.menu_Login.Size = new System.Drawing.Size(79, 32);
+            this.menu_Login.Size = new System.Drawing.Size(79, 29);
             this.menu_Login.Text = "LOGIN";
             // 
             // strip_Logon
@@ -849,7 +848,7 @@ namespace GenesysGym
             this.stripPesquisarCliente,
             this.stripExcluirCliente});
             this.menuClientes.Name = "menuClientes";
-            this.menuClientes.Size = new System.Drawing.Size(89, 32);
+            this.menuClientes.Size = new System.Drawing.Size(89, 29);
             this.menuClientes.Text = "Clientes";
             // 
             // stripCadastrarCliente
@@ -879,7 +878,7 @@ namespace GenesysGym
             this.stripCadastrarFuncionario,
             this.stripExcluirFuncionario});
             this.menuFuncionarios.Name = "menuFuncionarios";
-            this.menuFuncionarios.Size = new System.Drawing.Size(128, 32);
+            this.menuFuncionarios.Size = new System.Drawing.Size(128, 29);
             this.menuFuncionarios.Text = "Funcionários";
             // 
             // stripCadastrarFuncionario
@@ -901,7 +900,7 @@ namespace GenesysGym
             this.menuTreinos.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.stripRegistrarAlterarTreino});
             this.menuTreinos.Name = "menuTreinos";
-            this.menuTreinos.Size = new System.Drawing.Size(83, 32);
+            this.menuTreinos.Size = new System.Drawing.Size(83, 29);
             this.menuTreinos.Text = "Treinos";
             // 
             // stripRegistrarAlterarTreino
@@ -916,7 +915,7 @@ namespace GenesysGym
             this.menu_Manutencao.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.strip_BancoDados});
             this.menu_Manutencao.Name = "menu_Manutencao";
-            this.menu_Manutencao.Size = new System.Drawing.Size(126, 32);
+            this.menu_Manutencao.Size = new System.Drawing.Size(126, 29);
             this.menu_Manutencao.Text = "Manutenção";
             // 
             // strip_BancoDados
@@ -932,7 +931,7 @@ namespace GenesysGym
             this.strip_GestaoUser,
             this.strip_NovoUser});
             this.menu_Usuarios.Name = "menu_Usuarios";
-            this.menu_Usuarios.Size = new System.Drawing.Size(96, 32);
+            this.menu_Usuarios.Size = new System.Drawing.Size(96, 29);
             this.menu_Usuarios.Text = "Usuários";
             // 
             // strip_GestaoUser
@@ -976,17 +975,6 @@ namespace GenesysGym
             this.btnSalvarAlter.TabIndex = 26;
             this.btnSalvarAlter.Text = "Salvar Alterações";
             this.btnSalvarAlter.UseVisualStyleBackColor = true;
-            // 
-            // btnAlterDadosCliente
-            // 
-            this.btnAlterDadosCliente.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnAlterDadosCliente.Location = new System.Drawing.Point(1117, 23);
-            this.btnAlterDadosCliente.Name = "btnAlterDadosCliente";
-            this.btnAlterDadosCliente.Size = new System.Drawing.Size(207, 55);
-            this.btnAlterDadosCliente.TabIndex = 25;
-            this.btnAlterDadosCliente.Text = "Alterar Dados";
-            this.btnAlterDadosCliente.UseVisualStyleBackColor = true;
-            this.btnAlterDadosCliente.Click += new System.EventHandler(this.btnAlterDadosCliente_Click);
             // 
             // label25
             // 
@@ -1300,7 +1288,7 @@ namespace GenesysGym
             this.dtgridClientesCadastrados.RowHeadersVisible = false;
             this.dtgridClientesCadastrados.RowHeadersWidth = 62;
             this.dtgridClientesCadastrados.RowTemplate.Height = 28;
-            this.dtgridClientesCadastrados.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dtgridClientesCadastrados.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.CellSelect;
             this.dtgridClientesCadastrados.Size = new System.Drawing.Size(663, 312);
             this.dtgridClientesCadastrados.TabIndex = 15;
             // 
@@ -1326,7 +1314,7 @@ namespace GenesysGym
             dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dtgridPesquisaCliente.DefaultCellStyle = dataGridViewCellStyle4;
             this.dtgridPesquisaCliente.EnableHeadersVisualStyles = false;
-            this.dtgridPesquisaCliente.Location = new System.Drawing.Point(678, 118);
+            this.dtgridPesquisaCliente.Location = new System.Drawing.Point(678, 91);
             this.dtgridPesquisaCliente.MultiSelect = false;
             this.dtgridPesquisaCliente.Name = "dtgridPesquisaCliente";
             this.dtgridPesquisaCliente.ReadOnly = true;
@@ -1334,8 +1322,9 @@ namespace GenesysGym
             this.dtgridPesquisaCliente.RowHeadersWidth = 62;
             this.dtgridPesquisaCliente.RowTemplate.Height = 28;
             this.dtgridPesquisaCliente.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dtgridPesquisaCliente.Size = new System.Drawing.Size(663, 109);
+            this.dtgridPesquisaCliente.Size = new System.Drawing.Size(663, 136);
             this.dtgridPesquisaCliente.TabIndex = 14;
+            this.dtgridPesquisaCliente.SelectionChanged += new System.EventHandler(this.dtgridPesquisaCliente_SelectionChanged);
             // 
             // label13
             // 
@@ -1416,16 +1405,27 @@ namespace GenesysGym
             this.pb_ledLogado.TabIndex = 0;
             this.pb_ledLogado.TabStop = false;
             // 
+            // btnAlterDadosCliente
+            // 
+            this.btnAlterDadosCliente.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAlterDadosCliente.Location = new System.Drawing.Point(1117, 23);
+            this.btnAlterDadosCliente.Name = "btnAlterDadosCliente";
+            this.btnAlterDadosCliente.Size = new System.Drawing.Size(207, 55);
+            this.btnAlterDadosCliente.TabIndex = 25;
+            this.btnAlterDadosCliente.Text = "Alterar Dados";
+            this.btnAlterDadosCliente.UseVisualStyleBackColor = true;
+            this.btnAlterDadosCliente.Click += new System.EventHandler(this.btnAlterDadosCliente_Click);
+            // 
             // TelaPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(144F, 144F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.ClientSize = new System.Drawing.Size(1372, 794);
+            this.Controls.Add(this.pnlPesquisarCliente);
             this.Controls.Add(this.pnlCadastrarCliente);
             this.Controls.Add(this.pnlBarraLogin);
             this.Controls.Add(this.menuStrip1);
-            this.Controls.Add(this.pnlPesquisarCliente);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.MainMenuStrip = this.menuStrip1;
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
@@ -1547,7 +1547,6 @@ namespace GenesysGym
         private System.Windows.Forms.MaskedTextBox maskCPFAlter;
         private System.Windows.Forms.TextBox txtNomeClientAlter;
         private System.Windows.Forms.Label label25;
-        private System.Windows.Forms.Button btnAlterDadosCliente;
         private System.Windows.Forms.Button btnSalvarAlter;
         private System.Windows.Forms.Panel pnlBarraLogin;
         private System.Windows.Forms.Label label24;
@@ -1563,6 +1562,7 @@ namespace GenesysGym
         private System.Windows.Forms.ToolStripMenuItem menu_Usuarios;
         private System.Windows.Forms.ToolStripMenuItem strip_GestaoUser;
         private System.Windows.Forms.ToolStripMenuItem strip_NovoUser;
+        private System.Windows.Forms.Button btnAlterDadosCliente;
     }
 }
 

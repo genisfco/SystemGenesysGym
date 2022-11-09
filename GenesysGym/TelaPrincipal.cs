@@ -209,6 +209,8 @@ namespace GenesysGym
         {
             pnlPesquisarCliente.Visible = false;
             pnlCadastrarCliente.Visible = true;
+
+
         }
 
 
@@ -345,14 +347,16 @@ namespace GenesysGym
         {
             btnAlterDadosCliente.Enabled = false;
             btnSalvarAlter.Enabled = true;
+
+
            
+
         }
 
         private void strip_Logon_Click(object sender, EventArgs e)
         {
             TelaLogin telaLogin = new TelaLogin(this);
-            telaLogin.ShowDialog();
-            
+            telaLogin.ShowDialog();            
         }
 
         private void strip_logoff_Click(object sender, EventArgs e)
@@ -467,6 +471,32 @@ namespace GenesysGym
                 MessageBox.Show("Necessário ter um Usuário logado!");
             }
 
+        }
+
+        private void dtgridPesquisaCliente_SelectionChanged(object sender, EventArgs e)
+        {
+            DataGridView dgv = (DataGridView)sender;
+            int contlinhas = dgv.SelectedRows.Count;
+            if (contlinhas > 0)
+            {
+                DataTable dt = new DataTable();
+                string vcpf = dgv.SelectedRows[0].Cells[2].Value.ToString();
+
+                dt = DataConnection.ObterDadosCliente(vcpf);
+
+                txtNomeClientAlter.Text = dt.Rows[0].Field<string>("NmCliente").ToString();
+                maskCPFAlter.Text = dt.Rows[0].Field<string>("cpf").ToString();
+                maskRGAlter.Text = dt.Rows[0].Field<string>("rg").ToString();
+                txtLogradouroAlter.Text = dt.Rows[0].Field<string>("logradouro").ToString();
+                txtNumLogradouroAlter.Text = dt.Rows[0].Field<int>("numLogradouro").ToString();
+                maskCEPAlter.Text = dt.Rows[0].Field<string>("cep").ToString();
+                txtBairroAlter.Text = dt.Rows[0].Field<string>("bairro").ToString();
+                txtCidadeAlter.Text = dt.Rows[0].Field<string>("cidade").ToString();
+                txtEstadoAlter.Text = dt.Rows[0].Field<string>("estado").ToString();
+                maskTelefoneAlter.Text = dt.Rows[0].Field<string>("telefone").ToString();
+                txtEmailAlter.Text = dt.Rows[0].Field<string>("email").ToString();
+
+            }
         }
     }
 }
