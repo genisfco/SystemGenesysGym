@@ -295,8 +295,79 @@ namespace GenesysGym
         }
 
 
+        //FIM DAS FUNÇÕES PARA PESQUISA INCLUSAO  E ALTERAÇÃO DE CLIENTES
+        //
+
+        // FUNÇÕES PARA GESTÃO DE FUNCIONARIOS
+
+        public static DataTable ObterDadosFuncionario(string cod)
+        {
+            MySqlDataAdapter msdAdapter = null;
+            DataTable dt = new DataTable();
+
+            try
+            {
+                var vcon = ConexaoBanco();
+                var cmd = vcon.CreateCommand();
+                cmd.CommandText = "SELECT * FROM funcionario WHERE codfuncionario =" + cod;
+                msdAdapter = new MySqlDataAdapter(cmd.CommandText, vcon);
+                msdAdapter.Fill(dt);
+                vcon.Close();
+
+                return dt;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
+        public static void AtualizarDadosFuncionario(Funcionario func)
+        {
+            MySqlDataAdapter msdAdapter = null;
+            DataTable dt = new DataTable();
+
+            try
+            {
+                var vcon = ConexaoBanco();
+                var cmd = vcon.CreateCommand();
+                cmd.CommandText = "UPDATE funcionario SET nome='" + func.nomefunc + "', cpf='" + func.cpffunc + "', rg='" + func.rgfunc + "', logradouro='" + func.logradourofunc + "', numLogradouro='" + func.numLogradourofunc + "', cep='" + func.cepfunc + "', cargo='" + func.cargo + "',  bairro='" + func.bairrofunc + "', cidade='" + func.cidadefunc + "', estado='" + func.estadofunc + "', telefone='" + func.telefonefunc + "', email='" + func.emailfunc + "' WHERE cpf=" + func.codfunc;
+
+                msdAdapter = new MySqlDataAdapter(cmd.CommandText, vcon);
+                cmd.ExecuteNonQuery();
+
+                vcon.Close();
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
+        public static void ExcluirDadosFuncionario(string cod)
+        {
+
+            MySqlDataAdapter msdAdapter = null;
+            DataTable dt = new DataTable();
+
+            try
+            {
+
+                var vcon = ConexaoBanco();
+                var cmd = vcon.CreateCommand();
+                cmd.CommandText = "DELETE FROM cliente WHERE cpf=" + cod;
+
+                msdAdapter = new MySqlDataAdapter(cmd.CommandText, vcon);
+                cmd.ExecuteNonQuery();
+                vcon.Close();
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
 
 
-    }  
+    }
 
 }

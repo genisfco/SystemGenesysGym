@@ -67,6 +67,24 @@ namespace GenesysGym
             txtEmailFuncionario.Text = string.Empty;
         }
 
+        
+
+        private void LimparFormPesquisaFunc()
+        {
+            txtCargoFuncAlter.Text = string.Empty;
+            txtNomeFuncAlter.Text = string.Empty;
+            maskCPFFuncAlter.Text = string.Empty;
+            maskRGFuncAlter.Text = string.Empty;
+            txtLogradouroFuncAlter.Text = string.Empty;
+            txtNumLogradouroFuncAlter.Text = string.Empty;
+            maskCEPFuncAlter.Text = string.Empty;
+            txtBairroFuncAlter.Text = string.Empty;
+            txtCidadeFuncAlter.Text = string.Empty;
+            txtEstadoFuncAlter.Text = string.Empty;
+            maskTelefoneFuncAlter.Text = string.Empty;
+            txtEmailFuncAlter.Text = string.Empty;
+        }
+
 
         private void maskCEPFuncionario_Leave(object sender, EventArgs e)
         {
@@ -230,11 +248,14 @@ namespace GenesysGym
 
         private void btnSairPesquisaFuncionario_Click_1(object sender, EventArgs e)
         {
+            
+            LimparFormPesquisaFunc();
             Close();
         }
 
         private void btnPesquisarFuncionario_Click(object sender, EventArgs e)
         {
+            btnSalvarAlterFuncion.Enabled = true;
 
             string cod = txtPesquisarCodFuncionario.Text;
 
@@ -266,9 +287,103 @@ namespace GenesysGym
 
             }
         }
-        private void btnAlterarDadosFuncionario_Click(object sender, EventArgs e)
+
+        private void dtgridPesquisaFuncionario_SelectionChanged(object sender, EventArgs e)
         {
-                btnSalvarAlterFuncion.Enabled = true;
-        }        
+            DataGridView dgv = (DataGridView)sender;
+            int contlinhas = dgv.SelectedRows.Count;
+            if (contlinhas > 0)
+            {
+                DataTable dt = new DataTable();
+                string vcod = dgv.SelectedRows[0].Cells[0].Value.ToString();
+
+                dt = DataConnection.ObterDadosFuncionario(vcod);
+
+                txtCodFuncionario.Text = dt.Rows[0].Field<int>("codfuncionario").ToString();
+                txtNomeFuncAlter.Text = dt.Rows[0].Field<string>("nome").ToString();
+                maskCPFFuncAlter.Text = dt.Rows[0].Field<string>("cpf").ToString();
+                maskRGFuncAlter.Text = dt.Rows[0].Field<string>("rg").ToString();
+                txtLogradouroFuncAlter.Text = dt.Rows[0].Field<string>("logradouro").ToString();
+                txtNumLogradouroFuncAlter.Text = dt.Rows[0].Field<int>("numLogradouro").ToString();
+                maskCEPFuncAlter.Text = dt.Rows[0].Field<string>("cep").ToString();
+                txtBairroFuncAlter.Text = dt.Rows[0].Field<string>("bairro").ToString();
+                txtCidadeFuncAlter.Text = dt.Rows[0].Field<string>("cidade").ToString();
+                txtEstadoFuncAlter.Text = dt.Rows[0].Field<string>("estado").ToString();
+                maskTelefoneFuncAlter.Text = dt.Rows[0].Field<string>("telefone").ToString();
+                txtEmailFuncAlter.Text = dt.Rows[0].Field<string>("email").ToString();
+                txtCargoFuncAlter.Text = dt.Rows[0].Field<string>("cargo").ToString();
+            }
+        }
+
+        private void btnSalvarAlterFuncion_Click(object sender, EventArgs e)
+        {
+            int linha = dtgridPesquisaFuncionario.SelectedRows[0].Index;
+            Funcionario func = new Funcionario();
+
+            //TRATAMENTO DOS DADOS PARA INSERÇÃO
+            string cpf = maskCPFFuncAlter.Text;
+            string rg = maskRGFuncAlter.Text;
+            string telefone = maskTelefoneFuncAlter.Text;
+            cpf = cpf.Replace(",", "").Replace("-", "");
+            rg = rg.Replace(",", "").Replace("-", "");
+            telefone = telefone.Replace("(", "").Replace(")", "");
+
+            func.codfunc = Convert.ToInt32(txtCodFuncAlter.Text);
+            func.cargo = txtCargoFuncAlter.Text;
+            func.nomefunc = txtNomeFuncAlter.Text;
+            func.cpffunc = cpf;
+            func.rgfunc = rg;
+            func.logradourofunc = txtLogradouroFuncAlter.Text;
+            func.numLogradourofunc = Convert.ToInt32(txtNumLogradouroFuncAlter.Text);
+            func.cepfunc = maskCEPFuncAlter.Text;
+            func.bairrofunc = txtBairroFuncAlter.Text;
+            func.cidadefunc = txtCidadeFuncAlter.Text;
+            func.estadofunc = txtEstadoFuncAlter.Text;
+            func.telefonefunc = telefone;
+            func.emailfunc = txtEmailFuncAlter.Text;
+
+            DataConnection.AtualizarDadosFuncionario(func);
+            dtgridPesquisaFuncionario[1, linha].Value = txtNomeFuncAlter.Text;
+
+            MessageBox.Show("Dados atualizados com sucesso!");
+            
+            LimparFormPesquisaFunc();
+
+
+            ///ATUALIZANDO O DATAGRID VIEW DE FUNCIONARIOS            
+            DataTable dt = new DataTable();
+
+            string connection_mysql = @"Server=localhost;Database=GenesysGym;Uid=root;Pwd='1234'";
+
+            MySqlConnection msConnection = new MySqlConnection();
+            msConnection.ConnectionString = connection_mysql;
+            msConnection.Open();
+            MySqlCommand msCommand = new MySqlCommand();
+            msCommand.CommandText = "SELECT codfuncionario as 'COD.Funcionário', cargo as 'Cargo', nome as 'Nome Funcionário', cpf as 'CPF', rg as 'RG', sexo as 'sexo', dtMatricula as 'Data Admissão', dtNascimento as 'Data Nascimento', logradouro as 'Logradouro', numLogradouro as 'Nº', bairro as 'Bairro', cidade as 'Cidade', estado as 'UF', cep as 'CEP', telefone as 'Telefone', email as 'Email' FROM funcionario WHERE 1=1";
+            msCommand.Connection = msConnection;
+            MySqlDataAdapter msdAdapter = new MySqlDataAdapter(msCommand);
+            msdAdapter.Fill(dt);
+
+            dtgridFuncionariosCadastrados.DataSource = dt;
+            msConnection.Close();
+
+
+        }
+
+        private void btnExcluirFunc_Click(object sender, EventArgs e)
+        {
+            DialogResult res = MessageBox.Show("Deseja realmente Excluir?", "Exclusão de Funcionário", MessageBoxButtons.YesNo);
+            if (res == DialogResult.Yes)
+            {
+                string cod = txtCodFuncAlter.Text;
+                cod = cod.Replace(",", "").Replace("-", "");
+
+                DataConnection.ExcluirDadosCliente(cod);
+                dtgridFuncionariosCadastrados.Rows.Remove(dtgridFuncionariosCadastrados.CurrentRow);
+
+                MessageBox.Show("Funcionário excluído com Sucesso!");
+                LimparFormPesquisaFunc();
+            }
+        }
     }
 }

@@ -67,6 +67,25 @@ namespace GenesysGym
             txtEmail.Text = string.Empty;
         }
 
+
+        private void LimparFormPesquisa()
+        {
+            txtNomeClientAlter.Text = string.Empty;
+            maskCPFAlter.Text = string.Empty;
+            maskRGAlter.Text = string.Empty;
+            txtLogradouroAlter.Text = string.Empty;
+            txtNumLogradouroAlter.Text = string.Empty;
+            maskCEPAlter.Text = string.Empty;
+            txtBairroAlter.Text = string.Empty;
+            txtCidadeAlter.Text = string.Empty;
+            txtEstadoAlter.Text = string.Empty;
+            maskTelefoneAlter.Text = string.Empty;
+            txtEmailAlter.Text = string.Empty;
+            maskPesquisarCPFCliente.Text = string.Empty;
+        }
+
+
+
         private void maskCEP_Leave(object sender, EventArgs e)
         {
             using (var ws = new WSCorreios.AtendeClienteClient())
@@ -209,7 +228,7 @@ namespace GenesysGym
             pnlPesquisarCliente.Visible = false;
             pnlCadastrarCliente.Visible = true;
 
-
+            LimparFormPesquisa();
         }
 
 
@@ -516,6 +535,8 @@ namespace GenesysGym
             dtgridPesquisaCliente[1, linha].Value = txtNomeClientAlter.Text;
 
             MessageBox.Show("Dados atualizados com sucesso!");
+            LimparFormPesquisa();
+
 
             ///ATUALIZANDO O DATAGRID VIEW DE CLIENTES            
 
@@ -550,6 +571,7 @@ namespace GenesysGym
                 dtgridClientesCadastrados.Rows.Remove(dtgridClientesCadastrados.CurrentRow);
 
                 MessageBox.Show("Cliente excluído com Sucesso!");
+                LimparFormPesquisa();
             }
         }
     }
