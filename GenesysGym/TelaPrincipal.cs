@@ -137,7 +137,7 @@ namespace GenesysGym
                     msConnection.ConnectionString = connection_mysql;
                     msConnection.Open();
                     MySqlCommand msCommand = new MySqlCommand();
-                    msCommand.CommandText = "select * from cliente";
+                    msCommand.CommandText = "SELECT codCliente as 'COD. Cliente', nmCliente as 'Nome Cliente', cpf as 'CPF', rg as 'RG', sexo as 'sexo', dtMatricula as 'Data Matrícula', dtNascimento as 'Data Nascimento', logradouro as 'Logradouro', numLogradouro as 'Nº', bairro as 'Bairro', cidade as 'Cidade', estado as 'UF', cep as 'CEP', telefone as 'Telefone', email as 'Email' FROM cliente WHERE 1=1";
                     msCommand.Connection = msConnection;
                     MySqlDataAdapter msdAdapter = new MySqlDataAdapter(msCommand);
                     msdAdapter.Fill(dt);
@@ -240,8 +240,10 @@ namespace GenesysGym
                 // TRATAMENTO DOS DADOS PARA O INSERT
                 string cpf = maskCPFCliente.Text;
                 string rg = maskRGCliente.Text;
+                string telefone = maskTelefone.Text;
                 cpf = cpf.Replace(",", "").Replace("-", "");
                 rg = rg.Replace(",", "").Replace("-", "");
+                telefone = telefone.Replace("(", "").Replace(")", "");                
 
                 string sexo;
                 if (rdbtnMascCliente.Checked == true)
@@ -268,7 +270,7 @@ namespace GenesysGym
                 msConnection.ConnectionString = connection_mysql;
                 msConnection.Open();
                 MySqlCommand msCommand = new MySqlCommand();
-                msCommand.CommandText = "insert into cliente values (" 
+                msCommand.CommandText = "INSERT INTO cliente VALUES (" 
                            + txtCodCliente.Text +
                     ", '" + txtNomeCliente.Text +
                     "', '" + cpf +
@@ -282,6 +284,8 @@ namespace GenesysGym
                     "', '" + txtCidade.Text +
                     "', '" + txtEstado.Text +
                     "', '" + maskCEP.Text +
+                    "', '" + telefone +
+                    "', '" + txtEmail.Text +
                     "');";
                 
                 msCommand.Connection = msConnection;
@@ -322,7 +326,7 @@ namespace GenesysGym
                 msConnection.Open();
                 MySqlCommand msCommand = new MySqlCommand();
                 string pesquisarCPF = " and cpf = '" + cpf + "'";
-                string texto = "select * from cliente where 1=1";
+                string texto = "SELECT codCliente as 'COD. Cliente', nmCliente as 'Nome Cliente', cpf as 'CPF', rg as 'RG', sexo as 'sexo', dtMatricula as 'Data Matrícula', dtNascimento as 'Data Nascimento', logradouro as 'Logradouro', numLogradouro as 'Nº', bairro as 'Bairro', cidade as 'Cidade', estado as 'UF', cep as 'CEP', telefone as 'Telefone', email as 'Email' FROM cliente WHERE 1=1";
                 //MessageBox.Show("Nome: "+(nome == "")+  "\nCPF: " + (cpf == "         ") + "\n REG: " + (registro == ""));
                 if (cpf != "         ") texto += pesquisarCPF;
 

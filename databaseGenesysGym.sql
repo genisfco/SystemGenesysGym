@@ -2,14 +2,15 @@ create database GenesysGym;
 use GenesysGym;
 
 create table usuarios(
-id_user int primary key,
+id_user int primary key auto_increment,
 nome_user varchar (30),
-username varchar (20),
+username varchar (8) unique,
 senha_user varchar (20),
 status_user varchar (1),
 nivel_user int
 );
 select * from usuarios; 
+
 
 create table cliente(
 codCliente int not null,
@@ -24,10 +25,11 @@ numLogradouro int,
 bairro varchar (150),
 cidade varchar (50),
 estado char (2),
-cep varchar (9)
+cep varchar (9),
+telefone char (11),
+email varchar (50)
 );
 select * from cliente;
-
 
 create table funcionario(
 codfuncionario int not null,
@@ -43,7 +45,8 @@ bairro varchar (150),
 cidade varchar (50),
 estado char (2),
 cep varchar (9),
-cargo char (20) not null
+cargo char (20) not null,
+telefone char (11),
+email varchar (50)
 );
 select * from funcionario;
-

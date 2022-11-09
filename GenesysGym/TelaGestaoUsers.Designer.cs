@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -44,11 +45,11 @@
             this.label9 = new System.Windows.Forms.Label();
             this.txt_ID = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.dgv_Usuarios = new System.Windows.Forms.DataGridView();
-            this.btnNovoUser = new System.Windows.Forms.Button();
-            this.btnSalvarAlterUser = new System.Windows.Forms.Button();
-            this.btnExcluirUser = new System.Windows.Forms.Button();
             this.btnFechar = new System.Windows.Forms.Button();
+            this.btnExcluirUser = new System.Windows.Forms.Button();
+            this.btnSalvarAlterUser = new System.Windows.Forms.Button();
+            this.btnNovoUser = new System.Windows.Forms.Button();
+            this.dgv_Usuarios = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.nup_Nivel)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Usuarios)).BeginInit();
@@ -212,49 +213,6 @@
             this.panel1.Size = new System.Drawing.Size(782, 49);
             this.panel1.TabIndex = 28;
             // 
-            // dgv_Usuarios
-            // 
-            this.dgv_Usuarios.AllowUserToAddRows = false;
-            this.dgv_Usuarios.AllowUserToDeleteRows = false;
-            this.dgv_Usuarios.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgv_Usuarios.Location = new System.Drawing.Point(323, 32);
-            this.dgv_Usuarios.Name = "dgv_Usuarios";
-            this.dgv_Usuarios.ReadOnly = true;
-            this.dgv_Usuarios.RowHeadersWidth = 62;
-            this.dgv_Usuarios.RowTemplate.Height = 28;
-            this.dgv_Usuarios.Size = new System.Drawing.Size(456, 269);
-            this.dgv_Usuarios.TabIndex = 29;
-            // 
-            // btnNovoUser
-            // 
-            this.btnNovoUser.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnNovoUser.Location = new System.Drawing.Point(0, 3);
-            this.btnNovoUser.Name = "btnNovoUser";
-            this.btnNovoUser.Size = new System.Drawing.Size(161, 41);
-            this.btnNovoUser.TabIndex = 0;
-            this.btnNovoUser.Text = "Novo Usuário";
-            this.btnNovoUser.UseVisualStyleBackColor = true;
-            // 
-            // btnSalvarAlterUser
-            // 
-            this.btnSalvarAlterUser.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnSalvarAlterUser.Location = new System.Drawing.Point(182, 3);
-            this.btnSalvarAlterUser.Name = "btnSalvarAlterUser";
-            this.btnSalvarAlterUser.Size = new System.Drawing.Size(161, 41);
-            this.btnSalvarAlterUser.TabIndex = 1;
-            this.btnSalvarAlterUser.Text = "Salvar alterações";
-            this.btnSalvarAlterUser.UseVisualStyleBackColor = true;
-            // 
-            // btnExcluirUser
-            // 
-            this.btnExcluirUser.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnExcluirUser.Location = new System.Drawing.Point(360, 3);
-            this.btnExcluirUser.Name = "btnExcluirUser";
-            this.btnExcluirUser.Size = new System.Drawing.Size(161, 41);
-            this.btnExcluirUser.TabIndex = 2;
-            this.btnExcluirUser.Text = "Excluir Usuário";
-            this.btnExcluirUser.UseVisualStyleBackColor = true;
-            // 
             // btnFechar
             // 
             this.btnFechar.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -265,6 +223,65 @@
             this.btnFechar.Text = "Fechar";
             this.btnFechar.UseVisualStyleBackColor = true;
             this.btnFechar.Click += new System.EventHandler(this.btnFechar_Click);
+            // 
+            // btnExcluirUser
+            // 
+            this.btnExcluirUser.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnExcluirUser.Location = new System.Drawing.Point(360, 3);
+            this.btnExcluirUser.Name = "btnExcluirUser";
+            this.btnExcluirUser.Size = new System.Drawing.Size(161, 41);
+            this.btnExcluirUser.TabIndex = 2;
+            this.btnExcluirUser.Text = "Excluir Usuário";
+            this.btnExcluirUser.UseVisualStyleBackColor = true;
+            this.btnExcluirUser.Click += new System.EventHandler(this.btnExcluirUser_Click);
+            // 
+            // btnSalvarAlterUser
+            // 
+            this.btnSalvarAlterUser.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnSalvarAlterUser.Location = new System.Drawing.Point(182, 3);
+            this.btnSalvarAlterUser.Name = "btnSalvarAlterUser";
+            this.btnSalvarAlterUser.Size = new System.Drawing.Size(161, 41);
+            this.btnSalvarAlterUser.TabIndex = 1;
+            this.btnSalvarAlterUser.Text = "Salvar alterações";
+            this.btnSalvarAlterUser.UseVisualStyleBackColor = true;
+            this.btnSalvarAlterUser.Click += new System.EventHandler(this.btnSalvarAlterUser_Click);
+            // 
+            // btnNovoUser
+            // 
+            this.btnNovoUser.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnNovoUser.Location = new System.Drawing.Point(0, 3);
+            this.btnNovoUser.Name = "btnNovoUser";
+            this.btnNovoUser.Size = new System.Drawing.Size(161, 41);
+            this.btnNovoUser.TabIndex = 0;
+            this.btnNovoUser.Text = "Novo Usuário";
+            this.btnNovoUser.UseVisualStyleBackColor = true;
+            this.btnNovoUser.Click += new System.EventHandler(this.btnNovoUser_Click);
+            // 
+            // dgv_Usuarios
+            // 
+            this.dgv_Usuarios.AllowUserToAddRows = false;
+            this.dgv_Usuarios.AllowUserToDeleteRows = false;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgv_Usuarios.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            this.dgv_Usuarios.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv_Usuarios.EnableHeadersVisualStyles = false;
+            this.dgv_Usuarios.Location = new System.Drawing.Point(323, 32);
+            this.dgv_Usuarios.MultiSelect = false;
+            this.dgv_Usuarios.Name = "dgv_Usuarios";
+            this.dgv_Usuarios.ReadOnly = true;
+            this.dgv_Usuarios.RowHeadersVisible = false;
+            this.dgv_Usuarios.RowHeadersWidth = 62;
+            this.dgv_Usuarios.RowTemplate.Height = 28;
+            this.dgv_Usuarios.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgv_Usuarios.Size = new System.Drawing.Size(456, 269);
+            this.dgv_Usuarios.TabIndex = 29;
+            this.dgv_Usuarios.SelectionChanged += new System.EventHandler(this.dgv_Usuarios_SelectionChanged);
             // 
             // TelaGestaoUsers
             // 

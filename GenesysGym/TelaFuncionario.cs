@@ -118,7 +118,7 @@ namespace GenesysGym
             msConnection.ConnectionString = connection_mysql;
             msConnection.Open();
             MySqlCommand msCommand = new MySqlCommand();
-            msCommand.CommandText = "select * from funcionario";
+            msCommand.CommandText = "SELECT codfuncionario as 'COD.Funcionário', cargo as 'Cargo', nome as 'Nome Funcionário', cpf as 'CPF', rg as 'RG', sexo as 'sexo', dtMatricula as 'Data Admissão', dtNascimento as 'Data Nascimento', logradouro as 'Logradouro', numLogradouro as 'Nº', bairro as 'Bairro', cidade as 'Cidade', estado as 'UF', cep as 'CEP', telefone as 'Telefone', email as 'Email' FROM funcionario WHERE 1=1";
             msCommand.Connection = msConnection;
             MySqlDataAdapter msdAdapter = new MySqlDataAdapter(msCommand);
             msdAdapter.Fill(dt);
@@ -184,7 +184,8 @@ namespace GenesysGym
                 string data_admissao = year + "-" + month + "-" + day;
 
                 string data_nasc = comboxAnoFuncionario.Text + "-" + comboxMesFuncionario.Text + "-" + comboxDiaFuncionario.Text;
-
+                string telefone = maskTelefoneFuncionario.Text;
+                telefone = telefone.Replace("(", "").Replace(")", "");
 
                 // INSERT DOS DADOS PARA A TABELA CLIENTE
                 string connection_mysql = @"Server=localhost;Database=GenesysGym;Uid=root;Pwd='1234'";
@@ -208,7 +209,10 @@ namespace GenesysGym
                     "', '" + txtEstadoFuncionario.Text +
                     "', '" + maskCEPFuncionario.Text +
                     "', '" + txtCargoFuncionario.Text +
+                    "', '" + telefone +
+                    "', '" + txtEmailFuncionario.Text +
                     "');";
+                
 
                 msCommand.Connection = msConnection;
                 msCommand.ExecuteNonQuery();
@@ -252,7 +256,7 @@ namespace GenesysGym
                 msConnection.Open();
                 MySqlCommand msCommand = new MySqlCommand();
                 string pesquisarcod = " and codfuncionario = '" + cod + "'";
-                string texto = "select * from funcionario where 1=1";
+                string texto = "SELECT codfuncionario as 'COD.Funcionário', cargo as 'Cargo', nome as 'Nome Funcionário', cpf as 'CPF', rg as 'RG', sexo as 'sexo', dtMatricula as 'Data Admissão', dtNascimento as 'Data Nascimento', logradouro as 'Logradouro', numLogradouro as 'Nº', bairro as 'Bairro', cidade as 'Cidade', estado as 'UF', cep as 'CEP', telefone as 'Telefone', email as 'Email' FROM funcionario WHERE 1=1";
 
                 msCommand.CommandText = texto;
                 msCommand.Connection = msConnection;

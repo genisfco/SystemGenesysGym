@@ -7,6 +7,7 @@ using System.Data.SqlClient;
 using MySql.Data.MySqlClient;
 using System.Data;
 using System.Windows;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 
 namespace GenesysGym
 {
@@ -149,6 +150,76 @@ namespace GenesysGym
 
                 return dt;
 
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
+
+        public static DataTable ObterDadosUsuarios(string id)
+        {
+            MySqlDataAdapter msdAdapter = null;
+            DataTable dt = new DataTable();
+
+            try
+            {
+                var vcon = ConexaoBanco();
+                var cmd = vcon.CreateCommand();
+                cmd.CommandText = "SELECT * FROM usuarios WHERE id_user ="+id;
+                msdAdapter = new MySqlDataAdapter(cmd.CommandText, vcon);
+                msdAdapter.Fill(dt);
+                vcon.Close();
+
+                return dt;
+
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
+
+        public static void AtualizarDadosUsuario(Usuario u)
+        {
+            MySqlDataAdapter msdAdapter = null;
+            DataTable dt = new DataTable();
+
+            try
+            {
+                var vcon = ConexaoBanco();
+                var cmd = vcon.CreateCommand();
+                cmd.CommandText = "UPDATE usuarios SET nome_user='"+u.nome+"', username='"+u.username+"', senha_user='"+u.password+"', status_user='"+u.status+"', nivel_user="+u.nivel+" WHERE id_user="+u.id;    
+                 
+                msdAdapter = new MySqlDataAdapter(cmd.CommandText, vcon);
+                cmd.ExecuteNonQuery();
+                vcon.Close();
+
+
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
+
+        public static void ExcluirDadosUsuario(string id)
+        {
+            MySqlDataAdapter msdAdapter = null;
+            DataTable dt = new DataTable();
+
+            try
+            {
+                var vcon = ConexaoBanco();
+                var cmd = vcon.CreateCommand();
+                cmd.CommandText = "DELETE FROM usuarios WHERE id_user=" + id;
+
+                msdAdapter = new MySqlDataAdapter(cmd.CommandText, vcon);
+                cmd.ExecuteNonQuery();
+                vcon.Close();
             }
             catch (Exception ex)
             {

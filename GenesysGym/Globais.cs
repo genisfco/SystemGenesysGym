@@ -13,3 +13,14 @@ namespace GenesysGym
         public static int nivel=0;  //1-Basico, 2-Gerente, 3-Master
     }
 }
+
+
+
+    /* DADOS DA TABELA USUARIOS
+    id_user
+    nome_user
+    username
+    senha_user
+    status_user
+    nivel_user
+     */
