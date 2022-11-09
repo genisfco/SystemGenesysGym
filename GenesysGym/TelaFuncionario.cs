@@ -107,7 +107,6 @@ namespace GenesysGym
             pnlConsultarFuncionario.Visible = true;
             pnlCadastrarFuncionario.Visible = false;
 
-            btnAlterarDadosFuncionario.Enabled = false;
             btnSalvarAlterFuncion.Enabled = false;
 
             DataTable dt = new DataTable();
@@ -236,7 +235,6 @@ namespace GenesysGym
 
         private void btnPesquisarFuncionario_Click(object sender, EventArgs e)
         {
-            btnAlterarDadosFuncionario.Enabled = true;
 
             string cod = txtPesquisarCodFuncionario.Text;
 
@@ -270,7 +268,6 @@ namespace GenesysGym
         }
         private void btnAlterarDadosFuncionario_Click(object sender, EventArgs e)
         {
-                btnAlterarDadosFuncionario.Enabled = false;
                 btnSalvarAlterFuncion.Enabled = true;
         }        
     }

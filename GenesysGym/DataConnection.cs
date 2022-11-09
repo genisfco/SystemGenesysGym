@@ -181,7 +181,6 @@ namespace GenesysGym
             }
         }
 
-
         public static void AtualizarDadosUsuario(Usuario u)
         {
             MySqlDataAdapter msdAdapter = null;
@@ -196,8 +195,6 @@ namespace GenesysGym
                 msdAdapter = new MySqlDataAdapter(cmd.CommandText, vcon);
                 cmd.ExecuteNonQuery();
                 vcon.Close();
-
-
             }
             catch (Exception ex)
             {
@@ -229,8 +226,7 @@ namespace GenesysGym
         // FIM DAS FUNÇOES TELA GESTÃO USUARIOS
 
 
-        //FUNÇÕES PARA PESQUISA E ALTERAÇÃO DE CLIENTES
-
+        //FUNÇÕES PARA PESQUISA INCLUSAO  E ALTERAÇÃO DE CLIENTES        
         public static DataTable ObterDadosCliente(string cpf)
         {
             MySqlDataAdapter msdAdapter = null;
@@ -246,13 +242,61 @@ namespace GenesysGym
                 vcon.Close();
 
                 return dt;
-
             }
             catch (Exception ex)
             {
                 throw ex;
             }
         }
-    }   
+
+        public static void AtualizarDadosCliente(Cliente cli)
+        {
+            MySqlDataAdapter msdAdapter = null;
+            DataTable dt = new DataTable();
+
+            try
+            {
+                var vcon = ConexaoBanco();
+                var cmd = vcon.CreateCommand();
+                cmd.CommandText = "UPDATE cliente SET nmCliente='" + cli.nomecliente + "', cpf='" + cli.cpf + "', rg='" + cli.rg + "', logradouro='" + cli.logradouro + "', numLogradouro='" + cli.numLogradouro + "', cep='" + cli.cep + "', bairro='" + cli.bairro + "', cidade='" + cli.cidade + "', estado='" + cli.estado + "', telefone='" + cli.telefone + "', email='" + cli.email + "' WHERE cpf=" + cli.cpf;
+
+                msdAdapter = new MySqlDataAdapter(cmd.CommandText, vcon);
+                cmd.ExecuteNonQuery();
+
+                vcon.Close();
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
+        public static void ExcluirDadosCliente(string cpf)
+        {
+            
+            MySqlDataAdapter msdAdapter = null;
+            DataTable dt = new DataTable();
+
+            try
+            {           
+
+                var vcon = ConexaoBanco();
+                var cmd = vcon.CreateCommand();
+                cmd.CommandText = "DELETE FROM cliente WHERE cpf=" + cpf;
+
+                msdAdapter = new MySqlDataAdapter(cmd.CommandText, vcon);
+                cmd.ExecuteNonQuery();
+                vcon.Close();
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
+
+
+
+    }  
 
 }

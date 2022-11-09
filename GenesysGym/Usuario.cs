@@ -16,4 +16,6 @@ namespace GenesysGym
         public string status;
         public int nivel;
      }
+
+
 }

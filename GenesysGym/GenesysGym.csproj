@@ -89,12 +89,14 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ClassValidacao.cs" />
+    <Compile Include="Cliente.cs" />
     <Compile Include="Connected Services\WSCorreios\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Compile>
     <Compile Include="DataConnection.cs" />
+    <Compile Include="Funcionario.cs" />
     <Compile Include="Globais.cs" />
     <Compile Include="Login.cs">
       <SubType>Form</SubType>

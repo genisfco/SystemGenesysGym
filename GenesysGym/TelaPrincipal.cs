@@ -126,7 +126,6 @@ namespace GenesysGym
                     ////PROCEDIMENTOS TELA
                     pnlPesquisarCliente.Visible = true;
                     pnlCadastrarCliente.Visible = false;
-                    btnAlterDadosCliente.Enabled = false;
                     btnSalvarAlter.Enabled = false;
 
                     DataTable dt = new DataTable();
@@ -306,7 +305,7 @@ namespace GenesysGym
 
         private void btnPesquisarCliente_Click(object sender, EventArgs e)
         {
-            btnAlterDadosCliente.Enabled = true;
+            btnSalvarAlter.Enabled = true;
 
             string cpf = maskPesquisarCPFCliente.Text;
             cpf = cpf.Replace(",", "").Replace("-", "");
@@ -338,20 +337,9 @@ namespace GenesysGym
                 msdAdapter.Fill(dt);
 
                 dtgridPesquisaCliente.DataSource = dt;
-                msConnection.Close();
+                msConnection.Close();                
             }
-
-        }
-
-        private void btnAlterDadosCliente_Click(object sender, EventArgs e)
-        {
-            btnAlterDadosCliente.Enabled = false;
-            btnSalvarAlter.Enabled = true;
-
-
-           
-
-        }
+        }        
 
         private void strip_Logon_Click(object sender, EventArgs e)
         {
@@ -498,5 +486,72 @@ namespace GenesysGym
 
             }
         }
+
+        private void btnSalvarAlter_Click(object sender, EventArgs e)
+        {
+            int linha = dtgridPesquisaCliente.SelectedRows[0].Index;
+            Cliente cli = new Cliente();
+
+            //TRATAMENTO DOS DADOS PARA INSERÇÃO
+            string cpf = maskCPFAlter.Text;
+            string rg = maskRGAlter.Text;
+            string telefone = maskTelefoneAlter.Text;
+            cpf = cpf.Replace(",", "").Replace("-", "");
+            rg = rg.Replace(",", "").Replace("-", "");
+            telefone = telefone.Replace("(", "").Replace(")", "");
+
+            cli.nomecliente = txtNomeClientAlter.Text;
+            cli.cpf = cpf;
+            cli.rg = rg;
+            cli.logradouro = txtLogradouroAlter.Text;
+            cli.numLogradouro = Convert.ToInt32(txtNumLogradouroAlter.Text);
+            cli.cep = maskCEPAlter.Text;
+            cli.bairro = txtBairroAlter.Text;
+            cli.cidade = txtCidadeAlter.Text;
+            cli.estado = txtEstadoAlter.Text;
+            cli.telefone = telefone;
+            cli.email = txtEmailAlter.Text;            
+
+            DataConnection.AtualizarDadosCliente(cli);
+            dtgridPesquisaCliente[1, linha].Value = txtNomeClientAlter.Text;
+
+            MessageBox.Show("Dados atualizados com sucesso!");
+
+            ///ATUALIZANDO O DATAGRID VIEW DE CLIENTES            
+
+
+            DataTable dt = new DataTable();
+
+            string connection_mysql = @"Server=localhost;Database=GenesysGym;Uid=root;Pwd='1234'";
+
+            MySqlConnection msConnection = new MySqlConnection();
+            msConnection.ConnectionString = connection_mysql;
+            msConnection.Open();
+            MySqlCommand msCommand = new MySqlCommand();
+            msCommand.CommandText = "SELECT codCliente as 'COD. Cliente', nmCliente as 'Nome Cliente', cpf as 'CPF', rg as 'RG', sexo as 'sexo', dtMatricula as 'Data Matrícula', dtNascimento as 'Data Nascimento', logradouro as 'Logradouro', numLogradouro as 'Nº', bairro as 'Bairro', cidade as 'Cidade', estado as 'UF', cep as 'CEP', telefone as 'Telefone', email as 'Email' FROM cliente WHERE 1=1";
+            msCommand.Connection = msConnection;
+            MySqlDataAdapter msdAdapter = new MySqlDataAdapter(msCommand);
+            msdAdapter.Fill(dt);
+
+            dtgridClientesCadastrados.DataSource = dt;
+            msConnection.Close();
+
+        }
+
+        private void btnExcluirCliente_Click(object sender, EventArgs e)
+        {
+            DialogResult res = MessageBox.Show("Deseja realmente Excluir?", "Exclusão de Cliente", MessageBoxButtons.YesNo);
+            if (res == DialogResult.Yes)
+            {
+                string cpf = maskCPFAlter.Text;
+                cpf = cpf.Replace(",", "").Replace("-", "");
+
+                DataConnection.ExcluirDadosCliente(cpf);
+                dtgridClientesCadastrados.Rows.Remove(dtgridClientesCadastrados.CurrentRow);
+
+                MessageBox.Show("Cliente excluído com Sucesso!");
+            }
+        }
     }
+    
 }
