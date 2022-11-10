@@ -52,6 +52,27 @@ email varchar (50)
 );
 select * from funcionario;
 
+create table treino(
+cod_treino int auto_increment primary key,
+grupoMuscular varchar (40),
+descrição_exerc varchar (200),
+qtde_series int,
+qtde_reps int,
+cod_cliente int not null,
+codfuncionario int not null
+);
+select * from treino;
+
+alter table treino
+add constraint cod_cliente
+foreign key (cod_cliente)
+references cliente (cod_cliente);
+
+alter table treino
+add constraint codfuncionario
+foreign key (codfuncionario)
+references funcionario (codfuncionario);
+
 
 
 

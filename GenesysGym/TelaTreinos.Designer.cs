@@ -28,9 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.menuNovoTreino = new System.Windows.Forms.ToolStripMenuItem();
             this.stripDivisoesTreino = new System.Windows.Forms.ToolStripMenuItem();
@@ -43,8 +41,6 @@
             this.btnBuscarCliente = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.txtCodFuncionario = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.txtCargoFuncionario = new System.Windows.Forms.TextBox();
             this.label24 = new System.Windows.Forms.Label();
             this.txtNomeFuncionario = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
@@ -180,7 +176,7 @@
             this.label2.Location = new System.Drawing.Point(13, 47);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(93, 20);
+            this.label2.Size = new System.Drawing.Size(107, 22);
             this.label2.TabIndex = 2;
             this.label2.Text = "CPF Cliente";
             // 
@@ -190,7 +186,7 @@
             this.label3.Location = new System.Drawing.Point(162, 47);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(51, 20);
+            this.label3.Size = new System.Drawing.Size(57, 22);
             this.label3.TabIndex = 3;
             this.label3.Text = "Nome";
             // 
@@ -200,7 +196,7 @@
             this.maskCPFClienteTreino.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.maskCPFClienteTreino.Mask = "000.000.000-00";
             this.maskCPFClienteTreino.Name = "maskCPFClienteTreino";
-            this.maskCPFClienteTreino.Size = new System.Drawing.Size(121, 26);
+            this.maskCPFClienteTreino.Size = new System.Drawing.Size(121, 28);
             this.maskCPFClienteTreino.TabIndex = 4;
             // 
             // txtNomeClienteTreino
@@ -208,7 +204,7 @@
             this.txtNomeClienteTreino.Location = new System.Drawing.Point(166, 72);
             this.txtNomeClienteTreino.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtNomeClienteTreino.Name = "txtNomeClienteTreino";
-            this.txtNomeClienteTreino.Size = new System.Drawing.Size(380, 26);
+            this.txtNomeClienteTreino.Size = new System.Drawing.Size(380, 28);
             this.txtNomeClienteTreino.TabIndex = 5;
             // 
             // btnBuscarCliente
@@ -228,7 +224,7 @@
             this.label1.Location = new System.Drawing.Point(746, 47);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(86, 20);
+            this.label1.Size = new System.Drawing.Size(98, 22);
             this.label1.TabIndex = 14;
             this.label1.Text = "Cod. Func.";
             // 
@@ -237,43 +233,25 @@
             this.txtCodFuncionario.Location = new System.Drawing.Point(750, 72);
             this.txtCodFuncionario.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtCodFuncionario.Name = "txtCodFuncionario";
-            this.txtCodFuncionario.Size = new System.Drawing.Size(82, 26);
+            this.txtCodFuncionario.Size = new System.Drawing.Size(82, 28);
             this.txtCodFuncionario.TabIndex = 15;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(864, 47);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(52, 20);
-            this.label4.TabIndex = 17;
-            this.label4.Text = "Cargo";
-            // 
-            // txtCargoFuncionario
-            // 
-            this.txtCargoFuncionario.Location = new System.Drawing.Point(869, 72);
-            this.txtCargoFuncionario.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.txtCargoFuncionario.Name = "txtCargoFuncionario";
-            this.txtCargoFuncionario.Size = new System.Drawing.Size(136, 26);
-            this.txtCargoFuncionario.TabIndex = 16;
             // 
             // label24
             // 
             this.label24.AutoSize = true;
-            this.label24.Location = new System.Drawing.Point(1024, 47);
+            this.label24.Location = new System.Drawing.Point(850, 47);
             this.label24.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(51, 20);
+            this.label24.Size = new System.Drawing.Size(57, 22);
             this.label24.TabIndex = 19;
             this.label24.Text = "Nome";
             // 
             // txtNomeFuncionario
             // 
-            this.txtNomeFuncionario.Location = new System.Drawing.Point(1028, 72);
+            this.txtNomeFuncionario.Location = new System.Drawing.Point(854, 72);
             this.txtNomeFuncionario.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtNomeFuncionario.Name = "txtNomeFuncionario";
-            this.txtNomeFuncionario.Size = new System.Drawing.Size(384, 26);
+            this.txtNomeFuncionario.Size = new System.Drawing.Size(384, 28);
             this.txtNomeFuncionario.TabIndex = 18;
             // 
             // groupBox1
@@ -315,7 +293,7 @@
             this.groupBox1.Controls.Add(this.cboSerie1);
             this.groupBox1.Controls.Add(this.cboExerc1);
             this.groupBox1.Controls.Add(this.cboGrup1);
-            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(17, 118);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(662, 508);
@@ -328,7 +306,7 @@
             this.label8.AutoSize = true;
             this.label8.Location = new System.Drawing.Point(591, 71);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(43, 20);
+            this.label8.Size = new System.Drawing.Size(48, 22);
             this.label8.TabIndex = 35;
             this.label8.Text = "Rep.";
             // 
@@ -337,7 +315,7 @@
             this.label7.AutoSize = true;
             this.label7.Location = new System.Drawing.Point(492, 71);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(54, 20);
+            this.label7.Size = new System.Drawing.Size(61, 22);
             this.label7.TabIndex = 34;
             this.label7.Text = "Séries";
             // 
@@ -357,7 +335,7 @@
             this.label6.AutoSize = true;
             this.label6.Location = new System.Drawing.Point(294, 71);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(80, 20);
+            this.label6.Size = new System.Drawing.Size(92, 22);
             this.label6.TabIndex = 33;
             this.label6.Text = "Exercícios";
             // 
@@ -366,7 +344,7 @@
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(31, 71);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(122, 20);
+            this.label5.Size = new System.Drawing.Size(137, 22);
             this.label5.TabIndex = 32;
             this.label5.Text = "Grupo Muscular";
             // 
@@ -406,7 +384,7 @@
             "30"});
             this.cboRep8.Location = new System.Drawing.Point(586, 456);
             this.cboRep8.Name = "cboRep8";
-            this.cboRep8.Size = new System.Drawing.Size(58, 28);
+            this.cboRep8.Size = new System.Drawing.Size(58, 30);
             this.cboRep8.TabIndex = 31;
             // 
             // cboSerie8
@@ -425,7 +403,7 @@
             "10"});
             this.cboSerie8.Location = new System.Drawing.Point(496, 456);
             this.cboSerie8.Name = "cboSerie8";
-            this.cboSerie8.Size = new System.Drawing.Size(58, 28);
+            this.cboSerie8.Size = new System.Drawing.Size(58, 30);
             this.cboSerie8.TabIndex = 30;
             // 
             // cboExerc8
@@ -433,7 +411,7 @@
             this.cboExerc8.FormattingEnabled = true;
             this.cboExerc8.Location = new System.Drawing.Point(220, 456);
             this.cboExerc8.Name = "cboExerc8";
-            this.cboExerc8.Size = new System.Drawing.Size(251, 28);
+            this.cboExerc8.Size = new System.Drawing.Size(251, 30);
             this.cboExerc8.TabIndex = 29;
             // 
             // cboGrup8
@@ -450,7 +428,7 @@
             "ABDÔMEN"});
             this.cboGrup8.Location = new System.Drawing.Point(6, 456);
             this.cboGrup8.Name = "cboGrup8";
-            this.cboGrup8.Size = new System.Drawing.Size(190, 28);
+            this.cboGrup8.Size = new System.Drawing.Size(190, 30);
             this.cboGrup8.TabIndex = 28;
             this.cboGrup8.SelectedIndexChanged += new System.EventHandler(this.cboGrup8_SelectedIndexChanged);
             // 
@@ -490,7 +468,7 @@
             "30"});
             this.cboRep7.Location = new System.Drawing.Point(586, 406);
             this.cboRep7.Name = "cboRep7";
-            this.cboRep7.Size = new System.Drawing.Size(58, 28);
+            this.cboRep7.Size = new System.Drawing.Size(58, 30);
             this.cboRep7.TabIndex = 27;
             // 
             // cboSerie7
@@ -509,7 +487,7 @@
             "10"});
             this.cboSerie7.Location = new System.Drawing.Point(496, 406);
             this.cboSerie7.Name = "cboSerie7";
-            this.cboSerie7.Size = new System.Drawing.Size(58, 28);
+            this.cboSerie7.Size = new System.Drawing.Size(58, 30);
             this.cboSerie7.TabIndex = 26;
             // 
             // cboExerc7
@@ -517,7 +495,7 @@
             this.cboExerc7.FormattingEnabled = true;
             this.cboExerc7.Location = new System.Drawing.Point(220, 406);
             this.cboExerc7.Name = "cboExerc7";
-            this.cboExerc7.Size = new System.Drawing.Size(251, 28);
+            this.cboExerc7.Size = new System.Drawing.Size(251, 30);
             this.cboExerc7.TabIndex = 25;
             // 
             // cboGrup7
@@ -534,7 +512,7 @@
             "ABDÔMEN"});
             this.cboGrup7.Location = new System.Drawing.Point(6, 406);
             this.cboGrup7.Name = "cboGrup7";
-            this.cboGrup7.Size = new System.Drawing.Size(190, 28);
+            this.cboGrup7.Size = new System.Drawing.Size(190, 30);
             this.cboGrup7.TabIndex = 24;
             this.cboGrup7.SelectedIndexChanged += new System.EventHandler(this.cboGrup7_SelectedIndexChanged);
             // 
@@ -574,7 +552,7 @@
             "30"});
             this.cboRep6.Location = new System.Drawing.Point(586, 356);
             this.cboRep6.Name = "cboRep6";
-            this.cboRep6.Size = new System.Drawing.Size(58, 28);
+            this.cboRep6.Size = new System.Drawing.Size(58, 30);
             this.cboRep6.TabIndex = 23;
             // 
             // cboSerie6
@@ -593,7 +571,7 @@
             "10"});
             this.cboSerie6.Location = new System.Drawing.Point(496, 356);
             this.cboSerie6.Name = "cboSerie6";
-            this.cboSerie6.Size = new System.Drawing.Size(58, 28);
+            this.cboSerie6.Size = new System.Drawing.Size(58, 30);
             this.cboSerie6.TabIndex = 22;
             // 
             // cboExerc6
@@ -601,7 +579,7 @@
             this.cboExerc6.FormattingEnabled = true;
             this.cboExerc6.Location = new System.Drawing.Point(220, 356);
             this.cboExerc6.Name = "cboExerc6";
-            this.cboExerc6.Size = new System.Drawing.Size(251, 28);
+            this.cboExerc6.Size = new System.Drawing.Size(251, 30);
             this.cboExerc6.TabIndex = 21;
             // 
             // cboGrup6
@@ -618,7 +596,7 @@
             "ABDÔMEN"});
             this.cboGrup6.Location = new System.Drawing.Point(6, 356);
             this.cboGrup6.Name = "cboGrup6";
-            this.cboGrup6.Size = new System.Drawing.Size(190, 28);
+            this.cboGrup6.Size = new System.Drawing.Size(190, 30);
             this.cboGrup6.TabIndex = 20;
             this.cboGrup6.SelectedIndexChanged += new System.EventHandler(this.cboGrup6_SelectedIndexChanged);
             // 
@@ -658,7 +636,7 @@
             "30"});
             this.cboRep5.Location = new System.Drawing.Point(586, 306);
             this.cboRep5.Name = "cboRep5";
-            this.cboRep5.Size = new System.Drawing.Size(58, 28);
+            this.cboRep5.Size = new System.Drawing.Size(58, 30);
             this.cboRep5.TabIndex = 19;
             // 
             // cboSerie5
@@ -677,7 +655,7 @@
             "10"});
             this.cboSerie5.Location = new System.Drawing.Point(496, 306);
             this.cboSerie5.Name = "cboSerie5";
-            this.cboSerie5.Size = new System.Drawing.Size(58, 28);
+            this.cboSerie5.Size = new System.Drawing.Size(58, 30);
             this.cboSerie5.TabIndex = 18;
             // 
             // cboExerc5
@@ -685,7 +663,7 @@
             this.cboExerc5.FormattingEnabled = true;
             this.cboExerc5.Location = new System.Drawing.Point(220, 306);
             this.cboExerc5.Name = "cboExerc5";
-            this.cboExerc5.Size = new System.Drawing.Size(251, 28);
+            this.cboExerc5.Size = new System.Drawing.Size(251, 30);
             this.cboExerc5.TabIndex = 17;
             // 
             // cboGrup5
@@ -702,7 +680,7 @@
             "ABDÔMEN"});
             this.cboGrup5.Location = new System.Drawing.Point(6, 306);
             this.cboGrup5.Name = "cboGrup5";
-            this.cboGrup5.Size = new System.Drawing.Size(190, 28);
+            this.cboGrup5.Size = new System.Drawing.Size(190, 30);
             this.cboGrup5.TabIndex = 16;
             this.cboGrup5.SelectedIndexChanged += new System.EventHandler(this.cboGrup5_SelectedIndexChanged);
             // 
@@ -742,7 +720,7 @@
             "30"});
             this.cboRep4.Location = new System.Drawing.Point(586, 256);
             this.cboRep4.Name = "cboRep4";
-            this.cboRep4.Size = new System.Drawing.Size(58, 28);
+            this.cboRep4.Size = new System.Drawing.Size(58, 30);
             this.cboRep4.TabIndex = 15;
             // 
             // cboSerie4
@@ -761,7 +739,7 @@
             "10"});
             this.cboSerie4.Location = new System.Drawing.Point(496, 256);
             this.cboSerie4.Name = "cboSerie4";
-            this.cboSerie4.Size = new System.Drawing.Size(58, 28);
+            this.cboSerie4.Size = new System.Drawing.Size(58, 30);
             this.cboSerie4.TabIndex = 14;
             // 
             // cboExerc4
@@ -769,7 +747,7 @@
             this.cboExerc4.FormattingEnabled = true;
             this.cboExerc4.Location = new System.Drawing.Point(220, 256);
             this.cboExerc4.Name = "cboExerc4";
-            this.cboExerc4.Size = new System.Drawing.Size(251, 28);
+            this.cboExerc4.Size = new System.Drawing.Size(251, 30);
             this.cboExerc4.TabIndex = 13;
             // 
             // cboGrup4
@@ -786,7 +764,7 @@
             "ABDÔMEN"});
             this.cboGrup4.Location = new System.Drawing.Point(6, 256);
             this.cboGrup4.Name = "cboGrup4";
-            this.cboGrup4.Size = new System.Drawing.Size(190, 28);
+            this.cboGrup4.Size = new System.Drawing.Size(190, 30);
             this.cboGrup4.TabIndex = 12;
             this.cboGrup4.SelectedIndexChanged += new System.EventHandler(this.cboGrup4_SelectedIndexChanged);
             // 
@@ -826,7 +804,7 @@
             "30"});
             this.cboRep3.Location = new System.Drawing.Point(586, 206);
             this.cboRep3.Name = "cboRep3";
-            this.cboRep3.Size = new System.Drawing.Size(58, 28);
+            this.cboRep3.Size = new System.Drawing.Size(58, 30);
             this.cboRep3.TabIndex = 11;
             // 
             // cboSerie3
@@ -845,7 +823,7 @@
             "10"});
             this.cboSerie3.Location = new System.Drawing.Point(496, 206);
             this.cboSerie3.Name = "cboSerie3";
-            this.cboSerie3.Size = new System.Drawing.Size(58, 28);
+            this.cboSerie3.Size = new System.Drawing.Size(58, 30);
             this.cboSerie3.TabIndex = 10;
             // 
             // cboExerc3
@@ -853,7 +831,7 @@
             this.cboExerc3.FormattingEnabled = true;
             this.cboExerc3.Location = new System.Drawing.Point(220, 206);
             this.cboExerc3.Name = "cboExerc3";
-            this.cboExerc3.Size = new System.Drawing.Size(251, 28);
+            this.cboExerc3.Size = new System.Drawing.Size(251, 30);
             this.cboExerc3.TabIndex = 9;
             // 
             // cboGrup3
@@ -870,7 +848,7 @@
             "ABDÔMEN"});
             this.cboGrup3.Location = new System.Drawing.Point(6, 206);
             this.cboGrup3.Name = "cboGrup3";
-            this.cboGrup3.Size = new System.Drawing.Size(190, 28);
+            this.cboGrup3.Size = new System.Drawing.Size(190, 30);
             this.cboGrup3.TabIndex = 8;
             this.cboGrup3.SelectedIndexChanged += new System.EventHandler(this.cboGrup3_SelectedIndexChanged);
             // 
@@ -910,7 +888,7 @@
             "30"});
             this.cboRep2.Location = new System.Drawing.Point(586, 156);
             this.cboRep2.Name = "cboRep2";
-            this.cboRep2.Size = new System.Drawing.Size(58, 28);
+            this.cboRep2.Size = new System.Drawing.Size(58, 30);
             this.cboRep2.TabIndex = 7;
             // 
             // cboSerie2
@@ -929,7 +907,7 @@
             "10"});
             this.cboSerie2.Location = new System.Drawing.Point(496, 156);
             this.cboSerie2.Name = "cboSerie2";
-            this.cboSerie2.Size = new System.Drawing.Size(58, 28);
+            this.cboSerie2.Size = new System.Drawing.Size(58, 30);
             this.cboSerie2.TabIndex = 6;
             // 
             // cboExerc2
@@ -937,7 +915,7 @@
             this.cboExerc2.FormattingEnabled = true;
             this.cboExerc2.Location = new System.Drawing.Point(220, 156);
             this.cboExerc2.Name = "cboExerc2";
-            this.cboExerc2.Size = new System.Drawing.Size(251, 28);
+            this.cboExerc2.Size = new System.Drawing.Size(251, 30);
             this.cboExerc2.TabIndex = 5;
             // 
             // cboGrup2
@@ -954,7 +932,7 @@
             "ABDÔMEN"});
             this.cboGrup2.Location = new System.Drawing.Point(6, 156);
             this.cboGrup2.Name = "cboGrup2";
-            this.cboGrup2.Size = new System.Drawing.Size(190, 28);
+            this.cboGrup2.Size = new System.Drawing.Size(190, 30);
             this.cboGrup2.TabIndex = 4;
             this.cboGrup2.SelectedIndexChanged += new System.EventHandler(this.cboGrup2_SelectedIndexChanged);
             // 
@@ -994,7 +972,7 @@
             "30"});
             this.cboRep1.Location = new System.Drawing.Point(586, 106);
             this.cboRep1.Name = "cboRep1";
-            this.cboRep1.Size = new System.Drawing.Size(58, 28);
+            this.cboRep1.Size = new System.Drawing.Size(58, 30);
             this.cboRep1.TabIndex = 3;
             // 
             // cboSerie1
@@ -1013,7 +991,7 @@
             "10"});
             this.cboSerie1.Location = new System.Drawing.Point(496, 106);
             this.cboSerie1.Name = "cboSerie1";
-            this.cboSerie1.Size = new System.Drawing.Size(58, 28);
+            this.cboSerie1.Size = new System.Drawing.Size(58, 30);
             this.cboSerie1.TabIndex = 2;
             // 
             // cboExerc1
@@ -1021,7 +999,7 @@
             this.cboExerc1.FormattingEnabled = true;
             this.cboExerc1.Location = new System.Drawing.Point(220, 106);
             this.cboExerc1.Name = "cboExerc1";
-            this.cboExerc1.Size = new System.Drawing.Size(251, 28);
+            this.cboExerc1.Size = new System.Drawing.Size(251, 30);
             this.cboExerc1.TabIndex = 1;
             // 
             // cboGrup1
@@ -1038,7 +1016,7 @@
             "ABDÔMEN"});
             this.cboGrup1.Location = new System.Drawing.Point(6, 106);
             this.cboGrup1.Name = "cboGrup1";
-            this.cboGrup1.Size = new System.Drawing.Size(190, 28);
+            this.cboGrup1.Size = new System.Drawing.Size(190, 30);
             this.cboGrup1.TabIndex = 0;
             this.cboGrup1.SelectedIndexChanged += new System.EventHandler(this.cboGrup1_SelectedIndexChanged);
             // 
@@ -1081,7 +1059,7 @@
             this.groupBox2.Controls.Add(this.cboSerie12);
             this.groupBox2.Controls.Add(this.cboGrup13);
             this.groupBox2.Controls.Add(this.cboRep12);
-            this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox2.Location = new System.Drawing.Point(750, 118);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(662, 508);
@@ -1094,7 +1072,7 @@
             this.label9.AutoSize = true;
             this.label9.Location = new System.Drawing.Point(600, 71);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(43, 20);
+            this.label9.Size = new System.Drawing.Size(48, 22);
             this.label9.TabIndex = 39;
             this.label9.Text = "Rep.";
             // 
@@ -1145,7 +1123,7 @@
             "30"});
             this.cboRep16.Location = new System.Drawing.Point(586, 456);
             this.cboRep16.Name = "cboRep16";
-            this.cboRep16.Size = new System.Drawing.Size(58, 28);
+            this.cboRep16.Size = new System.Drawing.Size(58, 30);
             this.cboRep16.TabIndex = 63;
             // 
             // label10
@@ -1153,7 +1131,7 @@
             this.label10.AutoSize = true;
             this.label10.Location = new System.Drawing.Point(501, 71);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(54, 20);
+            this.label10.Size = new System.Drawing.Size(61, 22);
             this.label10.TabIndex = 38;
             this.label10.Text = "Séries";
             // 
@@ -1171,7 +1149,7 @@
             "ABDÔMEN"});
             this.cboGrup9.Location = new System.Drawing.Point(6, 106);
             this.cboGrup9.Name = "cboGrup9";
-            this.cboGrup9.Size = new System.Drawing.Size(190, 28);
+            this.cboGrup9.Size = new System.Drawing.Size(190, 30);
             this.cboGrup9.TabIndex = 32;
             this.cboGrup9.SelectedIndexChanged += new System.EventHandler(this.cboGrup9_SelectedIndexChanged);
             // 
@@ -1180,7 +1158,7 @@
             this.label11.AutoSize = true;
             this.label11.Location = new System.Drawing.Point(293, 71);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(80, 20);
+            this.label11.Size = new System.Drawing.Size(92, 22);
             this.label11.TabIndex = 37;
             this.label11.Text = "Exercícios";
             // 
@@ -1200,7 +1178,7 @@
             "10"});
             this.cboSerie16.Location = new System.Drawing.Point(496, 456);
             this.cboSerie16.Name = "cboSerie16";
-            this.cboSerie16.Size = new System.Drawing.Size(58, 28);
+            this.cboSerie16.Size = new System.Drawing.Size(58, 30);
             this.cboSerie16.TabIndex = 62;
             // 
             // label12
@@ -1208,7 +1186,7 @@
             this.label12.AutoSize = true;
             this.label12.Location = new System.Drawing.Point(29, 71);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(122, 20);
+            this.label12.Size = new System.Drawing.Size(137, 22);
             this.label12.TabIndex = 36;
             this.label12.Text = "Grupo Muscular";
             // 
@@ -1217,7 +1195,7 @@
             this.cboExerc9.FormattingEnabled = true;
             this.cboExerc9.Location = new System.Drawing.Point(220, 106);
             this.cboExerc9.Name = "cboExerc9";
-            this.cboExerc9.Size = new System.Drawing.Size(251, 28);
+            this.cboExerc9.Size = new System.Drawing.Size(251, 30);
             this.cboExerc9.TabIndex = 33;
             // 
             // cboExerc16
@@ -1225,7 +1203,7 @@
             this.cboExerc16.FormattingEnabled = true;
             this.cboExerc16.Location = new System.Drawing.Point(220, 456);
             this.cboExerc16.Name = "cboExerc16";
-            this.cboExerc16.Size = new System.Drawing.Size(251, 28);
+            this.cboExerc16.Size = new System.Drawing.Size(251, 30);
             this.cboExerc16.TabIndex = 61;
             // 
             // cboSerie9
@@ -1244,7 +1222,7 @@
             "10"});
             this.cboSerie9.Location = new System.Drawing.Point(496, 106);
             this.cboSerie9.Name = "cboSerie9";
-            this.cboSerie9.Size = new System.Drawing.Size(58, 28);
+            this.cboSerie9.Size = new System.Drawing.Size(58, 30);
             this.cboSerie9.TabIndex = 34;
             // 
             // cboGrup16
@@ -1261,7 +1239,7 @@
             "ABDÔMEN"});
             this.cboGrup16.Location = new System.Drawing.Point(6, 456);
             this.cboGrup16.Name = "cboGrup16";
-            this.cboGrup16.Size = new System.Drawing.Size(190, 28);
+            this.cboGrup16.Size = new System.Drawing.Size(190, 30);
             this.cboGrup16.TabIndex = 60;
             this.cboGrup16.SelectedIndexChanged += new System.EventHandler(this.cboGrup16_SelectedIndexChanged);
             // 
@@ -1301,7 +1279,7 @@
             "30"});
             this.cboRep9.Location = new System.Drawing.Point(586, 106);
             this.cboRep9.Name = "cboRep9";
-            this.cboRep9.Size = new System.Drawing.Size(58, 28);
+            this.cboRep9.Size = new System.Drawing.Size(58, 30);
             this.cboRep9.TabIndex = 35;
             // 
             // cboRep15
@@ -1340,7 +1318,7 @@
             "30"});
             this.cboRep15.Location = new System.Drawing.Point(586, 406);
             this.cboRep15.Name = "cboRep15";
-            this.cboRep15.Size = new System.Drawing.Size(58, 28);
+            this.cboRep15.Size = new System.Drawing.Size(58, 30);
             this.cboRep15.TabIndex = 59;
             // 
             // cboGrup10
@@ -1357,7 +1335,7 @@
             "ABDÔMEN"});
             this.cboGrup10.Location = new System.Drawing.Point(6, 156);
             this.cboGrup10.Name = "cboGrup10";
-            this.cboGrup10.Size = new System.Drawing.Size(190, 28);
+            this.cboGrup10.Size = new System.Drawing.Size(190, 30);
             this.cboGrup10.TabIndex = 36;
             this.cboGrup10.SelectedIndexChanged += new System.EventHandler(this.cboGrup10_SelectedIndexChanged);
             // 
@@ -1377,7 +1355,7 @@
             "10"});
             this.cboSerie15.Location = new System.Drawing.Point(496, 406);
             this.cboSerie15.Name = "cboSerie15";
-            this.cboSerie15.Size = new System.Drawing.Size(58, 28);
+            this.cboSerie15.Size = new System.Drawing.Size(58, 30);
             this.cboSerie15.TabIndex = 58;
             // 
             // cboExerc10
@@ -1385,7 +1363,7 @@
             this.cboExerc10.FormattingEnabled = true;
             this.cboExerc10.Location = new System.Drawing.Point(220, 156);
             this.cboExerc10.Name = "cboExerc10";
-            this.cboExerc10.Size = new System.Drawing.Size(251, 28);
+            this.cboExerc10.Size = new System.Drawing.Size(251, 30);
             this.cboExerc10.TabIndex = 37;
             // 
             // cboExerc15
@@ -1393,7 +1371,7 @@
             this.cboExerc15.FormattingEnabled = true;
             this.cboExerc15.Location = new System.Drawing.Point(220, 406);
             this.cboExerc15.Name = "cboExerc15";
-            this.cboExerc15.Size = new System.Drawing.Size(251, 28);
+            this.cboExerc15.Size = new System.Drawing.Size(251, 30);
             this.cboExerc15.TabIndex = 57;
             // 
             // cboSerie10
@@ -1412,7 +1390,7 @@
             "10"});
             this.cboSerie10.Location = new System.Drawing.Point(496, 156);
             this.cboSerie10.Name = "cboSerie10";
-            this.cboSerie10.Size = new System.Drawing.Size(58, 28);
+            this.cboSerie10.Size = new System.Drawing.Size(58, 30);
             this.cboSerie10.TabIndex = 38;
             // 
             // cboGrup15
@@ -1429,7 +1407,7 @@
             "ABDÔMEN"});
             this.cboGrup15.Location = new System.Drawing.Point(6, 406);
             this.cboGrup15.Name = "cboGrup15";
-            this.cboGrup15.Size = new System.Drawing.Size(190, 28);
+            this.cboGrup15.Size = new System.Drawing.Size(190, 30);
             this.cboGrup15.TabIndex = 56;
             this.cboGrup15.SelectedIndexChanged += new System.EventHandler(this.cboGrup15_SelectedIndexChanged);
             // 
@@ -1469,7 +1447,7 @@
             "30"});
             this.cboRep10.Location = new System.Drawing.Point(586, 156);
             this.cboRep10.Name = "cboRep10";
-            this.cboRep10.Size = new System.Drawing.Size(58, 28);
+            this.cboRep10.Size = new System.Drawing.Size(58, 30);
             this.cboRep10.TabIndex = 39;
             // 
             // cboRep14
@@ -1508,7 +1486,7 @@
             "30"});
             this.cboRep14.Location = new System.Drawing.Point(586, 356);
             this.cboRep14.Name = "cboRep14";
-            this.cboRep14.Size = new System.Drawing.Size(58, 28);
+            this.cboRep14.Size = new System.Drawing.Size(58, 30);
             this.cboRep14.TabIndex = 55;
             // 
             // cboGrup11
@@ -1525,7 +1503,7 @@
             "ABDÔMEN"});
             this.cboGrup11.Location = new System.Drawing.Point(6, 206);
             this.cboGrup11.Name = "cboGrup11";
-            this.cboGrup11.Size = new System.Drawing.Size(190, 28);
+            this.cboGrup11.Size = new System.Drawing.Size(190, 30);
             this.cboGrup11.TabIndex = 40;
             this.cboGrup11.SelectedIndexChanged += new System.EventHandler(this.cboGrup11_SelectedIndexChanged);
             // 
@@ -1545,7 +1523,7 @@
             "10"});
             this.cboSerie14.Location = new System.Drawing.Point(496, 356);
             this.cboSerie14.Name = "cboSerie14";
-            this.cboSerie14.Size = new System.Drawing.Size(58, 28);
+            this.cboSerie14.Size = new System.Drawing.Size(58, 30);
             this.cboSerie14.TabIndex = 54;
             // 
             // cboExerc11
@@ -1553,7 +1531,7 @@
             this.cboExerc11.FormattingEnabled = true;
             this.cboExerc11.Location = new System.Drawing.Point(220, 206);
             this.cboExerc11.Name = "cboExerc11";
-            this.cboExerc11.Size = new System.Drawing.Size(251, 28);
+            this.cboExerc11.Size = new System.Drawing.Size(251, 30);
             this.cboExerc11.TabIndex = 41;
             // 
             // cboExerc14
@@ -1561,7 +1539,7 @@
             this.cboExerc14.FormattingEnabled = true;
             this.cboExerc14.Location = new System.Drawing.Point(220, 356);
             this.cboExerc14.Name = "cboExerc14";
-            this.cboExerc14.Size = new System.Drawing.Size(251, 28);
+            this.cboExerc14.Size = new System.Drawing.Size(251, 30);
             this.cboExerc14.TabIndex = 53;
             // 
             // cboSerie11
@@ -1580,7 +1558,7 @@
             "10"});
             this.cboSerie11.Location = new System.Drawing.Point(496, 206);
             this.cboSerie11.Name = "cboSerie11";
-            this.cboSerie11.Size = new System.Drawing.Size(58, 28);
+            this.cboSerie11.Size = new System.Drawing.Size(58, 30);
             this.cboSerie11.TabIndex = 42;
             // 
             // cboGrup14
@@ -1597,7 +1575,7 @@
             "ABDÔMEN"});
             this.cboGrup14.Location = new System.Drawing.Point(6, 356);
             this.cboGrup14.Name = "cboGrup14";
-            this.cboGrup14.Size = new System.Drawing.Size(190, 28);
+            this.cboGrup14.Size = new System.Drawing.Size(190, 30);
             this.cboGrup14.TabIndex = 52;
             this.cboGrup14.SelectedIndexChanged += new System.EventHandler(this.cboGrup14_SelectedIndexChanged);
             // 
@@ -1637,7 +1615,7 @@
             "30"});
             this.cboRep11.Location = new System.Drawing.Point(586, 206);
             this.cboRep11.Name = "cboRep11";
-            this.cboRep11.Size = new System.Drawing.Size(58, 28);
+            this.cboRep11.Size = new System.Drawing.Size(58, 30);
             this.cboRep11.TabIndex = 43;
             // 
             // cboRep13
@@ -1676,7 +1654,7 @@
             "30"});
             this.cboRep13.Location = new System.Drawing.Point(586, 306);
             this.cboRep13.Name = "cboRep13";
-            this.cboRep13.Size = new System.Drawing.Size(58, 28);
+            this.cboRep13.Size = new System.Drawing.Size(58, 30);
             this.cboRep13.TabIndex = 51;
             // 
             // cboGrup12
@@ -1693,7 +1671,7 @@
             "ABDÔMEN"});
             this.cboGrup12.Location = new System.Drawing.Point(6, 256);
             this.cboGrup12.Name = "cboGrup12";
-            this.cboGrup12.Size = new System.Drawing.Size(190, 28);
+            this.cboGrup12.Size = new System.Drawing.Size(190, 30);
             this.cboGrup12.TabIndex = 44;
             this.cboGrup12.SelectedIndexChanged += new System.EventHandler(this.cboGrup12_SelectedIndexChanged);
             // 
@@ -1713,7 +1691,7 @@
             "10"});
             this.cboSerie13.Location = new System.Drawing.Point(496, 306);
             this.cboSerie13.Name = "cboSerie13";
-            this.cboSerie13.Size = new System.Drawing.Size(58, 28);
+            this.cboSerie13.Size = new System.Drawing.Size(58, 30);
             this.cboSerie13.TabIndex = 50;
             // 
             // cboExerc12
@@ -1721,7 +1699,7 @@
             this.cboExerc12.FormattingEnabled = true;
             this.cboExerc12.Location = new System.Drawing.Point(220, 256);
             this.cboExerc12.Name = "cboExerc12";
-            this.cboExerc12.Size = new System.Drawing.Size(251, 28);
+            this.cboExerc12.Size = new System.Drawing.Size(251, 30);
             this.cboExerc12.TabIndex = 45;
             // 
             // cboExerc13
@@ -1729,7 +1707,7 @@
             this.cboExerc13.FormattingEnabled = true;
             this.cboExerc13.Location = new System.Drawing.Point(220, 306);
             this.cboExerc13.Name = "cboExerc13";
-            this.cboExerc13.Size = new System.Drawing.Size(251, 28);
+            this.cboExerc13.Size = new System.Drawing.Size(251, 30);
             this.cboExerc13.TabIndex = 49;
             // 
             // cboSerie12
@@ -1748,7 +1726,7 @@
             "10"});
             this.cboSerie12.Location = new System.Drawing.Point(496, 256);
             this.cboSerie12.Name = "cboSerie12";
-            this.cboSerie12.Size = new System.Drawing.Size(58, 28);
+            this.cboSerie12.Size = new System.Drawing.Size(58, 30);
             this.cboSerie12.TabIndex = 46;
             // 
             // cboGrup13
@@ -1765,7 +1743,7 @@
             "ABDÔMEN"});
             this.cboGrup13.Location = new System.Drawing.Point(6, 306);
             this.cboGrup13.Name = "cboGrup13";
-            this.cboGrup13.Size = new System.Drawing.Size(190, 28);
+            this.cboGrup13.Size = new System.Drawing.Size(190, 30);
             this.cboGrup13.TabIndex = 48;
             this.cboGrup13.SelectedIndexChanged += new System.EventHandler(this.cboGrup13_SelectedIndexChanged);
             // 
@@ -1805,7 +1783,7 @@
             "30"});
             this.cboRep12.Location = new System.Drawing.Point(586, 256);
             this.cboRep12.Name = "cboRep12";
-            this.cboRep12.Size = new System.Drawing.Size(58, 28);
+            this.cboRep12.Size = new System.Drawing.Size(58, 30);
             this.cboRep12.TabIndex = 47;
             // 
             // btnGravarTreino
@@ -1836,36 +1814,20 @@
             // 
             this.dataGridView1.AllowUserToAddRows = false;
             this.dataGridView1.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle9.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle9.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle9;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridView1.EnableHeadersVisualStyles = false;
             this.dataGridView1.Location = new System.Drawing.Point(17, 645);
             this.dataGridView1.MultiSelect = false;
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dataGridView1.RowHeadersVisible = false;
             this.dataGridView1.RowHeadersWidth = 62;
             this.dataGridView1.RowTemplate.Height = 28;
@@ -1888,8 +1850,6 @@
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label24);
             this.Controls.Add(this.txtNomeFuncionario);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.txtCargoFuncionario);
             this.Controls.Add(this.txtCodFuncionario);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnBuscarCliente);
@@ -1898,7 +1858,7 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.menuStrip1);
-            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.MaximumSize = new System.Drawing.Size(1450, 830);
             this.MinimumSize = new System.Drawing.Size(1450, 830);
             this.Name = "TelaTreinos";
@@ -1931,8 +1891,6 @@
         private System.Windows.Forms.Button btnBuscarCliente;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtCodFuncionario;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox txtCargoFuncionario;
         private System.Windows.Forms.Label label24;
         private System.Windows.Forms.TextBox txtNomeFuncionario;
         private System.Windows.Forms.GroupBox groupBox1;

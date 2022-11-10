@@ -29,10 +29,8 @@ namespace GenesysGym
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
             this.pnlCadastrarCliente = new System.Windows.Forms.Panel();
             this.grpboxContatos = new System.Windows.Forms.GroupBox();
             this.label15 = new System.Windows.Forms.Label();
@@ -176,9 +174,9 @@ namespace GenesysGym
             // label15
             // 
             this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(354, 58);
+            this.label15.Location = new System.Drawing.Point(321, 57);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(48, 20);
+            this.label15.Size = new System.Drawing.Size(54, 22);
             this.label15.TabIndex = 3;
             this.label15.Text = "Email";
             // 
@@ -187,15 +185,15 @@ namespace GenesysGym
             this.label14.AutoSize = true;
             this.label14.Location = new System.Drawing.Point(9, 58);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(71, 20);
+            this.label14.Size = new System.Drawing.Size(81, 22);
             this.label14.TabIndex = 2;
             this.label14.Text = "Telefone";
             // 
             // txtEmail
             // 
-            this.txtEmail.Location = new System.Drawing.Point(354, 82);
+            this.txtEmail.Location = new System.Drawing.Point(325, 82);
             this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(276, 26);
+            this.txtEmail.Size = new System.Drawing.Size(305, 28);
             this.txtEmail.TabIndex = 1;
             // 
             // maskTelefone
@@ -203,7 +201,7 @@ namespace GenesysGym
             this.maskTelefone.Location = new System.Drawing.Point(10, 82);
             this.maskTelefone.Mask = "(00)000000000";
             this.maskTelefone.Name = "maskTelefone";
-            this.maskTelefone.Size = new System.Drawing.Size(113, 26);
+            this.maskTelefone.Size = new System.Drawing.Size(128, 28);
             this.maskTelefone.TabIndex = 0;
             // 
             // btnSairCadastrarCliente
@@ -271,7 +269,7 @@ namespace GenesysGym
             this.label12.Location = new System.Drawing.Point(560, 125);
             this.label12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(60, 20);
+            this.label12.Size = new System.Drawing.Size(66, 22);
             this.label12.TabIndex = 11;
             this.label12.Text = "Estado";
             // 
@@ -281,7 +279,7 @@ namespace GenesysGym
             this.label11.Location = new System.Drawing.Point(268, 125);
             this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(59, 20);
+            this.label11.Size = new System.Drawing.Size(67, 22);
             this.label11.TabIndex = 10;
             this.label11.Text = "Cidade";
             // 
@@ -291,7 +289,7 @@ namespace GenesysGym
             this.label10.Location = new System.Drawing.Point(15, 125);
             this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(51, 20);
+            this.label10.Size = new System.Drawing.Size(58, 22);
             this.label10.TabIndex = 9;
             this.label10.Text = "Bairro";
             // 
@@ -301,7 +299,7 @@ namespace GenesysGym
             this.label9.Location = new System.Drawing.Point(548, 37);
             this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(41, 20);
+            this.label9.Size = new System.Drawing.Size(47, 22);
             this.label9.TabIndex = 8;
             this.label9.Text = "CEP";
             // 
@@ -311,7 +309,7 @@ namespace GenesysGym
             this.label8.Location = new System.Drawing.Point(440, 37);
             this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(26, 20);
+            this.label8.Size = new System.Drawing.Size(30, 22);
             this.label8.TabIndex = 7;
             this.label8.Text = "Nº";
             // 
@@ -321,7 +319,7 @@ namespace GenesysGym
             this.label7.Location = new System.Drawing.Point(9, 31);
             this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(91, 20);
+            this.label7.Size = new System.Drawing.Size(102, 22);
             this.label7.TabIndex = 6;
             this.label7.Text = "Logradouro";
             // 
@@ -330,7 +328,7 @@ namespace GenesysGym
             this.txtEstado.Location = new System.Drawing.Point(564, 149);
             this.txtEstado.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtEstado.Name = "txtEstado";
-            this.txtEstado.Size = new System.Drawing.Size(66, 26);
+            this.txtEstado.Size = new System.Drawing.Size(66, 28);
             this.txtEstado.TabIndex = 5;
             // 
             // txtCidade
@@ -338,7 +336,7 @@ namespace GenesysGym
             this.txtCidade.Location = new System.Drawing.Point(273, 149);
             this.txtCidade.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtCidade.Name = "txtCidade";
-            this.txtCidade.Size = new System.Drawing.Size(148, 26);
+            this.txtCidade.Size = new System.Drawing.Size(148, 28);
             this.txtCidade.TabIndex = 4;
             // 
             // txtBairro
@@ -346,16 +344,16 @@ namespace GenesysGym
             this.txtBairro.Location = new System.Drawing.Point(18, 149);
             this.txtBairro.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtBairro.Name = "txtBairro";
-            this.txtBairro.Size = new System.Drawing.Size(148, 26);
+            this.txtBairro.Size = new System.Drawing.Size(148, 28);
             this.txtBairro.TabIndex = 3;
             // 
             // maskCEP
             // 
-            this.maskCEP.Location = new System.Drawing.Point(550, 62);
+            this.maskCEP.Location = new System.Drawing.Point(544, 62);
             this.maskCEP.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.maskCEP.Mask = "00000-000";
             this.maskCEP.Name = "maskCEP";
-            this.maskCEP.Size = new System.Drawing.Size(86, 26);
+            this.maskCEP.Size = new System.Drawing.Size(93, 28);
             this.maskCEP.TabIndex = 2;
             this.maskCEP.Leave += new System.EventHandler(this.maskCEP_Leave);
             // 
@@ -364,15 +362,15 @@ namespace GenesysGym
             this.txtNumLogradouro.Location = new System.Drawing.Point(444, 62);
             this.txtNumLogradouro.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtNumLogradouro.Name = "txtNumLogradouro";
-            this.txtNumLogradouro.Size = new System.Drawing.Size(66, 26);
+            this.txtNumLogradouro.Size = new System.Drawing.Size(66, 28);
             this.txtNumLogradouro.TabIndex = 1;
             // 
             // txtLogradouro
             // 
-            this.txtLogradouro.Location = new System.Drawing.Point(9, 62);
+            this.txtLogradouro.Location = new System.Drawing.Point(6, 62);
             this.txtLogradouro.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtLogradouro.Name = "txtLogradouro";
-            this.txtLogradouro.Size = new System.Drawing.Size(382, 26);
+            this.txtLogradouro.Size = new System.Drawing.Size(369, 28);
             this.txtLogradouro.TabIndex = 0;
             // 
             // label2
@@ -381,7 +379,7 @@ namespace GenesysGym
             this.label2.Location = new System.Drawing.Point(516, 22);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(112, 20);
+            this.label2.Size = new System.Drawing.Size(125, 22);
             this.label2.TabIndex = 3;
             this.label2.Text = "Data Matrícula";
             // 
@@ -391,7 +389,7 @@ namespace GenesysGym
             this.label1.Location = new System.Drawing.Point(6, 22);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(95, 20);
+            this.label1.Size = new System.Drawing.Size(109, 22);
             this.label1.TabIndex = 2;
             this.label1.Text = "Cod. Cliente";
             // 
@@ -401,7 +399,7 @@ namespace GenesysGym
             this.dttimepickDataMatricula.Location = new System.Drawing.Point(510, 51);
             this.dttimepickDataMatricula.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.dttimepickDataMatricula.Name = "dttimepickDataMatricula";
-            this.dttimepickDataMatricula.Size = new System.Drawing.Size(146, 26);
+            this.dttimepickDataMatricula.Size = new System.Drawing.Size(146, 28);
             this.dttimepickDataMatricula.TabIndex = 1;
             // 
             // txtCodCliente
@@ -409,7 +407,7 @@ namespace GenesysGym
             this.txtCodCliente.Location = new System.Drawing.Point(6, 51);
             this.txtCodCliente.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtCodCliente.Name = "txtCodCliente";
-            this.txtCodCliente.Size = new System.Drawing.Size(96, 26);
+            this.txtCodCliente.Size = new System.Drawing.Size(96, 28);
             this.txtCodCliente.TabIndex = 0;
             // 
             // grpboxDadosPessoais
@@ -441,7 +439,7 @@ namespace GenesysGym
             this.rdbtnFemCliente.Location = new System.Drawing.Point(506, 171);
             this.rdbtnFemCliente.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.rdbtnFemCliente.Name = "rdbtnFemCliente";
-            this.rdbtnFemCliente.Size = new System.Drawing.Size(99, 24);
+            this.rdbtnFemCliente.Size = new System.Drawing.Size(108, 26);
             this.rdbtnFemCliente.TabIndex = 11;
             this.rdbtnFemCliente.TabStop = true;
             this.rdbtnFemCliente.Text = "Feminino";
@@ -453,7 +451,7 @@ namespace GenesysGym
             this.rdbtnMascCliente.Location = new System.Drawing.Point(387, 171);
             this.rdbtnMascCliente.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.rdbtnMascCliente.Name = "rdbtnMascCliente";
-            this.rdbtnMascCliente.Size = new System.Drawing.Size(105, 24);
+            this.rdbtnMascCliente.Size = new System.Drawing.Size(115, 26);
             this.rdbtnMascCliente.TabIndex = 10;
             this.rdbtnMascCliente.TabStop = true;
             this.rdbtnMascCliente.Text = "Masculino";
@@ -465,7 +463,7 @@ namespace GenesysGym
             this.label6.Location = new System.Drawing.Point(15, 140);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(132, 20);
+            this.label6.Size = new System.Drawing.Size(147, 22);
             this.label6.TabIndex = 9;
             this.label6.Text = "Data Nascimento";
             // 
@@ -475,17 +473,17 @@ namespace GenesysGym
             this.label5.Location = new System.Drawing.Point(542, 45);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(34, 20);
+            this.label5.Size = new System.Drawing.Size(37, 22);
             this.label5.TabIndex = 8;
             this.label5.Text = "RG";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(406, 43);
+            this.label4.Location = new System.Drawing.Point(387, 45);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(40, 20);
+            this.label4.Size = new System.Drawing.Size(46, 22);
             this.label4.TabIndex = 7;
             this.label4.Text = "CPF";
             // 
@@ -495,7 +493,7 @@ namespace GenesysGym
             this.label3.Location = new System.Drawing.Point(10, 45);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(51, 20);
+            this.label3.Size = new System.Drawing.Size(57, 22);
             this.label3.TabIndex = 6;
             this.label3.Text = "Nome";
             // 
@@ -706,7 +704,7 @@ namespace GenesysGym
             this.comboxAno.Location = new System.Drawing.Point(146, 169);
             this.comboxAno.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.comboxAno.Name = "comboxAno";
-            this.comboxAno.Size = new System.Drawing.Size(124, 28);
+            this.comboxAno.Size = new System.Drawing.Size(124, 30);
             this.comboxAno.TabIndex = 5;
             // 
             // comboxMes
@@ -728,7 +726,7 @@ namespace GenesysGym
             this.comboxMes.Location = new System.Drawing.Point(78, 169);
             this.comboxMes.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.comboxMes.Name = "comboxMes";
-            this.comboxMes.Size = new System.Drawing.Size(56, 28);
+            this.comboxMes.Size = new System.Drawing.Size(56, 30);
             this.comboxMes.TabIndex = 4;
             // 
             // comboxDia
@@ -769,25 +767,25 @@ namespace GenesysGym
             this.comboxDia.Location = new System.Drawing.Point(10, 169);
             this.comboxDia.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.comboxDia.Name = "comboxDia";
-            this.comboxDia.Size = new System.Drawing.Size(56, 28);
+            this.comboxDia.Size = new System.Drawing.Size(56, 30);
             this.comboxDia.TabIndex = 3;
             // 
             // maskRGCliente
             // 
-            this.maskRGCliente.Location = new System.Drawing.Point(544, 74);
+            this.maskRGCliente.Location = new System.Drawing.Point(535, 74);
             this.maskRGCliente.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.maskRGCliente.Mask = "00.000.000-C";
             this.maskRGCliente.Name = "maskRGCliente";
-            this.maskRGCliente.Size = new System.Drawing.Size(104, 26);
+            this.maskRGCliente.Size = new System.Drawing.Size(115, 28);
             this.maskRGCliente.TabIndex = 2;
             // 
             // maskCPFCliente
             // 
-            this.maskCPFCliente.Location = new System.Drawing.Point(406, 74);
+            this.maskCPFCliente.Location = new System.Drawing.Point(391, 74);
             this.maskCPFCliente.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.maskCPFCliente.Mask = "000.000.000-00";
             this.maskCPFCliente.Name = "maskCPFCliente";
-            this.maskCPFCliente.Size = new System.Drawing.Size(121, 26);
+            this.maskCPFCliente.Size = new System.Drawing.Size(136, 28);
             this.maskCPFCliente.TabIndex = 1;
             // 
             // txtNomeCliente
@@ -795,11 +793,13 @@ namespace GenesysGym
             this.txtNomeCliente.Location = new System.Drawing.Point(10, 74);
             this.txtNomeCliente.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtNomeCliente.Name = "txtNomeCliente";
-            this.txtNomeCliente.Size = new System.Drawing.Size(380, 26);
+            this.txtNomeCliente.Size = new System.Drawing.Size(365, 28);
             this.txtNomeCliente.TabIndex = 0;
             // 
             // menuStrip1
             // 
+            this.menuStrip1.BackColor = System.Drawing.SystemColors.Control;
+            this.menuStrip1.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.menuStrip1.GripMargin = new System.Windows.Forms.Padding(2, 2, 0, 2);
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -810,7 +810,7 @@ namespace GenesysGym
             this.menu_Usuarios});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1372, 36);
+            this.menuStrip1.Size = new System.Drawing.Size(1372, 38);
             this.menuStrip1.TabIndex = 3;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -820,20 +820,20 @@ namespace GenesysGym
             this.strip_Logon,
             this.strip_logoff});
             this.menu_Login.Name = "menu_Login";
-            this.menu_Login.Size = new System.Drawing.Size(79, 32);
+            this.menu_Login.Size = new System.Drawing.Size(85, 32);
             this.menu_Login.Text = "LOGIN";
             // 
             // strip_Logon
             // 
             this.strip_Logon.Name = "strip_Logon";
-            this.strip_Logon.Size = new System.Drawing.Size(167, 34);
+            this.strip_Logon.Size = new System.Drawing.Size(270, 36);
             this.strip_Logon.Text = "Logon";
             this.strip_Logon.Click += new System.EventHandler(this.strip_Logon_Click);
             // 
             // strip_logoff
             // 
             this.strip_logoff.Name = "strip_logoff";
-            this.strip_logoff.Size = new System.Drawing.Size(167, 34);
+            this.strip_logoff.Size = new System.Drawing.Size(270, 36);
             this.strip_logoff.Text = "Logoff";
             this.strip_logoff.Click += new System.EventHandler(this.strip_logoff_Click);
             // 
@@ -843,20 +843,20 @@ namespace GenesysGym
             this.stripCadastrarCliente,
             this.stripPesquisarCliente});
             this.menuClientes.Name = "menuClientes";
-            this.menuClientes.Size = new System.Drawing.Size(89, 32);
+            this.menuClientes.Size = new System.Drawing.Size(96, 32);
             this.menuClientes.Text = "Clientes";
             // 
             // stripCadastrarCliente
             // 
             this.stripCadastrarCliente.Name = "stripCadastrarCliente";
-            this.stripCadastrarCliente.Size = new System.Drawing.Size(257, 34);
+            this.stripCadastrarCliente.Size = new System.Drawing.Size(272, 36);
             this.stripCadastrarCliente.Text = "Cadastrar Cliente";
             this.stripCadastrarCliente.Click += new System.EventHandler(this.stripCadastrarCliente_Click);
             // 
             // stripPesquisarCliente
             // 
             this.stripPesquisarCliente.Name = "stripPesquisarCliente";
-            this.stripPesquisarCliente.Size = new System.Drawing.Size(257, 34);
+            this.stripPesquisarCliente.Size = new System.Drawing.Size(272, 36);
             this.stripPesquisarCliente.Text = "Pesquisar / Alterar";
             this.stripPesquisarCliente.Click += new System.EventHandler(this.stripPesquisarCliente_Click);
             // 
@@ -865,13 +865,13 @@ namespace GenesysGym
             this.menuFuncionarios.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.stripCadastrarFuncionario});
             this.menuFuncionarios.Name = "menuFuncionarios";
-            this.menuFuncionarios.Size = new System.Drawing.Size(128, 32);
+            this.menuFuncionarios.Size = new System.Drawing.Size(139, 32);
             this.menuFuncionarios.Text = "Funcionários";
             // 
             // stripCadastrarFuncionario
             // 
             this.stripCadastrarFuncionario.Name = "stripCadastrarFuncionario";
-            this.stripCadastrarFuncionario.Size = new System.Drawing.Size(280, 34);
+            this.stripCadastrarFuncionario.Size = new System.Drawing.Size(296, 36);
             this.stripCadastrarFuncionario.Text = "Cadastrar / Pesquisar";
             this.stripCadastrarFuncionario.Click += new System.EventHandler(this.stripCadastrarFuncionario_Click);
             // 
@@ -880,13 +880,13 @@ namespace GenesysGym
             this.menuTreinos.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.stripRegistrarAlterarTreino});
             this.menuTreinos.Name = "menuTreinos";
-            this.menuTreinos.Size = new System.Drawing.Size(83, 32);
+            this.menuTreinos.Size = new System.Drawing.Size(89, 32);
             this.menuTreinos.Text = "Treinos";
             // 
             // stripRegistrarAlterarTreino
             // 
             this.stripRegistrarAlterarTreino.Name = "stripRegistrarAlterarTreino";
-            this.stripRegistrarAlterarTreino.Size = new System.Drawing.Size(252, 34);
+            this.stripRegistrarAlterarTreino.Size = new System.Drawing.Size(268, 36);
             this.stripRegistrarAlterarTreino.Text = "Registrar / Alterar";
             this.stripRegistrarAlterarTreino.Click += new System.EventHandler(this.stripRegistrarAlterarTreino_Click);
             // 
@@ -896,20 +896,20 @@ namespace GenesysGym
             this.strip_GestaoUser,
             this.strip_NovoUser});
             this.menu_Usuarios.Name = "menu_Usuarios";
-            this.menu_Usuarios.Size = new System.Drawing.Size(96, 32);
+            this.menu_Usuarios.Size = new System.Drawing.Size(103, 32);
             this.menu_Usuarios.Text = "Usuários";
             // 
             // strip_GestaoUser
             // 
             this.strip_GestaoUser.Name = "strip_GestaoUser";
-            this.strip_GestaoUser.Size = new System.Drawing.Size(267, 34);
+            this.strip_GestaoUser.Size = new System.Drawing.Size(282, 36);
             this.strip_GestaoUser.Text = "Gestão de Usuários";
             this.strip_GestaoUser.Click += new System.EventHandler(this.strip_GestaoUser_Click);
             // 
             // strip_NovoUser
             // 
             this.strip_NovoUser.Name = "strip_NovoUser";
-            this.strip_NovoUser.Size = new System.Drawing.Size(267, 34);
+            this.strip_NovoUser.Size = new System.Drawing.Size(282, 36);
             this.strip_NovoUser.Text = "Novo Usuário";
             this.strip_NovoUser.Click += new System.EventHandler(this.strip_NovoUser_Click);
             // 
@@ -957,7 +957,7 @@ namespace GenesysGym
             this.label25.AutoSize = true;
             this.label25.Location = new System.Drawing.Point(687, 304);
             this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(161, 20);
+            this.label25.Size = new System.Drawing.Size(182, 22);
             this.label25.TabIndex = 24;
             this.label25.Text = "Clientes Cadastrados";
             // 
@@ -977,9 +977,9 @@ namespace GenesysGym
             // label16
             // 
             this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(354, 58);
+            this.label16.Location = new System.Drawing.Point(334, 58);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(48, 20);
+            this.label16.Size = new System.Drawing.Size(54, 22);
             this.label16.TabIndex = 3;
             this.label16.Text = "Email";
             // 
@@ -988,15 +988,15 @@ namespace GenesysGym
             this.label17.AutoSize = true;
             this.label17.Location = new System.Drawing.Point(9, 58);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(71, 20);
+            this.label17.Size = new System.Drawing.Size(81, 22);
             this.label17.TabIndex = 2;
             this.label17.Text = "Telefone";
             // 
             // txtEmailAlter
             // 
-            this.txtEmailAlter.Location = new System.Drawing.Point(354, 82);
+            this.txtEmailAlter.Location = new System.Drawing.Point(338, 82);
             this.txtEmailAlter.Name = "txtEmailAlter";
-            this.txtEmailAlter.Size = new System.Drawing.Size(276, 26);
+            this.txtEmailAlter.Size = new System.Drawing.Size(305, 28);
             this.txtEmailAlter.TabIndex = 1;
             // 
             // maskTelefoneAlter
@@ -1004,7 +1004,7 @@ namespace GenesysGym
             this.maskTelefoneAlter.Location = new System.Drawing.Point(10, 82);
             this.maskTelefoneAlter.Mask = "(00)000000000";
             this.maskTelefoneAlter.Name = "maskTelefoneAlter";
-            this.maskTelefoneAlter.Size = new System.Drawing.Size(113, 26);
+            this.maskTelefoneAlter.Size = new System.Drawing.Size(128, 28);
             this.maskTelefoneAlter.TabIndex = 0;
             // 
             // groupBox2
@@ -1036,7 +1036,7 @@ namespace GenesysGym
             this.label18.Location = new System.Drawing.Point(560, 125);
             this.label18.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(60, 20);
+            this.label18.Size = new System.Drawing.Size(66, 22);
             this.label18.TabIndex = 11;
             this.label18.Text = "Estado";
             // 
@@ -1046,7 +1046,7 @@ namespace GenesysGym
             this.label19.Location = new System.Drawing.Point(268, 125);
             this.label19.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(59, 20);
+            this.label19.Size = new System.Drawing.Size(67, 22);
             this.label19.TabIndex = 10;
             this.label19.Text = "Cidade";
             // 
@@ -1056,27 +1056,27 @@ namespace GenesysGym
             this.label20.Location = new System.Drawing.Point(15, 125);
             this.label20.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(51, 20);
+            this.label20.Size = new System.Drawing.Size(58, 22);
             this.label20.TabIndex = 9;
             this.label20.Text = "Bairro";
             // 
             // label21
             // 
             this.label21.AutoSize = true;
-            this.label21.Location = new System.Drawing.Point(548, 37);
+            this.label21.Location = new System.Drawing.Point(542, 37);
             this.label21.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(41, 20);
+            this.label21.Size = new System.Drawing.Size(47, 22);
             this.label21.TabIndex = 8;
             this.label21.Text = "CEP";
             // 
             // label22
             // 
             this.label22.AutoSize = true;
-            this.label22.Location = new System.Drawing.Point(440, 37);
+            this.label22.Location = new System.Drawing.Point(420, 37);
             this.label22.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(26, 20);
+            this.label22.Size = new System.Drawing.Size(30, 22);
             this.label22.TabIndex = 7;
             this.label22.Text = "Nº";
             // 
@@ -1086,7 +1086,7 @@ namespace GenesysGym
             this.label23.Location = new System.Drawing.Point(9, 31);
             this.label23.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(91, 20);
+            this.label23.Size = new System.Drawing.Size(102, 22);
             this.label23.TabIndex = 6;
             this.label23.Text = "Logradouro";
             // 
@@ -1095,7 +1095,7 @@ namespace GenesysGym
             this.txtEstadoAlter.Location = new System.Drawing.Point(564, 149);
             this.txtEstadoAlter.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtEstadoAlter.Name = "txtEstadoAlter";
-            this.txtEstadoAlter.Size = new System.Drawing.Size(66, 26);
+            this.txtEstadoAlter.Size = new System.Drawing.Size(66, 28);
             this.txtEstadoAlter.TabIndex = 5;
             // 
             // txtCidadeAlter
@@ -1103,7 +1103,7 @@ namespace GenesysGym
             this.txtCidadeAlter.Location = new System.Drawing.Point(273, 149);
             this.txtCidadeAlter.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtCidadeAlter.Name = "txtCidadeAlter";
-            this.txtCidadeAlter.Size = new System.Drawing.Size(148, 26);
+            this.txtCidadeAlter.Size = new System.Drawing.Size(148, 28);
             this.txtCidadeAlter.TabIndex = 4;
             // 
             // txtBairroAlter
@@ -1111,25 +1111,25 @@ namespace GenesysGym
             this.txtBairroAlter.Location = new System.Drawing.Point(18, 149);
             this.txtBairroAlter.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtBairroAlter.Name = "txtBairroAlter";
-            this.txtBairroAlter.Size = new System.Drawing.Size(148, 26);
+            this.txtBairroAlter.Size = new System.Drawing.Size(148, 28);
             this.txtBairroAlter.TabIndex = 3;
             // 
             // maskCEPAlter
             // 
-            this.maskCEPAlter.Location = new System.Drawing.Point(550, 62);
+            this.maskCEPAlter.Location = new System.Drawing.Point(544, 62);
             this.maskCEPAlter.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.maskCEPAlter.Mask = "00000-000";
             this.maskCEPAlter.Name = "maskCEPAlter";
-            this.maskCEPAlter.Size = new System.Drawing.Size(86, 26);
+            this.maskCEPAlter.Size = new System.Drawing.Size(93, 28);
             this.maskCEPAlter.TabIndex = 2;
             this.maskCEPAlter.Leave += new System.EventHandler(this.maskCEPAlter_Leave);
             // 
             // txtNumLogradouroAlter
             // 
-            this.txtNumLogradouroAlter.Location = new System.Drawing.Point(444, 62);
+            this.txtNumLogradouroAlter.Location = new System.Drawing.Point(424, 62);
             this.txtNumLogradouroAlter.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtNumLogradouroAlter.Name = "txtNumLogradouroAlter";
-            this.txtNumLogradouroAlter.Size = new System.Drawing.Size(66, 26);
+            this.txtNumLogradouroAlter.Size = new System.Drawing.Size(66, 28);
             this.txtNumLogradouroAlter.TabIndex = 1;
             // 
             // txtLogradouroAlter
@@ -1137,7 +1137,7 @@ namespace GenesysGym
             this.txtLogradouroAlter.Location = new System.Drawing.Point(9, 62);
             this.txtLogradouroAlter.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtLogradouroAlter.Name = "txtLogradouroAlter";
-            this.txtLogradouroAlter.Size = new System.Drawing.Size(382, 26);
+            this.txtLogradouroAlter.Size = new System.Drawing.Size(368, 28);
             this.txtLogradouroAlter.TabIndex = 0;
             // 
             // groupBox3
@@ -1160,20 +1160,20 @@ namespace GenesysGym
             // label27
             // 
             this.label27.AutoSize = true;
-            this.label27.Location = new System.Drawing.Point(542, 45);
+            this.label27.Location = new System.Drawing.Point(531, 47);
             this.label27.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(34, 20);
+            this.label27.Size = new System.Drawing.Size(37, 22);
             this.label27.TabIndex = 8;
             this.label27.Text = "RG";
             // 
             // label28
             // 
             this.label28.AutoSize = true;
-            this.label28.Location = new System.Drawing.Point(406, 43);
+            this.label28.Location = new System.Drawing.Point(387, 45);
             this.label28.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(40, 20);
+            this.label28.Size = new System.Drawing.Size(46, 22);
             this.label28.TabIndex = 7;
             this.label28.Text = "CPF";
             // 
@@ -1183,26 +1183,26 @@ namespace GenesysGym
             this.label29.Location = new System.Drawing.Point(10, 45);
             this.label29.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(51, 20);
+            this.label29.Size = new System.Drawing.Size(57, 22);
             this.label29.TabIndex = 6;
             this.label29.Text = "Nome";
             // 
             // maskRGAlter
             // 
-            this.maskRGAlter.Location = new System.Drawing.Point(544, 74);
+            this.maskRGAlter.Location = new System.Drawing.Point(530, 74);
             this.maskRGAlter.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.maskRGAlter.Mask = "00.000.000-C";
             this.maskRGAlter.Name = "maskRGAlter";
-            this.maskRGAlter.Size = new System.Drawing.Size(104, 26);
+            this.maskRGAlter.Size = new System.Drawing.Size(115, 28);
             this.maskRGAlter.TabIndex = 2;
             // 
             // maskCPFAlter
             // 
-            this.maskCPFAlter.Location = new System.Drawing.Point(406, 74);
+            this.maskCPFAlter.Location = new System.Drawing.Point(387, 74);
             this.maskCPFAlter.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.maskCPFAlter.Mask = "000.000.000-00";
             this.maskCPFAlter.Name = "maskCPFAlter";
-            this.maskCPFAlter.Size = new System.Drawing.Size(121, 26);
+            this.maskCPFAlter.Size = new System.Drawing.Size(135, 28);
             this.maskCPFAlter.TabIndex = 1;
             // 
             // txtNomeClientAlter
@@ -1210,7 +1210,7 @@ namespace GenesysGym
             this.txtNomeClientAlter.Location = new System.Drawing.Point(10, 74);
             this.txtNomeClientAlter.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtNomeClientAlter.Name = "txtNomeClientAlter";
-            this.txtNomeClientAlter.Size = new System.Drawing.Size(380, 26);
+            this.txtNomeClientAlter.Size = new System.Drawing.Size(365, 28);
             this.txtNomeClientAlter.TabIndex = 0;
             // 
             // btnSairPesquisarCliente
@@ -1240,23 +1240,15 @@ namespace GenesysGym
             // 
             this.dtgridClientesCadastrados.AllowUserToAddRows = false;
             this.dtgridClientesCadastrados.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dtgridClientesCadastrados.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle9.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle9.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtgridClientesCadastrados.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle9;
             this.dtgridClientesCadastrados.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dtgridClientesCadastrados.DefaultCellStyle = dataGridViewCellStyle2;
             this.dtgridClientesCadastrados.EnableHeadersVisualStyles = false;
             this.dtgridClientesCadastrados.Location = new System.Drawing.Point(678, 327);
             this.dtgridClientesCadastrados.MultiSelect = false;
@@ -1273,23 +1265,15 @@ namespace GenesysGym
             // 
             this.dtgridPesquisaCliente.AllowUserToAddRows = false;
             this.dtgridPesquisaCliente.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dtgridPesquisaCliente.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle10.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle10.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtgridPesquisaCliente.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle10;
             this.dtgridPesquisaCliente.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dtgridPesquisaCliente.DefaultCellStyle = dataGridViewCellStyle4;
             this.dtgridPesquisaCliente.EnableHeadersVisualStyles = false;
             this.dtgridPesquisaCliente.Location = new System.Drawing.Point(678, 101);
             this.dtgridPesquisaCliente.MultiSelect = false;
@@ -1309,7 +1293,7 @@ namespace GenesysGym
             this.label13.Location = new System.Drawing.Point(979, 30);
             this.label13.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(40, 20);
+            this.label13.Size = new System.Drawing.Size(46, 22);
             this.label13.TabIndex = 13;
             this.label13.Text = "CPF";
             // 
@@ -1319,7 +1303,7 @@ namespace GenesysGym
             this.maskPesquisarCPFCliente.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.maskPesquisarCPFCliente.Mask = "000.000.000-00";
             this.maskPesquisarCPFCliente.Name = "maskPesquisarCPFCliente";
-            this.maskPesquisarCPFCliente.Size = new System.Drawing.Size(124, 26);
+            this.maskPesquisarCPFCliente.Size = new System.Drawing.Size(129, 28);
             this.maskPesquisarCPFCliente.TabIndex = 12;
             // 
             // pnlBarraLogin
@@ -1339,36 +1323,36 @@ namespace GenesysGym
             // lb_NomeUsuario
             // 
             this.lb_NomeUsuario.AutoSize = true;
-            this.lb_NomeUsuario.Location = new System.Drawing.Point(334, 13);
+            this.lb_NomeUsuario.Location = new System.Drawing.Point(190, 7);
             this.lb_NomeUsuario.Name = "lb_NomeUsuario";
-            this.lb_NomeUsuario.Size = new System.Drawing.Size(24, 20);
+            this.lb_NomeUsuario.Size = new System.Drawing.Size(28, 22);
             this.lb_NomeUsuario.TabIndex = 4;
             this.lb_NomeUsuario.Text = "---";
             // 
             // label24
             // 
             this.label24.AutoSize = true;
-            this.label24.Location = new System.Drawing.Point(208, 13);
+            this.label24.Location = new System.Drawing.Point(48, 7);
             this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(120, 20);
+            this.label24.Size = new System.Drawing.Size(136, 22);
             this.label24.TabIndex = 3;
             this.label24.Text = "Usuário logado:";
             // 
             // lb_Acesso
             // 
             this.lb_Acesso.AutoSize = true;
-            this.lb_Acesso.Location = new System.Drawing.Point(147, 13);
+            this.lb_Acesso.Location = new System.Drawing.Point(540, 7);
             this.lb_Acesso.Name = "lb_Acesso";
-            this.lb_Acesso.Size = new System.Drawing.Size(18, 20);
+            this.lb_Acesso.Size = new System.Drawing.Size(20, 22);
             this.lb_Acesso.TabIndex = 2;
             this.lb_Acesso.Text = "0";
             // 
             // label26
             // 
             this.label26.AutoSize = true;
-            this.label26.Location = new System.Drawing.Point(40, 13);
+            this.label26.Location = new System.Drawing.Point(426, 7);
             this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(103, 20);
+            this.label26.Size = new System.Drawing.Size(119, 22);
             this.label26.TabIndex = 1;
             this.label26.Text = "Nível Acesso:";
             // 
@@ -1388,11 +1372,11 @@ namespace GenesysGym
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.ClientSize = new System.Drawing.Size(1372, 794);
+            this.Controls.Add(this.pnlPesquisarCliente);
             this.Controls.Add(this.pnlCadastrarCliente);
             this.Controls.Add(this.pnlBarraLogin);
             this.Controls.Add(this.menuStrip1);
-            this.Controls.Add(this.pnlPesquisarCliente);
-            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.MainMenuStrip = this.menuStrip1;
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.MaximumSize = new System.Drawing.Size(1394, 850);
