@@ -368,6 +368,36 @@ namespace GenesysGym
                 throw ex;
             }
         }
+
+        // FIM DAS FUNÇÕES GESTÃO FUNCIONARIOS
+
+        /// FUNÇÕES PARA TREINOS
+        /// 
+
+        public static void NovoTreino(Treino tre)
+        {
+            
+            try
+            {
+                var vcon = ConexaoBanco();
+                var cmd = vcon.CreateCommand();
+                cmd.CommandText = "INSERT INTO treino (grupoMuscular, descrição_exerc, qtde_series, qtde_reps) VALUES (@grupoMuscular, @exerc, @series, @reps)";
+
+                cmd.Parameters.AddWithValue("@grupoMuscular", tre.grupoMuscular);
+                cmd.Parameters.AddWithValue("@exerc", tre.exerc);
+                cmd.Parameters.AddWithValue("@series", tre.series);
+                cmd.Parameters.AddWithValue("@reps", tre.reps);
+
+                cmd.ExecuteNonQuery();
+
+                MessageBox.Show("Treino Cadastrado com Sucesso!");
+                vcon.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Erro ao gravar Treino!");
+            }
+        }
     }
 
 }

@@ -112,9 +112,6 @@ namespace GenesysGym
             "Roda abdominal",
         };
 
-
-
-
         
         
         private void cboGrup1_SelectedIndexChanged(object sender, EventArgs e)
@@ -523,6 +520,16 @@ namespace GenesysGym
 
         private void btnGravarTreino_Click(object sender, EventArgs e)
         {
+            //Treino tre = new Treino();
+            //tre.nome = txt_NomeUsuario.Text;
+            //tre.username = txt_Username.Text;
+            //tre.password = txt_Senha.Text;
+            //tre.status = cb_Status.Text;
+            //tre.nivel = Convert.ToInt32(Math.Round(nup_Nivel.Value, 0));
+
+            //DataConnection.NovoTreino(tre);
+
+            MessageBox.Show("Treino cadastrado!");
 
         }
 
@@ -948,5 +955,7 @@ namespace GenesysGym
 
             }
         }
+
+        
     }
 }
