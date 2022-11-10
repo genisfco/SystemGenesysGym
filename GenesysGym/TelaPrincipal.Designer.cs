@@ -29,10 +29,10 @@ namespace GenesysGym
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.pnlCadastrarCliente = new System.Windows.Forms.Panel();
             this.grpboxContatos = new System.Windows.Forms.GroupBox();
             this.label15 = new System.Windows.Forms.Label();
@@ -87,6 +87,7 @@ namespace GenesysGym
             this.strip_GestaoUser = new System.Windows.Forms.ToolStripMenuItem();
             this.strip_NovoUser = new System.Windows.Forms.ToolStripMenuItem();
             this.pnlPesquisarCliente = new System.Windows.Forms.Panel();
+            this.btnExcluirCliente = new System.Windows.Forms.Button();
             this.btnSalvarAlter = new System.Windows.Forms.Button();
             this.label25 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
@@ -126,7 +127,6 @@ namespace GenesysGym
             this.lb_Acesso = new System.Windows.Forms.Label();
             this.label26 = new System.Windows.Forms.Label();
             this.pb_ledLogado = new System.Windows.Forms.PictureBox();
-            this.btnExcluirCliente = new System.Windows.Forms.Button();
             this.pnlCadastrarCliente.SuspendLayout();
             this.grpboxContatos.SuspendLayout();
             this.grpboxEndereco.SuspendLayout();
@@ -203,7 +203,7 @@ namespace GenesysGym
             this.maskTelefone.Location = new System.Drawing.Point(10, 82);
             this.maskTelefone.Mask = "(00)000000000";
             this.maskTelefone.Name = "maskTelefone";
-            this.maskTelefone.Size = new System.Drawing.Size(100, 26);
+            this.maskTelefone.Size = new System.Drawing.Size(113, 26);
             this.maskTelefone.TabIndex = 0;
             // 
             // btnSairCadastrarCliente
@@ -810,7 +810,7 @@ namespace GenesysGym
             this.menu_Usuarios});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1372, 33);
+            this.menuStrip1.Size = new System.Drawing.Size(1372, 36);
             this.menuStrip1.TabIndex = 3;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -820,7 +820,7 @@ namespace GenesysGym
             this.strip_Logon,
             this.strip_logoff});
             this.menu_Login.Name = "menu_Login";
-            this.menu_Login.Size = new System.Drawing.Size(79, 29);
+            this.menu_Login.Size = new System.Drawing.Size(79, 32);
             this.menu_Login.Text = "LOGIN";
             // 
             // strip_Logon
@@ -843,20 +843,20 @@ namespace GenesysGym
             this.stripCadastrarCliente,
             this.stripPesquisarCliente});
             this.menuClientes.Name = "menuClientes";
-            this.menuClientes.Size = new System.Drawing.Size(89, 29);
+            this.menuClientes.Size = new System.Drawing.Size(89, 32);
             this.menuClientes.Text = "Clientes";
             // 
             // stripCadastrarCliente
             // 
             this.stripCadastrarCliente.Name = "stripCadastrarCliente";
-            this.stripCadastrarCliente.Size = new System.Drawing.Size(270, 34);
+            this.stripCadastrarCliente.Size = new System.Drawing.Size(257, 34);
             this.stripCadastrarCliente.Text = "Cadastrar Cliente";
             this.stripCadastrarCliente.Click += new System.EventHandler(this.stripCadastrarCliente_Click);
             // 
             // stripPesquisarCliente
             // 
             this.stripPesquisarCliente.Name = "stripPesquisarCliente";
-            this.stripPesquisarCliente.Size = new System.Drawing.Size(270, 34);
+            this.stripPesquisarCliente.Size = new System.Drawing.Size(257, 34);
             this.stripPesquisarCliente.Text = "Pesquisar / Alterar";
             this.stripPesquisarCliente.Click += new System.EventHandler(this.stripPesquisarCliente_Click);
             // 
@@ -865,7 +865,7 @@ namespace GenesysGym
             this.menuFuncionarios.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.stripCadastrarFuncionario});
             this.menuFuncionarios.Name = "menuFuncionarios";
-            this.menuFuncionarios.Size = new System.Drawing.Size(128, 29);
+            this.menuFuncionarios.Size = new System.Drawing.Size(128, 32);
             this.menuFuncionarios.Text = "Funcionários";
             // 
             // stripCadastrarFuncionario
@@ -880,13 +880,13 @@ namespace GenesysGym
             this.menuTreinos.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.stripRegistrarAlterarTreino});
             this.menuTreinos.Name = "menuTreinos";
-            this.menuTreinos.Size = new System.Drawing.Size(83, 29);
+            this.menuTreinos.Size = new System.Drawing.Size(83, 32);
             this.menuTreinos.Text = "Treinos";
             // 
             // stripRegistrarAlterarTreino
             // 
             this.stripRegistrarAlterarTreino.Name = "stripRegistrarAlterarTreino";
-            this.stripRegistrarAlterarTreino.Size = new System.Drawing.Size(270, 34);
+            this.stripRegistrarAlterarTreino.Size = new System.Drawing.Size(252, 34);
             this.stripRegistrarAlterarTreino.Text = "Registrar / Alterar";
             this.stripRegistrarAlterarTreino.Click += new System.EventHandler(this.stripRegistrarAlterarTreino_Click);
             // 
@@ -896,20 +896,20 @@ namespace GenesysGym
             this.strip_GestaoUser,
             this.strip_NovoUser});
             this.menu_Usuarios.Name = "menu_Usuarios";
-            this.menu_Usuarios.Size = new System.Drawing.Size(96, 29);
+            this.menu_Usuarios.Size = new System.Drawing.Size(96, 32);
             this.menu_Usuarios.Text = "Usuários";
             // 
             // strip_GestaoUser
             // 
             this.strip_GestaoUser.Name = "strip_GestaoUser";
-            this.strip_GestaoUser.Size = new System.Drawing.Size(270, 34);
+            this.strip_GestaoUser.Size = new System.Drawing.Size(267, 34);
             this.strip_GestaoUser.Text = "Gestão de Usuários";
             this.strip_GestaoUser.Click += new System.EventHandler(this.strip_GestaoUser_Click);
             // 
             // strip_NovoUser
             // 
             this.strip_NovoUser.Name = "strip_NovoUser";
-            this.strip_NovoUser.Size = new System.Drawing.Size(270, 34);
+            this.strip_NovoUser.Size = new System.Drawing.Size(267, 34);
             this.strip_NovoUser.Text = "Novo Usuário";
             this.strip_NovoUser.Click += new System.EventHandler(this.strip_NovoUser_Click);
             // 
@@ -931,6 +931,16 @@ namespace GenesysGym
             this.pnlPesquisarCliente.Name = "pnlPesquisarCliente";
             this.pnlPesquisarCliente.Size = new System.Drawing.Size(1346, 712);
             this.pnlPesquisarCliente.TabIndex = 4;
+            // 
+            // btnExcluirCliente
+            // 
+            this.btnExcluirCliente.Location = new System.Drawing.Point(451, 653);
+            this.btnExcluirCliente.Name = "btnExcluirCliente";
+            this.btnExcluirCliente.Size = new System.Drawing.Size(207, 55);
+            this.btnExcluirCliente.TabIndex = 27;
+            this.btnExcluirCliente.Text = "Excluir Cliente";
+            this.btnExcluirCliente.UseVisualStyleBackColor = true;
+            this.btnExcluirCliente.Click += new System.EventHandler(this.btnExcluirCliente_Click);
             // 
             // btnSalvarAlter
             // 
@@ -994,7 +1004,7 @@ namespace GenesysGym
             this.maskTelefoneAlter.Location = new System.Drawing.Point(10, 82);
             this.maskTelefoneAlter.Mask = "(00)000000000";
             this.maskTelefoneAlter.Name = "maskTelefoneAlter";
-            this.maskTelefoneAlter.Size = new System.Drawing.Size(100, 26);
+            this.maskTelefoneAlter.Size = new System.Drawing.Size(113, 26);
             this.maskTelefoneAlter.TabIndex = 0;
             // 
             // groupBox2
@@ -1112,6 +1122,7 @@ namespace GenesysGym
             this.maskCEPAlter.Name = "maskCEPAlter";
             this.maskCEPAlter.Size = new System.Drawing.Size(86, 26);
             this.maskCEPAlter.TabIndex = 2;
+            this.maskCEPAlter.Leave += new System.EventHandler(this.maskCEPAlter_Leave);
             // 
             // txtNumLogradouroAlter
             // 
@@ -1229,23 +1240,23 @@ namespace GenesysGym
             // 
             this.dtgridClientesCadastrados.AllowUserToAddRows = false;
             this.dtgridClientesCadastrados.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dtgridClientesCadastrados.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtgridClientesCadastrados.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dtgridClientesCadastrados.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dtgridClientesCadastrados.DefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dtgridClientesCadastrados.DefaultCellStyle = dataGridViewCellStyle2;
             this.dtgridClientesCadastrados.EnableHeadersVisualStyles = false;
             this.dtgridClientesCadastrados.Location = new System.Drawing.Point(678, 327);
             this.dtgridClientesCadastrados.MultiSelect = false;
@@ -1262,25 +1273,25 @@ namespace GenesysGym
             // 
             this.dtgridPesquisaCliente.AllowUserToAddRows = false;
             this.dtgridPesquisaCliente.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle7.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dtgridPesquisaCliente.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtgridPesquisaCliente.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dtgridPesquisaCliente.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle8.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dtgridPesquisaCliente.DefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dtgridPesquisaCliente.DefaultCellStyle = dataGridViewCellStyle4;
             this.dtgridPesquisaCliente.EnableHeadersVisualStyles = false;
-            this.dtgridPesquisaCliente.Location = new System.Drawing.Point(678, 91);
+            this.dtgridPesquisaCliente.Location = new System.Drawing.Point(678, 101);
             this.dtgridPesquisaCliente.MultiSelect = false;
             this.dtgridPesquisaCliente.Name = "dtgridPesquisaCliente";
             this.dtgridPesquisaCliente.ReadOnly = true;
@@ -1288,7 +1299,7 @@ namespace GenesysGym
             this.dtgridPesquisaCliente.RowHeadersWidth = 62;
             this.dtgridPesquisaCliente.RowTemplate.Height = 28;
             this.dtgridPesquisaCliente.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dtgridPesquisaCliente.Size = new System.Drawing.Size(663, 136);
+            this.dtgridPesquisaCliente.Size = new System.Drawing.Size(658, 115);
             this.dtgridPesquisaCliente.TabIndex = 14;
             this.dtgridPesquisaCliente.SelectionChanged += new System.EventHandler(this.dtgridPesquisaCliente_SelectionChanged);
             // 
@@ -1371,26 +1382,16 @@ namespace GenesysGym
             this.pb_ledLogado.TabIndex = 0;
             this.pb_ledLogado.TabStop = false;
             // 
-            // btnExcluirCliente
-            // 
-            this.btnExcluirCliente.Location = new System.Drawing.Point(451, 653);
-            this.btnExcluirCliente.Name = "btnExcluirCliente";
-            this.btnExcluirCliente.Size = new System.Drawing.Size(207, 55);
-            this.btnExcluirCliente.TabIndex = 27;
-            this.btnExcluirCliente.Text = "Excluir Cliente";
-            this.btnExcluirCliente.UseVisualStyleBackColor = true;
-            this.btnExcluirCliente.Click += new System.EventHandler(this.btnExcluirCliente_Click);
-            // 
             // TelaPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(144F, 144F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.ClientSize = new System.Drawing.Size(1372, 794);
-            this.Controls.Add(this.pnlPesquisarCliente);
             this.Controls.Add(this.pnlCadastrarCliente);
             this.Controls.Add(this.pnlBarraLogin);
             this.Controls.Add(this.menuStrip1);
+            this.Controls.Add(this.pnlPesquisarCliente);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.MainMenuStrip = this.menuStrip1;
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);

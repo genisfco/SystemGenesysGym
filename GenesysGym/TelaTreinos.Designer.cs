@@ -28,6 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.menuNovoTreino = new System.Windows.Forms.ToolStripMenuItem();
             this.stripDivisoesTreino = new System.Windows.Forms.ToolStripMenuItem();
@@ -35,8 +38,8 @@
             this.stripABCD = new System.Windows.Forms.ToolStripMenuItem();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.maskCPFCliente = new System.Windows.Forms.MaskedTextBox();
-            this.txtNomeCliente = new System.Windows.Forms.TextBox();
+            this.maskCPFClienteTreino = new System.Windows.Forms.MaskedTextBox();
+            this.txtNomeClienteTreino = new System.Windows.Forms.TextBox();
             this.btnBuscarCliente = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.txtCodFuncionario = new System.Windows.Forms.TextBox();
@@ -122,9 +125,11 @@
             this.cboRep12 = new System.Windows.Forms.ComboBox();
             this.btnGravarTreino = new System.Windows.Forms.Button();
             this.btnSairTreino = new System.Windows.Forms.Button();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.menuStrip1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -189,22 +194,22 @@
             this.label3.TabIndex = 3;
             this.label3.Text = "Nome";
             // 
-            // maskCPFCliente
+            // maskCPFClienteTreino
             // 
-            this.maskCPFCliente.Location = new System.Drawing.Point(17, 72);
-            this.maskCPFCliente.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.maskCPFCliente.Mask = "000.000.000-00";
-            this.maskCPFCliente.Name = "maskCPFCliente";
-            this.maskCPFCliente.Size = new System.Drawing.Size(121, 26);
-            this.maskCPFCliente.TabIndex = 4;
+            this.maskCPFClienteTreino.Location = new System.Drawing.Point(17, 72);
+            this.maskCPFClienteTreino.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.maskCPFClienteTreino.Mask = "000.000.000-00";
+            this.maskCPFClienteTreino.Name = "maskCPFClienteTreino";
+            this.maskCPFClienteTreino.Size = new System.Drawing.Size(121, 26);
+            this.maskCPFClienteTreino.TabIndex = 4;
             // 
-            // txtNomeCliente
+            // txtNomeClienteTreino
             // 
-            this.txtNomeCliente.Location = new System.Drawing.Point(166, 72);
-            this.txtNomeCliente.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.txtNomeCliente.Name = "txtNomeCliente";
-            this.txtNomeCliente.Size = new System.Drawing.Size(380, 26);
-            this.txtNomeCliente.TabIndex = 5;
+            this.txtNomeClienteTreino.Location = new System.Drawing.Point(166, 72);
+            this.txtNomeClienteTreino.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtNomeClienteTreino.Name = "txtNomeClienteTreino";
+            this.txtNomeClienteTreino.Size = new System.Drawing.Size(380, 26);
+            this.txtNomeClienteTreino.TabIndex = 5;
             // 
             // btnBuscarCliente
             // 
@@ -311,7 +316,7 @@
             this.groupBox1.Controls.Add(this.cboExerc1);
             this.groupBox1.Controls.Add(this.cboGrup1);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(17, 132);
+            this.groupBox1.Location = new System.Drawing.Point(17, 118);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(662, 508);
             this.groupBox1.TabIndex = 20;
@@ -1077,7 +1082,7 @@
             this.groupBox2.Controls.Add(this.cboGrup13);
             this.groupBox2.Controls.Add(this.cboRep12);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.Location = new System.Drawing.Point(750, 132);
+            this.groupBox2.Location = new System.Drawing.Point(750, 118);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(662, 508);
             this.groupBox2.TabIndex = 21;
@@ -1807,7 +1812,7 @@
             // 
             this.btnGravarTreino.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnGravarTreino.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGravarTreino.Location = new System.Drawing.Point(513, 667);
+            this.btnGravarTreino.Location = new System.Drawing.Point(756, 712);
             this.btnGravarTreino.Name = "btnGravarTreino";
             this.btnGravarTreino.Size = new System.Drawing.Size(403, 56);
             this.btnGravarTreino.TabIndex = 24;
@@ -1819,7 +1824,7 @@
             // 
             this.btnSairTreino.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnSairTreino.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSairTreino.Location = new System.Drawing.Point(1246, 667);
+            this.btnSairTreino.Location = new System.Drawing.Point(1246, 712);
             this.btnSairTreino.Name = "btnSairTreino";
             this.btnSairTreino.Size = new System.Drawing.Size(166, 56);
             this.btnSairTreino.TabIndex = 25;
@@ -1827,12 +1832,56 @@
             this.btnSairTreino.UseVisualStyleBackColor = true;
             this.btnSairTreino.Click += new System.EventHandler(this.btnSairTreino_Click);
             // 
+            // dataGridView1
+            // 
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AllowUserToDeleteRows = false;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle2;
+            this.dataGridView1.EnableHeadersVisualStyles = false;
+            this.dataGridView1.Location = new System.Drawing.Point(17, 645);
+            this.dataGridView1.MultiSelect = false;
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            this.dataGridView1.RowHeadersVisible = false;
+            this.dataGridView1.RowHeadersWidth = 62;
+            this.dataGridView1.RowTemplate.Height = 28;
+            this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dataGridView1.Size = new System.Drawing.Size(662, 123);
+            this.dataGridView1.TabIndex = 26;
+            this.dataGridView1.Visible = false;
+            this.dataGridView1.SelectionChanged += new System.EventHandler(this.dataGridView1_SelectionChanged);
+            // 
             // TelaTreinos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(144F, 144F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.ClientSize = new System.Drawing.Size(1428, 754);
+            this.ClientSize = new System.Drawing.Size(1428, 774);
+            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.btnSairTreino);
             this.Controls.Add(this.btnGravarTreino);
             this.Controls.Add(this.groupBox2);
@@ -1844,14 +1893,14 @@
             this.Controls.Add(this.txtCodFuncionario);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnBuscarCliente);
-            this.Controls.Add(this.txtNomeCliente);
-            this.Controls.Add(this.maskCPFCliente);
+            this.Controls.Add(this.txtNomeClienteTreino);
+            this.Controls.Add(this.maskCPFClienteTreino);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.menuStrip1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.MaximumSize = new System.Drawing.Size(1450, 810);
-            this.MinimumSize = new System.Drawing.Size(1450, 810);
+            this.MaximumSize = new System.Drawing.Size(1450, 830);
+            this.MinimumSize = new System.Drawing.Size(1450, 830);
             this.Name = "TelaTreinos";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Treinos";
@@ -1862,6 +1911,7 @@
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1876,8 +1926,8 @@
         private System.Windows.Forms.ToolStripMenuItem stripABCD;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.MaskedTextBox maskCPFCliente;
-        private System.Windows.Forms.TextBox txtNomeCliente;
+        private System.Windows.Forms.MaskedTextBox maskCPFClienteTreino;
+        private System.Windows.Forms.TextBox txtNomeClienteTreino;
         private System.Windows.Forms.Button btnBuscarCliente;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtCodFuncionario;
@@ -1963,5 +2013,6 @@
         private System.Windows.Forms.Button btnLimparTreinoB;
         private System.Windows.Forms.Button btnGravarTreino;
         private System.Windows.Forms.Button btnSairTreino;
+        private System.Windows.Forms.DataGridView dataGridView1;
     }
 }

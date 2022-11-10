@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
             this.pnlCadastrarFuncionario = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
             this.txtCargoFuncionario = new System.Windows.Forms.TextBox();
@@ -72,6 +72,7 @@
             this.maskCPFFuncionario = new System.Windows.Forms.MaskedTextBox();
             this.txtNomeFuncionario = new System.Windows.Forms.TextBox();
             this.pnlConsultarFuncionario = new System.Windows.Forms.Panel();
+            this.btnExcluirFunc = new System.Windows.Forms.Button();
             this.btnSalvarAlterFuncion = new System.Windows.Forms.Button();
             this.label32 = new System.Windows.Forms.Label();
             this.btnPesquisarFuncionario = new System.Windows.Forms.Button();
@@ -110,10 +111,8 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.menuCadastrarFuncionario = new System.Windows.Forms.ToolStripMenuItem();
             this.menuConsultarFuncionario = new System.Windows.Forms.ToolStripMenuItem();
-            this.menuExcluirFuncionario = new System.Windows.Forms.ToolStripMenuItem();
-            this.btnExcluirFunc = new System.Windows.Forms.Button();
-            this.label26 = new System.Windows.Forms.Label();
             this.txtCodFuncAlter = new System.Windows.Forms.TextBox();
+            this.label26 = new System.Windows.Forms.Label();
             this.pnlCadastrarFuncionario.SuspendLayout();
             this.grpboxContatosFuncionario.SuspendLayout();
             this.grpboxEnderecoFuncionario.SuspendLayout();
@@ -208,7 +207,7 @@
             this.maskTelefoneFuncionario.Location = new System.Drawing.Point(10, 82);
             this.maskTelefoneFuncionario.Mask = "(00)000000000";
             this.maskTelefoneFuncionario.Name = "maskTelefoneFuncionario";
-            this.maskTelefoneFuncionario.Size = new System.Drawing.Size(100, 26);
+            this.maskTelefoneFuncionario.Size = new System.Drawing.Size(117, 26);
             this.maskTelefoneFuncionario.TabIndex = 0;
             // 
             // btnSairCadastrarFuncionario
@@ -818,13 +817,24 @@
             this.pnlConsultarFuncionario.Controls.Add(this.txtPesquisarCodFuncionario);
             this.pnlConsultarFuncionario.Controls.Add(this.label5);
             this.pnlConsultarFuncionario.Controls.Add(this.txtCargoFuncAlter);
-            this.pnlConsultarFuncionario.Controls.Add(this.groupBox1);
             this.pnlConsultarFuncionario.Controls.Add(this.groupBox2);
             this.pnlConsultarFuncionario.Controls.Add(this.groupBox3);
+            this.pnlConsultarFuncionario.Controls.Add(this.groupBox1);
             this.pnlConsultarFuncionario.Location = new System.Drawing.Point(14, 42);
             this.pnlConsultarFuncionario.Name = "pnlConsultarFuncionario";
             this.pnlConsultarFuncionario.Size = new System.Drawing.Size(1346, 709);
             this.pnlConsultarFuncionario.TabIndex = 6;
+            // 
+            // btnExcluirFunc
+            // 
+            this.btnExcluirFunc.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
+            this.btnExcluirFunc.Location = new System.Drawing.Point(453, 645);
+            this.btnExcluirFunc.Name = "btnExcluirFunc";
+            this.btnExcluirFunc.Size = new System.Drawing.Size(207, 55);
+            this.btnExcluirFunc.TabIndex = 39;
+            this.btnExcluirFunc.Text = "Excluir Funcionario";
+            this.btnExcluirFunc.UseVisualStyleBackColor = true;
+            this.btnExcluirFunc.Click += new System.EventHandler(this.btnExcluirFunc_Click);
             // 
             // btnSalvarAlterFuncion
             // 
@@ -874,14 +884,14 @@
             // 
             this.dtgridFuncionariosCadastrados.AllowUserToAddRows = false;
             this.dtgridFuncionariosCadastrados.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dtgridFuncionariosCadastrados.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle9.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle9.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtgridFuncionariosCadastrados.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle9;
             this.dtgridFuncionariosCadastrados.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtgridFuncionariosCadastrados.EnableHeadersVisualStyles = false;
             this.dtgridFuncionariosCadastrados.Location = new System.Drawing.Point(685, 346);
@@ -891,7 +901,7 @@
             this.dtgridFuncionariosCadastrados.RowHeadersVisible = false;
             this.dtgridFuncionariosCadastrados.RowHeadersWidth = 62;
             this.dtgridFuncionariosCadastrados.RowTemplate.Height = 28;
-            this.dtgridFuncionariosCadastrados.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dtgridFuncionariosCadastrados.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.CellSelect;
             this.dtgridFuncionariosCadastrados.Size = new System.Drawing.Size(658, 286);
             this.dtgridFuncionariosCadastrados.TabIndex = 34;
             // 
@@ -899,17 +909,17 @@
             // 
             this.dtgridPesquisaFuncionario.AllowUserToAddRows = false;
             this.dtgridPesquisaFuncionario.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dtgridPesquisaFuncionario.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle10.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle10.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle10.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtgridPesquisaFuncionario.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle10;
             this.dtgridPesquisaFuncionario.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtgridPesquisaFuncionario.EnableHeadersVisualStyles = false;
-            this.dtgridPesquisaFuncionario.Location = new System.Drawing.Point(685, 91);
+            this.dtgridPesquisaFuncionario.Location = new System.Drawing.Point(685, 104);
             this.dtgridPesquisaFuncionario.MultiSelect = false;
             this.dtgridPesquisaFuncionario.Name = "dtgridPesquisaFuncionario";
             this.dtgridPesquisaFuncionario.ReadOnly = true;
@@ -917,7 +927,7 @@
             this.dtgridPesquisaFuncionario.RowHeadersWidth = 62;
             this.dtgridPesquisaFuncionario.RowTemplate.Height = 28;
             this.dtgridPesquisaFuncionario.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dtgridPesquisaFuncionario.Size = new System.Drawing.Size(658, 141);
+            this.dtgridPesquisaFuncionario.Size = new System.Drawing.Size(658, 115);
             this.dtgridPesquisaFuncionario.TabIndex = 33;
             this.dtgridPesquisaFuncionario.SelectionChanged += new System.EventHandler(this.dtgridPesquisaFuncionario_SelectionChanged);
             // 
@@ -1000,7 +1010,7 @@
             this.maskTelefoneFuncAlter.Location = new System.Drawing.Point(10, 82);
             this.maskTelefoneFuncAlter.Mask = "(00)000000000";
             this.maskTelefoneFuncAlter.Name = "maskTelefoneFuncAlter";
-            this.maskTelefoneFuncAlter.Size = new System.Drawing.Size(100, 26);
+            this.maskTelefoneFuncAlter.Size = new System.Drawing.Size(119, 26);
             this.maskTelefoneFuncAlter.TabIndex = 0;
             // 
             // groupBox2
@@ -1118,6 +1128,7 @@
             this.maskCEPFuncAlter.Name = "maskCEPFuncAlter";
             this.maskCEPFuncAlter.Size = new System.Drawing.Size(90, 26);
             this.maskCEPFuncAlter.TabIndex = 2;
+            this.maskCEPFuncAlter.Leave += new System.EventHandler(this.maskCEPFuncAlter_Leave);
             // 
             // txtNumLogradouroFuncAlter
             // 
@@ -1214,8 +1225,7 @@
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.menuCadastrarFuncionario,
-            this.menuConsultarFuncionario,
-            this.menuExcluirFuncionario});
+            this.menuConsultarFuncionario});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(1372, 36);
@@ -1225,33 +1235,24 @@
             // menuCadastrarFuncionario
             // 
             this.menuCadastrarFuncionario.Name = "menuCadastrarFuncionario";
-            this.menuCadastrarFuncionario.Size = new System.Drawing.Size(103, 32);
+            this.menuCadastrarFuncionario.Size = new System.Drawing.Size(103, 29);
             this.menuCadastrarFuncionario.Text = "Cadastrar";
             this.menuCadastrarFuncionario.Click += new System.EventHandler(this.menuCadastrarFuncionario_Click);
             // 
             // menuConsultarFuncionario
             // 
             this.menuConsultarFuncionario.Name = "menuConsultarFuncionario";
-            this.menuConsultarFuncionario.Size = new System.Drawing.Size(103, 32);
+            this.menuConsultarFuncionario.Size = new System.Drawing.Size(103, 29);
             this.menuConsultarFuncionario.Text = "Consultar";
             this.menuConsultarFuncionario.Click += new System.EventHandler(this.menuConsultarFuncionario_Click);
             // 
-            // menuExcluirFuncionario
+            // txtCodFuncAlter
             // 
-            this.menuExcluirFuncionario.Name = "menuExcluirFuncionario";
-            this.menuExcluirFuncionario.Size = new System.Drawing.Size(77, 32);
-            this.menuExcluirFuncionario.Text = "Excluir";
-            // 
-            // btnExcluirFunc
-            // 
-            this.btnExcluirFunc.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
-            this.btnExcluirFunc.Location = new System.Drawing.Point(453, 645);
-            this.btnExcluirFunc.Name = "btnExcluirFunc";
-            this.btnExcluirFunc.Size = new System.Drawing.Size(207, 55);
-            this.btnExcluirFunc.TabIndex = 39;
-            this.btnExcluirFunc.Text = "Excluir Funcionario";
-            this.btnExcluirFunc.UseVisualStyleBackColor = true;
-            this.btnExcluirFunc.Click += new System.EventHandler(this.btnExcluirFunc_Click);
+            this.txtCodFuncAlter.Location = new System.Drawing.Point(17, 37);
+            this.txtCodFuncAlter.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtCodFuncAlter.Name = "txtCodFuncAlter";
+            this.txtCodFuncAlter.Size = new System.Drawing.Size(118, 26);
+            this.txtCodFuncAlter.TabIndex = 40;
             // 
             // label26
             // 
@@ -1263,23 +1264,15 @@
             this.label26.TabIndex = 41;
             this.label26.Text = "Cod. Funcionário";
             // 
-            // txtCodFuncAlter
-            // 
-            this.txtCodFuncAlter.Location = new System.Drawing.Point(17, 37);
-            this.txtCodFuncAlter.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.txtCodFuncAlter.Name = "txtCodFuncAlter";
-            this.txtCodFuncAlter.Size = new System.Drawing.Size(118, 26);
-            this.txtCodFuncAlter.TabIndex = 40;
-            // 
             // TelaFuncionario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(144F, 144F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.PeachPuff;
             this.ClientSize = new System.Drawing.Size(1372, 754);
-            this.Controls.Add(this.pnlConsultarFuncionario);
             this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.pnlCadastrarFuncionario);
+            this.Controls.Add(this.pnlConsultarFuncionario);
             this.MainMenuStrip = this.menuStrip1;
             this.MaximumSize = new System.Drawing.Size(1394, 810);
             this.MinimumSize = new System.Drawing.Size(1394, 810);
@@ -1322,7 +1315,6 @@
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem menuCadastrarFuncionario;
         private System.Windows.Forms.ToolStripMenuItem menuConsultarFuncionario;
-        private System.Windows.Forms.ToolStripMenuItem menuExcluirFuncionario;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txtCargoFuncionario;
         private System.Windows.Forms.GroupBox grpboxContatosFuncionario;

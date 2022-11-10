@@ -71,6 +71,7 @@ namespace GenesysGym
 
         private void LimparFormPesquisaFunc()
         {
+            txtCodFuncAlter.Text = string.Empty;
             txtCargoFuncAlter.Text = string.Empty;
             txtNomeFuncAlter.Text = string.Empty;
             maskCPFFuncAlter.Text = string.Empty;
@@ -276,6 +277,8 @@ namespace GenesysGym
                 MySqlCommand msCommand = new MySqlCommand();
                 string pesquisarcod = " and codfuncionario = '" + cod + "'";
                 string texto = "SELECT codfuncionario as 'COD.Funcionário', cargo as 'Cargo', nome as 'Nome Funcionário', cpf as 'CPF', rg as 'RG', sexo as 'sexo', dtMatricula as 'Data Admissão', dtNascimento as 'Data Nascimento', logradouro as 'Logradouro', numLogradouro as 'Nº', bairro as 'Bairro', cidade as 'Cidade', estado as 'UF', cep as 'CEP', telefone as 'Telefone', email as 'Email' FROM funcionario WHERE 1=1";
+                if (cod != "   ") texto += pesquisarcod;
+
 
                 msCommand.CommandText = texto;
                 msCommand.Connection = msConnection;
@@ -284,7 +287,6 @@ namespace GenesysGym
 
                 dtgridPesquisaFuncionario.DataSource = dt;
                 msConnection.Close();
-
             }
         }
 
@@ -299,7 +301,7 @@ namespace GenesysGym
 
                 dt = DataConnection.ObterDadosFuncionario(vcod);
 
-                txtCodFuncionario.Text = dt.Rows[0].Field<int>("codfuncionario").ToString();
+                txtCodFuncAlter.Text = dt.Rows[0].Field<int>("codfuncionario").ToString();
                 txtNomeFuncAlter.Text = dt.Rows[0].Field<string>("nome").ToString();
                 maskCPFFuncAlter.Text = dt.Rows[0].Field<string>("cpf").ToString();
                 maskRGFuncAlter.Text = dt.Rows[0].Field<string>("rg").ToString();
@@ -310,7 +312,7 @@ namespace GenesysGym
                 txtCidadeFuncAlter.Text = dt.Rows[0].Field<string>("cidade").ToString();
                 txtEstadoFuncAlter.Text = dt.Rows[0].Field<string>("estado").ToString();
                 maskTelefoneFuncAlter.Text = dt.Rows[0].Field<string>("telefone").ToString();
-                txtEmailFuncAlter.Text = dt.Rows[0].Field<string>("email").ToString();
+                txtEmailFuncAlter.Text = dt.Rows[0].Field<string>("email").ToString();                
                 txtCargoFuncAlter.Text = dt.Rows[0].Field<string>("cargo").ToString();
             }
         }
@@ -345,8 +347,7 @@ namespace GenesysGym
             DataConnection.AtualizarDadosFuncionario(func);
             dtgridPesquisaFuncionario[1, linha].Value = txtNomeFuncAlter.Text;
 
-            MessageBox.Show("Dados atualizados com sucesso!");
-            
+            MessageBox.Show("Dados atualizados com sucesso!");            
             LimparFormPesquisaFunc();
 
 
@@ -378,11 +379,30 @@ namespace GenesysGym
                 string cod = txtCodFuncAlter.Text;
                 cod = cod.Replace(",", "").Replace("-", "");
 
-                DataConnection.ExcluirDadosCliente(cod);
+                DataConnection.ExcluirDadosFuncionario(cod);
                 dtgridFuncionariosCadastrados.Rows.Remove(dtgridFuncionariosCadastrados.CurrentRow);
 
                 MessageBox.Show("Funcionário excluído com Sucesso!");
                 LimparFormPesquisaFunc();
+            }
+        }
+
+        private void maskCEPFuncAlter_Leave(object sender, EventArgs e)
+        {
+            using (var ws = new WSCorreios.AtendeClienteClient())
+            {
+                try
+                {
+                    var endereco = ws.consultaCEP(maskCEPFuncAlter.Text.Trim());
+                    txtEstadoFuncAlter.Text = endereco.uf;
+                    txtCidadeFuncAlter.Text = endereco.cidade;
+                    txtBairroFuncAlter.Text = endereco.bairro;
+                    txtLogradouroFuncAlter.Text = endereco.end;
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message, this.Text, MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
         }
     }

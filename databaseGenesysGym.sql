@@ -31,6 +31,7 @@ email varchar (50)
 );
 select * from cliente;
 
+
 create table funcionario(
 codfuncionario int not null,
 nome varchar (300) not null,
@@ -50,3 +51,10 @@ telefone char (11),
 email varchar (50)
 );
 select * from funcionario;
+
+
+
+
+
+
+

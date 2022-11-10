@@ -347,7 +347,6 @@ namespace GenesysGym
                 MySqlCommand msCommand = new MySqlCommand();
                 string pesquisarCPF = " and cpf = '" + cpf + "'";
                 string texto = "SELECT codCliente as 'COD. Cliente', nmCliente as 'Nome Cliente', cpf as 'CPF', rg as 'RG', sexo as 'sexo', dtMatricula as 'Data Matrícula', dtNascimento as 'Data Nascimento', logradouro as 'Logradouro', numLogradouro as 'Nº', bairro as 'Bairro', cidade as 'Cidade', estado as 'UF', cep as 'CEP', telefone as 'Telefone', email as 'Email' FROM cliente WHERE 1=1";
-                //MessageBox.Show("Nome: "+(nome == "")+  "\nCPF: " + (cpf == "         ") + "\n REG: " + (registro == ""));
                 if (cpf != "         ") texto += pesquisarCPF;
 
                 msCommand.CommandText = texto;
@@ -538,9 +537,7 @@ namespace GenesysGym
             LimparFormPesquisa();
 
 
-            ///ATUALIZANDO O DATAGRID VIEW DE CLIENTES            
-
-
+            ///ATUALIZANDO O DATAGRID VIEW DE CLIENTES  
             DataTable dt = new DataTable();
 
             string connection_mysql = @"Server=localhost;Database=GenesysGym;Uid=root;Pwd='1234'";
@@ -573,6 +570,26 @@ namespace GenesysGym
                 MessageBox.Show("Cliente excluído com Sucesso!");
                 LimparFormPesquisa();
             }
+        }
+
+        private void maskCEPAlter_Leave(object sender, EventArgs e)
+        {
+            using (var ws = new WSCorreios.AtendeClienteClient())
+            {
+                try
+                {
+                    var endereco = ws.consultaCEP(maskCEPAlter.Text.Trim());
+                    txtEstadoAlter.Text = endereco.uf;
+                    txtCidadeAlter.Text = endereco.cidade;
+                    txtBairroAlter.Text = endereco.bairro;
+                    txtLogradouroAlter.Text = endereco.end;
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message, this.Text, MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+
         }
     }
     

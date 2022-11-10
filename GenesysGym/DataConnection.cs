@@ -298,6 +298,8 @@ namespace GenesysGym
         //FIM DAS FUNÇÕES PARA PESQUISA INCLUSAO  E ALTERAÇÃO DE CLIENTES
         //
 
+
+
         // FUNÇÕES PARA GESTÃO DE FUNCIONARIOS
 
         public static DataTable ObterDadosFuncionario(string cod)
@@ -331,7 +333,7 @@ namespace GenesysGym
             {
                 var vcon = ConexaoBanco();
                 var cmd = vcon.CreateCommand();
-                cmd.CommandText = "UPDATE funcionario SET nome='" + func.nomefunc + "', cpf='" + func.cpffunc + "', rg='" + func.rgfunc + "', logradouro='" + func.logradourofunc + "', numLogradouro='" + func.numLogradourofunc + "', cep='" + func.cepfunc + "', cargo='" + func.cargo + "',  bairro='" + func.bairrofunc + "', cidade='" + func.cidadefunc + "', estado='" + func.estadofunc + "', telefone='" + func.telefonefunc + "', email='" + func.emailfunc + "' WHERE cpf=" + func.codfunc;
+                cmd.CommandText = "UPDATE funcionario SET nome='" + func.nomefunc + "', cpf='" + func.cpffunc + "', rg='" + func.rgfunc + "', logradouro='" + func.logradourofunc + "', numLogradouro='" + func.numLogradourofunc + "', cep='" + func.cepfunc + "', cargo='" + func.cargo + "', bairro='" + func.bairrofunc + "', cidade='" + func.cidadefunc + "', estado='" + func.estadofunc + "', telefone='" + func.telefonefunc + "', email='" + func.emailfunc + "' WHERE codfuncionario=" + func.codfunc;
 
                 msdAdapter = new MySqlDataAdapter(cmd.CommandText, vcon);
                 cmd.ExecuteNonQuery();
@@ -355,7 +357,7 @@ namespace GenesysGym
 
                 var vcon = ConexaoBanco();
                 var cmd = vcon.CreateCommand();
-                cmd.CommandText = "DELETE FROM cliente WHERE cpf=" + cod;
+                cmd.CommandText = "DELETE FROM funcionario WHERE codfuncionario=" + cod;
 
                 msdAdapter = new MySqlDataAdapter(cmd.CommandText, vcon);
                 cmd.ExecuteNonQuery();
@@ -366,8 +368,6 @@ namespace GenesysGym
                 throw ex;
             }
         }
-
-
     }
 
 }

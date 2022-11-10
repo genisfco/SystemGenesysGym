@@ -1,4 +1,6 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
+using System.Data;
 using System.Windows.Forms;
 
 namespace GenesysGym
@@ -526,7 +528,40 @@ namespace GenesysGym
 
         private void btnBuscarCliente_Click(object sender, EventArgs e)
         {
+            string cpf = maskCPFClienteTreino.Text;
+            cpf = cpf.Replace(",", "").Replace("-", "");
 
+            if (cpf.Length != 11)
+            {
+                MessageBox.Show("Obrigatório preencher o CPF completo!");
+            }
+
+            else
+            {
+                
+                DataTable dt = new DataTable();
+
+                string connection_mysql = @"Server=localhost;Database=GenesysGym;Uid=root;Pwd='1234'";
+
+                MySqlConnection msConnection = new MySqlConnection();
+                msConnection.ConnectionString = connection_mysql;
+                msConnection.Open();
+                MySqlCommand msCommand = new MySqlCommand();
+                string pesquisarCPF = " and cpf = '" + cpf + "'";
+                string texto = "SELECT codCliente as 'COD. Cliente', nmCliente as 'Nome Cliente', cpf as 'CPF', rg as 'RG', sexo as 'sexo', dtMatricula as 'Data Matrícula', dtNascimento as 'Data Nascimento', logradouro as 'Logradouro', numLogradouro as 'Nº', bairro as 'Bairro', cidade as 'Cidade', estado as 'UF', cep as 'CEP', telefone as 'Telefone', email as 'Email' FROM cliente WHERE 1=1";
+                if (cpf != "         ") texto += pesquisarCPF;
+
+                msCommand.CommandText = texto;
+                msCommand.Connection = msConnection;
+                MySqlDataAdapter msdAdapter = new MySqlDataAdapter(msCommand);
+                msdAdapter.Fill(dt);
+
+                dataGridView1.DataSource = dt;
+                msConnection.Close();
+               
+            }
+
+            dataGridView1.Visible = true;
         }
 
         private void cboGrup9_SelectedIndexChanged(object sender, EventArgs e)
@@ -894,6 +929,23 @@ namespace GenesysGym
             {
                 cboExerc16.Items.AddRange(exercAbdomen);
                 cboExerc16.SelectedIndex = 0;
+            }
+        }
+
+        private void dataGridView1_SelectionChanged(object sender, EventArgs e)
+        {
+            DataGridView dgv = (DataGridView)sender;
+            int contlinhas = dgv.SelectedRows.Count;
+            if (contlinhas > 0)
+            {
+                DataTable dt1 = new DataTable();
+                string vcpf = dgv.SelectedRows[0].Cells[2].Value.ToString();
+
+                dt1 = DataConnection.ObterDadosCliente(vcpf);
+
+                txtNomeClienteTreino.Text = dt1.Rows[0].Field<string>("NmCliente").ToString();
+                maskCPFClienteTreino.Text = dt1.Rows[0].Field<string>("cpf").ToString();
+
             }
         }
     }
