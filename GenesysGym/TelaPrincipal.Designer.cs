@@ -29,8 +29,8 @@ namespace GenesysGym
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.pnlCadastrarCliente = new System.Windows.Forms.Panel();
             this.grpboxContatos = new System.Windows.Forms.GroupBox();
             this.label15 = new System.Windows.Forms.Label();
@@ -800,7 +800,6 @@ namespace GenesysGym
             // 
             this.menuStrip1.BackColor = System.Drawing.SystemColors.Control;
             this.menuStrip1.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.menuStrip1.GripMargin = new System.Windows.Forms.Padding(2, 2, 0, 2);
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.menu_Login,
@@ -810,7 +809,7 @@ namespace GenesysGym
             this.menu_Usuarios});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1372, 38);
+            this.menuStrip1.Size = new System.Drawing.Size(1372, 36);
             this.menuStrip1.TabIndex = 3;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -826,14 +825,14 @@ namespace GenesysGym
             // strip_Logon
             // 
             this.strip_Logon.Name = "strip_Logon";
-            this.strip_Logon.Size = new System.Drawing.Size(270, 36);
+            this.strip_Logon.Size = new System.Drawing.Size(171, 36);
             this.strip_Logon.Text = "Logon";
             this.strip_Logon.Click += new System.EventHandler(this.strip_Logon_Click);
             // 
             // strip_logoff
             // 
             this.strip_logoff.Name = "strip_logoff";
-            this.strip_logoff.Size = new System.Drawing.Size(270, 36);
+            this.strip_logoff.Size = new System.Drawing.Size(171, 36);
             this.strip_logoff.Text = "Logoff";
             this.strip_logoff.Click += new System.EventHandler(this.strip_logoff_Click);
             // 
@@ -1004,7 +1003,7 @@ namespace GenesysGym
             this.maskTelefoneAlter.Location = new System.Drawing.Point(10, 82);
             this.maskTelefoneAlter.Mask = "(00)000000000";
             this.maskTelefoneAlter.Name = "maskTelefoneAlter";
-            this.maskTelefoneAlter.Size = new System.Drawing.Size(128, 28);
+            this.maskTelefoneAlter.Size = new System.Drawing.Size(144, 28);
             this.maskTelefoneAlter.TabIndex = 0;
             // 
             // groupBox2
@@ -1063,7 +1062,7 @@ namespace GenesysGym
             // label21
             // 
             this.label21.AutoSize = true;
-            this.label21.Location = new System.Drawing.Point(542, 37);
+            this.label21.Location = new System.Drawing.Point(523, 37);
             this.label21.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(47, 22);
@@ -1103,7 +1102,7 @@ namespace GenesysGym
             this.txtCidadeAlter.Location = new System.Drawing.Point(273, 149);
             this.txtCidadeAlter.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtCidadeAlter.Name = "txtCidadeAlter";
-            this.txtCidadeAlter.Size = new System.Drawing.Size(148, 28);
+            this.txtCidadeAlter.Size = new System.Drawing.Size(217, 28);
             this.txtCidadeAlter.TabIndex = 4;
             // 
             // txtBairroAlter
@@ -1116,11 +1115,11 @@ namespace GenesysGym
             // 
             // maskCEPAlter
             // 
-            this.maskCEPAlter.Location = new System.Drawing.Point(544, 62);
+            this.maskCEPAlter.Location = new System.Drawing.Point(525, 62);
             this.maskCEPAlter.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.maskCEPAlter.Mask = "00000-000";
             this.maskCEPAlter.Name = "maskCEPAlter";
-            this.maskCEPAlter.Size = new System.Drawing.Size(93, 28);
+            this.maskCEPAlter.Size = new System.Drawing.Size(101, 28);
             this.maskCEPAlter.TabIndex = 2;
             this.maskCEPAlter.Leave += new System.EventHandler(this.maskCEPAlter_Leave);
             // 
@@ -1134,10 +1133,10 @@ namespace GenesysGym
             // 
             // txtLogradouroAlter
             // 
-            this.txtLogradouroAlter.Location = new System.Drawing.Point(9, 62);
+            this.txtLogradouroAlter.Location = new System.Drawing.Point(6, 62);
             this.txtLogradouroAlter.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtLogradouroAlter.Name = "txtLogradouroAlter";
-            this.txtLogradouroAlter.Size = new System.Drawing.Size(368, 28);
+            this.txtLogradouroAlter.Size = new System.Drawing.Size(357, 28);
             this.txtLogradouroAlter.TabIndex = 0;
             // 
             // groupBox3
@@ -1170,7 +1169,7 @@ namespace GenesysGym
             // label28
             // 
             this.label28.AutoSize = true;
-            this.label28.Location = new System.Drawing.Point(387, 45);
+            this.label28.Location = new System.Drawing.Point(377, 45);
             this.label28.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label28.Name = "label28";
             this.label28.Size = new System.Drawing.Size(46, 22);
@@ -1193,16 +1192,16 @@ namespace GenesysGym
             this.maskRGAlter.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.maskRGAlter.Mask = "00.000.000-C";
             this.maskRGAlter.Name = "maskRGAlter";
-            this.maskRGAlter.Size = new System.Drawing.Size(115, 28);
+            this.maskRGAlter.Size = new System.Drawing.Size(125, 28);
             this.maskRGAlter.TabIndex = 2;
             // 
             // maskCPFAlter
             // 
-            this.maskCPFAlter.Location = new System.Drawing.Point(387, 74);
+            this.maskCPFAlter.Location = new System.Drawing.Point(377, 74);
             this.maskCPFAlter.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.maskCPFAlter.Mask = "000.000.000-00";
             this.maskCPFAlter.Name = "maskCPFAlter";
-            this.maskCPFAlter.Size = new System.Drawing.Size(135, 28);
+            this.maskCPFAlter.Size = new System.Drawing.Size(145, 28);
             this.maskCPFAlter.TabIndex = 1;
             // 
             // txtNomeClientAlter
@@ -1210,7 +1209,7 @@ namespace GenesysGym
             this.txtNomeClientAlter.Location = new System.Drawing.Point(10, 74);
             this.txtNomeClientAlter.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtNomeClientAlter.Name = "txtNomeClientAlter";
-            this.txtNomeClientAlter.Size = new System.Drawing.Size(365, 28);
+            this.txtNomeClientAlter.Size = new System.Drawing.Size(353, 28);
             this.txtNomeClientAlter.TabIndex = 0;
             // 
             // btnSairPesquisarCliente
@@ -1240,14 +1239,14 @@ namespace GenesysGym
             // 
             this.dtgridClientesCadastrados.AllowUserToAddRows = false;
             this.dtgridClientesCadastrados.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle9.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle9.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dtgridClientesCadastrados.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtgridClientesCadastrados.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dtgridClientesCadastrados.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtgridClientesCadastrados.EnableHeadersVisualStyles = false;
             this.dtgridClientesCadastrados.Location = new System.Drawing.Point(678, 327);
@@ -1265,14 +1264,14 @@ namespace GenesysGym
             // 
             this.dtgridPesquisaCliente.AllowUserToAddRows = false;
             this.dtgridPesquisaCliente.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle10.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle10.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dtgridPesquisaCliente.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle10;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtgridPesquisaCliente.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dtgridPesquisaCliente.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtgridPesquisaCliente.EnableHeadersVisualStyles = false;
             this.dtgridPesquisaCliente.Location = new System.Drawing.Point(678, 101);
@@ -1290,7 +1289,7 @@ namespace GenesysGym
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(979, 30);
+            this.label13.Location = new System.Drawing.Point(964, 30);
             this.label13.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(46, 22);
@@ -1299,11 +1298,11 @@ namespace GenesysGym
             // 
             // maskPesquisarCPFCliente
             // 
-            this.maskPesquisarCPFCliente.Location = new System.Drawing.Point(983, 55);
+            this.maskPesquisarCPFCliente.Location = new System.Drawing.Point(968, 55);
             this.maskPesquisarCPFCliente.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.maskPesquisarCPFCliente.Mask = "000.000.000-00";
             this.maskPesquisarCPFCliente.Name = "maskPesquisarCPFCliente";
-            this.maskPesquisarCPFCliente.Size = new System.Drawing.Size(129, 28);
+            this.maskPesquisarCPFCliente.Size = new System.Drawing.Size(142, 28);
             this.maskPesquisarCPFCliente.TabIndex = 12;
             // 
             // pnlBarraLogin
