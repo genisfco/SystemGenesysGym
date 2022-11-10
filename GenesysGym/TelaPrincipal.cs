@@ -376,6 +376,9 @@ namespace GenesysGym
 
             pnlCadastrarCliente.Visible = false;
             pnlPesquisarCliente.Visible = false;
+
+            Application.Restart();
+            
            
         }
 
