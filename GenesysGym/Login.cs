@@ -12,6 +12,8 @@ namespace GenesysGym
 {
     public partial class TelaLogin : Form
     {
+        //TELA LOGIN
+
         TelaPrincipal telaprincipal1;
         DataTable dt = new DataTable();
 
@@ -23,6 +25,7 @@ namespace GenesysGym
 
         private void btn_Logar_Click(object sender, EventArgs e)
         {
+            
             string username = txt_UserName.Text;
             string senha = txt_Senha.Text;
 
