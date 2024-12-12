@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.pnlCadastrarFuncionario = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
             this.txtCargoFuncionario = new System.Windows.Forms.TextBox();
@@ -902,14 +902,14 @@
             // 
             this.dtgridFuncionariosCadastrados.AllowUserToAddRows = false;
             this.dtgridFuncionariosCadastrados.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dtgridFuncionariosCadastrados.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtgridFuncionariosCadastrados.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dtgridFuncionariosCadastrados.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtgridFuncionariosCadastrados.EnableHeadersVisualStyles = false;
             this.dtgridFuncionariosCadastrados.Location = new System.Drawing.Point(685, 346);
@@ -927,14 +927,14 @@
             // 
             this.dtgridPesquisaFuncionario.AllowUserToAddRows = false;
             this.dtgridPesquisaFuncionario.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dtgridPesquisaFuncionario.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtgridPesquisaFuncionario.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dtgridPesquisaFuncionario.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtgridPesquisaFuncionario.EnableHeadersVisualStyles = false;
             this.dtgridPesquisaFuncionario.Location = new System.Drawing.Point(685, 104);
@@ -961,7 +961,7 @@
             // 
             // txtPesquisarCodFuncionario
             // 
-            this.txtPesquisarCodFuncionario.Location = new System.Drawing.Point(970, 56);
+            this.txtPesquisarCodFuncionario.Location = new System.Drawing.Point(970, 57);
             this.txtPesquisarCodFuncionario.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtPesquisarCodFuncionario.Name = "txtPesquisarCodFuncionario";
             this.txtPesquisarCodFuncionario.Size = new System.Drawing.Size(118, 28);
@@ -1247,21 +1247,21 @@
             this.menuConsultarFuncionario});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1372, 36);
+            this.menuStrip1.Size = new System.Drawing.Size(1372, 38);
             this.menuStrip1.TabIndex = 7;
             this.menuStrip1.Text = "menuStrip1";
             // 
             // menuCadastrarFuncionario
             // 
             this.menuCadastrarFuncionario.Name = "menuCadastrarFuncionario";
-            this.menuCadastrarFuncionario.Size = new System.Drawing.Size(103, 32);
+            this.menuCadastrarFuncionario.Size = new System.Drawing.Size(111, 34);
             this.menuCadastrarFuncionario.Text = "Cadastrar";
             this.menuCadastrarFuncionario.Click += new System.EventHandler(this.menuCadastrarFuncionario_Click);
             // 
             // menuConsultarFuncionario
             // 
             this.menuConsultarFuncionario.Name = "menuConsultarFuncionario";
-            this.menuConsultarFuncionario.Size = new System.Drawing.Size(103, 32);
+            this.menuConsultarFuncionario.Size = new System.Drawing.Size(111, 34);
             this.menuConsultarFuncionario.Text = "Consultar";
             this.menuConsultarFuncionario.Click += new System.EventHandler(this.menuConsultarFuncionario_Click);
             // 
