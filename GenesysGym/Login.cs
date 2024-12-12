@@ -12,7 +12,7 @@ namespace GenesysGym
 {
     public partial class TelaLogin : Form
     {
-        //TELA LOGIN, testes
+        //TELA LOGIN, testes de git pelo terminal
 
         TelaPrincipal telaprincipal1;
         DataTable dt = new DataTable();
